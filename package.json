@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx -y serve -l 8000 .",
-    "index": "node scripts/build-index.mjs",
+    "doc": "node scripts/fetch-doc.mjs",
+    "index": "npm run doc && node scripts/build-index.mjs",
     "check": "node tests/check.mjs"
   },
   "repository": {

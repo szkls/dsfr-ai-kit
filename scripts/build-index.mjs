@@ -121,14 +121,34 @@ const models = [
 const version = JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version;
 const today = new Date().toISOString().slice(0, 10);
 
+// --- copie de la documentation du site (reference/doc/, produite par scripts/fetch-doc.mjs) ---
+const docIndexFile = join(OUT, 'doc', 'index.json');
+const docIndex = existsSync(docIndexFile) ? JSON.parse(readFileSync(docIndexFile, 'utf8')) : null;
+const docSubjects = (docIndex?.subjects || []).filter((s) => s.section === 'composants');
+const docByTechnical = new Map(docSubjects.map((s) => [s.technical, s]));
+for (const c of components) {
+  const d = docByTechnical.get(c.id);
+  c.docFile = d && existsSync(join(ROOT, d.file)) ? d.file : '—';
+}
+const componentsWithoutDoc = components.filter((c) => c.docFile === '—').map((c) => c.id);
+const docWithoutComponent = docSubjects.filter((s) => !components.some((c) => c.id === s.technical)).map((s) => `${s.technical} (${s.title})`);
+const docNote = docIndex
+  ? [
+      `Colonne « Doc du site » : copie intégrale de la documentation officielle, récupérée le ${docIndex.fetched} par scripts/fetch-doc.mjs (à lire en entier avant d'employer un composant).`,
+      `- Composants du paquet sans page de doc trouvée sur le site : ${componentsWithoutDoc.length ? componentsWithoutDoc.join(', ') : 'aucun'}.`,
+      `- Pages de doc du site sans composant dans le paquet : ${docWithoutComponent.length ? docWithoutComponent.join(', ') : 'aucune'}.`
+    ].join('\n')
+  : 'Colonne « Doc du site » : vide, reference/doc/index.json est absent. Lancer `npm run doc`.';
+
 function table(rows, withCategory) {
   const head = withCategory
     ? ['Catégorie', 'Nom français', 'Nom technique', 'Page d\'exemple', 'Variantes repérées', 'Dépendances CSS', 'Doc officielle']
-    : ['Nom français', 'Nom technique', 'Page d\'exemple', 'Variantes repérées', 'Dépendances CSS', 'Doc officielle'];
+    : ['Nom français', 'Nom technique', 'Page d\'exemple', 'Variantes repérées', 'Dépendances CSS', 'Doc officielle', 'Doc du site (copie)'];
   const lines = [`| ${head.join(' | ')} |`, `|${head.map(() => '---').join('|')}|`];
   for (const r of rows) {
     const cols = [r.title, r.id, r.example, r.variants, r.style, r.doc === '—' ? '—' : `[doc](${r.doc})`];
     if (withCategory) cols.unshift(r.category);
+    else cols.push(r.docFile || '—');
     lines.push(`| ${cols.map(cell).join(' | ')} |`);
   }
   return lines.join('\n');
@@ -136,10 +156,16 @@ function table(rows, withCategory) {
 
 mkdirSync(OUT, { recursive: true });
 writeFileSync(join(OUT, 'composants.md'),
-  `${HEADER}\n\n# Composants DSFR ${version}\n\n${components.length} composants. Chemins relatifs à la racine du dépôt.\n\n${table(components, false)}\n`);
+  `${HEADER}\n\n# Composants DSFR ${version}\n\n${components.length} composants. Chemins relatifs à la racine du dépôt.\n\n${docNote}\n\n${table(components, false)}\n`);
 writeFileSync(join(OUT, 'modeles.md'),
   `${HEADER}\n\n# Modèles DSFR ${version}\n\n${models.length} modèles (pages types et blocs fonctionnels). Chemins relatifs à la racine du dépôt.\n\n${table(models, true)}\n`);
 writeFileSync(join(OUT, 'version.md'),
   `${HEADER}\n\n# Version\n\n- DSFR installé : ${version}\n- Généré le : ${today}\n`);
 
 console.log(`reference/ généré : ${components.length} composants, ${models.length} modèles, DSFR ${version}, ${today}`);
+if (!docIndex) console.warn('Attention : reference/doc/index.json absent, la colonne « Doc du site » est vide (lancer npm run doc).');
+else {
+  console.log(`Doc du site : ${docSubjects.length} composant(s) documenté(s), ${components.length - componentsWithoutDoc.length}/${components.length} composants du paquet reliés.`);
+  if (componentsWithoutDoc.length) console.warn(`  Composants sans page de doc : ${componentsWithoutDoc.join(', ')}`);
+  if (docWithoutComponent.length) console.warn(`  Pages de doc sans composant dans le paquet : ${docWithoutComponent.join(', ')}`);
+}

@@ -8,7 +8,7 @@ Ce dépôt sert à produire des écrans conformes au Système de Design de l'Ét
 2. Aucune classe CSS hors du DSFR (préfixe fr-), aucune couleur, taille ou espacement en dur.
 3. Aucun contenu inventé : les textes viennent du brief ; s'il manque quelque chose, demander avant de générer.
 4. Chaque écran vit dans screens/<nom>/ avec son brief.md, son index.html et un fichier HTML par état.
-5. La documentation officielle se consulte via le serveur MCP dsfr ; les règles d'usage propres à l'équipe sont dans fiches/.
+5. La documentation officielle est copiée intégralement dans reference/doc/ (un fichier par composant, fondamental et modèle, régénéré par npm run doc) : on la lit en entier pour chaque composant employé, et on le note dans conception.md (« Doc lue : … »). Le serveur MCP dsfr ne sert qu'à vérifier une nouveauté absente de cette copie. Les règles d'usage propres à l'équipe sont dans fiches/.
 
 ## Démarche
 Concevoir : skills/dsfr-designer/SKILL.md. Relire : skills/dsfr-review/SKILL.md. Livrer dans Figma : skills/dsfr-figma/SKILL.md. Monter de version : skills/dsfr-update/SKILL.md.

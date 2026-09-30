@@ -1,0 +1,2230 @@
+{
+  "site": "https://www.systeme-de-design.gouv.fr",
+  "fetched": "2026-09-30",
+  "dsfr": "1.15.3",
+  "pages": 263,
+  "failures": [],
+  "subjects": [
+    {
+      "section": "composants",
+      "subject": "accordeon",
+      "technical": "accordion",
+      "title": "Accordéon",
+      "file": "reference/doc/composants/accordion.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/accordeon",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Accordéon - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/accordeon/design-de-l-accordeon",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Accordéon - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/accordeon/code-de-l-accordeon",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Accordéon - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/accordeon/accessibilite-de-l-accordeon",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Accordéon - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/accordeon/demonstration-de-l-accordeon",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Accordéon - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "ajout-de-fichier",
+      "technical": "upload",
+      "title": "Ajout de fichier",
+      "file": "reference/doc/composants/upload.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/ajout-de-fichier",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Ajout de fichier - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/ajout-de-fichier/design-de-l-ajout-de-fichier",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Ajout de fichier - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/ajout-de-fichier/code-de-l-ajout-de-fichier",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Ajout de fichier - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/ajout-de-fichier/accessibilite-de-l-ajout-de-fichier",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Ajout de fichier - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/ajout-de-fichier/demonstration-de-l-ajout-de-fichier",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Ajout de fichier - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "alerte",
+      "technical": "alert",
+      "title": "Alerte",
+      "file": "reference/doc/composants/alert.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/alerte",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Alerte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/alerte/design-de-l-alerte",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Alerte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/alerte/code-de-l-alerte",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Alerte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/alerte/accessibilite-de-l-alerte",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Alerte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/alerte/demonstration-de-l-alerte",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Alerte - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "badge",
+      "technical": "badge",
+      "title": "Badge",
+      "file": "reference/doc/composants/badge.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/badge",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Badge - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/badge/design-du-badge",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Badge - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/badge/code-du-badge",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Badge - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/badge/accessibilite-du-badge",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du badge - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/badge/demonstration-du-badge",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du badge - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "bandeau-d-information-importante",
+      "technical": "notice",
+      "title": "Bandeau d'information importante",
+      "file": "reference/doc/composants/notice.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bandeau-d-information-importante",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Bandeau d'information importante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bandeau-d-information-importante/design-du-bandeau-d-information-importante",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Bandeau d'information importante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bandeau-d-information-importante/code-du-bandeau-d-information-importante",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Bandeau d'information importante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bandeau-d-information-importante/accessibilite-du-bandeau-d-information-importante",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Bandeau d'information importante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bandeau-d-information-importante/demonstration-du-bandeau-d-information-importante",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Bandeau d'information importante - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "barre-de-recherche",
+      "technical": "search",
+      "title": "Barre de recherche",
+      "file": "reference/doc/composants/search.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/barre-de-recherche",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Barre de recherche - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/barre-de-recherche/design-de-la-barre-de-recherche",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Barre de recherche - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/barre-de-recherche/code-de-la-barre-de-recherche",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Barre de recherche - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/barre-de-recherche/accessibilite-de-la-barre-de-recherche",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Barre de recherche - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/barre-de-recherche/demonstration-de-la-barre-de-recherche",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Barre de recherche - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "bloc-marque",
+      "technical": "logo",
+      "title": "Bloc marque",
+      "file": "reference/doc/composants/logo.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bloc-marque",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Bloc marque - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bloc-marque/design-du-bloc-marque",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Bloc marque - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bloc-marque/code-du-bloc-marque",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Bloc marque - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bloc-marque/accessibilite-du-bloc-marque",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Bloc marque - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bloc-marque/demonstration-du-bloc-marque",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Bloc marque - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "bouton",
+      "technical": "button",
+      "title": "Bouton",
+      "file": "reference/doc/composants/button.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Bouton - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton/design-du-bouton",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du bouton - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton/code-du-bouton",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Bouton - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton/accessibilite-du-bouton",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Bouton - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton/demonstration-du-bouton",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du bouton - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "bouton-radio",
+      "technical": "radio",
+      "title": "Bouton radio",
+      "file": "reference/doc/composants/radio.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton-radio",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Bouton radio - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton-radio/design-du-bouton-radio",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Bouton radio - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton-radio/code-du-bouton-radio",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Bouton radio - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton-radio/accessibilite-du-bouton-radio",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Bouton radio - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/bouton-radio/demonstration-du-bouton-radio",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Bouton radio - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "boutons-franceconnect-et-proconnect",
+      "technical": "connect",
+      "title": "Boutons FranceConnect et ProConnect",
+      "file": "reference/doc/composants/connect.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/boutons-franceconnect-et-proconnect",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Boutons FranceConnect et ProConnect - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/boutons-franceconnect-et-proconnect/design-des-boutons-franceconnect-et-proconnect",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design des Boutons FranceConnect et ProConnect - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/boutons-franceconnect-et-proconnect/code-des-boutons-franceconnect-et-proconnect",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code des Boutons FranceConnect et ProConnect - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/boutons-franceconnect-et-proconnect/accessibilite-des-boutons-franceconnect-et-proconnect",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité des Boutons FranceConnect et ProConnect - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/boutons-franceconnect-et-proconnect/demonstration-des-boutons-franceconnect-et-proconnect",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration des Boutons FranceConnect et ProConnect - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "carte",
+      "technical": "card",
+      "title": "Carte",
+      "file": "reference/doc/composants/card.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/carte",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Carte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/carte/design-de-la-carte",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Carte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/carte/code-de-la-carte",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Carte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/carte/accessibilite-de-la-carte",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Carte - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/carte/demonstration-de-la-carte",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Carte - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "case-a-cocher",
+      "technical": "checkbox",
+      "title": "Case à cocher",
+      "file": "reference/doc/composants/checkbox.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/case-a-cocher",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Case à cocher - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/case-a-cocher/design-de-la-case-a-cocher",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Case à cocher - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/case-a-cocher/code-de-la-case-a-cocher",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Case à cocher - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/case-a-cocher/accessibilite-de-la-case-a-cocher",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Case à cocher - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/case-a-cocher/demonstration-de-la-case-a-cocher",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la case à cocher - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "champ-de-saisie",
+      "technical": "input",
+      "title": "Champ de saisie",
+      "file": "reference/doc/composants/input.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/champ-de-saisie",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Champ de saisie - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/champ-de-saisie/design-du-champ-de-saisie",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Champ de saisie - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/champ-de-saisie/code-du-champ-de-saisie",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Champ de saisie - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/champ-de-saisie/accessibilite-du-champ-de-saisie",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Champ de saisie - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/champ-de-saisie/demonstration-du-champ-de-saisie",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Champ de saisie - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "citation",
+      "technical": "quote",
+      "title": "Citation",
+      "file": "reference/doc/composants/quote.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/citation",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Citation - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/citation/design-de-la-citation",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Citation - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/citation/code-de-la-citation",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Citation - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/citation/accessibilite-de-la-citation",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Citation - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/citation/demonstration-de-la-citation",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Citation - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "contenu-medias",
+      "technical": "content",
+      "title": "Contenu médias",
+      "file": "reference/doc/composants/content.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/contenu-medias",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Contenu médias - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/contenu-medias/design-du-contenu-medias",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Contenu médias - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/contenu-medias/code-du-contenu-medias",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Contenu médias - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/contenu-medias/accessibilite-du-contenu-medias",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Contenu médias - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/contenu-medias/demonstration-du-contenu-medias",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Contenu médias - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "controle-segmente",
+      "technical": "segmented",
+      "title": "Contrôle segmenté",
+      "file": "reference/doc/composants/segmented.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/controle-segmente",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Contrôle segmenté - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/controle-segmente/design-du-controle-segmente",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Contrôle segmenté - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/controle-segmente/code-du-controle-segmente",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Contrôle segmenté - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/controle-segmente/accessibilite-du-controle-segmente",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Contrôle segmenté - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/controle-segmente/demonstration-du-controle-segmente",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Contrôle segmenté - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "curseur",
+      "technical": "range",
+      "title": "Curseur",
+      "file": "reference/doc/composants/range.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/curseur",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Curseur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/curseur/design-du-curseur",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du curseur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/curseur/code-du-curseur",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Curseur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/curseur/accessibilite-du-curseur",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Curseur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/curseur/demonstration-du-curseur",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Curseur - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "en-tete",
+      "technical": "header",
+      "title": "En-tête",
+      "file": "reference/doc/composants/header.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "En-tête - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete/design-de-l-en-tete",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'En-tête - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete/code-de-l-en-tete",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'En-tête - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete/accessibilite-de-l-en-tete",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'En-tête - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete/demonstration-de-l-en-tete",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'En-tête - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "en-tete-connectee",
+      "technical": "user",
+      "title": "En-tête connectée",
+      "file": "reference/doc/composants/user.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete-connectee",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "En-tête connectée - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/en-tete-connectee/design-de-l-en-tete-connectee",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'En-tête connectée - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "fil-d-ariane",
+      "technical": "breadcrumb",
+      "title": "Fil d'Ariane",
+      "file": "reference/doc/composants/breadcrumb.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/fil-d-ariane",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Fil d'Ariane - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/fil-d-ariane/design-du-fil-d-ariane",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du fil d'Ariane - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/fil-d-ariane/code-du-fil-d-ariane",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Fil d'Ariane - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/fil-d-ariane/accessibilite-du-fil-d-ariane",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Fil d'Ariane - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/fil-d-ariane/demonstration-du-fil-d-ariane",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Fil d'Ariane - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "formulaire",
+      "technical": "form",
+      "title": "Formulaire",
+      "file": "reference/doc/composants/form.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/formulaire",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Formulaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/formulaire/design-du-formulaire",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Formulaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/formulaire/code-du-formulaire",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Formulaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/formulaire/accessibilite-du-formulaire",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Formulaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/formulaire/demonstration-du-formulaire",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Formulaire - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "gestionnaire-de-consentement",
+      "technical": "consent",
+      "title": "Gestionnaire de consentement",
+      "file": "reference/doc/composants/consent.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/gestionnaire-de-consentement",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Gestionnaire de consentement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/gestionnaire-de-consentement/design-du-gestionnaire-de-consentement",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Gestionnaire de consentement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/gestionnaire-de-consentement/code-du-gestionnaire-de-consentement",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Gestionnaire de consentement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/gestionnaire-de-consentement/accessibilite-du-gestionnaire-de-consentement",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Gestionnaire de consentement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/gestionnaire-de-consentement/demonstration-du-gestionnaire-de-consentement",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Gestionnaire de consentement - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "indicateur-d-etapes",
+      "technical": "stepper",
+      "title": "Indicateur d'étapes",
+      "file": "reference/doc/composants/stepper.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/indicateur-d-etapes",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Indicateur d’étapes - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/indicateur-d-etapes/design-de-l-indicateur-d-etapes",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Indicateur d'étapes - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/indicateur-d-etapes/code-de-l-indicateur-d-etapes",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Indicateur d'étapes - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/indicateur-d-etapes/accessibilite-de-l-indicateur-d-etapes",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Indicateur d'étapes - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/indicateur-d-etapes/demonstration-de-l-indicateur-d-etapes",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Indicateur d'étapes - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "infobulle",
+      "technical": "tooltip",
+      "title": "Infobulle",
+      "file": "reference/doc/composants/tooltip.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/infobulle",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Infobulle - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/infobulle/design-de-l-infobulle",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Infobulle - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/infobulle/code-de-l-infobulle",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Infobulle - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/infobulle/accessibilite-de-l-infobulle",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Infobulle - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/infobulle/demonstration-de-l-infobulle",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Infobulle - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "interrupteur",
+      "technical": "toggle",
+      "title": "Interrupteur",
+      "file": "reference/doc/composants/toggle.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/interrupteur",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Interrupteur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/interrupteur/design-de-l-interrupteur",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'interrupteur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/interrupteur/code-de-l-interrupteur",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Interrupteur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/interrupteur/accessibilite-de-l-interrupteur",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'interrupteur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/interrupteur/demonstration-de-l-interrupteur",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Interrupteur - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "lettre-d-information-et-reseaux-sociaux",
+      "technical": "follow",
+      "title": "Lettre d'information et Réseaux Sociaux",
+      "file": "reference/doc/composants/follow.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lettre-d-information-et-reseaux-sociaux",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Lettre d'information et réseaux sociaux - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lettre-d-information-et-reseaux-sociaux/design-de-la-lettre-d-information-et-des-reseaux-sociaux",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Lettre d'information et des réseaux sociaux - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lettre-d-information-et-reseaux-sociaux/code-de-la-lettre-d-information-et-des-reseaux-sociaux",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Lettre d'information et des réseaux sociaux - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lettre-d-information-et-reseaux-sociaux/accessibilite-de-la-lettre-d-information-et-des-reseaux-sociaux",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Lettre d'information et des réseaux sociaux - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lettre-d-information-et-reseaux-sociaux/demonstration-de-la-lettre-d-information-et-des-reseaux-sociaux",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Lettre d'information et des réseaux sociaux - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "lien",
+      "technical": "link",
+      "title": "Lien",
+      "file": "reference/doc/composants/link.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lien",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Lien - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lien/design-du-du-lien",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du du Lien - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lien/code-du-lien",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Lien - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lien/accessibilite-du-lien",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Lien - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/lien/demonstration-du-lien",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Lien - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "liens-d-evitement",
+      "technical": "skiplink",
+      "title": "Liens d'évitement",
+      "file": "reference/doc/composants/skiplink.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liens-d-evitement",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Liens d'évitement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liens-d-evitement/design-des-liens-d-evitement",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design des Liens d'évitement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liens-d-evitement/code-des-liens-d-evitement",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code des Liens d'évitement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liens-d-evitement/accessibilite-des-liens-d-evitement",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité des Liens d'évitement - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liens-d-evitement/demonstration-des-liens-d-evitement",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration des Liens d'évitement - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "liste-deroulante",
+      "technical": "select",
+      "title": "Liste déroulante",
+      "file": "reference/doc/composants/select.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Liste déroulante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante/design-de-la-liste-deroulante",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Liste déroulante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante/code-de-la-liste-deroulante",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Liste déroulante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante/accessibilite-de-la-liste-deroulante",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Liste déroulante - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante/demonstration-de-la-liste-deroulante",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Liste déroulante - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "liste-deroulante-riche",
+      "technical": "combobox",
+      "title": "Liste déroulante riche",
+      "file": "reference/doc/composants/combobox.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante-riche",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Liste déroulante riche - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/liste-deroulante-riche/design-de-la-liste-deroulante-riche",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Liste déroulante riche - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "menu-deroulant",
+      "technical": "dropdown",
+      "title": "Menu déroulant",
+      "file": "reference/doc/composants/dropdown.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-deroulant",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Menu déroulant - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-deroulant/design-du-menu-deroulant",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Menu déroulant - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "menu-lateral",
+      "technical": "sidemenu",
+      "title": "Menu latéral",
+      "file": "reference/doc/composants/sidemenu.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-lateral",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Menu latéral - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-lateral/design-du-menu-lateral",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Menu latéral - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-lateral/code-du-menu-lateral",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Menu latéral - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-lateral/accessibilite-du-menu-lateral",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Menu latéral - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/menu-lateral/demonstration-du-menu-lateral",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Menu latéral - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "mise-en-avant",
+      "technical": "callout",
+      "title": "Mise en avant",
+      "file": "reference/doc/composants/callout.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-avant",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Mise en avant - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-avant/design-de-la-mise-en-avant",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la mise en avant - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-avant/code-de-la-mise-en-avant",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Mise en avant - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-avant/accessibilite-de-la-mise-en-avant",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Mise en avant - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-avant/demonstration-de-la-mise-en-avant",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Mise en avant - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "mise-en-exergue",
+      "technical": "highlight",
+      "title": "Mise en exergue",
+      "file": "reference/doc/composants/highlight.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-exergue",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Mise en exergue - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-exergue/design-de-la-mise-en-exergue",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Mise en exergue - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-exergue/code-de-la-mise-en-exergue",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Mise en exergue - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-exergue/accessibilite-de-la-mise-en-exergue",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Mise en exergue - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mise-en-exergue/demonstration-de-la-mise-en-exergue",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Mise en exergue - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "modale",
+      "technical": "modal",
+      "title": "Modale",
+      "file": "reference/doc/composants/modal.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/modale",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Modale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/modale/design-de-la-modale",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Modale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/modale/code-de-la-modale",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Modale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/modale/accessibilite-de-la-modale",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Modale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/modale/demonstration-de-la-modale",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la modale - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "mot-de-passe",
+      "technical": "password",
+      "title": "Mot de passe",
+      "file": "reference/doc/composants/password.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mot-de-passe",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Mot de passe - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mot-de-passe/design-du-mot-de-passe",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Mot de passe - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mot-de-passe/code-du-mot-de-passe",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Mot de passe - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mot-de-passe/accessibilite-du-mot-de-passe",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Mot de passe - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/mot-de-passe/demonstration-du-mot-de-passe",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Mot de passe - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "navigation-principale",
+      "technical": "navigation",
+      "title": "Navigation principale",
+      "file": "reference/doc/composants/navigation.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-principale",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Navigation principale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-principale/design-de-la-navigation-principale",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Navigation principale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-principale/code-de-la-navigation-principale",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Navigation principale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-principale/accessibilite-de-la-navigation-principale",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Navigation principale - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-principale/demonstration-de-la-navigation-principale",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Navigation principale - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "navigation-tertiaire",
+      "technical": "tabnav",
+      "title": "Navigation tertiaire",
+      "file": "reference/doc/composants/tabnav.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-tertiaire",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Navigation tertiaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/navigation-tertiaire/design-de-la-navigation-tertiaire",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Navigation tertiaire - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "onglet",
+      "technical": "tab",
+      "title": "Onglet",
+      "file": "reference/doc/composants/tab.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/onglet",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Onglet - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/onglet/design-de-l-onglet",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de l'Onglet - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/onglet/code-de-l-onglet",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de l'Onglet - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/onglet/accessibilite-de-l-onglet",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de l'Onglet - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/onglet/demonstration-de-l-onglet",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de l'Onglet - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "pagination",
+      "technical": "pagination",
+      "title": "Pagination",
+      "file": "reference/doc/composants/pagination.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Pagination - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination/design-de-la-pagination",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Pagination - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination/code-de-la-pagination",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Pagination - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination/accessibilite-de-la-pagination",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Pagination - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pagination/demonstration-de-la-pagination",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Pagination - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "parametres-d-affichage",
+      "technical": "display",
+      "title": "Paramètres d'affichage",
+      "file": "reference/doc/composants/display.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/parametres-d-affichage",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Paramètres d'affichage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/parametres-d-affichage/design-des-parametres-d-affichage",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design des Paramètres d'affichage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/parametres-d-affichage/code-des-parametres-d-affichage",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code des Paramètres d'affichage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/parametres-d-affichage/accessibilite-des-parametres-d-affichage",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité des Paramètres d'affichage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/parametres-d-affichage/demonstration-des-parametres-d-affichage",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration des Paramètres d'affichage - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "partage",
+      "technical": "share",
+      "title": "Partage",
+      "file": "reference/doc/composants/share.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/partage",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Partage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/partage/design-du-partage",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Partage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/partage/code-du-partage",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Partage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/partage/accessibilite-du-partage",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Partage - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/partage/demonstration-du-partage",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Partage - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "pied-de-page",
+      "technical": "footer",
+      "title": "Pied de page",
+      "file": "reference/doc/composants/footer.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pied-de-page",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Pied de page - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pied-de-page/design-du-pied-de-page",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du pied de page - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pied-de-page/code-du-pied-de-page",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Pied de page - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pied-de-page/accessibilite-du-pied-de-page",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Pied de page - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/pied-de-page/demonstration-du-pied-de-page",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du pied de page - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "selecteur-de-langues",
+      "technical": "translate",
+      "title": "Sélecteur de langues",
+      "file": "reference/doc/composants/translate.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/selecteur-de-langues",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Sélecteur de langues - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/selecteur-de-langues/design-du-selecteur-de-langues",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Sélecteur de langues - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/selecteur-de-langues/code-du-selecteur-de-langues",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Sélecteur de langues - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/selecteur-de-langues/accessibilite-du-selecteur-de-langues",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Sélecteur de langues - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/selecteur-de-langues/demonstration-du-selecteur-de-langues",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Sélecteur de langues - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "sommaire",
+      "technical": "summary",
+      "title": "Sommaire",
+      "file": "reference/doc/composants/summary.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/sommaire",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Sommaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/sommaire/design-du-sommaire",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Sommaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/sommaire/code-du-sommaire",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Sommaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/sommaire/accessibilite-du-sommaire",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Sommaire - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/sommaire/demonstration-du-sommaire",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Sommaire - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "tableau",
+      "technical": "table",
+      "title": "Tableau",
+      "file": "reference/doc/composants/table.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tableau",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Tableau - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tableau/design-du-tableau",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du tableau - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tableau/code-du-tableau",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Tableau - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tableau/accessibilite-du-tableau",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du tableau - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tableau/demonstration-du-tableau",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Tableau - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "tag",
+      "technical": "tag",
+      "title": "Tag",
+      "file": "reference/doc/composants/tag.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tag",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Tag - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tag/design-du-tag",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design du Tag - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tag/code-du-tag",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code du Tag - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tag/accessibilite-du-tag",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité du Tag - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tag/demonstration-du-tag",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration du Tag - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "telechargement-de-fichier",
+      "technical": "download",
+      "title": "Téléchargement de fichier",
+      "file": "reference/doc/composants/download.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/telechargement-de-fichier",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Téléchargement de fichier - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "transcription",
+      "technical": "transcription",
+      "title": "Transcription",
+      "file": "reference/doc/composants/transcription.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/transcription",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Transcription - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/transcription/design-de-la-transcription",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Transcription - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/transcription/code-de-la-transcription",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Transcription - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/transcription/accessibilite-de-la-transcription",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Transcription - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/transcription/demonstration-de-la-transcription",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Transcription - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "tuile",
+      "technical": "tile",
+      "title": "Tuile",
+      "file": "reference/doc/composants/tile.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tuile",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Tuile - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tuile/design-de-la-tuile",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Tuile - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tuile/code-de-la-tuile",
+          "kind": "code",
+          "tab": "Code",
+          "title": "Code de la Tuile - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tuile/accessibilite-de-la-tuile",
+          "kind": "accessibilite",
+          "tab": "Accessibilité",
+          "title": "Accessibilité de la Tuile - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/tuile/demonstration-de-la-tuile",
+          "kind": "demonstration",
+          "tab": "Démo",
+          "title": "Démonstration de la Tuile - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "composants",
+      "subject": "zone-d-expression-visuelle",
+      "technical": "composition",
+      "title": "Zone d'expression visuelle",
+      "file": "reference/doc/composants/composition.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/zone-d-expression-visuelle",
+          "kind": "presentation",
+          "tab": "Présentation",
+          "title": "Zone d'expression visuelle - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/composants/zone-d-expression-visuelle/design-de-la-zone-d-expression-visuelle",
+          "kind": "design",
+          "tab": "Design",
+          "title": "Design de la Zone d'expression visuelle - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "classes-css-d-affichage",
+      "title": "Classes CSS d'affichage",
+      "file": "reference/doc/fondamentaux/classes-css-d-affichage.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/classes-css-d-affichage",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Classes CSS d’affichage - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "couleurs",
+      "title": "Couleur",
+      "file": "reference/doc/fondamentaux/couleurs.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/couleurs",
+          "kind": "presentation",
+          "tab": "Palette",
+          "title": "Couleur - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/couleurs/utilisation-des-couleurs-dans-le-dsfr",
+          "kind": "utilisation-des-couleurs-dans-le-dsfr",
+          "tab": "Usage",
+          "title": "Utilisation des couleurs dans le DSFR - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/couleurs/rechercher-une-couleur",
+          "kind": "rechercher-une-couleur",
+          "tab": "Recherche",
+          "title": "Rechercher une couleur - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "espacement",
+      "title": "Espacement",
+      "file": "reference/doc/fondamentaux/espacement.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/espacement",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Espacement - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "grille-et-points-de-rupture",
+      "title": "Grille et points de rupture",
+      "file": "reference/doc/fondamentaux/grille-et-points-de-rupture.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/grille-et-points-de-rupture",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Grille et points de rupture - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "icone",
+      "title": "Icône",
+      "file": "reference/doc/fondamentaux/icone.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/icone",
+          "kind": "presentation",
+          "tab": "Documentation",
+          "title": "Icône - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/icone/rechercher-une-icone",
+          "kind": "rechercher-une-icone",
+          "tab": "Recherche",
+          "title": "Rechercher une icône - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "icone-de-favori",
+      "title": "Icône de favoris - Favicon",
+      "file": "reference/doc/fondamentaux/icone-de-favori.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/icone-de-favori",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Icône de favori - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "les-principes-a-respecter",
+      "title": "Les principes à respecter",
+      "file": "reference/doc/fondamentaux/les-principes-a-respecter.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/les-principes-a-respecter",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Les principes à respecter - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "medias",
+      "title": "Média",
+      "file": "reference/doc/fondamentaux/medias.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/medias",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Média - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "pictogramme",
+      "title": "Pictogramme",
+      "file": "reference/doc/fondamentaux/pictogramme.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/pictogramme",
+          "kind": "presentation",
+          "tab": "Documentation",
+          "title": "Pictogramme - Système de Design de l’État"
+        },
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/pictogramme/rechercher-un-pictogramme",
+          "kind": "rechercher-un-pictogramme",
+          "tab": "Recherche",
+          "title": "Rechercher un pictogramme - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "systeme-d-ombres-et-d-elevation",
+      "title": "Système d'ombre et d'élévation",
+      "file": "reference/doc/fondamentaux/systeme-d-ombres-et-d-elevation.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/systeme-d-ombres-et-d-elevation",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Système d'ombre et d'élévation - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "fondamentaux",
+      "subject": "typographie",
+      "title": "Typographie",
+      "file": "reference/doc/fondamentaux/typographie.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/fondamentaux/typographie",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Typographie - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "adresse-electronique",
+      "title": "Adresse électronique",
+      "file": "reference/doc/modeles/adresse-electronique.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/adresse-electronique",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Adresse électronique - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "blocs-fonctionnels",
+      "title": "Blocs fonctionnels",
+      "file": "reference/doc/modeles/blocs-fonctionnels.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Blocs fonctionnels - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "civilite",
+      "title": "Civilité",
+      "file": "reference/doc/modeles/civilite.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/civilite",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Civilité - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "date-unique",
+      "title": "Date unique",
+      "file": "reference/doc/modeles/date-unique.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/date-unique",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Date unique - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "formulaires",
+      "title": "Formulaires",
+      "file": "reference/doc/modeles/formulaires.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/formulaires",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Formulaires - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "nom-et-prenom",
+      "title": "Nom et prénom",
+      "file": "reference/doc/modeles/nom-et-prenom.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/nom-et-prenom",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Nom et prénom - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "numero-de-telephone",
+      "title": "Numéro de téléphone",
+      "file": "reference/doc/modeles/numero-de-telephone.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/numero-de-telephone",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Numéro de téléphone - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "page-d-erreurs",
+      "title": "Page d'erreurs",
+      "file": "reference/doc/modeles/page-d-erreurs.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/pages-types/page-d-erreurs",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Page d’erreurs - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "page-de-connexion",
+      "title": "Page de connexion",
+      "file": "reference/doc/modeles/page-de-connexion.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/pages-types/page-de-connexion",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Page de connexion - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "page-de-creation-de-compte",
+      "title": "Page de création de compte",
+      "file": "reference/doc/modeles/page-de-creation-de-compte.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/pages-types/page-de-creation-de-compte",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Page de création de compte - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "pages-types",
+      "title": "Pages types",
+      "file": "reference/doc/modeles/pages-types.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/pages-types",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Pages types - Système de Design de l’État"
+        }
+      ]
+    },
+    {
+      "section": "modeles",
+      "subject": "societe",
+      "title": "Société",
+      "file": "reference/doc/modeles/societe.md",
+      "pages": [
+        {
+          "url": "https://www.systeme-de-design.gouv.fr/version-courante/fr/modeles/blocs-fonctionnels/societe",
+          "kind": "presentation",
+          "tab": "",
+          "title": "Société - Système de Design de l’État"
+        }
+      ]
+    }
+  ]
+}

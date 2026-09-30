@@ -2,7 +2,7 @@
 
 Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index.html, etat-erreur-serveur.html, etat-erreurs-saisie.html, etat-succes.html
 
-**Verdict : CONFORME — 0 écart(s) de snippet, 0 classe(s) inconnue(s) ou style(s) en ligne, 0 problème(s) de contenu, 0 violation(s) axe.**
+**Verdict : NON CONFORME — 0 écart(s) de snippet, 0 classe(s) inconnue(s) ou style(s) en ligne, 0 problème(s) de contenu, 0 violation(s) axe, 10 composant(s) sans ligne « Doc lue ».**
 
 ## 1. Fidélité aux snippets officiels
 
@@ -133,3 +133,20 @@ Captures d'écran (largeurs 320, 576, 768, 992, 1248 px) :
 - captures/etat-succes-768.png
 - captures/etat-succes-992.png
 - captures/etat-succes-1248.png
+
+## 5. Documentation lue par composant
+
+Chaque composant du paquet présent dans l'écran doit avoir dans `conception.md` une ligne « Doc lue : reference/doc/composants/<nom-technique>.md » (copie intégrale de la doc du site, `npm run doc`). Un composant sans cette ligne est un écart bloquant.
+
+| Composant | Fichier de doc attendu | Résultat | Détail |
+|---|---|---|---|
+| Alerte (alert) | reference/doc/composants/alert.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Fil d'Ariane (breadcrumb) | reference/doc/composants/breadcrumb.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Bouton (button) | reference/doc/composants/button.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Case à cocher (checkbox) | reference/doc/composants/checkbox.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Pied de page (footer) | reference/doc/composants/footer.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Formulaire (form) | reference/doc/composants/form.md | **écart** | ligne « Doc lue » absente de conception.md |
+| En-tête (header) | reference/doc/composants/header.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Champ de saisie (input) | reference/doc/composants/input.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Mot de passe (password) | reference/doc/composants/password.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Bouton radio (radio) | reference/doc/composants/radio.md | **écart** | ligne « Doc lue » absente de conception.md |

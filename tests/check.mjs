@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Contrôle d'un écran DSFR : npm run check -- <nom-d-ecran>
 // Contrôles : 1. fidélité aux snippets officiels, 2. classes inconnues et styles en ligne,
-// 3. contenus (faux-texte, libellés génériques), 4. accessibilité (axe) et captures d'écran.
-// Rapport : screens/<nom>/rapport-tests.md. Code de sortie 1 si écart au contrôle 1 ou 2.
+// 3. contenus (faux-texte, libellés génériques), 4. accessibilité (axe) et captures d'écran,
+// 5. documentation lue : chaque composant présent a sa ligne « Doc lue : reference/doc/composants/<nom>.md » dans conception.md.
+// Rapport : screens/<nom>/rapport-tests.md. Code de sortie 1 si écart au contrôle 1, 2 ou 5.
 
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, accessSync, statSync } from 'node:fs';
 import { join, dirname, resolve, relative, basename } from 'node:path';
@@ -106,7 +107,7 @@ try {
         if (!best || d.score < best.score) best = { ...d, v };
         if (d.score === 0) break;
       }
-      r1.push({ file, path: b.path, component: best ? best.v.component : '?', ok: best && best.score === 0, variant: best ? best.v.variant : '—', detail: best ? (best.score === 0 ? 'identique' : best.first) : 'aucun extrait de référence' });
+      r1.push({ file, path: b.path, component: best ? best.v.component : '?', id: best ? best.v.id : null, ok: best && best.score === 0, variant: best ? best.v.variant : '—', detail: best ? (best.score === 0 ? 'identique' : best.first) : 'aucun extrait de référence' });
       matched.push({ path: b.path, id: best ? best.v.id : null });
     }
     // 2. Classes inconnues, non-DSFR, styles en ligne
@@ -136,11 +137,29 @@ try {
     console.log(`${a.blocks.length} blocs, ${axe.violations.length} violation(s) axe.`);
   }
 
+  // ---------- 5. Documentation lue par composant (conception.md) ----------
+  // Tout composant du paquet présent dans l'écran doit avoir, dans conception.md, une ligne
+  // « Doc lue : reference/doc/composants/<nom-technique>.md » (la copie de la doc du site, voir scripts/fetch-doc.mjs).
+  const conceptionPath = join(screenDir, 'conception.md');
+  const conception = existsSync(conceptionPath) ? readFileSync(conceptionPath, 'utf8') : '';
+  const docRead = new Set([...conception.matchAll(/Doc lue\s*:\s*`?reference\/doc\/composants\/([a-z-]+)\.md`?/g)].map((m) => m[1]));
+  const componentIds = new Set(components.filter((c) => c.example.includes('/example/component/')).map((c) => c.id));
+  const used = new Map();
+  for (const x of r1) if (x.id && componentIds.has(x.id) && !used.has(x.id)) used.set(x.id, x.component);
+  const r5 = [];
+  for (const [id, title] of [...used].sort((a, b) => a[0].localeCompare(b[0]))) {
+    const docFile = `reference/doc/composants/${id}.md`;
+    const hasDoc = existsSync(join(ROOT, docFile));
+    const read = docRead.has(id);
+    r5.push({ id, title, docFile, ok: read, detail: read ? 'ligne « Doc lue » présente' : (conception ? 'ligne « Doc lue » absente de conception.md' : 'conception.md absent') + (hasDoc ? '' : ' ; fichier de doc introuvable, lancer npm run doc') });
+  }
+
   // ---------- Rapport ----------
-  const n1 = r1.filter((x) => !x.ok).length, n2 = r2.length, n3 = r3.length, n4 = r4.length;
+  const n1 = r1.filter((x) => !x.ok).length, n2 = r2.length, n3 = r3.length, n4 = r4.length, n5 = r5.filter((x) => !x.ok).length;
+  const blocking = n1 + n2 + n5;
   const md = [];
   md.push(`# Rapport de tests : ${screenName}`, '', `Généré par tests/check.mjs le ${new Date().toISOString().slice(0, 10)} — DSFR ${JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version} — fichiers : ${files.join(', ')}`, '');
-  md.push(`**Verdict : ${n1 + n2 === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s) inconnue(s) ou style(s) en ligne, ${n3} problème(s) de contenu, ${n4} violation(s) axe.**`, '');
+  md.push(`**Verdict : ${blocking === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s) inconnue(s) ou style(s) en ligne, ${n3} problème(s) de contenu, ${n4} violation(s) axe, ${n5} composant(s) sans ligne « Doc lue ».**`, '');
   md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement propres au champ (autocomplete, spellcheck, required…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante.`, '');
   md.push('| Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |', '|---|---|---|---|---|---|');
   for (const x of r1) md.push(`| ${x.file} | ${cell(x.path)} | ${cell(x.component)} | ${x.ok ? 'conforme' : '**écart**'} | ${cell(x.variant)} | ${cell(x.detail)} |`);
@@ -156,12 +175,15 @@ try {
   if (!r4.length) md.push('| — | — | — | aucune violation | — | — |');
   md.push('', `Captures d'écran (largeurs ${WIDTHS.join(', ')} px) :`, '');
   for (const c of captures) md.push(`- ${c}`);
+  md.push('', '## 5. Documentation lue par composant', '', `Chaque composant du paquet présent dans l'écran doit avoir dans \`conception.md\` une ligne « Doc lue : reference/doc/composants/<nom-technique>.md » (copie intégrale de la doc du site, \`npm run doc\`). Un composant sans cette ligne est un écart bloquant.`, '', '| Composant | Fichier de doc attendu | Résultat | Détail |', '|---|---|---|---|');
+  for (const x of r5) md.push(`| ${cell(x.title)} (${x.id}) | ${x.docFile} | ${x.ok ? 'conforme' : '**écart**'} | ${cell(x.detail)} |`);
+  if (!r5.length) md.push('| — | — | aucun composant du paquet identifié | — |');
   md.push('');
   const reportPath = join(screenDir, 'rapport-tests.md');
   writeFileSync(reportPath, md.join('\n'));
   console.log(`\nRapport : ${relative(ROOT, reportPath)}`);
-  console.log(`Verdict : ${n1 + n2 === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s)/style(s), ${n3} contenu(s), ${n4} violation(s) axe.`);
-  process.exitCode = n1 + n2 > 0 ? 1 : 0;
+  console.log(`Verdict : ${blocking === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s)/style(s), ${n3} contenu(s), ${n4} violation(s) axe, ${n5} composant(s) sans « Doc lue ».`);
+  process.exitCode = blocking > 0 ? 1 : 0;
 } finally {
   await browser.close();
   await server.close();
