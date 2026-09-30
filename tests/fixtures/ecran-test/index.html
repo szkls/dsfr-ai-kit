@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="system">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Écran de test - dsfr-ai-kit</title>
+  </head>
+  <body>
+    <!-- Écran de test pour tests/check.mjs : 4 composants copiés des exemples officiels + 3 erreurs volontaires. -->
+
+    <!-- Fil d'Ariane : copié de example/component/breadcrumb (structure identique, contenus adaptés) -->
+    <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+        <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-1">Voir le fil d’Ariane</button>
+        <div class="fr-collapse" id="breadcrumb-1">
+            <ol class="fr-breadcrumb__list">
+                <li>
+                    <a class="fr-breadcrumb__link" id="breadcrumb-1-accueil" href="../">Accueil</a>
+                </li>
+                <li>
+                    <a class="fr-breadcrumb__link" id="breadcrumb-1-demarches" href="../">Démarches</a>
+                </li>
+                <li>
+                    <a class="fr-breadcrumb__link" aria-current="page">Demande de carte de stationnement</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <h1>Écran de test</h1>
+
+    <!-- Alerte : copiée de example/component/alert, variante « Alerte par défaut » -->
+    <div id="alert-1" class="fr-alert">
+        <h3 class="fr-alert__title">Information : votre dossier est en cours d’instruction</h3>
+        <p>Vous recevrez un courriel dès qu’une décision aura été prise.</p>
+    </div>
+
+    <!-- Champ de saisie : copié de example/component/input, premier extrait -->
+    <div class="fr-input-group" id="input-group-1">
+        <label class="fr-label" for="numero-dossier">
+            Numéro de dossier
+        </label>
+        <input class="fr-input" aria-describedby="numero-dossier-messages" id="numero-dossier" type="text">
+        <div class="fr-messages-group" id="numero-dossier-messages" aria-live="polite">
+        </div>
+    </div>
+
+    <!-- Bouton : copié de example/component/button, variante « Bouton simple » -->
+    <button type="button" class="fr-btn">Valider la demande</button>
+
+    <!-- ERREUR VOLONTAIRE 1 : classe inventée fr-btn--rouge -->
+    <button type="button" class="fr-btn fr-btn--rouge">Annuler la demande</button>
+
+    <!-- ERREUR VOLONTAIRE 2 : structure du bouton modifiée (élément strong ajouté dans le bouton) -->
+    <button type="button" class="fr-btn"><strong>Continuer plus tard</strong></button>
+
+    <!-- ERREUR VOLONTAIRE 3 : faux-texte -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <!-- Script en version es6 module et nomodule pour les navigateurs le ne supportant pas -->
+    <script type="module" src="../../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>

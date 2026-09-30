@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx -y serve -l 8000 .",
-    "index": "node scripts/build-index.mjs"
+    "index": "node scripts/build-index.mjs",
+    "check": "node tests/check.mjs"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/szkls/dsfr-ai-kit#readme",
   "dependencies": {
     "@gouvfr/dsfr": "1.15.3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "playwright": "1.63.0"
   }
 }
