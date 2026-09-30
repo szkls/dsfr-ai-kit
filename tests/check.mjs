@@ -84,6 +84,9 @@ try {
       (library[it.primary] ??= []).push({ component: meta.component.title, id: meta.component.id, nested: it.nested, variant: it.nested ? `${meta.variant} (élément imbriqué <${it.norm.t}>)` : meta.variant, norm: it.norm });
     }
   }
+  // propriétaire d'une classe racine : l'unique composant dont la page d'exemple la présente comme racine d'extrait
+  const owners = {};
+  for (const [primary, entries] of Object.entries(library)) { const ids = new Set(entries.filter((e) => !e.nested).map((e) => e.id)); if (ids.size === 1) owners[primary] = [...ids][0]; }
   console.log(`${fragments.length} extraits, ${roots.length} classes racines, ${Object.values(library).reduce((s, a) => s + a.length, 0)} variantes.`);
 
   // ---------- Analyse de chaque fichier ----------
@@ -112,8 +115,12 @@ try {
         if (!best || d.score < best.score) best = { ...d, v };
         if (d.score === 0) break;
       }
-      r1.push({ file, path: b.path, component: best ? best.v.component : '?', id: best ? best.v.id : null, ok: best && best.score === 0, variant: best ? best.v.variant : '—', detail: best ? (best.score === 0 ? 'identique' : best.first) : 'aucun extrait de référence' });
-      matched.push({ path: b.path, id: best ? best.v.id : null });
+      // un bloc de premier niveau (hors de tout autre bloc) est attribué au composant propriétaire de sa classe racine, même si
+      // l'extrait le plus proche vient d'une mise en situation d'un autre composant (ex. pagination dans la page des tableaux)
+      const ownerId = !parent && owners[b.primary];
+      const owner = ownerId ? components.find((c) => c.id === ownerId) : null;
+      r1.push({ file, path: b.path, component: owner ? owner.title : best ? best.v.component : '?', id: owner ? owner.id : best ? best.v.id : null, ok: best && best.score === 0, variant: best ? best.v.variant : '—', detail: best ? (best.score === 0 ? 'identique' : best.first) : 'aucun extrait de référence' });
+      matched.push({ path: b.path, id: owner ? owner.id : best ? best.v.id : null });
     }
     // 2. Classes inconnues, non-DSFR, styles en ligne
     for (const c of a.classes) {
@@ -165,7 +172,7 @@ try {
   const md = [];
   md.push(`# Rapport de tests : ${screenName}`, '', `Généré par tests/check.mjs le ${new Date().toISOString().slice(0, 10)} — DSFR ${JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version} — fichiers : ${files.join(', ')}`, '');
   md.push(`**Verdict : ${blocking === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s) inconnue(s) ou style(s) en ligne, ${n3} problème(s) de contenu, ${n4} violation(s) axe, ${n5} composant(s) sans ligne « Doc lue ».**`, '');
-  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes. Un bloc est conforme s'il correspond à au moins une variante.`, '');
+  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, lignes de liste libres en nombre et en ordre (chaque ligne doit correspondre à un type de ligne de l'exemple), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes, contenu libre du bloc refermable des accordéons. Un bloc est conforme s'il correspond à au moins une variante.`, '');
   md.push('| Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |', '|---|---|---|---|---|---|');
   for (const x of r1) md.push(`| ${x.file} | ${cell(x.path)} | ${cell(x.component)} | ${x.ok ? 'conforme' : '**écart**'} | ${cell(x.variant)} | ${cell(x.detail)} |`);
   if (!r1.length) md.push('| — | — | — | aucun bloc de composant trouvé | — | — |');
@@ -206,6 +213,15 @@ function diff(a, b, path) {
   for (const m of b.c.filter((x) => !a.c.includes(x))) note(`${path} : classe ${m} manquante`);
   for (const e of a.c.filter((x) => !b.c.includes(x))) note(`${path} : classe ${e} en trop`);
   for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
+  // listes (ul, ol) : les lignes d'un écran sont libres en nombre et en ordre ; chaque ligne doit correspondre à un type de ligne de l'exemple
+  if ((a.t === 'ul' || a.t === 'ol') && a.k.length && b.k.length) {
+    for (const ca of a.k) {
+      let bestD = null;
+      for (const cb of b.k) { const d = diff(ca, cb, `${path} > ${ca.t}${ca.p ? '.' + ca.p : ''}`); if (!bestD || d.score < bestD.score) bestD = d; if (bestD.score === 0) break; }
+      score += bestD.score; if (!first && bestD.first) first = bestD.first;
+    }
+    return { score, first };
+  }
   const n = Math.max(a.k.length, b.k.length);
   for (let i = 0; i < n; i++) {
     const ca = a.k[i], cb = b.k[i];

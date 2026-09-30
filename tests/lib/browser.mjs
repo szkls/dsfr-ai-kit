@@ -35,7 +35,8 @@ export function normalizeFragments({ fragments, roots, utilityRe, ignoreAttrs = 
     const c = [...el.classList].filter((x) => x.startsWith('fr-') && !util.test(x)).sort();
     const a = [...el.attributes].map((x) => x.name).filter(keepAttr).sort();
     const kids = [];
-    for (const ch of el.children) {
+    const freeZone = el.classList.contains('fr-header__menu-links') || (el.classList.contains('fr-collapse') && el.parentElement && el.parentElement.classList.contains('fr-accordion'));
+    for (const ch of freeZone ? [] : el.children) {
       const p = primaryOf(ch);
       kids.push(p && roots.includes(p) ? { t: ch.tagName.toLowerCase(), p, b: true } : norm(ch));
     }
@@ -103,8 +104,10 @@ export function analyseDocument({ roots, utilityRe, ignoreAttrs = [] }) {
     const c = [...el.classList].filter((x) => x.startsWith('fr-') && !util.test(x)).sort();
     const a = [...el.attributes].map((x) => x.name).filter(keepAttr).sort();
     const kids = [];
-    // fr-header__menu-links est vide dans les extraits : le JS du DSFR y recopie les accès rapides pour le mobile
-    const children = el.classList.contains('fr-header__menu-links') ? [] : [...el.children];
+    // zones dont le contenu n'est pas comparé : fr-header__menu-links (vide dans les extraits, le JS du DSFR y recopie
+    // les accès rapides pour le mobile) et le bloc refermable d'un accordéon (contenu libre selon la doc)
+    const freeZone = el.classList.contains('fr-header__menu-links') || (el.classList.contains('fr-collapse') && el.parentElement && el.parentElement.classList.contains('fr-accordion'));
+    const children = freeZone ? [] : [...el.children];
     for (const ch of children) {
       const p = primaryOf(ch);
       kids.push(p && roots.includes(p) ? { t: ch.tagName.toLowerCase(), p, b: true } : norm(ch));

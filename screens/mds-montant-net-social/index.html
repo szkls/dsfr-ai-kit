@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="system">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Le Montant Net Social - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="#" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Le Montant Net Social</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>LE MONTANT NET SOCIAL</h1>
+                    <p class="fr-text--lead">Facilite l’accès au RSA et à la prime d’activité</p>
+            <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
+                <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+                <ol>
+                    <li>
+                        <a class="fr-summary__link" id="summary-link-1" href="#faciliter">FACILITER VOS DEMARCHES</a>
+                    </li>
+                    <li>
+                        <a class="fr-summary__link" id="summary-link-2" href="#dates-cles">Dates clés</a>
+                    </li>
+                    <li>
+                        <a class="fr-summary__link" id="summary-link-3" href="#tout-savoir">TOUT SAVOIR SUR LE NET SOCIAL</a>
+                    </li>
+                    <li>
+                        <a class="fr-summary__link" id="summary-link-4" href="#reponses">LES RÉPONSES À VOS QUESTIONS</a>
+                    </li>
+                </ol>
+            </nav>
+                    <h2 id="faciliter" class="fr-mt-6v">FACILITER VOS DEMARCHES</h2>
+                    <p>Le montant Net Social est affiché sur le bulletin de paie et les relevés de prestations sociales.</p>
+                    <p>Ce montant permet de :</p>
+                    <ul>
+                        <li>Améliorer l’information de l’assuré sur les ressources retenues pour le calcul de ses droits,</li>
+                        <li>Faciliter les démarches de déclaration,</li>
+                        <li>Lutter contre le non-recours aux prestations sociales.</li>
+                    </ul>
+                    <h2 id="dates-cles" class="fr-mt-6v">Dates clés</h2>
+                    <h3>À partir du 1er juillet 2023</h3>
+                    <p>Le montant Net Social est inscrit progressivement sur tous les bulletins de paie (quel que soit le statut, le secteur d’activité ou l’employeur). Les allocataires du RSA et de la prime d’activité peuvent se servir du montant Net Social dès qu’il est disponible sur leurs documents de référence (bulletins de paie / relevés de prestations sociales).</p>
+                    <h3>À partir du 1er janvier 2024</h3>
+                    <p>Le montant Net Social est inscrit sur les relevés de prestations sociales (assurance chômage, indemnités journalières maladie, pension d’invalidité, etc). Les allocataires du RSA et de la prime d’activité doivent obligatoirement utiliser le montant Net Social pour la déclaration de leurs ressources.</p>
+                    <h3>Mars 2024</h3>
+                    <p>Le montant Net Social est affiché sur votre tableau de bord des ressources sur mesdroitssociaux.gouv.fr</p>
+                    <h3>Octobre 2024</h3>
+                    <p>Expérimentation en CAF du pré-remplissage automatique des déclarations trimestrielles de ressources (DTR) dans cinq départements (Alpes-Maritimes, Aube, Hérault, Pyrénées-Atlantiques, Vendée).</p>
+                    <h3>Mars 2025</h3>
+                    <p>Généralisation nationale du pré-remplissage automatique des DTR pour les allocataires CAF relevant du régime général.</p>
+                    <h3>1er juillet 2025</h3>
+                    <p>Généralisation du pré-remplissage automatique des DTR pour les allocataires relevant du régime agricole (MSA) bénéficiant de la prime d’activité.</p>
+                    <h3>1er septembre 2025</h3>
+                    <p>Généralisation du pré-remplissage pour les allocataires de la MSA bénéficiaires du RSA.</p>
+                    <h2 id="tout-savoir" class="fr-mt-6v">TOUT SAVOIR SUR LE NET SOCIAL</h2>
+            <div data-fr-group="false" class="fr-accordions-group">
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-1">Qu’est-ce que le montant Net Social ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-1">
+                        <p>Cette information a pour objectif de sécuriser le juste accès aux droits sociaux. L’affichage de ce montant sur les bulletins de paie à partir de juillet 2023 a pour objectif de simplifier les démarches des allocataires qui n’ont plus aucun calcul à effectuer. Il leur suffit de déclarer le cumul des montants net sociaux qui leur ont été transmis.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-2">Comment est calculé le montant Net Social ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-2">
+                        <p>Le montant Net Social est le revenu net après déduction de l’ensemble des prélèvements sociaux obligatoires et constitue à ce titre une référence commune à tous les salariés quel que soit leur statut, leur branche ou leur entreprise (Arrêté du 31 janvier 2023). Ce montant habituellement déclaré pour bénéficier de certains compléments de revenus tels que la prime d’activité ou de revenus de substitution comme le RSA n’était pas directement disponible.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-3">Qui calcule le montant Net Social ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-3">
+                        <p>Le montant Net Social est directement calculé par l’employeur ou l’organisme versant une prestation.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-4">Où retrouver le montant Net Social ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-4">
+                        <p>Si vous êtes salarié, votre montant Net Social apparaît dans une ligne spécifique de votre bulletin de paie (à partir de la paie de juillet 2023). Si vous êtes agent public, cet affichage dans le bulletin de paie est effectif depuis le 4e trimestre 2023. Si vous bénéficiez d’un revenu de remplacement (pensions de retraite, indemnités journalières de sécurité sociale, allocation chômage, prestations sociales), votre montant Net Social apparaît dans une ligne spécifique de votre relevé de prestation (à partir de juillet 2023).</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-5">A partir de quand peut-on visualiser le montant Net Social sur mesdroitssociaux.gouv.fr ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-5">
+                        <p>Le montant net social est affiché sur le site mesdroitssociaux.fr depuis mars 2024. Sur le tableau de bord des ressources, en bas de page, sont affichés, en détail, le montant net fiscal (pour les ressources imposables) et le montant net social (pour toutes les ressources). Pour vos prestations sociales actuellement perçues, le montant net fiscal s’affiche à 0 car elles ne sont pas imposables.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-savoir-6">Quels éléments ne sont pas pris en compte dans le calcul du montant Net Social ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-savoir-6">
+                        <p>Les éléments qui n’entrent pas dans le calcul sont soit des données de paie qui ne sont pas des revenus soit, par exception, certains éléments de revenu qui restent totalement non pris en compte. Ainsi, n’entrent pas dans le calcul du montant Net Social : les remboursements de frais professionnels (au réel ou forfaitaires) dans la limite de chacun de leurs plafonds d’exonération ; les avantages en nature ou en espèces exemptés socialement et fiscalement liés aux activités sociales (nourriture, avantages tarifaires, activités sociales et culturelles des CSE) ; la part patronale pour le financement des garanties collectives à la complémentaire santé obligatoire ; l’intéressement et la participation placés sur des plans d’épargne ; les abondements de l’employeur aux plans d’épargne ; les indemnités journalières de sécurité sociale (IJSS).</p>
+                    </div>
+                </section>
+            </div>
+                    <h2 id="reponses" class="fr-mt-6v">LES RÉPONSES À VOS QUESTIONS</h2>
+            <div data-fr-group="false" class="fr-accordions-group">
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-1">Je ne vois pas le montant Net Social sur mon bulletin de salaire</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-1">
+                        <p>L’affichage du montant Net Social sur le bulletin de paie s’est fait progressivement depuis juillet 2023. Si vous êtes salarié : depuis la paie de juillet 2023. Si vous êtes agent public : depuis le 4e trimestre 2023.</p>
+                        <p>S’il n’est pas présent sur votre bulletin de paie vous devez contacter votre employeur pour rectification.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-2">Je ne vois pas le montant Net Social sur mon relevé de prestation sociale</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-2">
+                        <p>Depuis Janvier 2024, le montant Net Social apparaît sur votre relevé de prestation sociale émanant de votre organisme de prestations familiales (CAF et MSA).</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-3">Je ne sais pas quand utiliser le montant Net Social sur ma déclaration de ressources trimestrielle</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-3">
+                        <p>Depuis Janvier 2024, si vous êtes bénéficiaire du Revenu de Solidarité Active (RSA) et de la Prime d'Activité (PA), vous devez obligatoirement déclarer le montant Net Social perçu, sur votre déclaration trimestrielle de ressources (DTR) auprès de votre organisme de prestations familiales (CAF et MSA).</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-4">Le montant Net Social est incorrect : comment le rectifier ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-4">
+                        <p>Le montant Net Social est accessible sur le portail Mes Droits Sociaux depuis Mars 2024. Si vous constatez une erreur, veuillez vérifier le montant indiqué sur votre bulletin de paie ou votre relevé de prestation. Vous pouvez vous rapprocher de votre organisme verseur pour en faire la rectification si nécessaire.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-5">Est-ce que le montant Net Social remplace le Net imposable et le Net à payer ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-5">
+                        <p>Non, le montant Net Social ne remplace pas le Net imposable et le Net à payer : ces deux mentions existent toujours et continuent de figurer sur le bulletin de paie.</p>
+                        <p>Le montant Net Imposable inclut l’ensemble des éléments de rémunération perçus par les salariés, et assujettis à l’impôt sur le revenu. Il est minoré de l’ensemble des prélèvements sociaux obligatoires (à l’exception de la part non déductible de la CSG et de la CRDS). Il permet de vérifier votre revenu imposable.</p>
+                        <p>Le montant Net à Payer correspond au montant qui vous est versé par votre employeur et qui est décompté sur le bulletin de paie. Aussi, ce montant peut tenir compte de certains remboursements (frais professionnels) ou de certains prélèvements (paiement au comité social d’entreprise, précomptes, …), qui ne correspondent pas à des éléments de revenu ou à des charges déductibles.</p>
+                    </div>
+                </section>
+                <section class="fr-accordion">
+                    <h3 class="fr-accordion__title">
+                        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-reponses-6">L’employeur peut-il savoir que je perçois des prestations sociales ?</button>
+                    </h3>
+                    <div class="fr-collapse" id="accordion-reponses-6">
+                        <p>Non, l'employeur ne peut pas savoir que vous percevez des prestations sociales. Le montant Net Social est calculé par les employeurs à partir des seules informations qu’ils connaissent sur leurs salariés, dans le cadre de leur relation de travail : aucune information ne leur est transmise par les organismes de sécurité sociale. Votre employeur n’est évidemment pas non plus informé des éventuelles démarches que vous êtes susceptibles de réaliser auprès des organismes pour obtenir des prestations.</p>
+                    </div>
+                </section>
+            </div>
+                    <p class="fr-mt-6v">
+                        <a href="../mds-accueil/index.html" class="fr-link fr-icon-arrow-left-line fr-link--icon-left">Revenir à l'accueil</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="#" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="#" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="#" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="#" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="#" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>
