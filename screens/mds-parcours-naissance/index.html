@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Vous attendez ou venez d’avoir un enfant - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header id="top" role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="../mds-evenements-de-vie/index.html" class="fr-nav__link" aria-current="true">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-1" href="../mds-evenements-de-vie/index.html">Vos évènements de vie</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Vous attendez ou venez d’avoir un enfant</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <p>
+                        <a href="../mds-evenements-de-vie/index.html" class="fr-link fr-icon-arrow-left-line fr-link--icon-left">Revenir aux évènements de vie</a>
+                    </p>
+                    <h1>Vous attendez ou venez d’avoir un enfant</h1>
+                    <p class="fr-tag">Famille</p>
+                    <p class="fr-text--lead fr-mt-4v">Si votre grossesse est confirmée, vous devez effectuer certaines démarches avant et après la naissance de votre enfant.</p>
+                </div>
+            </div>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-6">
+                    <div id="callout-prime" class="fr-callout">
+                        <p class="fr-callout__text">Prime à la naissance</p>
+                        <a href="#" class="fr-btn fr-btn--secondary">Simuler la prime à la naissance</a>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6">
+                    <div id="callout-seul" class="fr-callout">
+                        <p class="fr-callout__text">VOUS VIVEZ SEUL(E) ?</p>
+                        <button type="button" class="fr-btn fr-btn--secondary" data-fr-opened="false" aria-controls="modal-seul">Informez-vous sur vos droits</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <nav class="fr-summary fr-mt-6v" role="navigation" aria-labelledby="fr-summary-title">
+                        <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+                        <ol>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-1" href="#pendant-la-grossesse">Pendant la grossesse</a>
+                                <ol>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-1" href="#jusqu-au-3eme-mois">Jusqu'au 3ème mois</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-2" href="#4eme-mois">4ème mois</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-3" href="#5eme-mois">5ème mois</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-4" href="#6eme-mois">6ème mois</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-5" href="#7eme-et-8eme-mois">7ème et 8ème mois</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-1-6" href="#9eme-mois">9ème mois</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-2" href="#apres-la-naissance">Après la naissance</a>
+                                <ol>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-2-1" href="#jusqu-au-3-mois-de-l-enfant">jusqu'au 3 mois de l'enfant</a>
+                                    </li>
+                                    <li>
+                                        <a class="fr-summary__link" id="summary-link-2-2" href="#de-4-mois-a-3-ans">de 4 mois à 3 ans</a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h2 id="pendant-la-grossesse" class="fr-mt-8v">Pendant la grossesse</h2>
+                    <h3 id="jusqu-au-3eme-mois" class="fr-mt-6v">Jusqu'au 3ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-1">faire le 1er examen prénatal et la 1ère échographie</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-1">
+                                        <p>Avant la fin du 3ème mois, vous devez faire le 1er examen prénatal, la 1ère échographie et les examens complémentaires prescrits par votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-2">prendre rendez-vous pour la consultation de prévention</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-2">
+                                        <p>Dès votre déclaration de grossesse, vous pouvez prendre rendez-vous pour une consultation de prévention avec une sage-femme pour faire le point sur vos habitudes de vie, vos vaccinations et être informée sur les programmes de prévention pour les femmes enceintes. La sage-femme abordera aussi les conditions du retour à la maison après l'accouchement. Cette consultation est prise en charge à 70% par l'Assurance Maladie.</p>
+                                        <p><a href="https://ansfl.org/sages-femmes" target="_blank" rel="noopener external" title="Rechercher une sage-femme - nouvelle fenêtre" class="fr-link">Rechercher une sage-femme</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-3">réaliser l’entretien prénatal précoce</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-3">
+                                        <p>Vous devez prendre rendez-vous pour votre entretien prénatal précoce. Cet entretien, individuel ou en couple selon votre choix, est effectué par un professionnel de la naissance qui a reçu une formation spécifique. Ce peut être un médecin (gynécologue ou généraliste) ou une sage-femme. Il peut avoir lieu dans une maternité, une PMI, en libéral ou dans les lieux de préparation à l'accouchement. C'est un moment privilégié au cours duquel vous pouvez parler avec un professionnel de votre projet de naissance, poser librement des questions, exprimer vos inquiétudes ou vos attentes. Cet entretien obligatoire permet d’évaluer vos besoins en termes d'accompagnement au cours de votre grossesse. Parlez-en dès le début de votre grossesse avec le professionnel de santé qui vous suit.</p>
+                                        <p>Il est pris en charge à 100% par l'assurance maladie. Vous pouvez le programmer quand vous le souhaitez, le plus tôt dans votre grossesse étant le mieux.</p>
+                                        <p>Vous pouvez également en profiter planifier vos 7 séances de préparation à la naissance et à la parentalité.</p>
+                                        <p><a href="https://www.ameli.fr/assure/sante/themes/grossesse/preparation-parentalite" target="_blank" rel="noopener external" title="En savoir plus sur la préparation à la parentalité - nouvelle fenêtre" class="fr-link">En savoir plus sur la préparation à la parentalité</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-4">déclarer sa grossesse</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-4">
+                                        <p>Vous devez déclarer la grossesse auprès de votre médecin, sage-femme ou gynécologue. Pour vous simplifier la vie, ce professionnel de santé peut le faire en ligne avec votre carte Vitale. Dans le cas contraire, vous devez transmettre la déclaration papier :</p>
+                                        <ul>
+                                            <li>Le volet rose à votre caisse d’assurance maladie</li>
+                                        </ul>
+                                        <p><a href="https://www.ameli.fr/assure/droits-demarches/famille/maternite-paternite-adoption/grossesse" target="_blank" rel="noopener external" title="Contacter votre Caisse d'Assurance Maladie sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Contacter votre Caisse d'Assurance Maladie sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/declaration-de-grossesse" target="_blank" rel="noopener external" title="Contacter votre Caisse d'Assurance Maladie sur le site de la MSA - nouvelle fenêtre" class="fr-link">Contacter votre Caisse d'Assurance Maladie sur le site de la MSA</a></p>
+                                        <ul>
+                                            <li>Les 2 volets bleus à votre caisse d’allocations familiales</li>
+                                        </ul>
+                                        <p><a href="http://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/j-ai-ou-j-attends-un-ou-des-enfants/j-attends-un-enfant" target="_blank" rel="noopener external" title="Contacter votre Caisse d'Allocations Familiales sur le site de la CAF - nouvelle fenêtre" class="fr-link">Contacter votre Caisse d'Allocations Familiales sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/declaration-de-grossesse" target="_blank" rel="noopener external" title="Contacter votre Caisse d'Allocations Familiales sur le site de la MSA - nouvelle fenêtre" class="fr-link">Contacter votre Caisse d'Allocations Familiales sur le site de la MSA</a></p>
+                                        <p>Pour garantir le traitement de votre dossier dans les délais, la déclaration de grossesse est à effectuer avant la fin des 14 premières semaines.</p>
+                                        <p>La déclaration de grossesse constitue le point de départ de la prise en charge de vos dépenses de santé au titre de la maternité. Ne tardez pas à la faire!</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-5">vérifier si je peux bénéficier de la prime à la naissance</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-5">
+                                        <p>Une fois votre grossesse déclarée, vous pouvez demander la prime à la naissance.</p>
+                                        <p>La prime à la naissance est versée au cours du 7ème mois de grossesse et ne peut pas être demandée après.</p>
+                                        <p>Cette aide dépend de vos ressources et permet de prendre en charge les premières dépenses liées à l’arrivée de votre enfant.</p>
+                                        <p><a href="#" class="fr-link">Simulation de la prime de naissance</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-6">mettre à jour sa carte Vitale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-6">
+                                        <p>Vous devez mettre à jour votre carte Vitale sur les bornes situées dans les points d'accueil de l'assurance maladie, les pharmacies, ou certains établissements hospitaliers et cliniques, pour que vos examens prénataux obligatoires soit pris en charge à 100%.</p>
+                                        <p>En cas de perte ou de vol de votre carte Vitale, vous pouvez en demander le renouvellement en ligne.</p>
+                                        <p><a href="https://www.ameli.fr/assure/adresses-et-contacts/votre-carte-vitale-carte-europeenne-d-assurance-maladie-ceam/declarer-la-perte-le-vol-le-dysfonctionnement-de-votre-carte-vitale" target="_blank" rel="noopener external" title="Déclarer la perte ou le vol de votre carte Vitale sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Déclarer la perte ou le vol de votre carte Vitale sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfy/web/msa/espace-prive?modalId=2&amp;codeServiceFct=B38CTVITAL" target="_blank" rel="noopener external" title="Déclarer la perte ou le vol de votre carte Vitale sur le site de la MSA - nouvelle fenêtre" class="fr-link">Déclarer la perte ou le vol de votre carte Vitale sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-7">vérifier le médecin traitant</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-7">
+                                        <p>Afin d’être bien remboursé, vous pouvez vérifier que vous avez déclaré un médecin traitant.</p>
+                                        <p><a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true" target="_blank" rel="noopener external" title="Créer ou se connecter à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou se connecter à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/creer-mon-espace-prive" target="_blank" rel="noopener external" title="Créer ou se connecter à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou se connecter à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-8">prendre contact avec une maternité</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-8">
+                                        <p>Vous devez prendre contact avec la maternité où vous souhaitez accoucher.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher une maternité dans l'annuaire santé du site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher une maternité dans l'annuaire santé du site ameli.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-9">informer son employeur</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-9">
+                                        <p>Vous pouvez informer votre employeur pour bénéficier des avantages légaux et éventuellement conventionnels liés à la maternité.</p>
+                                        <p>Vous pouvez informer votre employeur de votre grossesse au moment où vous le souhaitez, par écrit ou verbalement. Cependant, tant que vous n'avez pas prévenu votre employeur, vous ne pouvez pas bénéficier des avantages légaux (et conventionnels, s'il en existe) tels que, par exemple :</p>
+                                        <ul>
+                                            <li>la protection contre le licenciement,</li>
+                                            <li>les autorisations d'absence pour examens médicaux sans baisse de la rémunération,</li>
+                                            <li>la réduction du temps de travail quotidien.</li>
+                                        </ul>
+                                        <p><a href="https://www.monenfant.fr/web/guest/grossesse-informer-son-employeur" target="_blank" rel="noopener external" title="Annoncer la grossesse à son employeur sur le site de la CAF - nouvelle fenêtre" class="fr-link">Annoncer la grossesse à son employeur sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant?p_p_id=56_INSTANCE_Eij66wzTGAWi&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=2&amp;_56_INSTANCE_Eij66wzTGAWi_read_more=2" target="_blank" rel="noopener external" title="Annoncer la grossesse à son employeur sur le site de la MSA - nouvelle fenêtre" class="fr-link">Annoncer la grossesse à son employeur sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-10">si vous êtes exploitant agricole</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-10">
+                                        <p>Vous pouvez vous faire remplacer sur votre exploitation agricole, ce service est financé par la MSA.</p>
+                                        <p><a href="https://servicederemplacement.fr/fr/se-faire-remplacer/maternite" target="_blank" rel="noopener external" title="Consulter le service de remplacement - nouvelle fenêtre" class="fr-link">Consulter le service de remplacement</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-11">si vous exercez une profession libérale ou indépendante</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-11">
+                                        <p>Vous avez reçu de votre CPAM un carnet de maternité spécifique vous expliquant les prestations auxquelles vous avez droit pendant votre grossesse. Pour bénéficier de ces prestations, vous devez détacher de votre carnet de maternité les feuillets correspondants, les compléter et les envoyer à votre CPAM.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-12">informer sa complémentaire santé ou mutuelle</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-12">
+                                        <p>Vous devez contacter votre complémentaire santé (votre mutuelle, votre assurance santé ou votre institution de prévoyance selon les cas) pour savoir si votre contrat propose des garanties spécifiques pendant votre grossesse.</p>
+                                        <p>Si vous n'avez pas de complémentaire santé et selon vos ressources, vous pouvez prétendre à la Complémentaire Santé Solidaire (CSS) gratuite ou à coût réduit.</p>
+                                        <p><a href="#" class="fr-link">Simuler vos droits</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-13">mettre à jour ses informations sur Mon Espace Santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-13">
+                                        <p>Mon Espace Santé est un service public sécurisé qui facilite le suivi de votre santé avec les professionnels de santé. Il vous permet de conserver vos documents médicaux, les partager avec votre médecin traitant et tous les professionnels de santé qui vous prennent en charge. Vous pouvez aussi échanger avec eux grâce à une messagerie sécurisée en toute confidentialité.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-14">effectuer les démarches en ligne</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-14">
+                                        <p>Vous pouvez suivre vos remboursements en temps réel et réaliser vos démarches en ligne.</p>
+                                        <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                                        <p>Si vous êtes allocataire de la CAF ou de la MSA, vous pouvez effectuer vos démarches en ligne et suivre l'avancée de votre dossier.</p>
+                                        <p><a href="https://www.caf.fr" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la CAF - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la CAF</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-15">être suivie par un professionnel de santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-15">
+                                        <p>Votre grossesse peut être suivie par un médecin ou une sage-femme : en libéral, en centre de Protection Maternelle et Infantile (PMI) ou à l'hôpital.</p>
+                                        <p>Les services de Protection Maternelle et Infantile (PMI) sont des services départementaux qui organisent des consultations et des actions de prévention médico-sociale en faveur des femmes enceintes (examens de suivi de grossesse) et des enfants de moins de 6 ans (examens obligatoires de l'enfant). Il est possible de s’y rendre pour parler de ses préoccupations, poser des questions et recevoir des conseils.</p>
+                                        <p><a href="https://www.1000-premiers-jours.fr/fr/quest-ce-que-la-pmi" target="_blank" rel="noopener external" title="En savoir plus sur la PMI (Protection Maternelle et Infantile) - nouvelle fenêtre" class="fr-link">En savoir plus sur la PMI (Protection Maternelle et Infantile)</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-16">obtenir des autorisations d’absence</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-16">
+                                        <p>Si vous êtes salariée, vous avez droit à des autorisations d'absence pour effectuer les examens médicaux. Votre conjoint salarié également, pour vous accompagner.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F2330" target="_blank" rel="noopener external" title="En savoir plus sur les autorisations d’absence sur le site service-public.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur les autorisations d’absence sur le site service-public.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-17">choisir un mode de garde</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-17">
+                                        <p>Vous pouvez vous informer sur l'arrivée de bébé, les modes de garde pour votre enfant et identifier les professionnels qui peuvent vous conseiller. Renseignez-vous sur les places en crèche auprès de votre mairie et effectuez une préinscription si nécessaire.</p>
+                                        <p><a href="https://monenfant.fr/web/guest/quel-mode-d-accueil-choisir" target="_blank" rel="noopener external" title="En savoir plus sur les modes d'accueil sur le site monenfant.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur les modes d'accueil sur le site monenfant.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-18">bénéficier d'aides et de prestations</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-18">
+                                        <p>Vous pouvez renseigner sur les prestations familiales liées à l'arrivée de votre bébé</p>
+                                        <ul>
+                                            <li>prime à la naissance et allocation de base (Paje)</li>
+                                            <li>complément de libre choix de garde (CMG)</li>
+                                            <li>prestation partagée d'éducation de l'enfant (PreParE)</li>
+                                        </ul>
+                                        <p><a href="http://www.caf.fr/allocataires/droits-et-prestations/s-informer-sur-les-aides/petite-enfance/la-prestation-d-accueil-du-jeune-enfant-paje?active=tab3" target="_blank" rel="noopener external" title="En savoir plus sur les prestations familiales sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur les prestations familiales sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/famille-logement" target="_blank" rel="noopener external" title="En savoir plus sur les prestations familiales sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur les prestations familiales sur le site de la MSA</a></p>
+                                        <p>Vous pouvez vous renseigner sur les minima sociaux liés à l'arrivée de bébé et à votre situation d'isolement</p>
+                                        <ul>
+                                            <li>Revenu de solidarité active (RSA)</li>
+                                            <li>Prime d'activité (PPA)</li>
+                                        </ul>
+                                        <p><a href="http://www.caf.fr/allocataires/droits-et-prestations/s-informer-sur-les-aides/solidarite-et-insertion" target="_blank" rel="noopener external" title="En savoir plus sur les prestations sociales sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur les prestations sociales sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/rsa-prime-activite" target="_blank" rel="noopener external" title="En savoir plus sur les prestations sociales sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur les prestations sociales sur le site de la MSA</a></p>
+                                        <p><a href="#" class="fr-link">Simuler vos droits aux prestations sociales et familiales</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-19">améliorer l'environnement quotidien</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-19">
+                                        <p>Vous pouvez vous informer sur comment améliorer votre environnement quotidien pendant et après la grossesse :</p>
+                                        <ul>
+                                            <li>Quels changements dans votre quotidien avant, pendant et après la grossesse ?</li>
+                                            <li>Comment limiter les produits chimiques qui vous entourent ?</li>
+                                            <li>Comment gérer au mieux les nouvelles émotions qui vous envahissent ?</li>
+                                        </ul>
+                                        <p>Les réponses à vos questions et des conseils pratiques validés par les professionnels de santé et les pouvoirs publics.</p>
+                                        <p><a href="https://www.1000-premiers-jours.fr/fr" target="_blank" rel="noopener external" title="En savoir plus pour améliorer votre environnement - nouvelle fenêtre" class="fr-link">En savoir plus pour améliorer votre environnement</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="4eme-mois" class="fr-mt-6v">4ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-20">faire le 2ème examen prénatal et la 2ème échographie</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-20">
+                                        <p>Vous devez faire ces examens auprès de votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-21">faire un examen bucco-dentaire</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-21">
+                                        <p>Il est conseillé de prendre soin de ses dents lors de sa grossesse. Vous pouvez bénéficier d'un examen bucco-dentaire gratuit.</p>
+                                        <p><a href="https://www.ameli.fr/haute-garonne/chirurgien-dentiste/exercice-liberal/prescription-prise-charge/prise-charge-situation-type-soin/soin-ebd-femmes-enceintes" target="_blank" rel="noopener external" title="En savoir plus sur l’examen bucco-dentaire au cours de la grossesse sur le site d’Ameli - nouvelle fenêtre" class="fr-link">En savoir plus sur l’examen bucco-dentaire au cours de la grossesse sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/prevention-bucco-dentaire-future-maman?p_p_id=56_INSTANCE_22M2NZTLCfwc&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=2&amp;_56_INSTANCE_2..." target="_blank" rel="noopener external" title="En savoir plus sur l’examen bucco-dentaire au cours de la grossesse sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur l’examen bucco-dentaire au cours de la grossesse sur le site de la MSA</a></p>
+                                        <p>Dès réception de votre bon de prise en charge, vous pouvez prendre rendez-vous chez un chirurgien-dentiste.</p>
+                                        <p>Votre RDV est à programmer entre le 4ème mois de grossesse et le 12ème jour suivant votre accouchement. Lors de cette consultation, il vous faudra présenter votre carte Vitale et le bon de prise en charge reçu (sur votre compte assurance maladie ou par courrier).</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un chirurgien-dentiste dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un chirurgien-dentiste dans l’annuaire santé sur le site ameli.fr</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-22">si vous êtes exploitant agricole</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-22">
+                                        <p>Vous pouvez vous faire remplacer sur votre exploitation agricole, ce service est financé par la MSA.</p>
+                                        <p><a href="https://servicederemplacement.fr/fr/se-faire-remplacer/maternite" target="_blank" rel="noopener external" title="Consulter le service de remplacement - nouvelle fenêtre" class="fr-link">Consulter le service de remplacement</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-23">si vous exercez une profession libérale ou indépendante</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-23">
+                                        <p>Vous avez reçu de votre CPAM un carnet de maternité spécifique vous expliquant les prestations auxquelles vous avez droit pendant votre grossesse. Pour bénéficier de ces prestations, vous devez détacher de votre carnet de maternité les feuillets correspondants, les compléter et les envoyer à votre CPAM.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-24">mettre à jour ses informations sur Mon Espace Santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-24">
+                                        <p>Mon Espace Santé est un service public sécurisé qui facilite le suivi de votre santé avec les professionnels de santé. Il vous permet de conserver vos documents médicaux, les partager avec votre médecin traitant et tous les professionnels de santé qui vous prennent en charge. Vous pouvez aussi échanger avec eux grâce à une messagerie sécurisée en toute confidentialité.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-25">effectuer les démarches en ligne</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-25">
+                                        <p>Vous pouvez suivre vos remboursements en temps réel et réaliser vos démarches en ligne.</p>
+                                        <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                                        <p>Si vous êtes allocataire de la CAF ou de la MSA, vous pouvez effectuer vos démarches en ligne et suivre l'avancée de votre dossier.</p>
+                                        <p><a href="https://www.caf.fr" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la CAF - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la CAF</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="5eme-mois" class="fr-mt-6v">5ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-26">faire le 3ème examen prénatal</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-26">
+                                        <p>Vous devez faire cet examen auprès de votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-27">mettre à jour son dossier</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-27">
+                                        <p>Retournez les documents qui vous sont demandés par votre caisse d'allocation familiales.</p>
+                                        <p><a href="https://www.caf.fr" target="_blank" rel="noopener external" title="Aller sur le site de la CAF - nouvelle fenêtre" class="fr-link">Aller sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr" target="_blank" rel="noopener external" title="Aller sur le site de la MSA - nouvelle fenêtre" class="fr-link">Aller sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-28">si vous êtes exploitant agricole</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-28">
+                                        <p>Vous pouvez vous faire remplacer sur votre exploitation agricole, ce service est financé par la MSA.</p>
+                                        <p><a href="https://servicederemplacement.fr/fr/se-faire-remplacer/maternite" target="_blank" rel="noopener external" title="Consulter le service de remplacement - nouvelle fenêtre" class="fr-link">Consulter le service de remplacement</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-29">si vous exercez une profession libérale ou indépendante</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-29">
+                                        <p>Vous avez reçu de votre CPAM un carnet de maternité spécifique vous expliquant les prestations auxquelles vous avez droit pendant votre grossesse. Pour bénéficier de ces prestations, vous devez détacher de votre carnet de maternité les feuillets correspondants, les compléter et les envoyer à votre CPAM.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-30">mettre à jour ses informations sur Mon Espace Santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-30">
+                                        <p>Mon Espace Santé est un service public sécurisé qui facilite le suivi de votre santé avec les professionnels de santé. Il vous permet de conserver vos documents médicaux, les partager avec votre médecin traitant et tous les professionnels de santé qui vous prennent en charge. Vous pouvez aussi échanger avec eux grâce à une messagerie sécurisée en toute confidentialité.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-31">effectuer les démarches en ligne</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-31">
+                                        <p>Vous pouvez suivre vos remboursements en temps réel et réaliser vos démarches en ligne.</p>
+                                        <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                                        <p>Si vous êtes allocataire de la CAF ou de la MSA, vous pouvez effectuer vos démarches en ligne et suivre l'avancée de votre dossier.</p>
+                                        <p><a href="https://www.caf.fr" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la CAF - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la CAF</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="6eme-mois" class="fr-mt-6v">6ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-32">faire le 4ème examen prénatal</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-32">
+                                        <p>Vous devez faire cet examen auprès de votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-33">demander la prime à la naissance</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-33">
+                                        <p>La prime à la naissance est versée au cours du 7ème mois de grossesse et ne peut pas être demandée après.</p>
+                                        <p>Cette aide dépend de vos ressources et permet de prendre en charge les premières dépenses liées à l’arrivée de votre enfant.</p>
+                                        <p><a href="https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation/demanderprimenaissance/!ut/p/a1/hZHBcoIwEIafpQ-gWQWpHlMZkFIhah0ll07AhWYqwQlUp336JuqhPVQzOSQ737-7_..." target="_blank" rel="noopener external" title="Faire la demande de la prime de naissance sur le site de la CAF - nouvelle fenêtre" class="fr-link">Faire la demande de la prime de naissance sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfp/web/msa/famille/paje-allocation-base-prime-naissance" target="_blank" rel="noopener external" title="Faire la demande de la prime de naissance sur le site de la MSA - nouvelle fenêtre" class="fr-link">Faire la demande de la prime de naissance sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-34">mettre à jour sa carte Vitale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-34">
+                                        <p>Vous devez mettre à jour votre carte Vitale sur les bornes situées dans les points d'accueil de l'Assurance Maladie, les pharmacies ou certains établissements hospitaliers et cliniques. Vos dépenses de santé seront prises en charge à 100% à partir du 1er jour du 6ème mois et jusqu'à 12 jours après l'accouchement.</p>
+                                        <p>Ainsi vous bénéficiez de la dispense d'avance de frais chez les professionnels de santé exerçant en ville dès votre déclaration de grossesse, à partir du début du 6e mois de votre grossesse jusqu'à 12 jour après l'accouchement :</p>
+                                        <ul>
+                                            <li>pour les examens obligatoires liés à la grossesse,</li>
+                                            <li>pour toutes vos dépenses de santé.</li>
+                                        </ul>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-35">si vous êtes exploitant agricole</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-35">
+                                        <p>Vous pouvez vous faire remplacer sur votre exploitation agricole, ce service est financé par la MSA.</p>
+                                        <p><a href="https://servicederemplacement.fr/fr/se-faire-remplacer/maternite" target="_blank" rel="noopener external" title="Consulter le service de remplacement - nouvelle fenêtre" class="fr-link">Consulter le service de remplacement</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-36">si vous exercez une profession libérale ou indépendante</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-36">
+                                        <p>Vous avez reçu de votre CPAM un carnet de maternité spécifique vous expliquant les prestations auxquelles vous avez droit pendant votre grossesse. Pour bénéficier de ces prestations, vous devez détacher de votre carnet de maternité les feuillets correspondants, les compléter et les envoyer à votre CPAM.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-37">mettre à jour ses informations sur Mon Espace Santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-37">
+                                        <p>Mon Espace Santé est un service public sécurisé qui facilite le suivi de votre santé avec les professionnels de santé. Il vous permet de conserver vos documents médicaux, les partager avec votre médecin traitant et tous les professionnels de santé qui vous prennent en charge. Vous pouvez aussi échanger avec eux grâce à une messagerie sécurisée en toute confidentialité.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-38">effectuer les démarches en ligne</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-38">
+                                        <p>Vous pouvez suivre vos remboursements en temps réel et réaliser vos démarches en ligne.</p>
+                                        <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                                        <p>Si vous êtes allocataire de la CAF ou de la MSA, vous pouvez effectuer vos démarches en ligne et suivre l'avancée de votre dossier.</p>
+                                        <p><a href="https://www.caf.fr" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la CAF - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la CAF</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="7eme-et-8eme-mois" class="fr-mt-6v">7ème et 8ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-39">faire le 5ème et le 6ème examen prénatal et la 3ème échographie</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-39">
+                                        <p>Vous devez faire ces examens auprès de votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-40">programmer les séances de préparation à l’accouchement</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-40">
+                                        <p>Si vous ne l'avez pas encore fait, vous pouvez programmer auprès de votre sage-femme les 7 séances de préparation à la naissance et à la parentalité. Elles sont prises en charge à 100%.</p>
+                                        <p>Les 7 séances de préparation à la naissance et à la parentalité peuvent être individuelles ou collectives. Elles vous donnent l'opportunité de préparer votre accouchement et l'accueil de votre enfant.</p>
+                                        <p><a href="https://www.ameli.fr/haute-garonne/assure/sante/themes/grossesse/preparation-parentalite#text_2846" target="_blank" rel="noopener external" title="En savoir plus sur la préparation à la naissance sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur la préparation à la naissance sur le site ameli.fr</a></p>
+                                        <p><a href="https://ansfl.org/sages-femmes" target="_blank" rel="noopener external" title="Rechercher une sage-femme - nouvelle fenêtre" class="fr-link">Rechercher une sage-femme</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-41">préparer l'accouchement</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-41">
+                                        <p>Vous devez préparer votre séjour à la maternité: rassembler l'ensemble de vos analyses et échographies que vous devrez apporter le jour de votre accouchement.</p>
+                                        <p>Si vous le souhaitez, vous avez la possibilité d'accoucher sous anesthésie péridurale. C'est au cours du 8ème mois que se prend cette décision. Vous pouvez en parler avec le professionnel de santé qui vous suit.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-42">demander son congé maternité</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-42">
+                                        <p>Vous êtes en congé maternité :</p>
+                                        <ul>
+                                            <li>6 semaines avant la naissance prévue pour un 1er ou 2ème enfant,</li>
+                                            <li>8 semaines à partir du 3ème enfant.</li>
+                                        </ul>
+                                        <p>Vous avez la possibilité de reporter, en fonction de votre état de santé, 3 semaines de votre congé prénatal de maternité après la date d'accouchement sur prescription de votre médecin et en faisant la demande par écrit auprès de votre organisme d'assurance maladie.</p>
+                                        <p><a href="https://www.ameli.fr/assure/droits-demarches/famille/maternite-paternite-adoption/duree-du-conge-maternite" target="_blank" rel="noopener external" title="En savoir plus sur le congé prénatal de maternité sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé prénatal de maternité sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/conge-maternite" target="_blank" rel="noopener external" title="En savoir plus sur le congé prénatal de maternité sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé prénatal de maternité sur le site de la MSA</a></p>
+                                        <p><a href="https://www.unedic.org/l-assurance-chomage-et-vous/demandeur-d-emploi-ou-salarie/mes-droits-en-fonction-de-mon-parcours/je-suis-en-conge-maternite-ou-en-conge-paternite-que-deviennent-mes-allocations-chomage" target="_blank" rel="noopener external" title="En savoir plus sur le congé prénatal de maternité si vous êtes au chômage - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé prénatal de maternité si vous êtes au chômage</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-43">prendre le congé de paternité</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-43">
+                                        <p>La demande de congé de paternité doit être faite auprès de son employeur. Il doit être pris dans les 6 mois après la naissance de l'enfant.</p>
+                                        <p>Le père de l'enfant peut en bénéficier, ou la personne vivant avec la mère qu'elle soit mariée, pacsée ou en concubinage.</p>
+                                        <p>Depuis le 1er juillet 2021, le congé de paternité et d'accueil de l'enfant est porté à 25 jours fractionnables pour une naissance simple et à 32 jours en cas de naissances multiples.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F3156" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité</a></p>
+                                        <p><a href="https://www.ameli.fr/assure/droits-demarches/famille/maternite-paternite-adoption/conge-paternite-accueil-enfant" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/conge-paternite" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité sur le site de la MSA</a></p>
+                                        <p>Si votre conjoint exerce une activité indépendante et souhaite bénéficier du congé de paternité : il doit se renseigner auprès de sa CPAM pour obtenir le feuillet du carnet maternité lui donnant droit à son congé de paternité.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-44">bénéficier des indemnités journalières</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-44">
+                                        <p>Sous certaines conditions et selon votre situation, vous pouvez bénéficier des indemnités journalières pendant toute la durée de votre congé maternité.</p>
+                                        <p><a href="https://www.ameli.fr/assure/remboursements/indemnites-journalieres-maladie-maternite-paternite/conge-maternite-salariee" target="_blank" rel="noopener external" title="simuler vos indemnités journalières maternité ou paternité sur le site ameli.fr - nouvelle fenêtre" class="fr-link">simuler vos indemnités journalières maternité ou paternité sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/conge-maternite?p_p_id=56_INSTANCE_INTB1y8zQqD1&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=2&amp;_56_INSTANCE_INTB1y8zQqD1_read_more=3" target="_blank" rel="noopener external" title="simuler vos indemnités journalières maternité ou paternité sur le site de la MSA - nouvelle fenêtre" class="fr-link">simuler vos indemnités journalières maternité ou paternité sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-45">choisir et organiser le mode garde</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-45">
+                                        <p>Vous allez devoir choisir et organiser le mode de garde de votre enfant et penser à la façon dont vous allez concilier vies familiale et professionnelle.</p>
+                                        <p>Vous pouvez vous rendre au relais assistant maternels (Ram) le plus proche de chez vous pour obtenir des éléments d’information concrets qui vous aideront dans vos choix d’organisation et vos démarches.</p>
+                                        <p><a href="https://monenfant.fr/web/guest/quel-mode-d-accueil-choisir" target="_blank" rel="noopener external" title="En savoir plus sur les modes de garde sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur les modes de garde sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/famille/paje-solutions-garde-enfant?p_p_id=56_INSTANCE_guTWv1zScFMI&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_pos=1&amp;p_p_col_count=3&amp;_56_INSTA..." target="_blank" rel="noopener external" title="En savoir plus sur les modes de garde sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur les modes de garde sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-46">bénéficier d’une allocation de remplacement (MSA)</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-46">
+                                        <p>Si vous relevez de la MSA, votre congé de maternité se traduit par une Allocation de Remplacement (AR) prévue dans le cadre de l'AMEXA. Vous pouvez bénéficier de l'allocation de remplacement maternité durant toute la durée de votre congé maternité (6 semaines avant la naissance prévue pour un 1er ou 2ème enfant et 8 semaines à partir du 3ème enfant).</p>
+                                        <p>Cette AR maternité a pour but de prendre en charge les frais occasionnés par votre remplacement dans les travaux agricoles, lorsque vous ne pouvez pas les accomplir en raison de la maternité ou de l'arrivée d'un enfant en vue de son adoption.</p>
+                                        <p>Votre conjoint a droit à l'allocation de remplacement paternité durant son congé paternité, selon les mêmes conditions d'attribution.</p>
+                                        <p><a href="https://servicederemplacement.fr/fr/se-faire-remplacer/maternite" target="_blank" rel="noopener external" title="En savoir plus sur les services de remplacement de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur les services de remplacement de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-47">se renseigner sur l'aide à domicile</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-47">
+                                        <p>Vous pouvez prétendre à une aide à domicile, renseignez-vous auprès de votre complémentaire santé et de votre caisse d'allocations familiales.</p>
+                                        <p>Assumer son rôle de parent, tout en menant de front vie professionnelle et gestion du quotidien, peut parfois s’avérer difficile.</p>
+                                        <p>Financée en partie par votre caisse d’allocations familiales, l’intervention d’un professionnel à votre domicile peut vous aider à y voir plus clair.</p>
+                                        <p><a href="https://monenfant.fr/web/guest/l-arrivee-d-un-nouvel-enfant-ou-plus" target="_blank" rel="noopener external" title="En savoir plus sur l’aide à domicile - nouvelle fenêtre" class="fr-link">En savoir plus sur l’aide à domicile</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-48">effectuer les démarches en ligne</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-48">
+                                        <p>Vous pouvez consulter les paiements des indemnités journalières en ligne et télécharger le relevé d'indemnités journalières.</p>
+                                        <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site ameli.fr</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfp/web/msa/particulier?modalId=2" target="_blank" rel="noopener external" title="Créer ou accéder à votre compte sur le site de la MSA - nouvelle fenêtre" class="fr-link">Créer ou accéder à votre compte sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="9eme-mois" class="fr-mt-6v">9ème mois</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-49">faire le 7ème examen prénatal</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-49">
+                                        <p>Vous devez faire cet examen auprès de votre médecin ou votre sage-femme.</p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un médecin dans l’annuaire santé sur le site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher un médecin dans l’annuaire santé sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.ameli.fr/sites/default/files/Documents/guide-maternite-2023.pdf" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site d’Ameli - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/j-attends-un-enfant" target="_blank" rel="noopener external" title="Consulter le Guide « Ma maternité » sur le site de la MSA - nouvelle fenêtre" class="fr-link">Consulter le Guide « Ma maternité » sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-50">bénéficier d’une aide à domicile</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-50">
+                                        <p>En cas de difficultés médicales, sociales ou financières, ou lorsque votre santé ou celle de votre enfant l'exige, vous pouvez demander une l'aide à domicile.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F970" target="_blank" rel="noopener external" title="En savoir plus sur l'aide à domicile pour les familles en difficulté - nouvelle fenêtre" class="fr-link">En savoir plus sur l'aide à domicile pour les familles en difficulté</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-51">bénéficier de prestation pour une activité indépendante</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-51">
+                                        <p>Si vous exercez une activité indépendante, vous avez reçu de votre CPAM un carnet de maternité spécifique vous expliquant les prestations auxquelles vous avez droit pendant votre grossesse. Pour bénéficier de ces prestations, vous devez détacher de votre carnet de maternité le(s) feuillet(s) correspondant(s), le(s) compléter et l'(les) envoyer à votre CPAM.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-52">préparer le retour à domicile</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-52">
+                                        <p>Vous pouvez vous renseigner sur les conditions de sortie de la maternité après l'accouchement et sur les possibilités d'accompagnement par une sage-femme à votre retour à domicile.</p>
+                                        <p>Si vous souhaitez bénéficier d'une sortie précoce après la naissance, une sage-femme peut vous rendre visite dans les 24 heures suivant votre retour. Parlez-en avec le professionnel de santé qui suit votre grossesse.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-53">faire une reconnaissance anticipée de paternité</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-53">
+                                        <p>Si les futurs parents ne sont pas mariés, le conjoint peut faire une reconnaissance anticipée en paternité auprès d’une mairie.</p>
+                                        <p>S'il suffit que le nom de la mère apparaisse dans l'acte de naissance pour que la maternité soit établie, pour établir sa paternité, le père doit en revanche faire une reconnaissance (avant ou après la naissance de l'enfant).</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F887" target="_blank" rel="noopener external" title="En savoir plus sur la reconnaissance de paternité - nouvelle fenêtre" class="fr-link">En savoir plus sur la reconnaissance de paternité</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="apres-la-naissance" class="fr-mt-8v">Après la naissance</h2>
+                    <h3 id="jusqu-au-3-mois-de-l-enfant" class="fr-mt-6v">jusqu'au 3 mois de l'enfant</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-54">bénéficier du service de retour à domicile précoce</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-54">
+                                        <p>Sous certaines conditions, vous pouvez bénéficier d'une sortie précoce et du service de retour à domicile (Prado). Une sage-femme vous rend visite chez vous pour un suivi personnalisé pour vous et votre enfant.</p>
+                                        <p>Ce suivi, pour vous et votre enfant, est pris en charge à 100 % (dans la limite des tarifs de base de l’Assurance Maladie), sans avance de frais sur la partie prise en charge par la Sécurité sociale, et ce jusqu'au 12ème jour après la naissance.</p>
+                                        <p><a href="https://www.ameli.fr/assure/sante/themes/accouchement-nouveau-ne/suivi-domicile" target="_blank" rel="noopener external" title="En savoir plus sur le service de retour à domicile Prado sur le site d’Ameli - nouvelle fenêtre" class="fr-link">En savoir plus sur le service de retour à domicile Prado sur le site d’Ameli</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/service-de-retour-a-domicile-apres-accouchement" target="_blank" rel="noopener external" title="En savoir plus sur le service de retour à domicile Prado sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le service de retour à domicile Prado sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-55">bénéficier des séances de suivi postnatal</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-55">
+                                        <p>Selon vos besoins, vous pouvez bénéficier de 2 séances de suivi postnatal avec un médecin ou une sage-femme. Ces séances sont à programmer entre le 8ème jour suivant la naissance de votre enfant et l'examen médical postnatal (effectué dans les 6-8 semaines suivant l'accouchement).</p>
+                                        <p>Réalisées avant le 12ème jour après la naissance de l'enfant, elles sont prises en charge à 100% par l'Assurance Maladie. Au-delà, la prise en charge sera de 70%.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-56">prendre rendez-vous pour la consultation postnatale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-56">
+                                        <p>Vous devez prendre rendez-vous avec un médecin ou une sage-femme pour un examen médical postnatal, à programmer entre 6 et 8 semaines après l'accouchement.</p>
+                                        <p>Elle est prise en charge à 100%.</p>
+                                        <p><a href="https://www.ameli.fr/haute-garonne/assure/sante/themes/accouchement-nouveau-ne/suivi-domicile#text_1034" target="_blank" rel="noopener external" title="En savoir plus sur la consultation postnatale sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur la consultation postnatale sur le site ameli.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-57">planifier les séances de rééducation périnéale et abdominale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-57">
+                                        <p>Vous pouvez planifier avec une sage-femme ou un kinésithérapeute les séances de rééducation périnéale et abdominale qui vous ont éventuellement été prescrites.</p>
+                                        <p>Elles sont prises en charge à 100%.</p>
+                                        <p><a href="https://www.ameli.fr/haute-garonne/assure/sante/themes/accouchement-nouveau-ne/suivi-domicile#text_1036" target="_blank" rel="noopener external" title="En savoir plus sur la rééducation périnéale et abdominale sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur la rééducation périnéale et abdominale sur le site ameli.fr</a></p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher une sage-femme ou un kinésithérapeute dans l’annuaire santé du site ameli.fr - nouvelle fenêtre" class="fr-link">Rechercher une sage-femme ou un kinésithérapeute dans l’annuaire santé du site ameli.fr</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Santé de l'enfant</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-58">prendre rendez-vous pour les examens de santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-58">
+                                        <p>De la naissance à 16 ans, votre enfant bénéficie gratuitement de 20 examens de santé qui permettent de faire le point avec le médecin sur sa croissance et son développement. Jusqu'à ses 3 mois 6 examens de santé sont prévus :</p>
+                                        <ul>
+                                            <li>dans les 8 jours suivant sa naissance,</li>
+                                            <li>au cours de sa 2ème semaine,</li>
+                                            <li>au cours de sa 2ème quinzaine et avant la fin de son 1er mois,</li>
+                                            <li>à 1 mois : il recevra peut-être son 1er vaccin (BCG) en cas de risque élevé de tuberculose,</li>
+                                            <li>à 2 mois : il recevra les vaccins obligatoires (contre la diphtérie, le tétanos, la poliomyélite, la coqueluche, l'haemophilus influenzae b, l'hépatite B, le pneumocoque) et peut-être son 1er vaccin (BCG) en cas de risque élevé de tuberculose,</li>
+                                            <li>à 3 mois.</li>
+                                        </ul>
+                                        <p>Ces examens sont pris en charge à 100 % par I'Assurance Maladie sans avance de frais (hors dépassements d'honoraires éventuels) et peuvent être réalisés par un médecin en cabinet libéral, en centre de santé ou jusqu'à 6 ans en PMI.</p>
+                                        <p>N'oubliez pas le carnet de santé de l'enfant à chaque consultation.</p>
+                                        <p><a href="https://www.ameli.fr/assure/sante/themes/suivi-medical-de-lenfant-et-de-ladolescent" target="_blank" rel="noopener external" title="En savoir plus sur le suivi de l'enfant après l’accouchement sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le suivi de l'enfant après l’accouchement sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/vaccination" target="_blank" rel="noopener external" title="En savoir plus sur le suivi de l'enfant après l’accouchement sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le suivi de l'enfant après l’accouchement sur le site de la MSA</a></p>
+                                        <p><a href="https://vaccination-info-service.fr/La-vaccination-au-cours-de-la-vie/Nourrissons-et-enfants-de-la-naissance-a-13-ans" target="_blank" rel="noopener external" title="En savoir plus sur la vaccination - nouvelle fenêtre" class="fr-link">En savoir plus sur la vaccination</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-59">déclarer la naissance</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-59">
+                                        <p>Le père (ou le médecin, la sage-femme ou une autre personne qui aura assisté à l'accouchement) déclare la naissance de l'enfant à l’hôpital ou à la mairie du lieu de naissance.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F961" target="_blank" rel="noopener external" title="En savoir plus sur la déclaration de naissance sur le site service-public.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur la déclaration de naissance sur le site service-public.fr</a></p>
+                                        <p><a href="https://monenfant.fr/web/guest/les-demarches-a-la-naissance" target="_blank" rel="noopener external" title="En savoir plus sur les démarches sur le site monenfant.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur les démarches sur le site monenfant.fr</a></p>
+                                        <p>Déclarez la naissance auprès de votre Caisse d’Allocations Familiales</p>
+                                        <p><a href="http://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/j-ai-ou-j-attends-un-ou-des-enfants/mon-enfant-vient-de-naitre" target="_blank" rel="noopener external" title="En savoir plus sur la déclaration de la naissance sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur la déclaration de la naissance sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/web/msa/j-attends-un-enfant" target="_blank" rel="noopener external" title="En savoir plus sur la déclaration de la naissance sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur la déclaration de la naissance sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-60">mettre à jour la carte Vitale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-60">
+                                        <p>Demandez le rattachement de votre enfant sur votre carte Vitale et celle de votre conjoint.</p>
+                                        <p><a href="https://www.ameli.fr/assure/remboursements/etre-bien-rembourse/carte-vitale#text_64386" target="_blank" rel="noopener external" title="En savoir plus sur le rattachement de l'enfant sur la carte Vitale sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le rattachement de l'enfant sur la carte Vitale sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/carte-vitale" target="_blank" rel="noopener external" title="En savoir plus sur le rattachement de l'enfant sur la carte Vitale sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le rattachement de l'enfant sur la carte Vitale sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-61">prendre le congé de paternité</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-61">
+                                        <p>La demande de congé de paternité doit être faite auprès de son employeur. Il doit être pris dans les 6 mois après la naissance de l'enfant.</p>
+                                        <p>Le père de l'enfant peut en bénéficier, ou la personne vivant avec la mère qu'elle soit mariée, pacsée ou en concubinage.</p>
+                                        <p>Depuis le 1er juillet 2021, le congé de paternité et d'accueil de l'enfant est porté à 25 jours fractionnables pour une naissance simple et à 32 jours en cas de naissances multiples.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F3156" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité</a></p>
+                                        <p><a href="https://www.ameli.fr/assure/droits-demarches/famille/maternite-paternite-adoption/conge-paternite-accueil-enfant" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/conge-paternite" target="_blank" rel="noopener external" title="En savoir plus sur le congé de paternité sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé de paternité sur le site de la MSA</a></p>
+                                        <p>Si votre conjoint exerce une activité indépendante et souhaite bénéficier du congé de paternité : il doit se renseigner auprès de sa CPAM pour obtenir le feuillet du carnet maternité lui donnant droit à son congé de paternité.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-62">adresser les justificatifs d’hospitalisation</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-62">
+                                        <p>Afin d’être remboursé des frais de la maternité et des annexes, adressez les justificatifs d'hospitalisation à votre assurance maladie et à votre complémentaire santé.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-63">prendre contact avec l’employeur</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-63">
+                                        <p>Prenez contact avec votre employeur au moins un mois avant la fin du congé maternité pour l'informer de votre choix de reprise ou non d'activité.</p>
+                                        <p><a href="https://travail-emploi.gouv.fr/droit-du-travail/les-absences-pour-maladie-et-conges-pour-evenements-familiaux/article/le-conge-de-maternite" target="_blank" rel="noopener external" title="En savoir plus sur le congé maternité sur le site travail-emploi.gouv.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le congé maternité sur le site travail-emploi.gouv.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-64">gérer le prélèvement des impôts à la source</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-64">
+                                        <p>Signalez la naissance dans les 60 jours pour vous permettre d'ajuster immédiatement le taux de prélèvement à la source</p>
+                                        <p><a href="https://www.impots.gouv.fr/portail/particulier/je-viens-davoir-un-enfant" target="_blank" rel="noopener external" title="En savoir plus sur le site impots.gouv.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le site impots.gouv.fr</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-65">bénéficier d'aide selon le choix de mode de garde</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-65">
+                                        <p>A la fin du congé maternité, vous pouvez choisir de garder ou faire garder votre enfant par une assistante maternelle et selon votre situation bénéficier d'aides :</p>
+                                        <ul>
+                                            <li>Si vous optez pour une assistante maternelle ou une micro-crèche : le complément de libre choix de garde (CMG).</li>
+                                            <li>Si vous choisissez de réduire ou de cesser votre activité pour vous occuper de votre enfant : prestation partagée d'éducation de l'enfant (PreParE)</li>
+                                        </ul>
+                                        <p><a href="https://wwwd.caf.fr/wps/portal/caffr/aidesetservices/lesservicesenligne/faireunedemandedeprestation#/enfants" target="_blank" rel="noopener external" title="Simuler vos droits pour bénéficier d’aide selon votre mode de garde sur le site de la CAF - nouvelle fenêtre" class="fr-link">Simuler vos droits pour bénéficier d’aide selon votre mode de garde sur le site de la CAF</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/famille/paje" target="_blank" rel="noopener external" title="Simuler vos droits pour bénéficier d’aide selon votre mode de garde sur le site de la MSA - nouvelle fenêtre" class="fr-link">Simuler vos droits pour bénéficier d’aide selon votre mode de garde sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-66">mettre à jour ses informations sur Mon Espace Santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-66">
+                                        <p>Mon Espace Santé est un service public sécurisé qui facilite le suivi de votre santé avec les professionnels de santé. Il vous permet de conserver vos documents médicaux, les partager avec votre médecin traitant et tous les professionnels de santé qui vous prennent en charge. Vous pouvez aussi échanger avec eux grâce à une messagerie sécurisée en toute confidentialité.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-67">activer Mon Espace Santé pour votre enfant</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-67">
+                                        <p>Mon Espace Santé est un service gratuit, ouvert à tous les citoyens qui permet de conserver ses documents médicaux, les partager avec son médecin traitant et tous les professionnels de santé impliqués dans le suivi de l’enfant.</p>
+                                        <p>Vous pourrez y retrouver les courbes de croissance de vos enfants et des conseils personnalisés selon l’âge.</p>
+                                        <p>Quelques semaines après la naissance de l’enfant, vous recevrez un mail ou un courrier avec un code pour activer le profil Mon Espace Santé. Cette possibilité est offerte aux deux parents.</p>
+                                        <p><a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre" class="fr-link">Activer ou accéder à votre compte Mon Espace Santé</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-68">prendre le congé parental d’éducation</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-68">
+                                        <p>Ce congé peut être pris par l’un ou l’autre des parents de l’enfant.</p>
+                                        <p><a href="https://travail-emploi.gouv.fr/droit-du-travail/les-absences-pour-maladie-et-conges-pour-evenements-familiaux/article/le-conge-parental-d-education" target="_blank" rel="noopener external" title="En savoir plus sur Le congé parental d’éducation - nouvelle fenêtre" class="fr-link">En savoir plus sur Le congé parental d’éducation</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-69">se renseigner sur l’aide et l’accompagnement à domicile</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-69">
+                                        <p>Si vous avez déjà au moins un enfant de moins de 12 ans à charge et que vous éprouvez le besoin d’être aidée, informez-vous sur l'aide et l'accompagnement à domicile.</p>
+                                        <p><a href="https://monenfant.fr/web/guest/l-arrivee-d-un-nouvel-enfant-ou-plus" target="_blank" rel="noopener external" title="S’informer sur l'aide à domicile - nouvelle fenêtre" class="fr-link">S’informer sur l'aide à domicile</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-70">s'informer sur la croissance et le développement de l’enfant</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-70">
+                                        <p>Vous pouvez vous informer sur le développement de votre enfant entre 0 et 3 ans sur le site Mpedia (site gratuit de référence, les informations sont vérifiées et validées par une équipe de 160 professionnels de santé et spécialistes de l'enfance bénévoles).</p>
+                                        <p><a href="https://www.mpedia.fr/cat-bebe-0-3ans/" target="_blank" rel="noopener external" title="S'informer sur le développement de l’enfant entre o et 3 ans - nouvelle fenêtre" class="fr-link">S'informer sur le développement de l’enfant entre o et 3 ans</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3 id="de-4-mois-a-3-ans" class="fr-mt-6v">de 4 mois à 3 ans</h3>
+                    <h4 class="fr-mt-4v">Santé</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-71">faire un examen bucco-dentaire (MSA)</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-71">
+                                        <p>Si vous dépendez de la MSA, vous pouvez bénéficier d'un examen bucco-dentaire gratuit 6 mois après votre accouchement. Dès réception de votre bon de prise en charge, vous pouvez prendre rendez-vous chez un chirurgien-dentiste. Il est pris en charge à 100%.</p>
+                                        <p>Lors de cette consultation, présentez votre carte Vitale et le bon de prise en charge reçu par courrier.</p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/prevention-bucco-dentaire-future-maman?p_p_id=56_INSTANCE_22M2NZTLCfwc&amp;p_p_lifecycle=0&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=2&amp;_56_INSTANCE_2..." target="_blank" rel="noopener external" title="En savoir plus sur l’examen bucco-dentaire sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur l’examen bucco-dentaire sur le site de la MSA</a></p>
+                                        <p><a href="http://annuairesante.ameli.fr/" target="_blank" rel="noopener external" title="Rechercher un chirurgien-dentiste dans l’annuaire santé du site d’Ameli - nouvelle fenêtre" class="fr-link">Rechercher un chirurgien-dentiste dans l’annuaire santé du site d’Ameli</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Santé de l'enfant</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-72">prendre rendez-vous pour les examens de santé</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-72">
+                                        <p>Depuis les 4 mois de mon enfant et jusqu'à son entrée à l'école, 9 examens de santé gratuits sont prévus :</p>
+                                        <ul>
+                                            <li>à 4 mois : il recevra les vaccins obligatoires (contre la diphtérie, le tétanos, la poliomyélite, la coqueluche, l'haemophilus influenzae b, l'hépatite B, le pneumocoque),</li>
+                                            <li>à 5 mois : il recevra les vaccins obligatoires (contre le méningocoque C),</li>
+                                            <li>à 8 mois : il recevra peut-être son 1er vaccin (BCG) en cas de risque élevé de tuberculose,</li>
+                                            <li>à 11 mois : il recevra les vaccins obligatoires (contre la diphtérie, le tétanos, la poliomyélite, la coqueluche, l'haemophilus influenzae b, l'hépatite B, le pneumocoque),</li>
+                                            <li>à 12 mois : il recevra les vaccins obligatoires (contre le méningocoque C et 1ère injection contre la rougeole, les oreillons et la rubéole),</li>
+                                            <li>entre 16 et 18 mois : il recevra les vaccins obligatoires (2ème injection contre la rougeole, les oreillons et la rubéole),</li>
+                                            <li>entre 23 et 24 mois : il bénéficiera d’un examen approfondi avec établissement du 3e certificat de santé obligatoire à cet âge,</li>
+                                            <li>à 2 ans,</li>
+                                            <li>à 3 ans.</li>
+                                        </ul>
+                                        <p>Ces examens sont pris en charge à 100% par I ‘Assurance Maladie sans avance de frais (hors dépassements d'honoraires éventuels) et peuvent être réalisés par un médecin en cabinet libéral, en centre de santé ou jusqu'à 6 ans en PMI.</p>
+                                        <p>N'oubliez pas le carnet de santé de l'enfant à chaque consultation.</p>
+                                        <p><a href="https://www.ameli.fr/assure/sante/themes/suivi-medical-de-lenfant-et-de-ladolescent" target="_blank" rel="noopener external" title="En savoir plus sur le suivi médical de l’enfant jusqu’à 3 ans sur le site ameli.fr - nouvelle fenêtre" class="fr-link">En savoir plus sur le suivi médical de l’enfant jusqu’à 3 ans sur le site ameli.fr</a></p>
+                                        <p><a href="https://www.msa.fr/lfy/sante/vaccination" target="_blank" rel="noopener external" title="En savoir plus sur le suivi médical de l’enfant jusqu’à 3 ans sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le suivi médical de l’enfant jusqu’à 3 ans sur le site de la MSA</a></p>
+                                        <p><a href="https://vaccination-info-service.fr/La-vaccination-au-cours-de-la-vie/Nourrissons-et-enfants-de-la-naissance-a-13-ans" target="_blank" rel="noopener external" title="En savoir plus sur la vaccination - nouvelle fenêtre" class="fr-link">En savoir plus sur la vaccination</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Droits et démarches</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-73">bénéficier d'aide selon le choix de mode de garde</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-73">
+                                        <p>À la fin du congé maternité, vous pouvez choisir de garder ou faire garder votre enfant par une assistante maternelle et selon votre situation bénéficier d'aides</p>
+                                        <ul>
+                                            <li>Si vous optez pour une assistante maternelle ou une micro-crèche : le complément de libre choix de garde (CMG).</li>
+                                            <li>Si vous choisissez de réduire ou de cesser votre activité pour vous occuper de votre enfant : prestation partagée d'éducation de l'enfant (PreParE).</li>
+                                        </ul>
+                                        <p><a href="#" class="fr-link">Simuler vos droits pour bénéficier d’aide selon votre mode de garde</a></p>
+                                        <p>Si vous êtes bénéficiaire du complément de libre choix de garde (CMG), vous devez déclarer chaque mois le salaire de votre employé sur le site Pajemploi des Urssaf.</p>
+                                        <p><a href="https://www.pajemploi.urssaf.fr/pajewebinfo/cms/sites/pajewebinfo/accueil/employeur-dassistante-maternelle/je-remunere-et-je-declare/declarer-en-ligne.html" target="_blank" rel="noopener external" title="Déclarer votre employé sur le site de l’Urssaf - nouvelle fenêtre" class="fr-link">Déclarer votre employé sur le site de l’Urssaf</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-74">déclarer tout changement de situation</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-74">
+                                        <p>Dès qu'un changement a lieu dans votre vie en terme de situation familiale, professionnelle, déménagement, veuillez le signaler à votre caisse d’Allocations Familiales.</p>
+                                        <p><a href="https://wwwd.caf.fr/wps/portal/caffr/login/" target="_blank" rel="noopener external" title="Déclarer un changement de situation sur le site de la CAF - nouvelle fenêtre" class="fr-link">Déclarer un changement de situation sur le site de la CAF</a></p>
+                                        <p><a href="https://monespaceprive.msa.fr/lfy/web/msa/espace-prive?modalId=2&amp;codeServiceFct=DCLCHGSIT" target="_blank" rel="noopener external" title="Déclarer un changement de situation sur le site de la MSA - nouvelle fenêtre" class="fr-link">Déclarer un changement de situation sur le site de la MSA</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-75">préparer l’inscription à l’école</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-75">
+                                        <p>Au début de l'année où votre enfant atteint ses 3 ans, pensez à l’inscrire à l'école pour la rentrée de septembre. Renseignez-vous auprès de votre mairie ou de la future école pour connaître les dates de début et de fin d’inscription.</p>
+                                        <p><a href="https://www.education.gouv.fr/l-inscription-l-ecole-maternelle-8651" target="_blank" rel="noopener external" title="Inscrivez votre enfant à l’école maternelle - nouvelle fenêtre" class="fr-link">Inscrivez votre enfant à l’école maternelle</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <h4 class="fr-mt-4v">Bon à savoir</h4>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-76">s'informer sur la croissance et le développement de l’enfant</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-76">
+                                        <p>Vous pouvez vous informer sur le développement de votre enfant entre 0 et 3 ans sur le site Mpedia (site gratuit de référence, les informations sont vérifiées et validées par une équipe de 160 professionnels de santé et spécialistes de l'enfance bénévoles).</p>
+                                        <p><a href="https://www.mpedia.fr/cat-bebe-0-3ans/" target="_blank" rel="noopener external" title="S'informer sur le développement de l’enfant entre o et 3 ans - nouvelle fenêtre" class="fr-link">S'informer sur le développement de l’enfant entre o et 3 ans</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-77">s’informer sur la médiation familiale</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-77">
+                                        <p>Vous pouvez profiter de services de médiation familiale en cas de situation difficile avec un ou plusieurs membres de votre famille.</p>
+                                        <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F34355" target="_blank" rel="noopener external" title="S'informer sur la médiation familiale - nouvelle fenêtre" class="fr-link">S'informer sur la médiation familiale</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h5 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-mds-parcours-naissance-78">s’informer sur les lieux d’accueil enfant-parent</button>
+                            </h5>
+                            <div class="fr-collapse" id="accordion-mds-parcours-naissance-78">
+                                        <p>Vous pouvez profiter d'activités, de services et de conseils dans les structures proches de chez vous : lieux d'accueil enfants-parents, centres sociaux, services de médiation familiale.</p>
+                                        <p><a href="https://monenfant.fr/je-suis-un-parent" target="_blank" rel="noopener external" title="S'informer sur les lieux d’accueil enfant-parent - nouvelle fenêtre" class="fr-link">S'informer sur les lieux d’accueil enfant-parent</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="fr-mt-6v">
+                        <a id="link-haut-de-page" href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-left">Haut de page</a>
+                    </p>
+                </div>
+            </div>
+            <h2 class="fr-mt-8v">Aller plus loin</h2>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-site-1">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://www.1000-premiers-jours.fr" target="_blank" rel="noopener external" title="Consulter le site &quot;1000 Premiers Jours&quot; - nouvelle fenêtre">1000 Premiers Jours</a>
+                                </h3>
+                                <p class="fr-tile__desc">Un site qui donne des clés aux futurs parents et parents d’enfants jusqu’à deux ans, pour créer un environnement favorable au développement de l’enfant. Ce site Internet a été conçu par Santé publique France, afin d’améliorer et protéger la santé des populations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-site-2">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://www.memo-sante-enfant.fr/" target="_blank" rel="noopener external" title="Consulter le site &quot;Mémo santé enfant&quot; - nouvelle fenêtre">Mémo Santé Enfant</a>
+                                </h3>
+                                <p class="fr-tile__desc">L’aide mémoire des parents ! Bénéficiez de recommandations, de rappels et de conseils personnalisés pour suivre sereinement la santé de vos enfants. Mémo Santé Enfant est un service développé par la MSA, ouvert à tous, quel que soit votre régime de sécurité sociale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-site-3">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://www.monespacesante.fr/" target="_blank" rel="noopener external" title="Activer ou accéder à votre compte Mon Espace Santé - nouvelle fenêtre">Mon Espace Santé</a>
+                                </h3>
+                                <p class="fr-tile__desc">Mon Espace Santé vous permet de stocker et partager vos documents et données de santé en toute confidentialité. Ce portail a été mis en œuvre par le Ministère chargé de la santé et l’Assurance Maladie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <dialog id="modal-seul" class="fr-modal" aria-labelledby="modal-seul-title">
+        <div class="fr-container fr-container--fluid fr-container-md">
+            <div class="fr-grid-row fr-grid-row--center">
+                <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+                    <div class="fr-modal__body">
+                        <div class="fr-modal__header">
+                            <button aria-controls="modal-seul" title="Fermer" type="button" class="fr-btn--close fr-btn">Fermer</button>
+                        </div>
+                        <div class="fr-modal__content">
+                            <h2 id="modal-seul-title" class="fr-modal__title">VOUS VIVEZ SEUL(E) ?</h2>
+                            <h3 class="fr-h6 fr-mt-4v">Vous élevez seul(e) votre ou vos enfants</h3>
+                            <p>Vous pouvez bénéficier de l’allocation de soutien familial et d’une modulation des plafonds de la prime à la naissance et de l'allocation de base. Vous pouvez également bénéficier d'une majoration...</p>
+                            <ul>
+                                <li><a href="http://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/je-vis-seul-avec-ou-sans-enfant/je-vis-seul-avec-mon-enfant" target="_blank" rel="noopener external" title="En savoir plus sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la CAF</a></li>
+                                <li><a href="https://service-pensionalimentaire.msa.fr/aripa/accueil" target="_blank" rel="noopener external" title="En savoir plus sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la MSA</a></li>
+                            </ul>
+                            <h3 class="fr-h6 fr-mt-4v">Suite à une séparation</h3>
+                            <p>Si vous êtes séparé(e) ou que vous envisagez de vous séparer de votre conjoint, vous pouvez bénéficier d'un rendez-vous personnalisé avec un conseiller de votre caisse d’allocations familiales.</p>
+                            <ul>
+                                <li><a href="http://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/je-change-de-situation/je-me-separe" target="_blank" rel="noopener external" title="En savoir plus sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la CAF</a></li>
+                                <li><a href="https://www.msa.fr/lfy/web/msa/famille/mediation-familiale" target="_blank" rel="noopener external" title="En savoir plus sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la MSA</a></li>
+                            </ul>
+                            <h3 class="fr-h6 fr-mt-4v">Suite au décès de votre conjoint</h3>
+                            <p>Vous pouvez être accompagné(e) par un conseiller de votre caisse d’allocations familiales.</p>
+                            <ul>
+                                <li><a href="http://www.caf.fr/allocataires/droits-et-prestations/connaitre-vos-droits-selon-votre-situation/je-vis-seul-avec-ou-sans-enfant/le-pere-ou-la-mere-de-mon-enfant-vient-de-deceder" target="_blank" rel="noopener external" title="En savoir plus sur le site de la CAF - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la CAF</a></li>
+                                <li><a href="https://www.msa.fr/lfp/vous-avez-perdu-un-proche" target="_blank" rel="noopener external" title="En savoir plus sur le site de la MSA - nouvelle fenêtre" class="fr-link">En savoir plus sur le site de la MSA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>

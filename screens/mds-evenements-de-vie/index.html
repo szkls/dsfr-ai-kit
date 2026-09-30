@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Vos évènements de vie - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header id="top" role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="../mds-evenements-de-vie/index.html" class="fr-nav__link" aria-current="page">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Vos évènements de vie</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>Vos évènements de vie</h1>
+                    <p class="fr-text--lead">Mes droits sociaux vous accompagne dans tous les évènements de votre vie.</p>
+                    <p class="fr-text--bold fr-mb-2v" id="filtres-titre">Filtrer par thèmes :</p>
+                    <ul class="fr-tags-group" id="filtres-themes" aria-labelledby="filtres-titre">
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">Emploi</button>
+                        </li>
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">Famille</button>
+                        </li>
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">Grand âge</button>
+                        </li>
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">Handicap</button>
+                        </li>
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">International</button>
+                        </li>
+                        <li>
+                            <button class="fr-tag" type="button" aria-pressed="false">Logement</button>
+                        </li>
+                    </ul>
+                    <p class="fr-mt-4v" id="compteur-evenements" role="status">15 évènements de vie affichés</p>
+                </div>
+            </div>
+            <div class="fr-grid-row fr-grid-row--gutters" id="liste-evenements">
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-1">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Vous cherchez un emploi</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Emploi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-2">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Vous adoptez un enfant</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Famille</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-3">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="../mds-parcours-naissance/index.html">Vous attendez ou venez d’avoir un enfant</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Famille</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-4">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Vous avez besoin de faire garder vos enfants</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Famille</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-5">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="../mds-parcours-deces/index.html">Vous faites face au décès d’un proche</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Famille</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-6">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F33362" target="_blank" rel="noopener external" title="Vous vous séparez de votre conjoint - nouvelle fenêtre">Vous vous séparez de votre conjoint</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Famille</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-7">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Autonomie et grand âge</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Grand âge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-8">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.info-retraite.fr/portail-info/home.html" target="_blank" rel="noopener external" title="Vous préparez votre retraite - nouvelle fenêtre">Vous préparez votre retraite</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Grand âge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-9">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Votre enfant est en situation de handicap</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Handicap</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-10">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="#">Vous êtes en situation de handicap</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Handicap</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-11">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/N19804" target="_blank" rel="noopener external" title="Vous êtes étranger et vous vivez en France - nouvelle fenêtre">Vous êtes étranger et vous vivez en France</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">International</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-12">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.diplomatie.gouv.fr/fr/je-pars-a-l-etranger/" target="_blank" rel="noopener external" title="Vous partez à l’étranger - nouvelle fenêtre">Vous partez à l’étranger</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">International</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-13">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.diplomatie.gouv.fr/fr/services-aux-francais/preparer-son-retour-en-france/" target="_blank" rel="noopener external" title="Vous revenez vivre en France - nouvelle fenêtre">Vous revenez vivre en France</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">International</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-14">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.1jeune1solution.gouv.fr/" target="_blank" rel="noopener external" title="Vous partez du domicile de vos parents - nouvelle fenêtre">Vous partez du domicile de vos parents</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Logement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-15">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h2 class="fr-tile__title">
+                                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F14128" target="_blank" rel="noopener external" title="Vous quittez votre logement - nouvelle fenêtre">Vous quittez votre logement</a>
+                                </h2>
+                                <div class="fr-tile__start">
+                                    <p class="fr-tag">Logement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="fr-mt-6v">
+                <a id="link-haut-de-page" href="#top" class="fr-link fr-icon-arrow-up-fill fr-link--icon-left">Haut de page</a>
+            </p>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+      <script>
+      (function () {
+        var group = document.getElementById('filtres-themes');
+        var counter = document.getElementById('compteur-evenements');
+        var columns = document.querySelectorAll('#liste-evenements > div');
+        function apply() {
+          var active = [];
+          group.querySelectorAll('button[aria-pressed="true"]').forEach(function (b) { active.push(b.textContent.trim()); });
+          var shown = 0;
+          columns.forEach(function (c) {
+            var theme = c.querySelector('.fr-tile__start .fr-tag').textContent.trim();
+            var visible = active.length === 0 || active.indexOf(theme) !== -1;
+            c.hidden = !visible;
+            if (visible) shown++;
+          });
+          counter.textContent = shown + (shown > 1 ? ' évènements de vie affichés' : ' évènement de vie affiché');
+        }
+        group.addEventListener('click', function () { setTimeout(apply, 50); });
+      })();
+    </script>
+  </body>
+</html>

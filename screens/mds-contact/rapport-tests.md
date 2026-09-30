@@ -6,7 +6,7 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 
 ## 1. Fidélité aux snippets officiels
 
-17 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, lignes de liste libres en nombre et en ordre (chaque ligne doit correspondre à un type de ligne de l'exemple), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes, contenu libre du bloc refermable des accordéons. Un bloc est conforme s'il correspond à au moins une variante.
+18 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, lignes de liste libres en nombre et en ordre (chaque ligne doit correspondre à un type de ligne de l'exemple), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes, contenu libre du bloc refermable des accordéons. Un bloc est conforme s'il correspond à au moins une variante.
 
 | Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |
 |---|---|---|---|---|---|
@@ -20,6 +20,7 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 | index.html | body > header.fr-header > div:nth-of-type(1) > div > div > div:nth-of-type(2) > div > div.fr-connect-group | Bouton FranceConnect | conforme | Bouton FranceConnect | identique |
 | index.html | body > header.fr-header > div.fr-modal:nth-of-type(2) | En-tête | conforme | Header minimal (élément imbriqué <div>) | identique |
 | index.html | body > header.fr-header > div.fr-modal:nth-of-type(2) > div > button.fr-btn | En-tête | conforme | Header minimal (élément imbriqué <button>) | identique |
+| index.html | body > header.fr-header > div.fr-modal:nth-of-type(2) > div > div > div.fr-connect-group | Bouton FranceConnect | conforme | Bouton FranceConnect | identique |
 | index.html | body > header.fr-header > div.fr-modal:nth-of-type(2) > div > nav.fr-nav | En-tête | conforme | Header minimal (élément imbriqué <nav>) | identique |
 | index.html | body > div:nth-of-type(2) > nav.fr-breadcrumb | Fil d'Ariane | conforme | Fil d’Ariane avec liens | identique |
 | index.html | body > main > div > div > div > div.fr-callout | Mise en avant | conforme | Titre mise en avant | identique |
