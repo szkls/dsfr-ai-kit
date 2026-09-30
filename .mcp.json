@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dsfr": {
+      "command": "npx",
+      "args": ["-y", "dsfr-mcp"]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}
