@@ -44,9 +44,28 @@ for (const line of readFileSync(join(ROOT, 'reference', 'modeles.md'), 'utf8').s
   const m = line.match(/^\| (page type|bloc fonctionnel) \| ([^|]+) \| ([a-z/-]+) \| (node_modules[^|]+\.html) \|/);
   if (m) components.push({ title: m[2].trim(), id: m[3], example: m[4].trim() });
 }
+// Pages d'exemple complémentaires d'un composant : sous-dossiers officiels du paquet (ex. link/back-to-top, link/download,
+// tile/download), hors exemples dépréciés.
+for (const c of [...components]) {
+  const m = c.example.match(/^(node_modules\/@gouvfr\/dsfr\/example\/component\/[a-z-]+)\/index\.html$/);
+  if (!m || !existsSync(join(ROOT, m[1]))) continue;
+  for (const d of readdirSync(join(ROOT, m[1]), { withFileTypes: true })) {
+    if (d.isDirectory() && d.name !== 'deprecated' && existsSync(join(ROOT, m[1], d.name, 'index.html'))) components.push({ ...c, example: `${m[1]}/${d.name}/index.html` });
+  }
+}
 // Attributs de comportement ou d'état : leur présence dépend du contenu, de la page ou du JS du DSFR, pas du composant.
 // id : identifiants techniques des exemples ; aria-current : page ou élément courant (navigation, fil d'Ariane) ;
 // aria-labelledby : retiré par le JS du DSFR sur les modales de l'en-tête en desktop.
+// Parties que la doc du composant déclare facultatives : leur absence n'est pas un écart ; toute autre partie manquante en reste un.
+// Tuile : « Une description, optionnelle », « Un texte de détail, optionnel ». Mise en avant : « Un titre — En option ».
+// Modale : « Une icône — En option » dans le titre (span d'icône du titre, voir optionalKey).
+const OPTIONAL_PARTS = new Set(['fr-tile__desc', 'fr-tile__detail', 'fr-callout__title']);
+function optionalKey(child, parent) {
+  const cls = (child.c || []).find((x) => OPTIONAL_PARTS.has(x));
+  if (cls) return cls;
+  if ((parent.c || []).includes('fr-modal__title') && child.t === 'span' && [child.p, ...(child.c || [])].some((x) => x && x.startsWith('fr-icon-'))) return 'icone-du-titre';
+  return null;
+}
 const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role', 'id', 'aria-current', 'aria-labelledby']);
 const IGNORE_ATTRS = [...BEHAVIOUR_ATTRS];
 
@@ -107,8 +126,10 @@ try {
       // les variantes du composant parent sont essayées en premier : un sous-bloc partagé par
       // plusieurs composants (ex. fr-messages-group) est ainsi étiqueté avec le bon composant ;
       // à égalité, une variante racine de la page du composant passe avant un élément imbriqué d'un autre composant
-      // (un lien seul est ainsi étiqueté « Lien », pas « Mot de passe »)
-      const variants = [...(library[b.primary] || [])].sort((x, y) => ((parent && y.id === parent.id) - (parent && x.id === parent.id)) || (x.nested - y.nested));
+      // (un lien seul est ainsi étiqueté « Lien », pas « Mot de passe ») ; à égalité encore, le composant qui porte le nom de la
+      // classe racine passe en premier (fr-modal : Modale plutôt que le panneau du gestionnaire de consentement)
+      const own = b.primary.replace(/^fr-/, '');
+      const variants = [...(library[b.primary] || [])].sort((x, y) => ((parent && y.id === parent.id) - (parent && x.id === parent.id)) || ((y.id === own) - (x.id === own)) || (x.nested - y.nested));
       let best = null;
       for (const v of variants) {
         const d = diff(b.norm, v.norm, `${b.norm.t}.${b.primary}`);
@@ -127,7 +148,10 @@ try {
       if (!c.cls.startsWith('fr-')) r2.push({ file, path: c.path, problem: 'classe hors DSFR (préfixe fr- attendu)', value: c.cls });
       else if (!knownClasses.has(c.cls)) r2.push({ file, path: c.path, problem: 'classe fr-* inconnue du DSFR', value: c.cls });
     }
-    for (const s of a.styles) r2.push({ file, path: s.path, problem: 'attribut style en ligne', value: s.value });
+    // seuls les styles écrits dans le fichier comptent : le JS du DSFR pose lui-même des variables CSS en ligne
+    // (ex. --table-offset sur le tableau) selon le moment de l'analyse
+    const authoredStyles = [...readFileSync(join(screenDir, file), 'utf8').matchAll(/\sstyle="([^"]*)"/g)].map((m) => m[1].trim()).filter(Boolean);
+    for (const s of a.styles) if (authoredStyles.some((v) => s.value.includes(v) || v.includes(s.value.trim()))) r2.push({ file, path: s.path, problem: 'attribut style en ligne', value: s.value });
     // 3. Contenus
     const fauxRe = /lorem|ipsum|\bà compléter\b|\[[^\]]*\]|^(titre|texte|libellé|description)\b/i;
     for (const t of a.texts) if (fauxRe.test(t.text)) r3.push({ file, path: t.path, problem: 'faux-texte', value: t.text.slice(0, 80) });
@@ -222,9 +246,10 @@ function diff(a, b, path) {
     }
     return { score, first };
   }
-  const n = Math.max(a.k.length, b.k.length);
+  const bk = b.k.filter((c) => { const key = optionalKey(c, b); return !key || a.k.some((x) => optionalKey(x, a) === key); });
+  const n = Math.max(a.k.length, bk.length);
   for (let i = 0; i < n; i++) {
-    const ca = a.k[i], cb = b.k[i];
+    const ca = a.k[i], cb = bk[i];
     if (!ca) { note(`${path} : élément ${lbl(cb)} manquant`, 2); continue; }
     if (!cb) { note(`${path} : élément ${lbl(ca)} en trop`, 2); continue; }
     const d = diff(ca, cb, `${path} > ${ca.t}${ca.p ? '.' + ca.p : ''}`);
