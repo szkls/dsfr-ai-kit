@@ -7,6 +7,8 @@ description: Concevoir et assembler un écran, une page, une maquette ou un form
 
 Méthode pour produire un écran DSFR en HTML pur, du brief à la livraison. Suivre les neuf étapes dans l'ordre, sans en sauter. Les détails sont dans `reference/`. La documentation officielle du site systeme-de-design.gouv.fr est copiée intégralement dans `reference/doc/` (un fichier par composant, fondamental et modèle) : c'est là qu'on la lit, pas de mémoire, pas en ligne.
 
+**Avec le serveur MCP dsfr-kit** (quand ses outils sont disponibles) : les mêmes fichiers se lisent par ses outils, qui renvoient tout en une réponse. Correspondances : fondamentaux → `get_fundamental(nom)` ; templates → `list_templates` / `get_template(nom)` ; modèles → `list_page_models` / `get_page_model(nom)` ; composants → `list_components` puis `get_component(nom)` (doc complète, fiche et snippets exacts de chaque variante) ; squelette → `get_page_skeleton` ; gabarit de brief → `get_brief_template` ; valeurs d'exemple → `get_realistic_data(type)` ; tests → `check_screen(nom)`. Les lignes « Doc lue » restent obligatoires : chaque réponse indique le chemin à noter. Sans le serveur, lire les fichiers indiqués dans chaque étape. Les règles ne changent pas.
+
 ## 1. Lire AGENTS.md
 Lire AGENTS.md à la racine et rappeler ses cinq règles absolues en une ligne chacune avant de commencer. Elles s'appliquent à tout ce qui suit.
 
@@ -28,7 +30,7 @@ Pour chaque besoin du brief, choisir le composant dans `reference/composants.md`
 Sans cette ligne, le composant ne peut pas être utilisé : le contrôle 5 des tests le signale comme écart bloquant. Le serveur MCP dsfr ne sert plus qu'à vérifier une nouveauté, par exemple un composant ou une variante absents de `reference/doc/` ; dans ce cas, le dire à l'utilisateur et proposer `npm run doc`.
 
 ## 6. Assembler l'écran
-Partir de `screens/_gabarit.html` (chemins CSS/JS déjà corrects depuis `screens/<nom>/` après ajustement d'un niveau : `../../node_modules/...`). Pour chaque composant, ouvrir sa page d'exemple (chemin donné par l'index), copier le bloc HTML exact de la variante retenue, puis adapter uniquement les contenus du brief. Le snippet n'est copié qu'après lecture complète de la doc du composant (étape 5).
+Partir de `screens/_gabarit.html` (chemins CSS/JS déjà corrects depuis `screens/<nom>/` après ajustement d'un niveau : `../../node_modules/...`). Pour chaque composant, ouvrir sa page d'exemple (chemin donné par l'index) ou reprendre le snippet servi par `get_component`, copier le bloc HTML exact de la variante retenue, puis adapter uniquement les contenus du brief. Le snippet n'est copié qu'après lecture complète de la doc du composant (étape 5). Pour les valeurs d'exemple que le brief ne fournit pas mais autorise (saisies conservées, lignes de tableau), `get_realistic_data` donne des données plausibles ; tout autre texte manquant se demande à l'utilisateur.
 
 Interdit : écrire un composant de mémoire ; ajouter une classe hors préfixe `fr-` ; mettre une couleur, une taille ou un espacement en dur (style inline ou CSS maison) ; inventer un texte.
 

@@ -1,5 +1,10 @@
 {
   "servers": {
+    "dsfr-kit": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/mcp/server.mjs"]
+    },
     "dsfr": {
       "command": "npx",
       "args": ["-y", "dsfr-mcp"]

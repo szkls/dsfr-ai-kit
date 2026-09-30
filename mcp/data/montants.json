@@ -1,0 +1,16 @@
+{
+  "description": "Montants d'exemple pour les écrans de paiement, de récapitulatif ou de tableau, avec le libellé et le format d'affichage français.",
+  "note": "Montants indicatifs pour des maquettes ; vérifier le tarif réel avant toute mise en production. Format français : espace insécable pour les milliers, virgule décimale, symbole € après un espace.",
+  "items": [
+    { "libelle": "Timbre fiscal (passeport, personne majeure)", "montant": 86, "affichage": "86,00 €", "usage": "Récapitulatif avant paiement" },
+    { "libelle": "Timbre fiscal (carte d'identité, en cas de perte ou de vol)", "montant": 25, "affichage": "25,00 €", "usage": "Récapitulatif avant paiement" },
+    { "libelle": "Timbre fiscal (permis de conduire, duplicata)", "montant": 25, "affichage": "25,00 €", "usage": "Récapitulatif avant paiement" },
+    { "libelle": "Redevance annuelle", "montant": 148.5, "affichage": "148,50 €", "usage": "Ligne de facture" },
+    { "libelle": "Frais de dossier", "montant": 12, "affichage": "12,00 €", "usage": "Ligne de facture" },
+    { "libelle": "Aide versée (mensuelle)", "montant": 635.71, "affichage": "635,71 €", "usage": "Espace personnel, droits et paiements" },
+    { "libelle": "Montant dû", "montant": 1240, "affichage": "1 240,00 €", "usage": "Avis de paiement" },
+    { "libelle": "Trop-perçu à rembourser", "montant": 87.3, "affichage": "87,30 €", "usage": "Notification" },
+    { "libelle": "Total TTC", "montant": 2599.99, "affichage": "2 599,99 €", "usage": "Récapitulatif de commande" },
+    { "libelle": "Montant nul", "montant": 0, "affichage": "0,00 €", "usage": "Démarche gratuite, cas limite" }
+  ]
+}

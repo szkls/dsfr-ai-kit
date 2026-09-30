@@ -1,0 +1,20 @@
+{
+  "description": "Dates d'exemple calculées à l'appel, relatives à aujourd'hui (décalage en jours ou en mois) ou fixes (naissance), rendues aux formats JJ/MM/AAAA, AAAA-MM-JJ et long (fr-FR).",
+  "note": "Champs possibles par élément : decalageJours, decalageMois, finDeMois, ou annee/mois/jour pour une date fixe.",
+  "items": [
+    { "cle": "aujourdhui", "libelle": "Aujourd'hui", "decalageJours": 0, "usage": "Date de dépôt d'une demande" },
+    { "cle": "demain", "libelle": "Demain", "decalageJours": 1, "usage": "Premier créneau possible" },
+    { "cle": "dans_3_jours", "libelle": "Dans 3 jours", "decalageJours": 3, "usage": "Date de rendez-vous proche" },
+    { "cle": "dans_15_jours", "libelle": "Dans 15 jours", "decalageJours": 15, "usage": "Date limite de réponse" },
+    { "cle": "dans_1_mois", "libelle": "Dans un mois", "decalageMois": 1, "usage": "Échéance d'instruction" },
+    { "cle": "dans_2_mois", "libelle": "Dans deux mois", "decalageMois": 2, "usage": "Délai légal de réponse de l'administration" },
+    { "cle": "fin_de_mois", "libelle": "Dernier jour du mois en cours", "finDeMois": true, "usage": "Clôture d'une période" },
+    { "cle": "il_y_a_8_jours", "libelle": "Il y a 8 jours", "decalageJours": -8, "usage": "Date de dépôt d'une demande en cours" },
+    { "cle": "il_y_a_1_mois", "libelle": "Il y a un mois", "decalageMois": -1, "usage": "Historique récent" },
+    { "cle": "il_y_a_6_mois", "libelle": "Il y a six mois", "decalageMois": -6, "usage": "Démarche ancienne dans un tableau" },
+    { "cle": "il_y_a_1_an", "libelle": "Il y a un an", "decalageMois": -12, "usage": "Échéance annuelle" },
+    { "cle": "naissance_adulte", "libelle": "Date de naissance (adulte)", "annee": 1985, "mois": 7, "jour": 22, "usage": "Champ date de naissance" },
+    { "cle": "naissance_jeune_majeur", "libelle": "Date de naissance (jeune majeur)", "annee": 2007, "mois": 3, "jour": 4, "usage": "Cas limite de majorité" },
+    { "cle": "naissance_senior", "libelle": "Date de naissance (senior)", "annee": 1952, "mois": 11, "jour": 30, "usage": "Champ date de naissance" }
+  ]
+}

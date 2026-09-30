@@ -1,0 +1,21 @@
+{
+  "description": "Identités fictives et plausibles d'usagers, pour les champs Nom, Prénom, courriel, téléphone et date de naissance des écrans. Toute ressemblance avec une personne réelle serait fortuite.",
+  "note": "Courriels sur le domaine réservé exemple.fr ; numéros de téléphone commençant par 06 12 ou 01 99 (indicatifs d'exemple).",
+  "items": [
+    { "civilite": "Madame", "prenom": "Camille", "nom": "Lefebvre", "dateNaissance": "14/03/1988", "email": "camille.lefebvre@exemple.fr", "telephone": "06 12 45 78 90" },
+    { "civilite": "Monsieur", "prenom": "Karim", "nom": "Benali", "dateNaissance": "02/11/1979", "email": "karim.benali@exemple.fr", "telephone": "06 12 33 21 08" },
+    { "civilite": "Madame", "prenom": "Aïcha", "nom": "Diallo", "dateNaissance": "27/06/1995", "email": "aicha.diallo@exemple.fr", "telephone": "06 12 90 14 57" },
+    { "civilite": "Monsieur", "prenom": "Julien", "nom": "Moreau", "dateNaissance": "19/09/1972", "email": "julien.moreau@exemple.fr", "telephone": "01 99 45 12 36" },
+    { "civilite": "Madame", "prenom": "Nathalie", "nom": "Rousseau", "dateNaissance": "05/01/1966", "email": "nathalie.rousseau@exemple.fr", "telephone": "06 12 78 45 63" },
+    { "civilite": "Monsieur", "prenom": "Thomas", "nom": "Nguyen", "dateNaissance": "23/04/1991", "email": "thomas.nguyen@exemple.fr", "telephone": "06 12 57 89 12" },
+    { "civilite": "Madame", "prenom": "Léa", "nom": "Martin", "dateNaissance": "30/12/2001", "email": "lea.martin@exemple.fr", "telephone": "06 12 23 67 45" },
+    { "civilite": "Monsieur", "prenom": "Mamadou", "nom": "Traoré", "dateNaissance": "11/07/1984", "email": "mamadou.traore@exemple.fr", "telephone": "06 12 41 09 88" },
+    { "civilite": "Madame", "prenom": "Sophie", "nom": "Garcia", "dateNaissance": "08/08/1958", "email": "sophie.garcia@exemple.fr", "telephone": "01 99 62 30 41" },
+    { "civilite": "Monsieur", "prenom": "Antoine", "nom": "Da Silva", "dateNaissance": "16/02/1997", "email": "antoine.dasilva@exemple.fr", "telephone": "06 12 15 84 27" },
+    { "civilite": "Madame", "prenom": "Fatoumata", "nom": "Koné", "dateNaissance": "21/05/1990", "email": "fatoumata.kone@exemple.fr", "telephone": "06 12 66 02 19" },
+    { "civilite": "Monsieur", "prenom": "Pierre-Yves", "nom": "Le Goff", "dateNaissance": "03/10/1963", "email": "pierre-yves.legoff@exemple.fr", "telephone": "06 12 38 71 50" },
+    { "civilite": "Madame", "prenom": "Inès", "nom": "Haddad", "dateNaissance": "12/12/1993", "email": "ines.haddad@exemple.fr", "telephone": "06 12 04 96 73" },
+    { "civilite": "Monsieur", "prenom": "Lucas", "nom": "Petit", "dateNaissance": "29/03/2003", "email": "lucas.petit@exemple.fr", "telephone": "06 12 52 18 64" },
+    { "civilite": "Madame", "prenom": "Marie-Claude", "nom": "Bernard", "dateNaissance": "17/06/1951", "email": "marie-claude.bernard@exemple.fr", "telephone": "01 99 27 58 03" }
+  ]
+}

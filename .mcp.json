@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "dsfr-kit": {
+      "command": "node",
+      "args": ["mcp/server.mjs"]
+    },
     "dsfr": {
       "command": "npx",
       "args": ["-y", "dsfr-mcp"]

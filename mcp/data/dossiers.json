@@ -1,0 +1,18 @@
+{
+  "description": "Numéros de dossier et références fictifs, dans des formats plausibles de démarches en ligne (numéro de demande, référence de rendez-vous, numéro de télédéclaration, immatriculation…).",
+  "note": "Formats indicatifs pour des maquettes : aucun n'est un identifiant réel. Ne pas utiliser de numéro de sécurité sociale, même fictif.",
+  "items": [
+    { "type": "Numéro de demande", "format": "AAAA-NNNNNN", "exemple": "2026-014582", "usage": "Titre d'une page de suivi, accusé de réception" },
+    { "type": "Référence de rendez-vous", "format": "RDV-AAAAMMJJ-NNNN", "exemple": "RDV-20261012-0378", "usage": "Confirmation de rendez-vous en préfecture ou en mairie" },
+    { "type": "Numéro de dossier", "format": "DOS-AA-NNNNNNN", "exemple": "DOS-26-0093174", "usage": "Colonne d'un tableau de démarches" },
+    { "type": "Numéro de télédéclaration", "format": "NNNNNNNNNNNNN (13 chiffres)", "exemple": "2610045873201", "usage": "Récapitulatif d'une déclaration en ligne" },
+    { "type": "Numéro d'allocataire", "format": "NNNNNNN (7 chiffres)", "exemple": "4738201", "usage": "Identifiant affiché dans un espace personnel" },
+    { "type": "Immatriculation de véhicule", "format": "AA-NNN-AA", "exemple": "GK-482-TR", "usage": "Démarches liées au véhicule" },
+    { "type": "Numéro SIRET", "format": "NNN NNN NNN NNNNN (14 chiffres)", "exemple": "130 025 265 00013", "usage": "Écrans destinés aux entreprises et associations" },
+    { "type": "Numéro de courrier", "format": "AAAA/SSSS/NNNN", "exemple": "2026/DDT/0421", "usage": "Référence d'un courrier administratif" },
+    { "type": "Code de suivi", "format": "6 caractères alphanumériques", "exemple": "K7P2QD", "usage": "Suivi d'une demande sans compte" },
+    { "type": "Numéro de titre", "format": "NNAANNNNN", "exemple": "26PR04127", "usage": "Titre de séjour, permis, carte" },
+    { "type": "Référence de paiement", "format": "PAY-AAAA-NNNNNN", "exemple": "PAY-2026-118904", "usage": "Confirmation de paiement d'un timbre ou d'une redevance" },
+    { "type": "Numéro de ticket", "format": "NNN", "exemple": "147", "usage": "File d'attente en accueil physique" }
+  ]
+}

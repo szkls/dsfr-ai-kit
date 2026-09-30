@@ -1,0 +1,17 @@
+{
+  "description": "Statuts d'une démarche administrative, avec le libellé à afficher, la variante de badge DSFR recommandée et un message d'accompagnement possible.",
+  "note": "Variantes de badge : fr-badge--new (nouveauté), fr-badge--info, fr-badge--success, fr-badge--warning, fr-badge--error. Le libellé du badge doit rester court ; le message va dans une alerte ou un texte.",
+  "items": [
+    { "statut": "Brouillon", "badge": "fr-badge--new", "message": "Votre demande n'a pas encore été envoyée.", "usage": "Démarche commencée, non soumise" },
+    { "statut": "Envoyée", "badge": "fr-badge--info", "message": "Votre demande a bien été envoyée. Vous recevrez une confirmation par courriel.", "usage": "Juste après la soumission" },
+    { "statut": "En cours d'instruction", "badge": "fr-badge--info", "message": "Votre demande est en cours d'examen par nos services.", "usage": "Suivi de dossier" },
+    { "statut": "Pièces manquantes", "badge": "fr-badge--warning", "message": "Des pièces justificatives sont manquantes. Vous avez jusqu'au {date} pour les fournir.", "usage": "Action attendue de l'usager" },
+    { "statut": "En attente de paiement", "badge": "fr-badge--warning", "message": "Le paiement du timbre fiscal est nécessaire pour poursuivre.", "usage": "Action attendue de l'usager" },
+    { "statut": "Rendez-vous confirmé", "badge": "fr-badge--success", "message": "Votre rendez-vous est confirmé le {date} à {heure}.", "usage": "Prise de rendez-vous" },
+    { "statut": "Acceptée", "badge": "fr-badge--success", "message": "Votre demande a été acceptée.", "usage": "Décision favorable" },
+    { "statut": "Refusée", "badge": "fr-badge--error", "message": "Votre demande a été refusée. Vous pouvez consulter les motifs et former un recours.", "usage": "Décision défavorable" },
+    { "statut": "Annulée", "badge": "fr-badge--error", "message": "Cette demande a été annulée à votre initiative.", "usage": "Annulation par l'usager" },
+    { "statut": "Expirée", "badge": "fr-badge--error", "message": "Le délai pour compléter cette demande est dépassé.", "usage": "Inaction prolongée" },
+    { "statut": "Terminée", "badge": "fr-badge--success", "message": "Cette démarche est terminée. Vous pouvez télécharger votre attestation.", "usage": "Clôture" }
+  ]
+}

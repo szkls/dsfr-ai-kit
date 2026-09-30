@@ -8,7 +8,9 @@
     "serve": "npx -y serve -l 8000 .",
     "doc": "node scripts/fetch-doc.mjs",
     "index": "npm run doc && node scripts/build-index.mjs",
-    "check": "node tests/check.mjs"
+    "check": "node tests/check.mjs",
+    "mcp": "node mcp/server.mjs",
+    "mcp:call": "node mcp/call.mjs"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,9 @@
   },
   "homepage": "https://github.com/szkls/dsfr-ai-kit#readme",
   "dependencies": {
-    "@gouvfr/dsfr": "1.15.3"
+    "@gouvfr/dsfr": "1.15.3",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",

@@ -1,0 +1,32 @@
+{
+  "description": "Communes françaises réelles avec code postal principal, code INSEE et département, pour les listes déroulantes, autocomplétions et tableaux.",
+  "note": "Code postal principal seulement (Paris, Lyon et Marseille en ont plusieurs).",
+  "items": [
+    { "nom": "Paris", "codePostal": "75001", "codeInsee": "75056", "departement": "Paris (75)", "region": "Île-de-France" },
+    { "nom": "Marseille", "codePostal": "13001", "codeInsee": "13055", "departement": "Bouches-du-Rhône (13)", "region": "Provence-Alpes-Côte d'Azur" },
+    { "nom": "Lyon", "codePostal": "69001", "codeInsee": "69123", "departement": "Rhône (69)", "region": "Auvergne-Rhône-Alpes" },
+    { "nom": "Toulouse", "codePostal": "31000", "codeInsee": "31555", "departement": "Haute-Garonne (31)", "region": "Occitanie" },
+    { "nom": "Nice", "codePostal": "06000", "codeInsee": "06088", "departement": "Alpes-Maritimes (06)", "region": "Provence-Alpes-Côte d'Azur" },
+    { "nom": "Nantes", "codePostal": "44000", "codeInsee": "44109", "departement": "Loire-Atlantique (44)", "region": "Pays de la Loire" },
+    { "nom": "Montpellier", "codePostal": "34000", "codeInsee": "34172", "departement": "Hérault (34)", "region": "Occitanie" },
+    { "nom": "Strasbourg", "codePostal": "67000", "codeInsee": "67482", "departement": "Bas-Rhin (67)", "region": "Grand Est" },
+    { "nom": "Bordeaux", "codePostal": "33000", "codeInsee": "33063", "departement": "Gironde (33)", "region": "Nouvelle-Aquitaine" },
+    { "nom": "Lille", "codePostal": "59000", "codeInsee": "59350", "departement": "Nord (59)", "region": "Hauts-de-France" },
+    { "nom": "Rennes", "codePostal": "35000", "codeInsee": "35238", "departement": "Ille-et-Vilaine (35)", "region": "Bretagne" },
+    { "nom": "Reims", "codePostal": "51100", "codeInsee": "51454", "departement": "Marne (51)", "region": "Grand Est" },
+    { "nom": "Le Havre", "codePostal": "76600", "codeInsee": "76351", "departement": "Seine-Maritime (76)", "region": "Normandie" },
+    { "nom": "Saint-Étienne", "codePostal": "42000", "codeInsee": "42218", "departement": "Loire (42)", "region": "Auvergne-Rhône-Alpes" },
+    { "nom": "Toulon", "codePostal": "83000", "codeInsee": "83137", "departement": "Var (83)", "region": "Provence-Alpes-Côte d'Azur" },
+    { "nom": "Grenoble", "codePostal": "38000", "codeInsee": "38185", "departement": "Isère (38)", "region": "Auvergne-Rhône-Alpes" },
+    { "nom": "Dijon", "codePostal": "21000", "codeInsee": "21231", "departement": "Côte-d'Or (21)", "region": "Bourgogne-Franche-Comté" },
+    { "nom": "Angers", "codePostal": "49000", "codeInsee": "49007", "departement": "Maine-et-Loire (49)", "region": "Pays de la Loire" },
+    { "nom": "Nîmes", "codePostal": "30000", "codeInsee": "30189", "departement": "Gard (30)", "region": "Occitanie" },
+    { "nom": "Clermont-Ferrand", "codePostal": "63000", "codeInsee": "63113", "departement": "Puy-de-Dôme (63)", "region": "Auvergne-Rhône-Alpes" },
+    { "nom": "Brest", "codePostal": "29200", "codeInsee": "29019", "departement": "Finistère (29)", "region": "Bretagne" },
+    { "nom": "Metz", "codePostal": "57000", "codeInsee": "57463", "departement": "Moselle (57)", "region": "Grand Est" },
+    { "nom": "Amiens", "codePostal": "80000", "codeInsee": "80021", "departement": "Somme (80)", "region": "Hauts-de-France" },
+    { "nom": "Ajaccio", "codePostal": "20000", "codeInsee": "2A004", "departement": "Corse-du-Sud (2A)", "region": "Corse" },
+    { "nom": "Fort-de-France", "codePostal": "97200", "codeInsee": "97209", "departement": "Martinique (972)", "region": "Martinique" },
+    { "nom": "Saint-Denis", "codePostal": "97400", "codeInsee": "97411", "departement": "La Réunion (974)", "region": "La Réunion" }
+  ]
+}

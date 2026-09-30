@@ -1,0 +1,22 @@
+{
+  "description": "Adresses postales plausibles : numéros et voies fictifs dans des communes françaises réelles (code postal et département exacts).",
+  "note": "Les voies portent des noms très courants ; le numéro est inventé.",
+  "items": [
+    { "numero": "12", "voie": "rue de la République", "complement": "", "codePostal": "69002", "commune": "Lyon", "departement": "Rhône" },
+    { "numero": "47 bis", "voie": "avenue Jean-Jaurès", "complement": "Bâtiment B, 3e étage", "codePostal": "75019", "commune": "Paris", "departement": "Paris" },
+    { "numero": "3", "voie": "place de la Mairie", "complement": "", "codePostal": "33000", "commune": "Bordeaux", "departement": "Gironde" },
+    { "numero": "128", "voie": "boulevard Victor-Hugo", "complement": "Appartement 14", "codePostal": "59000", "commune": "Lille", "departement": "Nord" },
+    { "numero": "8", "voie": "rue des Écoles", "complement": "", "codePostal": "44000", "commune": "Nantes", "departement": "Loire-Atlantique" },
+    { "numero": "21", "voie": "rue du Général-de-Gaulle", "complement": "", "codePostal": "67000", "commune": "Strasbourg", "departement": "Bas-Rhin" },
+    { "numero": "5", "voie": "allée des Tilleuls", "complement": "Résidence Les Cèdres", "codePostal": "31200", "commune": "Toulouse", "departement": "Haute-Garonne" },
+    { "numero": "64", "voie": "rue Pasteur", "complement": "", "codePostal": "13006", "commune": "Marseille", "departement": "Bouches-du-Rhône" },
+    { "numero": "17", "voie": "rue de la Gare", "complement": "", "codePostal": "35000", "commune": "Rennes", "departement": "Ille-et-Vilaine" },
+    { "numero": "2", "voie": "impasse des Lilas", "complement": "", "codePostal": "21000", "commune": "Dijon", "departement": "Côte-d'Or" },
+    { "numero": "39", "voie": "avenue de la Liberté", "complement": "Chez Mme Rousseau", "codePostal": "57000", "commune": "Metz", "departement": "Moselle" },
+    { "numero": "9", "voie": "rue Saint-Michel", "complement": "", "codePostal": "29200", "commune": "Brest", "departement": "Finistère" },
+    { "numero": "76", "voie": "cours Gambetta", "complement": "", "codePostal": "80000", "commune": "Amiens", "departement": "Somme" },
+    { "numero": "14", "voie": "rue Schœlcher", "complement": "", "codePostal": "97200", "commune": "Fort-de-France", "departement": "Martinique" },
+    { "numero": "11", "voie": "cours Napoléon", "complement": "", "codePostal": "20000", "commune": "Ajaccio", "departement": "Corse-du-Sud" },
+    { "numero": "53", "voie": "route de Grenoble", "complement": "Lieu-dit Le Pré Vert", "codePostal": "06200", "commune": "Nice", "departement": "Alpes-Maritimes" }
+  ]
+}
