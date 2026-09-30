@@ -33,12 +33,18 @@ try { accessSync(chromium.executablePath()); } catch {
   execSync('npx playwright install chromium', { stdio: 'inherit', cwd: ROOT });
 }
 
-// ---------- Index des composants -> pages d'exemple ----------
+// ---------- Index des composants et des modèles -> pages d'exemple ----------
 const components = [];
 for (const line of readFileSync(join(ROOT, 'reference', 'composants.md'), 'utf8').split('\n')) {
   const m = line.match(/^\| ([^|]+) \| ([a-z-]+) \| (node_modules[^|]+\.html) \|/);
   if (m) components.push({ title: m[1].trim(), id: m[2], example: m[3].trim() });
 }
+for (const line of readFileSync(join(ROOT, 'reference', 'modeles.md'), 'utf8').split('\n')) {
+  const m = line.match(/^\| (page type|bloc fonctionnel) \| ([^|]+) \| ([a-z/-]+) \| (node_modules[^|]+\.html) \|/);
+  if (m) components.push({ title: m[2].trim(), id: m[3], example: m[4].trim() });
+}
+// Attributs de comportement propres à chaque champ : leur présence dépend du contenu, pas du composant
+const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role']);
 
 // ---------- Classes connues du DSFR ----------
 const knownClasses = new Set();
@@ -64,6 +70,8 @@ try {
     for (const s of snippets) { const id = fragments.length; fragments.push({ id, html: s.html }); fragmentsMeta.push({ id, component: c, variant: s.variant }); }
   }
   await page.goto('about:blank');
+  // les classes présentes dans le balisage officiel sont connues même sans règle CSS (ex. fr-footer__content-item)
+  for (const f of fragments) for (const m of f.html.matchAll(/class="([^"]*)"/g)) for (const c of m[1].split(/\s+/)) if (c.startsWith('fr-')) knownClasses.add(c);
   const roots = await page.evaluate(snippetRootPrimaries, { fragments, utilityRe: UTILITY_CLASS_RE });
   const normalized = await page.evaluate(normalizeFragments, { fragments, roots, utilityRe: UTILITY_CLASS_RE });
   for (const n of normalized) {
@@ -133,11 +141,11 @@ try {
   const md = [];
   md.push(`# Rapport de tests : ${screenName}`, '', `Généré par tests/check.mjs le ${new Date().toISOString().slice(0, 10)} — DSFR ${JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version} — fichiers : ${files.join(', ')}`, '');
   md.push(`**Verdict : ${n1 + n2 === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s) inconnue(s) ou style(s) en ligne, ${n3} problème(s) de contenu, ${n4} violation(s) axe.**`, '');
-  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante de la page d'exemple.`, '');
+  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement propres au champ (autocomplete, spellcheck, required…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante.`, '');
   md.push('| Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |', '|---|---|---|---|---|---|');
   for (const x of r1) md.push(`| ${x.file} | ${cell(x.path)} | ${cell(x.component)} | ${x.ok ? 'conforme' : '**écart**'} | ${cell(x.variant)} | ${cell(x.detail)} |`);
   if (!r1.length) md.push('| — | — | — | aucun bloc de composant trouvé | — | — |');
-  md.push('', '## 2. Classes inconnues et styles en ligne', '', '| Fichier | Endroit | Problème | Valeur |', '|---|---|---|---|');
+  md.push('', '## 2. Classes inconnues et styles en ligne', '', 'Classes connues : celles des deux CSS du paquet et celles du balisage des extraits officiels.', '', '| Fichier | Endroit | Problème | Valeur |', '|---|---|---|---|');
   for (const x of r2) md.push(`| ${x.file} | ${cell(x.path)} | ${x.problem} | ${cell(x.value)} |`);
   if (!r2.length) md.push('| — | — | aucun problème | — |');
   md.push('', '## 3. Contenus', '', '| Fichier | Endroit | Problème | Texte |', '|---|---|---|---|');
@@ -168,7 +176,7 @@ function diff(a, b, path) {
   if (a.b || b.b) { if (!!a.b !== !!b.b) note(`${path} : sous-composant ${a.b ? 'inattendu' : 'attendu'} ${lbl(a.b ? a : b)}`, 3); return { score, first }; }
   for (const m of b.c.filter((x) => !a.c.includes(x))) note(`${path} : classe ${m} manquante`);
   for (const e of a.c.filter((x) => !b.c.includes(x))) note(`${path} : classe ${e} en trop`);
-  for (const m of b.a.filter((x) => !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
+  for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
   const n = Math.max(a.k.length, b.k.length);
   for (let i = 0; i < n; i++) {
     const ca = a.k[i], cb = b.k[i];

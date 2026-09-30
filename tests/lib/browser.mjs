@@ -39,7 +39,8 @@ export function normalizeFragments({ fragments, roots, utilityRe }) {
     }
     const k = [];
     for (const kid of kids) { const j = JSON.stringify(kid); if (!k.length || JSON.stringify(k[k.length - 1]) !== j) k.push(kid); }
-    return { t: el.tagName.toLowerCase(), p: primaryOf(el), c, a, k };
+    // les titres h1 à h6 sont interchangeables : la doc DSFR précise que le niveau dépend de la page
+    return { t: el.tagName.toLowerCase().replace(/^h[1-6]$/, 'h1-h6'), p: primaryOf(el), c, a, k };
   };
   const result = [];
   for (const f of fragments) {
@@ -105,7 +106,7 @@ export function analyseDocument({ roots, utilityRe }) {
     }
     const k = [];
     for (const kid of kids) { const j = JSON.stringify(kid); if (!k.length || JSON.stringify(k[k.length - 1]) !== j) k.push(kid); }
-    return { t: el.tagName.toLowerCase(), p: primaryOf(el), c, a, k };
+    return { t: el.tagName.toLowerCase().replace(/^h[1-6]$/, 'h1-h6'), p: primaryOf(el), c, a, k };
   };
 
   const blocks = [], classes = [], styles = [], texts = [], controls = [], attrTexts = [];

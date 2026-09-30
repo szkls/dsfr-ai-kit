@@ -6,7 +6,7 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 
 ## 1. Fidélité aux snippets officiels
 
-7 bloc(s) de composant analysé(s). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante de la page d'exemple.
+7 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement propres au champ (autocomplete, spellcheck, required…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante.
 
 | Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |
 |---|---|---|---|---|---|
@@ -19,6 +19,8 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 | index.html | body > button.fr-btn:nth-of-type(3) | Bouton | **écart** | Bouton simple | button.fr-btn : élément <strong> en trop |
 
 ## 2. Classes inconnues et styles en ligne
+
+Classes connues : celles des deux CSS du paquet et celles du balisage des extraits officiels.
 
 | Fichier | Endroit | Problème | Valeur |
 |---|---|---|---|
