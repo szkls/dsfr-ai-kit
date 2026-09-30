@@ -6,7 +6,7 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 
 ## 1. Fidélité aux snippets officiels
 
-80 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement propres au champ (autocomplete, spellcheck, required…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante.
+80 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes. Un bloc est conforme s'il correspond à au moins une variante.
 
 | Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |
 |---|---|---|---|---|---|
@@ -14,24 +14,24 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 | index.html | body > header.fr-header > div > div > div > div.fr-enlarge-link > div:nth-of-type(1) > div > p.fr-logo | En-tête | conforme | Header minimal (élément imbriqué <p>) | identique |
 | index.html | body > div > nav.fr-breadcrumb | Fil d'Ariane | conforme | Fil d’Ariane avec liens | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) | Bloc fonctionnel de civilité | conforme | Demande de situation familiale | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group | Champ de saisie | conforme | Champ de type "text" | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group | Champ de saisie | conforme | Champ de type "text" | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div.fr-messages-group:nth-of-type(3) | Bloc fonctionnel de civilité | conforme | Demande du sexe (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(2) | Formulaire | conforme | Ensemble de boutons radio | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(2) > div.fr-messages-group:nth-of-type(4) | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-checkbox-group:nth-of-type(4) | Case à cocher | conforme | Case à cocher seule | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-checkbox-group:nth-of-type(4) > div.fr-messages-group | Case à cocher | conforme | Case à cocher seule (élément imbriqué <div>) | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group | Bouton | conforme | Groupe de boutons inline à partir du breakpoint SM | identique |
 | index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group > li > button.fr-btn | Bouton | conforme | Bouton simple | identique |
-| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Mot de passe | conforme | Mot de passe de connexion (élément imbriqué <a>) | identique |
+| index.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Lien | conforme | Lien seul | identique |
 | index.html | body > footer.fr-footer | Pied de page | conforme | Pied de page minimal | identique |
 | index.html | body > footer.fr-footer > div > div:nth-of-type(1) > div.fr-enlarge-link:nth-of-type(1) > a > p.fr-logo | Pied de page | conforme | Pied de page minimal (élément imbriqué <p>) | identique |
 | etat-erreur-serveur.html | body > header.fr-header | En-tête | conforme | Header sans navigation | identique |
@@ -39,24 +39,24 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 | etat-erreur-serveur.html | body > div > nav.fr-breadcrumb | Fil d'Ariane | conforme | Fil d’Ariane avec liens | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(1) > div > div > div.fr-alert | Alerte | conforme | Erreur détectée dans le formulaire | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) | Bloc fonctionnel de civilité | conforme | Demande de situation familiale | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group | Champ de saisie | conforme | Champ de type "text" | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(1) > div.fr-input-group > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group | Champ de saisie | conforme | Champ de type "text" | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div:nth-of-type(2) > div.fr-input-group > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(1) > div.fr-messages-group:nth-of-type(3) | Bloc fonctionnel de civilité | conforme | Demande du sexe (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(1) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(2) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(2) | Formulaire | conforme | Ensemble de boutons radio | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > fieldset.fr-fieldset:nth-of-type(2) > div.fr-messages-group:nth-of-type(4) | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) | Formulaire | conforme | Ensemble de champs de saisie désactivés (élément imbriqué <div>) | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) > div.fr-messages-group | Formulaire | conforme | Ensemble de champs de saisie (élément imbriqué <div>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) | Champ de saisie | conforme | Champ avec texte additionnel | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-input-group:nth-of-type(3) > div.fr-messages-group | Champ de saisie | conforme | Champ de type "text" (élément imbriqué <div>) | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-checkbox-group:nth-of-type(4) | Case à cocher | conforme | Case à cocher seule | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-checkbox-group:nth-of-type(4) > div.fr-messages-group | Case à cocher | conforme | Case à cocher seule (élément imbriqué <div>) | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group | Bouton | conforme | Groupe de boutons inline à partir du breakpoint SM | identique |
 | etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group > li > button.fr-btn | Bouton | conforme | Bouton simple | identique |
-| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Mot de passe | conforme | Mot de passe de connexion (élément imbriqué <a>) | identique |
+| etat-erreur-serveur.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Lien | conforme | Lien seul | identique |
 | etat-erreur-serveur.html | body > footer.fr-footer | Pied de page | conforme | Pied de page minimal | identique |
 | etat-erreur-serveur.html | body > footer.fr-footer > div > div:nth-of-type(1) > div.fr-enlarge-link:nth-of-type(1) > a > p.fr-logo | Pied de page | conforme | Pied de page minimal (élément imbriqué <p>) | identique |
 | etat-erreurs-saisie.html | body > header.fr-header | En-tête | conforme | Header sans navigation | identique |
@@ -80,14 +80,14 @@ Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index
 | etat-erreurs-saisie.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > div.fr-checkbox-group:nth-of-type(4) > div.fr-messages-group | Case à cocher | conforme | Case à cocher seule avec erreur (élément imbriqué <div>) | identique |
 | etat-erreurs-saisie.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group | Bouton | conforme | Groupe de boutons inline à partir du breakpoint SM | identique |
 | etat-erreurs-saisie.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > ul.fr-btns-group > li > button.fr-btn | Bouton | conforme | Bouton simple | identique |
-| etat-erreurs-saisie.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Mot de passe | conforme | Mot de passe de connexion (élément imbriqué <a>) | identique |
+| etat-erreurs-saisie.html | body > main > div:nth-of-type(2) > div > div > div > div > div > form > p:nth-of-type(2) > a.fr-link | Lien | conforme | Lien seul | identique |
 | etat-erreurs-saisie.html | body > footer.fr-footer | Pied de page | conforme | Pied de page minimal | identique |
 | etat-erreurs-saisie.html | body > footer.fr-footer > div > div:nth-of-type(1) > div.fr-enlarge-link:nth-of-type(1) > a > p.fr-logo | Pied de page | conforme | Pied de page minimal (élément imbriqué <p>) | identique |
 | etat-succes.html | body > header.fr-header | En-tête | conforme | Header sans navigation | identique |
 | etat-succes.html | body > header.fr-header > div > div > div > div.fr-enlarge-link > div:nth-of-type(1) > div > p.fr-logo | En-tête | conforme | Header minimal (élément imbriqué <p>) | identique |
 | etat-succes.html | body > div > nav.fr-breadcrumb | Fil d'Ariane | conforme | Fil d’Ariane avec liens | identique |
 | etat-succes.html | body > main > div:nth-of-type(1) > div > div > div.fr-alert | Alerte | conforme | Succès de l'envoi | identique |
-| etat-succes.html | body > main > div:nth-of-type(2) > div > div > div > div > div > p > a.fr-link | Mot de passe | conforme | Mot de passe de connexion (élément imbriqué <a>) | identique |
+| etat-succes.html | body > main > div:nth-of-type(2) > div > div > div > div > div > p > a.fr-link | Lien | conforme | Lien seul | identique |
 | etat-succes.html | body > footer.fr-footer | Pied de page | conforme | Pied de page minimal | identique |
 | etat-succes.html | body > footer.fr-footer > div > div:nth-of-type(1) > div.fr-enlarge-link:nth-of-type(1) > a > p.fr-logo | Pied de page | conforme | Pied de page minimal (élément imbriqué <p>) | identique |
 
@@ -148,5 +148,5 @@ Chaque composant du paquet présent dans l'écran doit avoir dans `conception.md
 | Formulaire (form) | reference/doc/composants/form.md | **écart** | ligne « Doc lue » absente de conception.md |
 | En-tête (header) | reference/doc/composants/header.md | **écart** | ligne « Doc lue » absente de conception.md |
 | Champ de saisie (input) | reference/doc/composants/input.md | **écart** | ligne « Doc lue » absente de conception.md |
-| Mot de passe (password) | reference/doc/composants/password.md | **écart** | ligne « Doc lue » absente de conception.md |
+| Lien (link) | reference/doc/composants/link.md | **écart** | ligne « Doc lue » absente de conception.md |
 | Bouton radio (radio) | reference/doc/composants/radio.md | **écart** | ligne « Doc lue » absente de conception.md |

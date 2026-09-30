@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="system">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Accueil - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="#" class="fr-nav__link" aria-current="page">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="#" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main role="main" id="content">
+        <!-- Bandeau d'introduction -->
+        <div class="fr-background-alt--blue-france fr-py-8v fr-py-md-12v">
+            <div class="fr-container">
+                <div class="fr-grid-row fr-grid-row--gutters">
+                    <div class="fr-col-12 fr-col-lg-8">
+                        <h1>MES DROITS SOCIAUX</h1>
+                        <p class="fr-text--lead">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        <a href="#" class="fr-btn">Voir les simulateurs</a>
+                        <p class="fr-mt-4v fr-mb-0">
+                            <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Qui sommes-nous ?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mise en avant -->
+        <div class="fr-container fr-mt-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <div id="callout-mns" class="fr-callout">
+                        <h2 class="fr-callout__title">Le Montant Net Social</h2>
+                        <p class="fr-callout__text">Objectifs : simplifier vos démarches et rendre plus claires les ressources prises en compte pour calculer vos aides.</p>
+                        <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Tout savoir sur le Montant Net Social</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actualités -->
+        <section class="fr-container fr-mt-8v">
+            <h2>ACTUALITÉS</h2>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+                    <div class="fr-tile fr-enlarge-link" id="tile-actu-1">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Deux nouveaux documents pour faciliter vos démarches</a>
+                                </h3>
+                                <p class="fr-tile__detail">11/09/2026</p>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document-add.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document-add.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document-add.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fr-grid-row fr-grid-row--gutters fr-mt-2v">
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-actu-2">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">La durée des arrêts de travail est désormais plafonnée</a>
+                                </h3>
+                                <p class="fr-tile__detail">11/09/2026</p>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/doctor.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/doctor.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/doctor.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-actu-3">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Congé supplémentaire de naissance : un nouveau droit depuis le 1er juillet</a>
+                                </h3>
+                                <p class="fr-tile__detail">11/09/2026</p>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/digital/calendar.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/digital/calendar.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/digital/calendar.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-actu-4">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Etudiants : pensez aux aides au logement !</a>
+                                </h3>
+                                <p class="fr-tile__detail">11/09/2026</p>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/buildings/house.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/buildings/house.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/buildings/house.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="fr-mt-4v">
+                <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Voir toutes les actualités</a>
+            </p>
+        </section>
+
+        <!-- Services -->
+        <section class="fr-container fr-mt-8v">
+            <h2>Santé, Famille, Logement, Retraite, Solidarité, Autour de l'emploi : retrouvez tous vos droits sociaux en un seul endroit.</h2>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-grid-row">
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link" id="tile-service-1">
+                                <div class="fr-tile__body">
+                                    <div class="fr-tile__content">
+                                        <h3 class="fr-tile__title">
+                                            <a href="#">Votre simulateur</a>
+                                        </h3>
+                                        <p class="fr-tile__desc">Découvrez en quelques clics les prestations sociales auxquelles vous pourriez prétendre</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Effectuer une simulation</a>
+                    </p>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-grid-row">
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link" id="tile-service-2">
+                                <div class="fr-tile__body">
+                                    <div class="fr-tile__content">
+                                        <h3 class="fr-tile__title">
+                                            <a href="#">Vos droits</a>
+                                        </h3>
+                                        <p class="fr-tile__desc">Consultez l'ensemble de vos droits sociaux, retrouvez vos interlocuteurs et vos démarches</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Consultez vos droits</a>
+                    </p>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-grid-row">
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link" id="tile-service-3">
+                                <div class="fr-tile__body">
+                                    <div class="fr-tile__content">
+                                        <h3 class="fr-tile__title">
+                                            <a href="#">Vos ressources</a>
+                                        </h3>
+                                        <p class="fr-tile__desc">Consultez l'ensemble de vos ressources personnelles des douze derniers mois</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Accéder à vos ressources</a>
+                    </p>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-grid-row">
+                        <div class="fr-col-12">
+                            <div class="fr-tile fr-enlarge-link" id="tile-service-4">
+                                <div class="fr-tile__body">
+                                    <div class="fr-tile__content">
+                                        <h3 class="fr-tile__title">
+                                            <a href="#">Votre activité professionnelle</a>
+                                        </h3>
+                                        <p class="fr-tile__desc">Consultez les informations déclarées par vos employeurs, et téléchargez votre attestation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Voir votre activité salariée</a>
+                    </p>
+                </div>
+            </div>
+            <p class="fr-mt-4v">
+                <a href="#" class="fr-btn fr-btn--secondary">Voir tous les services</a>
+            </p>
+        </section>
+
+        <!-- Événements de vie -->
+        <section class="fr-container fr-mt-8v">
+            <p class="fr-text--sm fr-text-mention--grey fr-mb-1v">ÉVÉNEMENTS DE VIE</p>
+            <h2>Vous accompagner à chaque étape</h2>
+            <p>mesdroitssociaux.gouv.fr vous accompagne dans tous les événements de votre vie</p>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-1">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Vous attendez un enfant / naissance</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/health.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/health.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/health/health.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-2">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Vous devez faire face au décès d'un proche</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/document/document.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-3">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Autonomie et grand âge</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/environment/human-cooperation.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/environment/human-cooperation.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/environment/human-cooperation.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-6 fr-col-lg-3">
+                    <div class="fr-tile fr-enlarge-link" id="tile-evenement-4">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="#">Vous êtes en situation de handicap</a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="fr-tile__header">
+                            <div class="fr-tile__pictogram">
+                                <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                                    <use class="fr-artwork-decorative" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/accessibility/accessibility.svg#artwork-decorative"></use>
+                                    <use class="fr-artwork-minor" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/accessibility/accessibility.svg#artwork-minor"></use>
+                                    <use class="fr-artwork-major" href="../../node_modules/@gouvfr/dsfr/dist/artwork/pictograms/accessibility/accessibility.svg#artwork-major"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="fr-mt-4v">
+                <a href="#" class="fr-btn fr-btn--secondary">Voir tous les événements de vie</a>
+            </p>
+        </section>
+
+        <!-- Tutos vidéos -->
+        <section class="fr-container fr-mt-8v">
+            <h2>Découvrez le site mesdroitssociaux.gouv.fr</h2>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-consent-placeholder">
+                        <h3 class="fr-h6">La page d'accueil</h3>
+                        <p>Pour voir cette vidéo, vous devez autoriser les cookies « Vidéo » Dailymotion.</p>
+                        <button type="button" class="fr-btn fr-btn--secondary">Gérer les cookies</button>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link">Voir la transcription textuelle du tuto vidéo « La page d'accueil »</a>
+                    </p>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-consent-placeholder">
+                        <h3 class="fr-h6">La connexion</h3>
+                        <p>Pour voir cette vidéo, vous devez autoriser les cookies « Vidéo » Dailymotion.</p>
+                        <button type="button" class="fr-btn fr-btn--secondary">Gérer les cookies</button>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link">Voir la transcription textuelle du tuto vidéo « La connexion »</a>
+                    </p>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-consent-placeholder">
+                        <h3 class="fr-h6">Vos droits</h3>
+                        <p>Pour voir cette vidéo, vous devez autoriser les cookies « Vidéo » Dailymotion.</p>
+                        <button type="button" class="fr-btn fr-btn--secondary">Gérer les cookies</button>
+                    </div>
+                    <p class="fr-mt-2v">
+                        <a href="#" class="fr-link">Voir la transcription textuelle du tuto vidéo « Vos droits »</a>
+                    </p>
+                </div>
+            </div>
+            <p class="fr-mt-4v">
+                <a href="#" class="fr-btn fr-btn--secondary">Voir les tutos vidéos</a>
+            </p>
+        </section>
+
+        <!-- Partenaires -->
+        <div class="fr-background-alt--grey fr-mt-8v fr-py-8v">
+            <section class="fr-container">
+                <p class="fr-text--sm fr-text-mention--grey fr-mb-1v">NOS PARTENAIRES</p>
+                <h2>Un projet porté par</h2>
+                <div class="fr-grid-row fr-grid-row--gutters">
+                    <div class="fr-col-12 fr-col-md-6">
+                        <ul>
+                            <li>France Travail</li>
+                            <li>l'Assurance Maladie</li>
+                            <li>Allocations familiales</li>
+                            <li>MSA</li>
+                            <li>Ministère de la Santé et de la Prévention</li>
+                            <li>la Sécurité sociale</li>
+                            <li>Info Retraite</li>
+                        </ul>
+                    </div>
+                    <div class="fr-col-12 fr-col-md-6">
+                        <ul>
+                            <li>l'Assurance Retraite</li>
+                            <li>Caisse des Dépôts</li>
+                            <li>Ministère des Solidarités et des Familles</li>
+                            <li>Urssaf</li>
+                            <li>MGEN</li>
+                            <li>Mon Compte Formation</li>
+                            <li>Net-entreprises.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="#" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="#" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="#" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="#" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="#" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="#" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>

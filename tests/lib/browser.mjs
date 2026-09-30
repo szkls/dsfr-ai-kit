@@ -23,15 +23,17 @@ export function extractSnippets() {
 
 // Normalise des fragments HTML (extraits) en arbres comparables. Retourne, par fragment, ses racines
 // et tous ses éléments imbriqués qui sont eux-mêmes des racines de composant.
-export function normalizeFragments({ fragments, roots, utilityRe }) {
+export function normalizeFragments({ fragments, roots, utilityRe, ignoreAttrs = [] }) {
   const util = new RegExp(utilityRe);
   const primaryOf = (el) => {
     for (const c of el.classList) if (c.startsWith('fr-') && !c.includes('--') && !c.includes('__') && !util.test(c)) return c;
     return null;
   };
+  // attributs qui dépendent de la page ou du JS du DSFR (identifiants, états ARIA, data-fr-js-*) : hors comparaison
+  const keepAttr = (n) => n !== 'class' && !ignoreAttrs.includes(n) && !n.startsWith('data-fr-js-');
   const norm = (el) => {
     const c = [...el.classList].filter((x) => x.startsWith('fr-') && !util.test(x)).sort();
-    const a = [...el.attributes].map((x) => x.name).filter((n) => n !== 'class').sort();
+    const a = [...el.attributes].map((x) => x.name).filter(keepAttr).sort();
     const kids = [];
     for (const ch of el.children) {
       const p = primaryOf(ch);
@@ -76,12 +78,13 @@ export function snippetRootPrimaries({ fragments, utilityRe }) {
 }
 
 // Analyse d'un fichier d'écran : blocs de composants normalisés, classes, styles en ligne, textes, liens et boutons.
-export function analyseDocument({ roots, utilityRe }) {
+export function analyseDocument({ roots, utilityRe, ignoreAttrs = [] }) {
   const util = new RegExp(utilityRe);
   const primaryOf = (el) => {
     for (const c of el.classList) if (c.startsWith('fr-') && !c.includes('--') && !c.includes('__') && !util.test(c)) return c;
     return null;
   };
+  const keepAttr = (n) => n !== 'class' && !ignoreAttrs.includes(n) && !n.startsWith('data-fr-js-');
   const pathOf = (el) => {
     const parts = [];
     for (let e = el; e && e.nodeType === 1 && e.tagName !== 'HTML'; e = e.parentElement) {
@@ -98,9 +101,11 @@ export function analyseDocument({ roots, utilityRe }) {
   };
   const norm = (el) => {
     const c = [...el.classList].filter((x) => x.startsWith('fr-') && !util.test(x)).sort();
-    const a = [...el.attributes].map((x) => x.name).filter((n) => n !== 'class').sort();
+    const a = [...el.attributes].map((x) => x.name).filter(keepAttr).sort();
     const kids = [];
-    for (const ch of el.children) {
+    // fr-header__menu-links est vide dans les extraits : le JS du DSFR y recopie les accès rapides pour le mobile
+    const children = el.classList.contains('fr-header__menu-links') ? [] : [...el.children];
+    for (const ch of children) {
       const p = primaryOf(ch);
       kids.push(p && roots.includes(p) ? { t: ch.tagName.toLowerCase(), p, b: true } : norm(ch));
     }

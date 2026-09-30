@@ -44,8 +44,11 @@ for (const line of readFileSync(join(ROOT, 'reference', 'modeles.md'), 'utf8').s
   const m = line.match(/^\| (page type|bloc fonctionnel) \| ([^|]+) \| ([a-z/-]+) \| (node_modules[^|]+\.html) \|/);
   if (m) components.push({ title: m[2].trim(), id: m[3], example: m[4].trim() });
 }
-// Attributs de comportement propres à chaque champ : leur présence dépend du contenu, pas du composant
-const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role']);
+// Attributs de comportement ou d'état : leur présence dépend du contenu, de la page ou du JS du DSFR, pas du composant.
+// id : identifiants techniques des exemples ; aria-current : page ou élément courant (navigation, fil d'Ariane) ;
+// aria-labelledby : retiré par le JS du DSFR sur les modales de l'en-tête en desktop.
+const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role', 'id', 'aria-current', 'aria-labelledby']);
+const IGNORE_ATTRS = [...BEHAVIOUR_ATTRS];
 
 // ---------- Classes connues du DSFR ----------
 const knownClasses = new Set();
@@ -74,11 +77,11 @@ try {
   // les classes présentes dans le balisage officiel sont connues même sans règle CSS (ex. fr-footer__content-item)
   for (const f of fragments) for (const m of f.html.matchAll(/class="([^"]*)"/g)) for (const c of m[1].split(/\s+/)) if (c.startsWith('fr-')) knownClasses.add(c);
   const roots = await page.evaluate(snippetRootPrimaries, { fragments, utilityRe: UTILITY_CLASS_RE });
-  const normalized = await page.evaluate(normalizeFragments, { fragments, roots, utilityRe: UTILITY_CLASS_RE });
+  const normalized = await page.evaluate(normalizeFragments, { fragments, roots, utilityRe: UTILITY_CLASS_RE, ignoreAttrs: IGNORE_ATTRS });
   for (const n of normalized) {
     const meta = fragmentsMeta[n.id];
     for (const it of n.items) {
-      (library[it.primary] ??= []).push({ component: meta.component.title, id: meta.component.id, variant: it.nested ? `${meta.variant} (élément imbriqué <${it.norm.t}>)` : meta.variant, norm: it.norm });
+      (library[it.primary] ??= []).push({ component: meta.component.title, id: meta.component.id, nested: it.nested, variant: it.nested ? `${meta.variant} (élément imbriqué <${it.norm.t}>)` : meta.variant, norm: it.norm });
     }
   }
   console.log(`${fragments.length} extraits, ${roots.length} classes racines, ${Object.values(library).reduce((s, a) => s + a.length, 0)} variantes.`);
@@ -92,15 +95,17 @@ try {
     process.stdout.write(`Analyse de ${file}… `);
     await page.setViewportSize({ width: 1248, height: 800 });
     await page.goto(`${server.url}/${rel}`, { waitUntil: 'load' });
-    const a = await page.evaluate(analyseDocument, { roots, utilityRe: UTILITY_CLASS_RE });
+    const a = await page.evaluate(analyseDocument, { roots, utilityRe: UTILITY_CLASS_RE, ignoreAttrs: IGNORE_ATTRS });
 
     // 1. Fidélité aux snippets
     const matched = []; // blocs déjà traités (pour retrouver le composant du bloc parent)
     for (const b of a.blocks) {
       const parent = [...matched].reverse().find((m) => b.path.startsWith(m.path + ' > '));
       // les variantes du composant parent sont essayées en premier : un sous-bloc partagé par
-      // plusieurs composants (ex. fr-messages-group) est ainsi étiqueté avec le bon composant
-      const variants = [...(library[b.primary] || [])].sort((x, y) => (parent && y.id === parent.id) - (parent && x.id === parent.id));
+      // plusieurs composants (ex. fr-messages-group) est ainsi étiqueté avec le bon composant ;
+      // à égalité, une variante racine de la page du composant passe avant un élément imbriqué d'un autre composant
+      // (un lien seul est ainsi étiqueté « Lien », pas « Mot de passe »)
+      const variants = [...(library[b.primary] || [])].sort((x, y) => ((parent && y.id === parent.id) - (parent && x.id === parent.id)) || (x.nested - y.nested));
       let best = null;
       for (const v of variants) {
         const d = diff(b.norm, v.norm, `${b.norm.t}.${b.primary}`);
@@ -160,7 +165,7 @@ try {
   const md = [];
   md.push(`# Rapport de tests : ${screenName}`, '', `Généré par tests/check.mjs le ${new Date().toISOString().slice(0, 10)} — DSFR ${JSON.parse(readFileSync(join(PKG, 'package.json'), 'utf8')).version} — fichiers : ${files.join(', ')}`, '');
   md.push(`**Verdict : ${blocking === 0 ? 'CONFORME' : 'NON CONFORME'} — ${n1} écart(s) de snippet, ${n2} classe(s) inconnue(s) ou style(s) en ligne, ${n3} problème(s) de contenu, ${n4} violation(s) axe, ${n5} composant(s) sans ligne « Doc lue ».**`, '');
-  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement propres au champ (autocomplete, spellcheck, required…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste). Un bloc est conforme s'il correspond à au moins une variante.`, '');
+  md.push('## 1. Fidélité aux snippets officiels', '', `${r1.length} bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, répétitions d'éléments identiques (lignes de liste), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes. Un bloc est conforme s'il correspond à au moins une variante.`, '');
   md.push('| Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |', '|---|---|---|---|---|---|');
   for (const x of r1) md.push(`| ${x.file} | ${cell(x.path)} | ${cell(x.component)} | ${x.ok ? 'conforme' : '**écart**'} | ${cell(x.variant)} | ${cell(x.detail)} |`);
   if (!r1.length) md.push('| — | — | — | aucun bloc de composant trouvé | — | — |');
@@ -194,8 +199,10 @@ function diff(a, b, path) {
   let score = 0, first = null;
   const note = (m, w = 1) => { score += w; if (!first) first = m; };
   const lbl = (n) => `<${n.t}${n.p ? '.' + n.p : ''}>`;
-  if (a.t !== b.t) { note(`${path} : balise ${lbl(a)} au lieu de ${lbl(b)}`, 5); return { score, first }; }
+  // un sous-composant (bouton, lien…) imbriqué est comparé à part, contre ses propres variantes : ici seule sa présence compte,
+  // quel que soit son élément (la doc autorise par exemple un lien ou un bouton dans une mise en avant)
   if (a.b || b.b) { if (!!a.b !== !!b.b) note(`${path} : sous-composant ${a.b ? 'inattendu' : 'attendu'} ${lbl(a.b ? a : b)}`, 3); return { score, first }; }
+  if (a.t !== b.t) { note(`${path} : balise ${lbl(a)} au lieu de ${lbl(b)}`, 5); return { score, first }; }
   for (const m of b.c.filter((x) => !a.c.includes(x))) note(`${path} : classe ${m} manquante`);
   for (const e of a.c.filter((x) => !b.c.includes(x))) note(`${path} : classe ${e} en trop`);
   for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
