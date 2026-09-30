@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Mentions légales - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="#" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Mentions légales</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>Mentions légales</h1>
+                    <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
+                        <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+                        <ol>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-1" href="#hebergement">Hébergement</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-2" href="#protection-et-traitement-des-donnees-personnelles">Protection et traitement des données personnelles</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-3" href="#droit-d-acces-a-vos-donnees-et-droit-de-rectificat">Droit d'accès à vos données et droit de rectification</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-4" href="#le-simulateur-multi-prestations">Le simulateur multi-prestations</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-5" href="#informations-affichees-sur-vos-ressources-vos-droi">Informations affichées sur Vos ressources, Vos droits et Votre activité professionnelle</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-6" href="#evolution-du-portail-mises-a-jour">Evolution du portail /Mises à jour</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-7" href="#cookies">Cookies</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-8" href="#responsabilite">Responsabilité</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-9" href="#homologation-de-securite-du-portail">Homologation de sécurité du portail</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h2 id="hebergement" class="fr-mt-6v">Hébergement</h2>
+
+                    <p>Le portail mesdroitssociaux.gouv.fr est édité par la Caisse Centrale de la MSA.</p>
+                    <p>Siège social :</p>
+                    <p>Directeur de la publication : Le Directeur Général de la Caisse Centrale de la MSA</p>
+                    <p>Réalisation : Ce portail est réalisé par la Caisse Centrale de la MSA et le GIE iMSA</p>
+                    <p>(<a href="https://informatique.msa.fr" target="_blank" rel="noopener external" title="http://informatique.msa.fr/ - nouvelle fenêtre">http://informatique.msa.fr/</a>) avec le portail opensource LIFERAY (<a href="https://www.liferay.com/fr/home" target="_blank" rel="noopener external" title="https://www.liferay.com - nouvelle fenêtre">https://www.liferay.com</a>).</p>
+                    <p>Il est hébergé et géré par :</p>
+                    <h2 id="protection-et-traitement-des-donnees-personnelles" class="fr-mt-6v">Protection et traitement des données personnelles</h2>
+
+                    <h3>Le Portail Numérique des Droits Sociaux</h3>
+                    <h4>Identité et coordonnées de l'organisme</h4>
+                    <p>La Mutualité Sociale Agricole (MSA) met en œuvre un traitement automatisé de données à caractère personnel, dénommé « Portail Numérique des Droits Sociaux » dont la finalité est de donner aux personnes un accès centralisé à leurs droits sociaux.</p>
+                    <p>Caisse Centrale de la MSA A l'attention de la Déléguée à la Protection des Données (DPO) 19 rue de Paris 93000 BOBIGNY CEDEX</p>
+                    <h4>Finalités</h4>
+                    <p>Le traitement a pour objectifs de permettre à chaque personne :</p>
+                    <ul>
+                        <li>de consulter ses ressources,</li>
+                        <li>de disposer de relevé ou de synthèse,</li>
+                        <li>de consulter ses droits aux prestations sociales,</li>
+                        <li>de simuler les prestations sociales auxquelles elle est susceptible d'avoir droit,</li>
+                        <li>de recevoir les informations sur les droits aux prestations sociales des organismes qui gèrent cette personne,</li>
+                        <li>d'engager des démarches auprès des organismes assurant la gestion de ses prestations sociales.</li>
+                    </ul>
+                    <h4>Base légale</h4>
+                    <p>Le traitement est nécessaire au respect d'une obligation légale à laquelle la Mutualité Sociale Agricole est soumise.</p>
+                    <h4>Données traitées</h4>
+                    <p>Les catégories d'informations traitées sont les suivantes :</p>
+                    <ul>
+                        <li>les données d'identification,</li>
+                        <li>les données relatives aux ressources et à la situation professionnelle nécessaires à l'appréciation des droits sociaux,</li>
+                        <li>les données de connexion,</li>
+                        <li>les avis des usagers sur le portail.</li>
+                    </ul>
+                    <h4>Source des données</h4>
+                    <p>La Mutualité Sociale Agricole est amenée à collecter vos données personnelles directement (avis sur le portail) ou indirectement, dans les systèmes d'information des organismes sociaux auxquels vous êtes affiliés (l'Assurance Maladie tout régime, Caisse nationale d'allocations familiales, l'Assurance retraite, régimes de retraite complémentaire des salariés Agirc-Arrco, France Travail et dans le répertoire national commun de la protection sociale -RNCPS-).</p>
+                    <h4>Durée de conservation des données</h4>
+                    <p>Les informations pour lesquelles vous accédez au « Portail Numérique des Droits Sociaux » ne sont pas conservées après la déconnexion. Les informations relatives à votre avis sur le service sont conservées pendant six mois après l'achèvement des opérations d'exploitation. La conservation de vos autres données relatives aux traces de vos accès (données de connexion), qui sont enregistrées lors de l'utilisation du portail, ne peut excéder 2 mois après l'achèvement des opérations de suivi ou de gestion technique. La demande de signalements d'anomalie du Dispositif des Ressources Mensuelles (DRM) est conservée 4 ans. Les pièces justificatives jointes au signalement sont conservées pendant 1 an.</p>
+                    <h4>Destinataires des données</h4>
+                    <p>Les informations sont accessibles uniquement :</p>
+                    <ul>
+                        <li>aux usagers du portail numérique des droits sociaux, après authentification,</li>
+                        <li>aux agents des organismes de la mutualité sociale agricole chargés de l'assistance aux usagers, spécialement habilités, et uniquement dans la limite de ce qui est nécessaire à l'exercice de leurs missions.</li>
+                    </ul>
+                    <h4>Exercer vos droits</h4>
+                    <p>Conformément aux articles 15 et suivants du Règlement Général sur la protection des données (RGPD), vous disposez de droits d'accès, de rectification, d'effacement et de limitation des données vous concernant.</p>
+                    <p>Pour le portail MesDroitsSociaux, ces droits s'exercent auprès de la Caisse centrale de la mutualité sociale agricole (CCMSA) ou de son délégué à la protection des données.</p>
+                    <p>En raison du caractère légal et obligatoire des traitements mis en œuvre, les droits d'opposition et à la portabilité ne s'appliquent pas.</p>
+                    <p>En cas de difficultés dans l'application des droits énoncés ci-dessus, vous pouvez adresser une réclamation à la Commission Nationale Informatique et Libertés (CNIL) – 3, Place de Fontenoy TSA – 80715 – 75334 PARIS CEDEX07</p>
+                    <h3>Dispositif relatif aux ressources mensuelles</h3>
+                    <p>Le décret n° 2025-1288 du 22 décembre 2025 relatif au traitement de données à caractère personnel portant sur la transmission des ressources des personnes physiques dans le champ des politiques sociales prévoit la mise en œuvre d'un traitement dénommé « dispositif relatif aux ressources mensuelles ».</p>
+                    <p>La responsabilité de ce traitement est exercée conjointement par le ministère chargé de la Sécurité sociale, représenté par la mission interministérielle chargée du pilotage du système de collecte et d'utilisation des données sociales (MIDS) et la Caisse nationale d'assurance vieillesse (CNAV).</p>
+                    <h4>Base légale et finalités</h4>
+                    <p>Ce traitement s'inscrit dans le cadre d'une obligation légale et d'une mission d'intérêt public.</p>
+                    <p>Il poursuit une approche similaire au dispositif « Dites-le-nous une fois » mis en place par la direction interministérielle du numérique (DINUM) en simplifiant les démarches des administrés. Au sein de la sphère sociale, il vise à faciliter les échanges de données entre les destinataires autorisés par le décret pour éviter aux assurés de fournir, dans le cadre d'une démarche d'attribution ou de maintien d'allocations, de prestations ou d'aides, d'informations déjà détenues par les organismes de la sphère sociale. Il permet également d'assurer une information des assurés par un affichage des données qui les concernent via le portail numérique des droits sociaux (PNDS).</p>
+                    <h4>Catégories de données traitées</h4>
+                    <p>Les données traitées concernent les assurés sociaux, les demandeurs ou allocataires d'aides et les membres de leur foyer. Ces données ont notamment trait à : l'identification des personnes, l'identification de l'employeur ou des organismes versant des autres revenus, les informations d'ordre économique et financier (salaire, aides et prestations reçues, éléments du contrat de travail etc.).</p>
+                    <h4>Durée de conservation des données</h4>
+                    <p>Les données sont conservées pendant 37 mois.</p>
+                    <h4>Destinataires des données</h4>
+                    <p>Les organismes destinataires sont listés dans le décret. Il s'agit principalement des organismes nationaux en charge du pilotage d'un régime de base d'assurance maladie ou d'assurance vieillesse, la caisse nationale des allocations familiales, la Caisse centrale de la mutualité agricole ainsi que certains services de l'État ou des organismes sous tutelle de l'État (notamment France Travail, l'Agence de service et de paiement, la Caisse des consignations, le GIP gérant les demandes de logement social) en vue de l'accomplissement de leurs missions dans le champ de la sphère sociale (notamment la gestion des prestations payées par les CAF, les CPAM ou d'un régime de retraite ou les prestations chômage).</p>
+                    <h4>Droits des personnes concernées sur leurs données</h4>
+                    <p>Les personnes concernées disposent de droits d'accès, de rectification des données et de limitation du traitement des données les concernant.</p>
+                    <p>Toutefois, le droit d'opposition ne s'applique pas au traitement sauf dans le cas des campagnes de non-recours à une prestation ou à un droit. Lorsque les personnes qui ont été informées de leur droit au bénéfice éventuel d'une prestation ou d'un droit ne souhaitent pas en bénéficier, le droit d'opposition à la participation à une prochaine campagne de non-recours de la dite prestation ou du dit droit peut s'exercer auprès de la Caisse nationale d'assurance vieillesse. L'échange entre l'usager et l'organisme gérant la prestation ou le droit reste à privilégier.</p>
+                    <p>Pour exercer l'un de ces droits ou obtenir davantage d'informations sur le traitement, les personnes peuvent s'adresser, en justifiant de leur identité, à la CNAV :</p>
+                    <ul>
+                        <li>Acteur : CNAV</li>
+                        <li><a href="mailto:informatiqueetlibertes@cnav.fr">Contact : informatiqueetlibertes@cnav.fr</a></li>
+                        <li>Support <a href="https://www.lassuranceretraite.fr" target="_blank" rel="noopener external" title="www.lassuranceretraite.fr - nouvelle fenêtre">www.lassuranceretraite.fr</a></li>
+                    </ul>
+                    <p>Si, après sollicitation du responsable de traitement, vous considérez que vos droits ne sont pas respectés, vous pouvez déposer une réclamation auprès de la Commission nationale de l'informatique et des libertés (CNIL).</p>
+                    <h2 id="droit-d-acces-a-vos-donnees-et-droit-de-rectificat" class="fr-mt-6v">Droit d'accès à vos données et droit de rectification</h2>
+
+                    <h3>France Connect et votre numéro NIR</h3>
+                    <p>Pour exercer vos droits au sujet de la conservation de votre identifiant FranceConnect et de votre NIR, adressez-vous à la MSA :</p>
+                    <p>Caisse Centrale de la MSA</p>
+                    <p>A l'attention de la Déléguée à la Protection des Données (DPO)</p>
+                    <p>19 rue de Paris</p>
+                    <p>93000 BOBIGNY CEDEX</p>
+                    <h3>Vos prestations</h3>
+                    <p>Pour exercer vos droits au sujet d’une prestation en particulier, il faut vous adresser à l'organisme de protection sociale qui vous gère pour cette prestation (dont vous trouverez les coordonnées dans la bulle de prestations concernées). Les demandes devront être accompagnées d’une copie d’un titre d’identité en cours de validité.</p>
+                    <h3>Données DSN et votre activité professionnelle</h3>
+                    <p>Pour exercer vos droits d’accès et de rectification sur les données issues de la déclaration sociale nominative (uniquement pour les personnes ayant une activité salariale).</p>
+                    <p>Le tableau ci-après vous présente l’organisme auquel vous pouvez vous adresser en fonction de la catégorie de données et selon quelles modalités.</p>
+                    <p>Si vous souhaitez faire rectifier une donnée relative à votre rémunération, à un arrêt de travail ou au motif de rupture du contrat de travail, rapprochez-vous de votre employeur.A défaut d’une réponse de sa part, contactez l’organisme indiqué dans le tableau ci-après selon la nature du problème et celui-ci prendra s’il y a lieu contact avec votre employeur.</p>
+                    <p>Afin de faciliter l’examen de votre demande, veuillez indiquer dans votre courrier :</p>
+                    <ul>
+                        <li>votre numéro de sécurité sociale</li>
+                        <li>le ou les employeurs objet de votre requête</li>
+                        <li>la ou les durée(s) souhaitée(s)</li>
+                    </ul>
+                    <p>Nous vous remercions également de joindre la photocopie d’un titre d’identité.</p>
+                    <p>Adresse utiles :</p>
+                    <p>CNAV, à l’attention du service relation CNIL : 110 av. de Flandre 75951 PARIS CEDEX 19</p>
+                    <p>CCMSA : Luminem, 19 Rue de Paris - CS 50070 - 93013 Bobigny Cedex</p>
+                    <p>France Travail (Direction générale) : 1 av. du docteur Gley 75020 PARIS</p>
+                    <div class="fr-table fr-table--multiline" id="table-dsn-component">
+                        <div class="fr-table__wrapper">
+                            <div class="fr-table__container">
+                                <div class="fr-table__content">
+                                    <table id="table-dsn">
+                                        <caption>
+                                            Organisme à contacter selon la catégorie de données issues de la déclaration sociale nominative
+                                        </caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">
+                                                    Catégorie de données
+                                                </th>
+                                                <th scope="col">
+                                                    A qui s’adresser ?
+                                                </th>
+                                                <th scope="col">
+                                                    Comment ?
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="table-dsn-row-key-1" data-row-key="1">
+                                                <td>
+                                                    Données permettant de vous identifier (noms, prénoms, date et lieu de naissance, numéro de sécurité sociale)
+                                                </td>
+                                                <td>
+                                                    A la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-2" data-row-key="2">
+                                                <td>
+                                                    Données relatives à votre emploi et à votre contrat de travail
+                                                </td>
+                                                <td>
+                                                    A la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-3" data-row-key="3">
+                                                <td>
+                                                    Données relatives à votre rémunération
+                                                </td>
+                                                <td>
+                                                    A la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-4" data-row-key="4">
+                                                <td>
+                                                    Données relatives aux dates d’arrêt de travail pour maladie, maternité, paternité ou adoption
+                                                </td>
+                                                <td>
+                                                    Votre Caisse primaire d’assurance maladie (CPAM) ou votre Caisse générale de sécurité sociale dans les DOM (CGSS) ou, si vous êtes salarié agricole, la Caisse centrale de la mutualité sociale agricole (CCMSA)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au directeur de votre CPAM ou de votre CGSS ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de la CCMSA
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-5" data-row-key="5">
+                                                <td>
+                                                    Données relatives à la fin de contrat de travail
+                                                </td>
+                                                <td>
+                                                    Votre ancien employeur
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au service concerné
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-6" data-row-key="6">
+                                                <td>
+                                                    Données relatives à vos cotisations retraites et l’alimentation du compte personnel pénibilité
+                                                </td>
+                                                <td>
+                                                    A la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, la Caisse centrale de la mutualité sociale agricole (CCMSA)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » suivant que vous dépendez de la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de la CCMSA
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-7" data-row-key="7">
+                                                <td>
+                                                    Données relatives à vos cotisations retraites complémentaires
+                                                </td>
+                                                <td>
+                                                    L’Association pour le régime de retraite complémentaire des salariés (ARRCO) ou à l'Association générale des institutions de retraite des cadres (AGIRC) ou, si vous êtes salarié agricole, la Caisse de retraite complémentaire agricole (AGRICA) ou la caisse dont vous dépendez
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » suivant que vous dépendez de l’AGIRC ou de ARRCO, si vous êtes salarié agricole, au correspondant « informatique et libertés » de l’AGRICA ou de la caisse dont vous dépendez
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-8" data-row-key="8">
+                                                <td>
+                                                    Données relatives à la prévoyance
+                                                </td>
+                                                <td>
+                                                    Votre organisme complémentaire de prévoyance ou, la Caisse de retraite complémentaire agricole (AGRICA) ou la caisse dont vous dépendez
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de l’organisme de prévoyance dont vous dépendez ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de l’AGRICA ou de la caisse dont vous dépendez
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-9" data-row-key="9">
+                                                <td>
+                                                    Données relatives à l’alimentation du compte personnel de formation
+                                                </td>
+                                                <td>
+                                                    La Caisse des dépôts et consignation
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatiques et libertés » de la Caisse des dépôts et consignation
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-10" data-row-key="10">
+                                                <td>
+                                                    Données relatives au calcul des congés payés des salariés affiliés à AUDIENS
+                                                </td>
+                                                <td>
+                                                    Caisse des congés payés AUDIENS
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatiques et libertés » de la Caisse des congés payés AUDIENS
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-11" data-row-key="11">
+                                                <td>
+                                                    Données relatives à un régime spécial
+                                                </td>
+                                                <td>
+                                                    Votre régime spécial (CNIEG, CAMIEG, CRPCEN et CPRPF)
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » du régime spécial dont vous dépendez
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-12" data-row-key="12">
+                                                <td>
+                                                    Données relatives à l’IRCANTEC
+                                                </td>
+                                                <td>
+                                                    IRCANTEC
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de l’IRCANTEC dont vous dépendez
+                                                </td>
+                                            </tr>
+                                            <tr id="table-dsn-row-key-13" data-row-key="13">
+                                                <td>
+                                                    Données relatives à la CRPNPAC
+                                                </td>
+                                                <td>
+                                                    CRPNPAC
+                                                </td>
+                                                <td>
+                                                    Adresser un courrier au correspondant « informatique et libertés » de la CRPNPAC dont vous dépendez
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="le-simulateur-multi-prestations" class="fr-mt-6v">Le simulateur multi-prestations</h2>
+
+                    <p>Le simulateur multi-prestations du Portail peut être pré-alimenté d’informations transmises par les différents Organismes de Protection Sociale (OPS) partenaires. Ces informations ne sont pas stockées et vous pouvez les modifier. Elles vous sont présentées dans l’unique but de vous faciliter la saisie et la navigation dans le simulateur.</p>
+                    <p>Le simulateur de prestations sociales fourni par le Portail MesDroitsSociaux.gouv.fr utilise un moteur de calcul OpenFisca (<a href="https://openfisca.org/fr/" target="_blank" rel="noopener external" title="https://openfisca.org/fr// - nouvelle fenêtre">https://openfisca.org/fr//</a>) pour évaluer vos droits à plusieurs dizaines d’aides sociales. Le moteur de calcul OpenFisca libre et ouvert qui permet de modéliser le système socio-fiscal de manière collaborative et transparente. Ce logiciel est utilisé par des chercheurs en économie et certains services publics, à partir d’une licence AGPL (<a href="https://choosealicense.com/licenses/agpl-3.0/" target="_blank" rel="noopener external" title="https://choosealicense.com/licenses/agpl-3.0/ - nouvelle fenêtre">https://choosealicense.com/licenses/agpl-3.0/</a>)</p>
+                    <h2 id="informations-affichees-sur-vos-ressources-vos-droi" class="fr-mt-6v">Informations affichées sur Vos ressources, Vos droits et Votre activité professionnelle</h2>
+
+                    <p>Le portail mesdroitssociaux.gouv.fr interroge l’ensemble des organismes de la sphère sociale qui vous connaissent pour vous présenter vos informations personnelles. Il utilise essentiellement le « dispositif relatif aux ressources mensuelles » dont les mentions sont données dans les mentions légales/Protection et traitements des données personnelles de ce site. Ces informations ne sont pas conservées par le Portail.</p>
+                    <h2 id="evolution-du-portail-mises-a-jour" class="fr-mt-6v">Evolution du portail /Mises à jour</h2>
+
+                    <p>L'éditeur du portail se réserve la possibilité d'améliorer, d'enrichir et de modifier tout élément ou service mis en ligne.</p>
+                    <p>Il se réserve également le droit de modifier ou de mettre à jour tout ou partie des présentes conditions générales d'utilisation. Ces modifications ou mises à jour sont applicables et s'imposent à l'utilisateur dès leur mise en ligne. Il appartient donc à celui-ci de consulter régulièrement les présentes conditions générales d'utilisation pour se tenir informé, en cliquant sur le lien « Mentions légales » accessible sur chaque pied de page du portail.</p>
+                    <p>Date de mise à jour : 18/06/2018</p>
+                    <h2 id="cookies" class="fr-mt-6v">Cookies</h2>
+
+                    <h3>Qu'est-ce qu'un cookie ?</h3>
+                    <p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette ou mobile) lors de la visite d'un site ou lors de la consultation d'une publicité. Il contient plusieurs données : le nom du serveur qui l'a déposé, un identifiant sous forme de numéro unique, éventuellement une date d'expiration.</p>
+                    <p>Les cookies ont pour but de collecter des informations relatives à votre navigation sur les sites et de vous adresser des services personnalisés.</p>
+                    <p>Afin de mieux connaître les modes de navigation sur ce portail nous collectons des données statistiques via le service stat@gouv.</p>
+                    <p>Les cookies ont une durée de validité de 6 mois maximum. Votre consentement sera de nouveau sollicité à l'issue de ce délai par l'affichage du bandeau d'information.</p>
+                    <h2 id="responsabilite" class="fr-mt-6v">Responsabilité</h2>
+
+                    <p>Il est précisé aux utilisateurs que les informations présentées sur ce portail sont des informations générales et non exhaustives. Elles sont communiquées à titre indicatif et ne sauraient engager la responsabilité de l'éditeur du portail.</p>
+                    <p>Le portail propose quelques liens vers d'autres sites officiels. Les contenus de ces sites dont les adresses sont régulièrement vérifiées ne sauraient engager la responsabilité de l'éditeur du portail.</p>
+                    <p>Les informations se trouvant sur ce portail Internet ont une valeur informative et sont susceptibles d'évoluer notamment en fonction des évolutions législatives et réglementaires ou de la ligne éditoriale de ce portail Internet.</p>
+                    <p>En aucun cas, ces informations n'ont valeur de décision. L’éditeur du portail ne peut être tenu pour responsable de l'interprétation que vous pourriez faire des informations contenues dans le portail mesdroitssociaux.gouv.fr.</p>
+                    <h2 id="homologation-de-securite-du-portail" class="fr-mt-6v">Homologation de sécurité du portail</h2>
+
+                    <h3>Contexte</h3>
+                    <p>Le portail numérique des droits sociaux PNDS permet à tous les assurés sociaux:</p>
+                    <ul>
+                        <li>d’accéder à l’ensemble de leurs droits sociaux dans les domaines de la santé, de la retraite, du chômage, du logement, de la solidarité, de la famille et de l’activité professionnelle à partir d’un point d’entrée unique ;</li>
+                        <li>de simuler leurs droits aux prestations ;</li>
+                        <li>de consulter des rappels pour effectuer leurs démarches en ligne ;</li>
+                        <li>de donner leur avis sur le portail ;</li>
+                    </ul>
+                    <h3>Périmètre fonctionnel</h3>
+                    <p>L’homologation porte sur le portail <a href="https://www.mesdroitssociaux.gouv.fr/accueil/" target="_blank" rel="noopener external" title="www.mesdroitssociaux.gouv.fr. - nouvelle fenêtre">www.mesdroitssociaux.gouv.fr.</a>L’homologation de sécurité porte sur l’ensemble des fonctionnalités du portail existantes, à savoir l’accès au portail, la consultation de ses données personnelles, les fonctions de simulation et d’accès aux démarches en ligne.</p>
+                    <p>Elle porte sur l’ensemble des fonctionnalités existantes mais aussi sur les services mis en ligne dans les prochains mois.</p>
+                    <h3>Homologation du portail Mes droits sociaux</h3>
+                    <p>Conformément au décret N°2010-112 du 2 février 2010 relatif à la sécurité des informations échangées par voie électronique et à l’arrêté du 6 mai 2010, dit Arrêté RGS, portant approbation du RGS,</p>
+                    <p>Vu la délibération CNIL n°2018-122 du 5 avril 2018 portant avis sur un projet de décret relatif à la mise en œuvre d'un traitement de données à caractère personnel dénommé "portail numérique des droits sociaux (PNDS)",</p>
+                    <p>La commission d’homologation de sécurité de la MSA en date du 04 Septembre 2024 délivre une homologation de sécurité du portail numérique des droits sociaux pour une durée de 36 mois à compter du 04 Septembre 2024, sauf livraison anticipée d’un nouveau service de sensibilité élevée.</p>
+                    <p>La présente homologation de sécurité sera réévaluée à l’issue du délai sus indiqué.</p>
+                    <p class="fr-mt-6v">Si vous ne trouvez pas de réponse à votre question :</p>
+                    <p>
+                        <a href="../mds-contact/index.html" id="link-contact" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Contactez-nous</a>
+                    </p>
+                    <p>
+                        <a href="../mds-accueil/index.html" class="fr-link fr-icon-arrow-left-line fr-link--icon-left">Revenir à l'accueil</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>

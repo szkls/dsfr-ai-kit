@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Accessibilité - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="#" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Accessibilité</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>Accessibilité</h1>
+                    <p class="fr-text--lead">L’accessibilité du site mesdroitssociaux.gouv.fr a été auditée le 18 Novembre 2024 sur la base du RGAA 4.1. Le site était partiellement conforme, avec un taux de 51,90 %. Suite à des travaux sur le 4ème trimestre 2025, le site est partiellement conforme, avec un taux de 73,08 %. La moyenne des pages du site a un taux de 86,75 %. La page "Vos évènements de vie" a un taux de 87,50 %, "Votre activité professionnelle" a un taux de 84,78%. Voici le taux d’accessibilité de nos simulateurs : Le simulateur "RSA et Prime d'Activité" est à 100 % d’accessibilité, Le simulateur "toutes prestations" est à 81,13 % d’accessibilité, Les simulateurs “La Complémentaire Santé Solidaire (CSS)”, “L’allocation aux Adultes Handicapées (AAH)” et “Les Aides au logement” sont à 98,08 % d’accessibilité.</p>
+                    <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
+                        <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+                        <ol>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-1" href="#qu-est-ce-que-l-accessibilite-numerique">Qu'est-ce que l'accessibilité numérique?</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-2" href="#notre-politique-d-accessibilite">Notre politique d’accessibilité</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-3" href="#declaration-d-accessibilite">Déclaration d'accessibilité</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-4" href="#nous-contacter">Nous contacter</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-5" href="#defenseur-des-droits">Défenseur des droits</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h2 id="qu-est-ce-que-l-accessibilite-numerique" class="fr-mt-6v">Qu'est-ce que l'accessibilité numérique?</h2>
+
+                    <p>Un site web accessible est un site qui permet à tous les internautes d'accéder à ses contenus sans difficulté, y compris aux personnes qui présentent un handicap et utilisent des logiciels ou matériels spécialisés.</p>
+                    <p>Un site accessible permet par exemple de :</p>
+                    <ul>
+                        <li>Naviguer avec des synthèses vocales ou des plages braille (notamment utilisées par les internautes aveugles ou malvoyants).</li>
+                        <li>Personnaliser l'affichage du site selon ses besoins (grossissement des caractères, modification des couleurs, etc.).</li>
+                        <li>Naviguer sans utiliser la souris, avec le clavier uniquement ou via un écran tactile.</li>
+                        <li>Pour cela, le site doit respecter des normes rigoureuses lors de sa conception et de ses mises à jour.</li>
+                    </ul>
+                    <h2 id="notre-politique-d-accessibilite" class="fr-mt-6v">Notre politique d’accessibilité</h2>
+
+                    <p>La loi n° 2005-102 du 11 février 2005 "pour l'égalité des droits et des chances, la participation et la citoyenneté des personnes handicapées" instaure au titre de l’article 47, l’obligation pour les services de communication publique en ligne des services de l'Etat, des collectivités territoriales et des établissements publics qui en dépendent d’être accessibles aux personnes handicapées. Cette obligation légale a été réaffirmée par la loi n°2016-1321 du 7 octobre 2016 pour une République numérique.</p>
+                    <p>En ce sens, l’État, représenté par la Direction de la Sécurité Sociale (DSS) porteur du site mesdroitssociaux.gouv.fr et la Mutualité Sociale Agricole (MSA) son opérateur se sont donc engagés à rendre ce site conforme aux critères RGAA. Ainsi, nous nous engageons à maintenir l’accessibilité du site au fil des versions.</p>
+                    <h2 id="declaration-d-accessibilite" class="fr-mt-6v">Déclaration d'accessibilité</h2>
+
+                    <p>Mes Droits Sociaux s’engage à rendre accessible son site internet conformément à l’article 47 de la loi n°2005-102 du 11 février 2005.</p>
+                    <p>À cette fin, Mes Droits Sociaux met en œuvre la stratégie et les actions suivantes :</p>
+                    <ul>
+                        <li><a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/app/resources/files/schema_pluriannuel_accessibilite_numerique_PNDS_2025-2027.pdf" target="_blank" rel="noopener external" title="Schéma pluriannuel d’accessibilité 2025-2027.pdf - nouvelle fenêtre">Schéma pluriannuel d’accessibilité 2025-2027.pdf</a></li>
+                        <li><a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/app/resources/files/plan_d_actions_de_mise_en_accessibilite_2025.pdf" target="_blank" rel="noopener external" title="Plan d’actions de mise en accessibilité 2025.pdf - nouvelle fenêtre">Plan d’actions de mise en accessibilité 2025.pdf</a></li>
+                    </ul>
+                    <p>Cette déclaration d’accessibilité s’applique à <a href="https://www.mesdroitssociaux.gouv.fr" target="_blank" rel="noopener external" title="mesdroitssociaux.gouv.fr - nouvelle fenêtre">mesdroitssociaux.gouv.fr</a></p>
+                    <h3>État de conformité</h3>
+                    <p><a href="https://www.mesdroitssociaux.gouv.fr" target="_blank" rel="noopener external" title="mesdroitssociaux.gouv.fr - nouvelle fenêtre">mesdroitssociaux.gouv.fr</a> est partiellement conforme avec le référentiel général d’amélioration de l’accessibilité (RGAA), version 4 en raison des non-conformités et des dérogations énumérées ci-dessous.</p>
+                    <h4>Résultats des tests</h4>
+                    <p>L’audit de conformité réalisé par Mes Droits Sociaux révèle que :</p>
+                    <ul>
+                        <li>73,08 % des critères du RGAA version 4.1 sont respectés.</li>
+                    </ul>
+                    <h3>Contenu non accessibles</h3>
+                    <p>Les contenus listés ci-dessous ne sont pas accessibles pour les raisons suivantes.</p>
+                    <h4>Non-conformités</h4>
+                    <h5>Très impactant</h5>
+                    <ul>
+                        <li>Certains formulaires ne permettent pas le remplissage automatique des champs avec les données de l’utilisateur ;</li>
+                        <li>Le lien d’accès rapide ne fonctionne pas dans certaines pages ;</li>
+                        <li>Des pages présentent des problèmes dans le parcours de tabulation ;</li>
+                        <li>Des champs de formulaires n'ont pas d'étiquette correctement liée ;</li>
+                        <li>Des fonctionnalités JavaScript ne sont pas compatibles avec les technologies d’assistance ou ne sont pas accessibles au clavier (notamment des fenêtres modales, des contenus qui s’affichent et se masquent), ou font un usage inapproprié de propriétés ARIA ;</li>
+                        <li>Des messages de statut ne sont pas restitués par les technologies d’assistance ;</li>
+                        <li>Des contenus informatifs sont ignorés par les technologies d’assistance ;</li>
+                        <li>Des images porteuses d’information n’ont pas d’alternative ;</li>
+                        <li>Des images porteuses d’informations complexes nécessitent une description détaillée ;</li>
+                        <li>Des pages contiennent des informations insérées en CSS qui ne sont pas restituées par les technologies d’assistance ;</li>
+                        <li>Des aides à la saisie sont absentes pour certains champs qui attendent un format particulier.</li>
+                    </ul>
+                    <h5>Impactant</h5>
+                    <ul>
+                        <li>Des indications visuelles de prise de focus ne sont pas suffisamment contrastées ou sont désactivées ;</li>
+                        <li>Des textes et des composants d’interfaces ont des contrastes insuffisants ;</li>
+                        <li>Certains textes ayant une couleur de fond définie n’ont pas de couleur de police associée ;</li>
+                        <li>Des informations sont véhiculées uniquement par la forme ;</li>
+                        <li>Des pages présentent des pertes d’information et de lisibilité lorsqu’elles sont zoomées à 200% ou lorsque des propriétés d’espacement de texte sont appliquées ;</li>
+                        <li>Des contenus présentent des pertes d’informations lorsque les pages sont zoomées à 400% ;</li>
+                        <li>Des liens n'ont pas d’intitulé ou pas d’intitulé explicite ;</li>
+                        <li>Des tableaux sont utilisés à des fins de présentation mais ne sont pas déclarés comme tels ;</li>
+                        <li>Des tableaux ont des cellules d’en-têtes qui ne sont pas correctement définis ;</li>
+                        <li>Des pages n’ont pas de titre de page pertinent ;</li>
+                        <li>Des pages font usage de balises à des fins de présentation (par exemple des paragraphes vides et/ou des textes non structurés dans des balises de paragraphes) ;</li>
+                        <li>Des pages ont une hiérarchie de titres non pertinente (titres manquants ou mal définis) ;</li>
+                        <li>La structure et/ou les zones principales des pages sont mal définies ;</li>
+                        <li>Des suites d’éléments ne sont pas structurées avec des listes ;</li>
+                        <li>Des citations ne sont pas définies comme telles ;</li>
+                        <li>Des balises ou attributs HTML de présentation sont présents dans certaines pages ;</li>
+                        <li>Dans certaines pages, il manque un système de navigation alternatif au plan du site ;</li>
+                        <li>Des actions sont déclenchées au moyen d'un dispositif de pointage qui ne peuvent pas être annulées (impossible d'annuler un clic sur un lien) ;</li>
+                        <li>Des changements de langue dans le texte ne sont pas signalés ;</li>
+                        <li>Des images de décoration ne sont pas ignorées des technologies d’assistance.</li>
+                    </ul>
+                    <h4>Dérogations pour charge disproportionnée</h4>
+                    <p>Dérogation pour la page “Vos droits” du site qui va faire l’objet d’une refonte en 2026.</p>
+                    <p>Dans l’attente, si besoin, l’usager peut solliciter les partenaires suivants :</p>
+                    <ul>
+                        <li>France travail, pour la bulle Autour de l’emploi, via son site <a href="https://www.francetravail.fr/accueil/" target="_blank" rel="noopener external" title="www.francetravail.fr - nouvelle fenêtre">www.francetravail.fr</a>/accueil/</li>
+                        <li>Sa Caisse d’Allocations Familiales ou sa Caisse de Mutualité Sociale Agricole, pour les bulles Solidarité, Logement, Famille, via le site <a href="https://www.caf.fr" target="_blank" rel="noopener external" title="www.caf.fr - nouvelle fenêtre">www.caf.fr</a> ou le site <a href="https://www.msa.fr" target="_blank" rel="noopener external" title="www.msa.fr - nouvelle fenêtre">www.msa.fr</a></li>
+                        <li>Le GIP Info Retraite, pour la bulle Retraite, via son site <a href="https://www.info-retraite.fr/portail-info/home.html" target="_blank" rel="noopener external" title="www.info-retraite.fr - nouvelle fenêtre">www.info-retraite.fr</a>/portail-info/home.html</li>
+                        <li>Sa Caisse Primaire d’Assurance Maladie ou sa Caisse de Mutualité Sociale Agricole pour la bulle Maladie, via le site <a href="https://www.ameli.fr" target="_blank" rel="noopener external" title="www.ameli.fr - nouvelle fenêtre">www.ameli.fr</a> ou le site <a href="https://www.msa.fr" target="_blank" rel="noopener external" title="www.msa.fr - nouvelle fenêtre">www.msa.fr</a></li>
+                    </ul>
+                    <h4>Contenu non soumis à l’obligation d’accessibilité</h4>
+                    <ul>
+                        <li>Module de connexion France Connect (service tiers) ;</li>
+                        <li>Gestionnaire de cookies (service tiers) ;</li>
+                        <li>Lecteur Dailymotion (service tiers) ;</li>
+                        <li>TOLD (service tiers). Le contenu est consultable mais la langue principale est déclaré en anglais.</li>
+                    </ul>
+                    <h3>Établissement de cette déclaration d’accessibilité</h3>
+                    <p>Cette déclaration a été établie le 02 Janvier 2025. Elle a été mise à jour le 26 juin 2025.</p>
+                    <h4>Technologies utilisées pour la réalisation du site</h4>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h4>Environnement de test</h4>
+                    <p>Les vérifications de restitution de contenus ont été réalisées sur la base de la combinaison fournie par la base de référence du RGAA, avec les versions suivantes :</p>
+                    <ul>
+                        <li>Firefox 132.0.2 et NVDA 2024 ;</li>
+                        <li>Firefox 132.0.2 et JAWS 2023 ;</li>
+                        <li>Safari 17.5 et VoiceOver (mac OS Sonoma)</li>
+                    </ul>
+                    <h4>Outils pour évaluer l’accessibilité</h4>
+                    <p>Les outils de vérification du code suivants ont été utilisés afin de vérifier la conformité aux tests du RGAA :</p>
+                    <ul>
+                        <li>Feuilles CSS dédiés ;</li>
+                        <li>Extensions Web Developer ;</li>
+                        <li>Extensions HeadingsMaps ;</li>
+                        <li>Color Contrast Analyser</li>
+                    </ul>
+                    <h4>Pages du site ayant fait l'objet de la vérification de conformité</h4>
+                    <ul>
+                        <li>Accueil : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/ - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/</a></li>
+                        <li>Contact : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/contactFooter" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/contactFooter - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/contactFooter</a></li>
+                        <li>Formulaire de contact : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/formulaireContact" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/formulaireContact - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/formulaireContact</a></li>
+                        <li>Mentions légales : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/mentionLegaleFooter" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/mentionLegaleFooter - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/mentionLegaleFooter</a></li>
+                        <li>Accessibilité : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/accessibilite" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/accessibilite - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/accessibilite</a></li>
+                        <li>Plan du site : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/planSiteFooter" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/planSiteFooter - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/planSiteFooter</a></li>
+                        <li>Foire aux questions : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/foireAuxQuestionsFooter" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/foireAuxQuestionsFooter - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/foireAuxQuestionsFooter</a></li>
+                        <li>Qui sommes-nous ? : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/qui-sommes-nous" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/qui-sommes-nous - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/qui-sommes-nous</a></li>
+                        <li>Vos services : <a href="https://www.mesdroitssociaux.gouv.fr/services" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/services - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/services</a></li>
+                        <li>Vos événements de vie : <a href="https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/accueil" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/accueil - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/accueil</a></li>
+                        <li>Parcours décès : <a href="https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/parcours-deces" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/parcours-deces - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/parcours-deces</a></li>
+                        <li>Les tutos vidéo : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/les-tutos-videos" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/les-tutos-videos - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/les-tutos-videos</a></li>
+                        <li>Vos droits : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits</a></li>
+                        <li>Autour de l'emploi : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits</a></li>
+                        <li>Droits/Santé : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/vos-droits</a></li>
+                        <li>Vos ressources : <a href="https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil</a></li>
+                        <li>Votre activité professionnelle : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/votre-activite-professionnelle" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/votre-activite-professionnelle - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/votre-activite-professionnelle</a></li>
+                        <li>Vos rappels : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/vos-rappels" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/vos-rappels - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/vos-rappels</a></li>
+                        <li>Vos signalements : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/vos-signalements" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/vos-signalements - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/vos-signalements</a></li>
+                        <li>Signalement d'erreur : <a href="https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/vos-ressources/accueil</a> (Accessible depuis le lien "Signaler d'autres erreurs" et "Signaler un employeur manquant")</li>
+                        <li>Accueil des simulateurs : <a href="https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil</a></li>
+                        <li>Simulateur - Toutes les prestations : <a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-foyer" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-foyer - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-foyer</a></li>
+                        <li>Simulateur - Les Aides au Logement : <a href="https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-logement" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-logement - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-logement</a></li>
+                        <li>Simulateur - RSA et la Prime d'activité : <a href="https://www.mesdroitssociaux.gouv.fr/vos-simulateurs/#/rsa-pa/foyer" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/vos-simulateurs/#/rsa-pa/foyer - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/vos-simulateurs/#/rsa-pa/foyer</a></li>
+                        <li>Simulateur Victimes de violences conjugales : <a href="https://www.mesdroitssociaux.gouv.fr/avvc/" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/avvc/ - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/avvc/</a></li>
+                        <li>Victimes de violences conjugales : <a href="https://www.mesdroitssociaux.gouv.fr/accueil/actualites/violences-conjugales-demander-une-aide-financiere-2025-01-02" target="_blank" rel="noopener external" title="https://www.mesdroitssociaux.gouv.fr/accueil/actualites/violences-conjugales-demander-une-aide-financiere-2025-01-02 - nouvelle fenêtre">https://www.mesdroitssociaux.gouv.fr/accueil/actualites/violences-conjugales-demander-une-aide-financiere-2025-01-02</a></li>
+                    </ul>
+                    <h3>Retour d’information et contact</h3>
+                    <p>Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez contacter le responsable de Mes Droits Sociaux pour être orienté vers une alternative accessible ou obtenir le contenu sous une autre forme.</p>
+                    <ul>
+                        <li><a href="https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/formulaireContact" target="_blank" rel="noopener external" title="Envoyer un message : lien vers le formulaire - nouvelle fenêtre">Envoyer un message : lien vers le formulaire</a></li>
+                        <li><a href="mailto:contact-accessibilite@mesdroitssociaux.gouv.fr">Contacter contact-accessibilite@mesdroitssociaux.gouv.fr</a></li>
+                    </ul>
+                    <h3>Voies de recours</h3>
+                    <p>Si vous constatez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, que vous nous le signalez et que vous ne parvenez pas à obtenir une réponse de notre part, vous êtes en droit de faire parvenir vos doléances ou une demande de saisine au Défenseur des droits.</p>
+                    <p>Plusieurs moyens sont à votre disposition :</p>
+                    <ul>
+                        <li>Écrire un message au Défenseur des droits</li>
+                        <li>Contacter le délégué du Défenseur des droits dans votre région</li>
+                        <li>Envoyer un courrier par la poste (gratuit, ne pas mettre de timbre) : Défenseur des droits Libre réponse 71120 75342 Paris CEDEX 07</li>
+                    </ul>
+                    <h2 id="nous-contacter" class="fr-mt-6v">Nous contacter</h2>
+
+                    <p>Nous nous engageons à maintenir l’accessibilité du site. Toutefois si vous rencontrez des difficultés lors de navigation ou lors d’accès à un contenu ou à une fonctionnalité du site, n’hésitez pas à nous informer.</p>
+                    <p>Envoyez-nous un courriel à contact-accessibilite@mesdroitssociaux.gouv.fr</p>
+                    <h2 id="defenseur-des-droits" class="fr-mt-6v">Défenseur des droits</h2>
+
+                    <h3>Rubrique « Défenseur des droits »</h3>
+                    <p>Si vous constatez un défaut d’accessibilité qui vous empêche d’accéder à un contenu ou une fonctionnalité du site, que vous nous en informez et que vous ne parvenez pas à obtenir une réponse rapide de notre part, vous êtes en droit de faire parvenir vos doléances ou demande de saisine au Défenseur des droits :</p>
+                    <p>7 rue Saint-Florentin 75409 Paris cedex 08</p>
+                    <p>Téléphone : 09 69 39 00 00</p>
+                    <p>Contacter le Défenseur des droits avec le formulaire en ligne</p>
+                    <p class="fr-mt-6v">Si vous ne trouvez pas de réponse à votre question :</p>
+                    <p>
+                        <a href="../mds-contact/index.html" id="link-contact" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Contactez-nous</a>
+                    </p>
+                    <p>
+                        <a href="../mds-accueil/index.html" class="fr-link fr-icon-arrow-left-line fr-link--icon-left">Revenir à l'accueil</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>

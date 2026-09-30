@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Foire aux questions - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="#" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Foire aux questions</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>Foire aux questions</h1>
+                    <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
+                        <h2 class="fr-summary__title" id="fr-summary-title">Sommaire</h2>
+                        <ol>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-1" href="#rubrique-1">Qu’est-ce que le portail mesdroitssociaux.gouv.fr ?</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-2" href="#rubrique-2">Pourquoi et comment vous connecter au portail mesdroitssociaux.gouv.fr ?</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-3" href="#rubrique-3">Vous rencontrez des problèmes de navigation</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-4" href="#rubrique-4">Vous avez une question ou un problème avec le simulateur du portail mesdroitssociaux.gouv.fr</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-5" href="#rubrique-5">Vous ne comprenez pas les informations qui sont affichées sur une bulle retraite, famille, logement, solidarité, santé, emploi</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-6" href="#rubrique-6">Erreurs ou informations manquantes (Signalement)</a>
+                            </li>
+                            <li>
+                                <a class="fr-summary__link" id="summary-link-7" href="#rubrique-7">Vos questions ?</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <h2 id="rubrique-1" class="fr-mt-6v">Qu’est-ce que le portail mesdroitssociaux.gouv.fr ?</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-1-1-1">QU’EST-CE QUE LE PORTAIL MESDROITSSOCIAUX.GOUV.FR ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-1-1-1">
+                                <p><a href="https://www.dailymotion.com/embed/video/x80c8rk?autoplay=1sharing-enable=false&endscreen-enable=false&ui-logo=false&ui-start-screen-info=false&autoplay=true" target="_blank" rel="noopener external" title="Voir la vidéo de présentation - nouvelle fenêtre">Voir la vidéo de présentation</a></p>
+                                <p>Mesdroitssociaux.gouv.fr est un portail universel destiné à tous, que vous soyez salarié, indépendant, à la retraite ou sans activité.</p>
+                                <p>C’est simple, facile et rapide.</p>
+                                <p>Connectez-vous pour :</p>
+                                <p>Visualiser et comprendre vos droits: consulter l'ensemble de vos droits sociaux et retrouver en un coup d’œil vos organismes de rattachement.</p>
+                                <p>Simuler vos droits sociaux: découvrir rapidement et facilement les prestations sociales auxquelles vous êtes éligible.</p>
+                                <p>Réaliser vos démarches en ligne: effectuer vos démarches personnelles en ligne depuis les rubriques de droits sociaux concernées.</p>
+                                <p>Ce portail est porté par le Ministère en charge de la Santé et les organismes de protection sociale.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-2" class="fr-mt-6v">Pourquoi et comment vous connecter au portail mesdroitssociaux.gouv.fr ?</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-1-1">Pourquoi et comment vous connecter au portail mesdroitssociaux.gouv.fr?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-2-1-1">
+                                <p>Parce que c’est un site unique, qui permet de prendre connaissance de l’ensemble de vos droits ouverts (santé, famille, logement, solidarité, retraite, emploi) et d’apprécier vos droits potentiels pour en faire la demande.</p>
+                                <p>La connexion est nécessaire afin de vous identifier et de personnaliser l’information qui vous est affichée en matière de sécurité sociale et de situation professionnelle (vos organismes sociaux de rattachement, vos remboursements santé, vos prestations familiales, votre situation d'assurance retraite etc...).</p>
+                                <p>Ces informations servent également à pré-remplir le simulateur. L'intérêt de ce pré-remplissage est de vous faciliter la simulation dès lors que votre situation n'a pas changé. Vous pouvez à tout moment modifier les informations pré-remplies pour simuler une autre situation (naissance d'un nouvel enfant, variation de ressources, déménagement, etc...)</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-1-2">Qu’est-ce que FranceConnect ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-2-1-2">
+                                <p>L'accès au portail mesdroitssociaux.gouv.fr nécessite de se connecter en cliquant sur le bouton « S’identifier avec FranceConnect » de la page d'accueil puis en suivant les étapes de connexion avec FranceConnect.</p>
+                                <p>Vous avez déjà un compte auprès d'<a href="https://cfspart.impots.gouv.fr/" target="_blank" rel="noopener external" title="Impots.gouv.fr - nouvelle fenêtre">Impots.gouv.fr</a>, d'<a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true" target="_blank" rel="noopener external" title="Ameli.fr - nouvelle fenêtre">Ameli.fr</a>, de <a href="https://www.mobileconnectetmoi.fr/" target="_blank" rel="noopener external" title="MobileConnect et moi - nouvelle fenêtre">MobileConnect et moi</a>, de <a href="https://www.msa.fr/lfp/espace-prive" target="_blank" rel="noopener external" title="MSA - nouvelle fenêtre">MSA</a> ou de <a href="https://lidentitenumerique.laposte.fr/" target="_blank" rel="noopener external" title="l'Identité Nationale - La Poste - nouvelle fenêtre">l'Identité Nationale - La Poste</a>.</p>
+                                <p>Sinon veuillez en créer un en cliquant sur un des liens précédents. FranceConnect est le bouton qui vous permet de vous connecter aux services publics en ligne en utilisant l'un de ces comptes .</p>
+                                <p>Il suffit de vous rendre sur le site auquel vous voulez accéder : <a href="https://www.info-retraite.fr/portail-services/" target="_blank" rel="noopener external" title="info-retraite - nouvelle fenêtre">info-retraite</a>, <a href="https://www.service-public.gouv.fr/compte/se-connecter" target="_blank" rel="noopener external" title="service-public - nouvelle fenêtre">service-public</a>, <a href="https://moncompte.ants.gouv.fr/connexion" target="_blank" rel="noopener external" title="carte grise - nouvelle fenêtre">carte grise</a> ... et de cliquer sur le bouton « S’identifier avec FranceConnect ».</p>
+                                <p>Il vous sera ensuite demandé de vous identifier soit avec votre compte <a href="https://cfspart.impots.gouv.fr/" target="_blank" rel="noopener external" title="Impots.gouv.fr - nouvelle fenêtre">Impots.gouv.fr</a>, <a href="https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_somtc=true" target="_blank" rel="noopener external" title="Ameli.fr - nouvelle fenêtre">Ameli.fr</a>, <a href="https://www.mobileconnectetmoi.fr/" target="_blank" rel="noopener external" title="MobileConnect et moi - nouvelle fenêtre">MobileConnect et moi</a>, <a href="https://www.msa.fr/lfp/espace-prive" target="_blank" rel="noopener external" title="MSA - nouvelle fenêtre">MSA</a> ou l'IN La Poste .</p>
+                                <p>Cette identification sera la même quel que soit le service souhaité en ne retenant qu'un seul identifiant.</p>
+                                <p><a href="https://www.dailymotion.com/video/x78xrdm" target="_blank" rel="noopener external" title="Une vidéo est à votre disposition - nouvelle fenêtre">Une vidéo est à votre disposition</a> pour comprendre le fonctionnement de FranceConnect.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-1-3">Vous n’arrivez pas à vous connecter au portail mesdroitssociaux.gouv.fr. Que devez-vous faire ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-2-1-3">
+                                <p>La connexion au portail mesdroitssociaux.gouv.fr s’appuie sur le dispositif FranceConnect.</p>
+                                <p>En cas de difficulté ou de question sur le dispositif FranceConnect, vous pouvez consulter la foire aux questions de FranceConnect <a href="https://franceconnect.gouv.fr/faq" target="_blank" rel="noopener external" title="https://franceconnect.gouv.fr/faq - nouvelle fenêtre">https://franceconnect.gouv.fr/faq</a></p>
+                                <p>En cas de difficulté d’accès au portail après la connexion avec FranceConnect, nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi à vendredi de 8h30 à 12h30 et de 13h30 à 17h ou de nous écrire via le formulaire de contact.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-1-4">Quand pouvez-vous accéder au portail mesdroitssociaux.gouv.fr ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-2-1-4">
+                                <p>Le portail est accessible 24 heures sur 24 et 7 jours sur 7, sauf interruptions liées à des difficultés informatiques ou techniques ou à des opérations de maintenance utiles au bon fonctionnement du portail. L’accès au portail est libre et gratuit (hors coût de la connexion internet).</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Vous avez des questions sur votre connexion</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-1">Impossible d'accéder au service malgré plusieurs tentatives. Voici le message d'erreur : "Vous n'êtes pas authentifié, ou l'accès à cette ressource est interdit".</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-1">
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-2">J’ai un compte MSA mais je n’arrive pas à me connecter. Je saisis mes codes MSA et j’ai un message qui m’indique que la connexion est impossible.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-2">
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-3">Je n’arrive pas à me connecter.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-3">
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-4">Lors de ma connexion sur le portail mesdroitssociaux.gouv.fr, je reste bloqué à l'étape d'insertion des numéros de ma carte vitale: un message m'indique que les indications sont erronées.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-4">
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-5">Je ne me souviens plus de mon code. Comment en obtenir un nouveau ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-5">
+                                <p>La démarche à suivre varie en fonction du compte que vous souhaitez utiliser pour vous connecter au portail. Dans tous les cas, nous vous invitons à vous rendre sur votre compte Ameli, impots.gouv, MSA, L'identité numérique de La poste ou mobile et moi pour demander un nouveau mot de passe.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-6">Où puis-je trouver le code confidentiel sur Ameli?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-6">
+                                <p>Pour trouver votre code confidentiel Ameli, nous vous invitons à vous rendre sur votre espace privé sur le site ameli.fr</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-7">Je n'arrive pas à me connecter avec France Connect, j'ai choisi le code comme pour nos impôts mais le nom affiché ensuite est le nom de mon conjoint donc mon numéro de sécurité sociale n'est pas accepté.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-7">
+                                <p>Chaque membre d’un foyer fiscal peut avoir son compte personnel. Si le nom de votre conjoint apparaît, c’est que vous avez utilisé son numéro fiscal personnel.</p>
+                                <p>Pour créer votre propre compte impots.gouv.fr, accédez à l’Espace Particulier <a href="https://cfspart.impots.gouv.fr" target="_blank" rel="noopener external" title="https://cfspart.impots.gouv.fr - nouvelle fenêtre">https://cfspart.impots.gouv.fr</a> avec votre numéro fiscal. Vous le trouverez sur votre avis d’imposition ou sur un courrier de l’administration fiscale.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-2-2-8">Je tente une connexion FranceConnect et une erreur E010008, E010009 ou E010004 apparaît.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-2-2-8">
+                                <p>Vous ne pouvez pas vous connecter via FranceConnect.</p>
+                                <p>Ces erreurs E010008, E010009 ou E010004 peuvent signifier:</p>
+                                <p>cas 1 : vous n'êtes pas enregistré(e) dans la base d'état civil de l'INSEE(*),</p>
+                                <p>cas 2 : il y a une erreur de saisie lors de l'enregistrement de votre état civil (nom d'usage au lieu du nom de naissance, prénom composé pour lequel il manque le tiret, commune de naissance incorrecte...)</p>
+                                <p>* seules les personnes disposant d'un numéro de sécurité sociale définitif (commençant par 1 ou 2) figurent dans la base INSEE</p>
+                                <p>Dans ce cas, merci d'écrire à l'adresse <a href="mailto:support.usagers@franceconnect.gouv.fr">support.usagers@franceconnect.gouv.fr</a> en transmettant :</p>
+                                <p>vos informations d'identité: nom de naissance, prénoms, date et lieu de naissance et une description de votre incident.</p>
+                                <p>l'adresse du site de l'administration à laquelle vous voulez accéder</p>
+                                <p>une copie d'écran du compte utilisé indiquant votre identité avec vos nom, prénoms, date et lieu de naissance (impots.gouv.fr, ameli.fr, MobileConnect et moi, MSA ou l'IN La Poste).</p>
+                                <p>une copie d'écran du message d'erreur affiché.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-3" class="fr-mt-6v">Vous rencontrez des problèmes de navigation</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-1-1">Avec quel navigateur pouvez-vous accéder au portail mesdroitssociaux.gouv.fr ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-3-1-1">
+                                <p>Ce portail est optimisé pour fonctionner avec les dernières versions des navigateurs suivants :</p>
+                                <p>Mozilla Firefox</p>
+                                <p>Google Chrome</p>
+                                <p>Apple Safari</p>
+                                <p>Si votre navigateur n'est pas pris en charge, veuillez le mettre à jour ou essayer avec un autre navigateur.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-1-2">Quand vous êtes sur une page du portail, comment pouvez-vous revenir à la page d’accueil ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-3-1-2">
+                                <p>En cliquant sur "Accueil en haut de la page ou en cliquant sur le titre "mes droits sociaux", vous pouvez retourner à la page d’accueil du portail mesdroitssociaux.gouv.fr.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Vous avez des questions sur la navigation</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-2-1">Je voudrais me connecter pour mon épouse, pour un proche afin de faire sa demande de retraite ou connaître ses droits.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-3-2-1">
+                                <p>Compte tenu de la sensibilité des informations disponibles sur le portail mesdroitssociaux.gouv.fr, en principe vous ne pouvez pas vous connecter à la place de votre proche. Il ou elle peut le faire en utilisant ses codes de connexion personnels pour les comptes suivants Ameli, impots.gouv.fr, MSA, l'Identité Numérique de La poste ou mobileConnect …</p>
+                                <p>Attention, pour vous connecter au site impots.gouv.fr, chaque membre du foyer fiscal a son propre compte, pour plus de détails sur ce point voir la rubrique Connexion.</p>
+                                <p>Une fois connecté au portail, depuis la rubrique « Vos droits » « retraite » vous pouvez accéder à votre compte retraite, en utilisant FranceConnect.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-2-2">Je n'arrive pas à me connecter sur mon compte espace retraite.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-3-2-2">
+                                <p>Pour vous connecter sur les sites partenaires pour vos droits SANTE, RETRAITE vous pouvez utiliser FranceConnect. Il en est de même pour la connexion à l’espace FAMILLE, LOGEMENT, SOLIDARITE pour les assurés MSA. Si vous relevez de la CAF pour vos droits FAMILLE, LOGEMENT, SOLIDARITE, vous devez utiliser vos codes de connexion personnels.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-2-3">J'aimerais créer un mot de passe pour accéder aux informations sur ma retraite, mais je ne trouve pas la navigation sur le portail pour cela.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-3-2-3">
+                                <p>Sur le site « mesdroitssociaux.gouv.fr», vous ne pouvez pas créer un compte ni changer de mot de passe car le site n’est accessible qu’avec FranceConnect. Pour accéder à votre espace retraite, vous pouvez le faire depuis la page RETRAITE en utilisant FranceConnect.</p>
+                                <p>Si vous souhaitez changer le mot de passe de votre compte Ameli, impots.gouv.fr, MSA, l'Identité Numérique de La poste ou mobile et moi, nous vous invitons à vous rendre sur ces sites.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-3-2-4">Je souhaite consulter l’historique de mes connexions au site mesdroitssociaux.gouv.fr.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-3-2-4">
+                                <p>Vous pouvez consulter l’historique de vos connexions avec FranceConnect en cliquant sur votre nom en haut à droite.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-4" class="fr-mt-6v">Vous avez une question ou un problème avec le simulateur du portail mesdroitssociaux.gouv.fr</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-1-1">Quelles sont les prestations calculées par le simulateur ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-4-1-1">
+                                <p>Actuellement le simulateur vous permet de simuler vos droits aux prestations dans les domaines suivants:</p>
+                                <p>retraite : ASPA - Allocation de Solidarité aux Personnes Agées,</p>
+                                <p>autour de l’emploi : PPA - Prime d’Activité, ASS - Allocation de Solidarité Spécifique,</p>
+                                <p>santé : ASI - Allocation Supplémentaire d'Invalidité, CSS - Complémentaire Santé Solidaire</p>
+                                <p>logement : AL - Aide au Logement, Chèque Énergie, Logement Social</p>
+                                <p>solidarité : RSA - Revenu de Solidarité Active, AAH - Allocation aux Adultes Handicapés, MVA – Majoration pour la Vie Autonome, Garantie Jeunes, APA – Allocation Personnalisée d’Autonomie, Livret d’Épargne Populaire,</p>
+                                <p>famille : AF - Allocations Familiales, ASF - Allocation de Soutien Familial, CF - Complément Familial, PAJE – Allocation de base, Bourse de collège, Bourse de lycée,</p>
+                                <p>aides locales :</p>
+                                <p>pour Paris :</p>
+                                <p>Paris Logement Famille, Paris Forfait Familles, Paris Solidarité, Paris Logement, Allocation de Soutien aux Parents d’Enfants Handicapés de Paris, Paris Logement Familles Monoparentales, Paris Énergie Familles, Complément Santé Paris, Pass Paris Seniors, Pass Paris Access’,</p>
+                                <p>pour Rennes - Brest - Côtes d’Armor :</p>
+                                <p>Tarification Solidaire des Transports de Rennes et de Brest, Impayé Energie des Côtes d’Armor,</p>
+                                <p>pour l’Eure et Loir :</p>
+                                <p>AdéFIP - Aide départementale Financière d’Insertion Personnalisée de l’Eure-et-Loir, FAJ - Fonds départemental d’Aide aux Jeunes, Prêt de véhicule, Transport social, Aide au Transport des élèves et étudiants en situation de handicap,</p>
+                                <p>Aide sociale à l'hébergement (ASH) pour les personnes âgées ou handicapées, Aide-ménagère pour les personnes âgées ou handicapées, Repas en foyer pour les personnes âgées ou handicapées, Prestation de Compensation du Handicap à domicile ou en établissement,</p>
+                                <p>Carte mobilité inclusion "invalidité", Carte mobilité inclusion "priorité", Carte mobilité inclusion "stationnement",</p>
+                                <p>Fonds de solidarité pour l’accès au logement, Fonds de solidarité pour installation dans le logement, Fonds de solidarité pour le maintien dans le logement, Fonds de solidarité pour le maintien des fournitures (énergie eau et téléphone),</p>
+                                <p>pour la ville d'Antony :</p>
+                                <p>Bourse famille nombreuse, Bourse communale, Bourse du conservatoire, Noël pour tous, Aide au départ en séjour adapté.</p>
+                                <p>autre aide : Fonds de Solidarité pour le Logement.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-1-2">D’où viennent les données affichées dans le simulateur multi-prestations ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-4-1-2">
+                                <p>Puisque vous vous êtes connecté personnellement au portail mesdroitssociaux.gouv.fr, les informations qui sont affichées vous concernant dans les pages de droits (par exemple famille, retraite ou santé), servent également à pré-remplir le simulateur. L'intérêt de ce pré-remplissage est de vous faciliter la simulation dès lors que votre situation n'a pas changé. Vous pouvez à tout moment modifier les informations pré-remplies pour simuler une autre situation (naissance d'un nouvel enfant, variation de ressources, déménagement, etc...).</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-1-3">Est-ce que vos informations sont enregistrées lorsque vous effectuez une simulation ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-4-1-3">
+                                <p>Lorsque vous effectuez une simulation, les informations que vous renseignez ne sont pas conservées ni enregistrées ni transmises à d’autres organismes.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Vous avez des questions sur le simulateur</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-1">J’aimerais connaître mes droits, mon droit à la prime d’activité, au RSA...</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-1">
+                                <p>Pour connaître vos droits nous vous invitons à utiliser le simulateur multi-prestations.</p>
+                                <p>En une seule fois, il vous permet de simuler vos droits aux prestations suivantes : CSS, ASI, prestations familiales, aides au logement, RSA et AAH, la prime d’activité et allocation de solidarité spécifique ainsi que l'allocation de solidarité aux personnes âgées.</p>
+                                <p>Nous appelons votre attention sur le fait que pour l’instant, il n’est pas possible de formuler la demande, ainsi vous serez renvoyé vers la bonne démarche pour faire votre demande.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-2">Comment savoir si je suis éligible au RSA ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-2">
+                                <p>Pour connaître vos droits éventuels au Revenu de Solidarité Active (RSA), nous vous invitons à utiliser le simulateur multi-prestations disponible sur le site. Outre le droit au RSA, il vous indiquera si vous avez droit à d'autres aides et les démarches à suivre.</p>
+                                <p>Nous appelons votre attention sur le fait que pour l’instant, il n’est pas possible de formuler la demande, ainsi vous serez renvoyé vers la bonne démarche pour faire votre demande.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-3">J’ai une activité à temps plein, et une activité agricole en plus, comment puis-je faire pour compléter mes ressources dans le simulateur ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-3">
+                                <p>Le simulateur est pré-rempli avec les informations connues des organismes de sécurité sociale.</p>
+                                <p>Cependant vous pouvez les compléter ou les modifier en cliquant sur « modifier mes ressources ».</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-4">Pourquoi mon activité de fonctionnaire hospitalier depuis le 1 janvier 2010 n’apparaît pas sur mes simulations ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-4">
+                                <p>Le simulateur ne tient compte que des informations disponibles. A ce jour, le portail n’a pas connaissance des rémunérations du secteur public. Cette situation va évoluer prochainement.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-5">Pour le calcul de la prime d’activité, doit-on déduire les frais de déplacement et les frais de transport du montant mensuel à déclarer?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-5">
+                                <p>Oui. Vous devez déduire ces montants du mensuel à déclarer.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-4-2-6">Pouvez-vous indiquer quelle rémunération est prise en compte pour le calcul de la prime d’activité/RSA?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-4-2-6">
+                                <p>Pour le calcul de la prime d’activité et du Revenu de Solidarité Active c’est le net perçu qui est pris en compte.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-5" class="fr-mt-6v">Vous ne comprenez pas les informations qui sont affichées sur une bulle retraite, famille, logement, solidarité, santé, emploi</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-5-1-1">Vous ne reconnaissez pas les interlocuteurs qui sont affichés dans une bulle ou vous ne savez pas à qui vous adresser</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-5-1-1">
+                                <p>En cas de question sur les interlocuteurs qui vous sont affichés, contactez la plateforme téléphonique du portail mesdroitssociaux, joignable au 05 56 99 30 60 du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-5-1-2">A qui vous adresser si vous avez des questions sur les informations de droits qui vous sont affichées ?</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-5-1-2">
+                                <p>Pour toute information sur vos droits, vos démarches, vos questions générales sur un droit ou une prise en charge : adressez-vous à votre organisme de protection sociale car le portail mesdroitssociaux n'a pas accès aux dossiers vous concernant.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-5-1-3">En savoir plus sur les revenus de remplacement</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-5-1-3">
+                                <p>Les revenus de remplacement sont destinés à compenser la perte de rémunération pendant une période d’inactivité partielle ou totale : maladie, maternité, invalidité, préretraite, retraite, réduction temporaire d’activité…</p>
+                                <p>Prestations de retraite de base</p>
+                                <p>Pensions de base servies par les organismes de Sécurité sociale;</p>
+                                <p>Pensions de base servies par les régimes spéciaux.</p>
+                                <p>Prestations de retraite complémentaire</p>
+                                <p>Pensions servies par les régimes de retraite complémentaire (AGIRC-ARRCO, Ircantec, Cavec, CRPNAC,CNBF…)</p>
+                                <p>Avantages de retraite servis par des organismes habiptés (sociétés d'assurance, mutuelles, institutionsde prévoyance…) ;</p>
+                                <p>Avantages servis par les anciens employeurs (rentes servies aux veuves, avantages en nature…);</p>
+                                <p>Avantages accessoires (en nature ou en compensation des dépenses prises en charge par l'ancien employeur).</p>
+                                <p>Prestations de préretraite</p>
+                                <p>Allocations spéciales du fonds national de l'emploi ;</p>
+                                <p>Allocations préretraite progressive ;</p>
+                                <p>Avantages préretraite d'entreprise;</p>
+                                <p>Avantages accessoires (en nature ou en compensation des dépenses prises en charge par lancienemployeur) ;</p>
+                                <p>Allocations de cessation anticipée d'activité en faveur des salariés victimes de lamiante.</p>
+                                <p>Prestations de cessation anticipée d'activité</p>
+                                <p>Allocation de cessation d'activité de certains travailleurs salariés</p>
+                                <p>Prestations veuvage</p>
+                                <p>Allocation veuvage</p>
+                                <p>Prestations chômage</p>
+                                <p>Allocation d'aide au retour à l'emploi (ARE) ;</p>
+                                <p>Allocation d'activité partielle ;</p>
+                                <p>Allocation de sécurisation professionnelle (ASP).</p>
+                                <p>Allocation de formation professionnelle versée par France Travail</p>
+                                <p>Prestations de prévoyance de base au titre de l'invalidité</p>
+                                <p>Pensions d'invalidité ou d'incapacité permanente (rentes ou capitaux) ;</p>
+                                <p>Prestations de prévoyance complémentaire au titre de l'invaliditéSont considérées comme revenus deremplacement au titre des prestations de prévoyance complémentaire, les avantages perçus postérieurement à la rupture du contrat de travail :</p>
+                                <p>Pensions invalidité complémentaires versées par un organisme de prévoyance ;</p>
+                                <p>Pensions invalidité complémentaires versées par un régime spécial ;</p>
+                                <p>Prestations décès (rente de survivant, conjoint, éducation…).</p>
+                                <p>Prestations de prévoyance de base au titre de l'incapacité</p>
+                                <p>Indemnités journalières de Sécurité sociale (IJSS) de base</p>
+                                <p>Allocations ou indemnités journalières versées par un régime de Sécurité sociale ;</p>
+                                <p>Indemnités versées par les collectivités territoriales aux agents mis en « disponibilité d'office »</p>
+                                <p>Prestations de prévoyance complémentaire au titre de l'invalidité</p>
+                                <p>IJSS complémentaires ;</p>
+                                <p>IJSS complémentaires versées par lemployeur ;</p>
+                                <p>IJSS complémentaires versées par un organisme de prévoyance ;</p>
+                                <p>Prestations dont le financement est assimilé à une contribution patronale de prévoyance complémentaire ;</p>
+                                <p>Autres prestations versées en cas d'inaptitude au titre des périodes postérieures à la rupture ducontrat de travail ;</p>
+                                <p>Prestations en espèces versées dans le cadre du risque dépendance</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-5-1-4">En savoir plus sur les prestations sociales</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-5-1-4">
+                                <p>Les prestations sociales sont des ressources non imposables dues (CAF - Caisse d’Allocations Familiales) ou versées (MSA – Mutualité Sociale Agricole) par l’organisme d’allocations familiales à un individu ou à sa famille afin de réduire la charge financière que représente la protection contre divers risques.</p>
+                                <p>Les prestations affichées sur la page ’’ Vos ressources ’’ sont les suivantes :</p>
+                                <p>- Allocations familiales</p>
+                                <p>- Complément familial</p>
+                                <p>- Allocation de soutien familial</p>
+                                <p>- Allocation de base de la Prestation d’Accueil du Jeune Enfant (PAJE)</p>
+                                <p>- Allocation et complément d’allocation aux Adultes Handicapé (AAH et CAAH)</p>
+                                <p>- Aides aux logement et prime de déménagement​ (ALF – Allocation de Logement Familiale / ALS – Allocation de Logement Sociale / APL – Aide Personnalisée au Logement / Prime de Déménagement​)</p>
+                                <p>- Revenu de solidarité active​ (RSA - Revenu de solidarité active socle non majoré ou majoré, RSA (OM) - Le revenu de solidarité outre-mer​)</p>
+                                <p>- Allocation Journalière de présence Parentale (AJPPM)</p>
+                                <p>En cas de changement de régime ou de changement de caisse, seules les prestations sociales dues ou versées par votre nouvelle caisse de rattachement seront affichées sur la page ’’ Vos ressources ’’ .</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-6" class="fr-mt-6v">Erreurs ou informations manquantes (Signalement)</h2>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-6-1-1">Vous souhaitez exercer votre droit de rectification sur des données relatives à votre identité.</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-6-1-1">
+                                <p>Pour exercer votre droit de rectification concernant vos données d'identification:</p>
+                                <p>Si vous êtes salarié du régime obligatoire de Sécurité Sociale, adressez un courrier à l’attention du service relation CNIL de la CNAV à l’adresse suivante :</p>
+                                <p>110 av. de Flandre</p>
+                                <p>75 951 PARIS CEDEX 19</p>
+                                <p>Si vous êtes un salarié du régime agricole, adressez un courrier à l’attention du service relation CNIL de la CCMSA à l’adresse suivante :</p>
+                                <p>19 Rue de Paris</p>
+                                <p>CS 50070</p>
+                                <p>93 013 BOBIGNY CEDEX</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-6-1-2">Vous souhaitez faire rectifier des données relatives à vos salaires.</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-6-1-2">
+                                <p>Ces explications ne concernent pour le moment que les personnes ayant une activité salariée.</p>
+                                <p>Si vous constatez une erreur sur une donnée relative à l’un de vos salaires affichés sur la page ’’ Vos ressources ’’ au niveau des revenus d’activité et que vous souhaitez faire rectifier la donnée en question, vous pouvez créer un signalement d’erreurs.</p>
+                                <p>Qu’est-ce qu’une erreur sur un salaire ?</p>
+                                <p>Sur la page ’’ Vos ressources ’’ , au niveau des revenus d’activité, vous pouvez consulter la liste de vos salaires. Il est possible que vous constatiez des erreurs. Ces erreurs peuvent porter sur :</p>
+                                <p>les montants de vos salaires affichés ;</p>
+                                <p>un employeur affiché inconnu;</p>
+                                <p>un employeur manquant.</p>
+                                <p>A savoir :</p>
+                                <p>Le terme « employeur » désigne en général l’établissement auquel vous êtes rattaché administrativement dans le cadre d’un contrat de travail.</p>
+                                <p>L’employeur peut recourir à un dispositif simplifié pour la déclaration de votre rémunération. Pour les cas suivants, il est normal que la page ’’ Vos ressources ’’ affiche votre salaire comme étant lié non pas à l’employeur mais à l’organisme en charge de l’un de ces dispositifs :</p>
+                                <p>Organisme Dispositif Activités concernées Sites internet</p>
+                                <p>Carte national CESU CESU:Chèque emploi service universel Service à la personne (hors garde d’enfants), à domicile et auprès d’un employeur qui est un particulier <a href="https://www.cesu.urssaf.fr" target="_blank" rel="noopener external" title="https://www.cesu.urssaf.fr - nouvelle fenêtre">https://www.cesu.urssaf.fr</a></p>
+                                <p>Centre national CEA CEA : Chèque emploi associatif Salarié d’associations ou de fondations <a href="https://www.cea.urssaf.fr/" target="_blank" rel="noopener external" title="https://www.cea.urssaf.fr/ - nouvelle fenêtre">https://www.cea.urssaf.fr/</a></p>
+                                <p>Centre national Pajemploi Pajemploi Garde d’enfants ou assistante maternelle <a href="https://www.pajemploi.urssaf.fr" target="_blank" rel="noopener external" title="https://www.pajemploi.urssaf.fr - nouvelle fenêtre">https://www.pajemploi.urssaf.fr</a></p>
+                                <p>Centre national TESE (Paris ou Bordeaux) TESE : Titre emploi service entreprise Salarié en CDD ou CDI d’entreprises métropolitaines relevant du régime général ou d’entreprises ultramarines (Guadeloupe, Martinique, Guyane, La Réunion et Saint-Martin) relevant du régime général ou agricole <a href="https://www.letese.urssaf.fr/" target="_blank" rel="noopener external" title="https://www.letese.urssaf.fr/ - nouvelle fenêtre">https://www.letese.urssaf.fr/</a></p>
+                                <p>Caisse MSA TESA : Titre emploi simplifié agricole Salarié agricole en CDD de 3 mois maximum OU Travailleur agricole occasionnel <a href="https://tesa.msa.fr/mode-emploi/tesa-simplifie/" target="_blank" rel="noopener external" title="https://tesa.msa.fr/mode-emploi/tesa-simplifie/ - nouvelle fenêtre">https://tesa.msa.fr/mode-emploi/tesa-simplifie/</a></p>
+                                <p>Caisse MSA TESA+ Salarié agricole en CDD / CDI d’une petite entreprise agricole <a href="https://tesa.msa.fr/mode-emploi/tesa-simplifie/" target="_blank" rel="noopener external" title="https://tesa.msa.fr/mode-emploi/tesa-simplifie/ - nouvelle fenêtre">https://tesa.msa.fr/mode-emploi/tesa-simplifie/</a></p>
+                                <p>France Travail GUSO : Guichet unique du spectacle occasionnel Intermittent du spectacle vivant <a href="https://www.guso.fr/information/accueil" target="_blank" rel="noopener external" title="https://www.guso.fr/information/accueil - nouvelle fenêtre">https://www.guso.fr/information/accueil</a></p>
+                                <p>Qu’est-ce qu’un signalement d’erreurs sur un salaire ?</p>
+                                <p>Grâce à un signalement, vous pouvez indiquer à nos services l’existence d’erreur(s) concernant votre situation.</p>
+                                <p>Dans un premier temps, vous pouvez signaler des erreurs exclusivement sur vos salaires affichés sur la page ’’ Vos ressources ’’ au niveau des revenus d’activité.</p>
+                                <p>Comment créer un signalement d’erreurs sur un salaire ?</p>
+                                <p>Si vous constatez une erreur en consultant vos revenus d’activité sur la page ’’ Vos ressources ’’ ,vous pouvez la signaler de la façon suivante:</p>
+                                <p>o A partir de la page ‘‘Revenus d’activité’’qui présente les totaux des revenus par employeur, si vous constatez qu’il manque un de vos employeurs et les salaires associés, vous pouvez le signaler à l’aide du lien ‘’Signaler un employeur manquant’’.</p>
+                                <p>o Après avoir affiché le détail des revenus pour un employeur en particulier depuis la page ‘‘Revenus d’activité’’, vous pouvez signaler des erreurs sur des données relatives à cet employeur, en cliquant sur le lien ‘’Signaler des erreurs’’. Vous pouvez :</p>
+                                <p>• Soit signaler des salaires en erreur ;</p>
+                                <p>• Soit signaler que vous ne connaissez pas cet employeur et les salaires associés.</p>
+                                <p>Comment est traité votre signalement d’erreurs sur un salaire ?</p>
+                                <p>Le traitement d’un signalement se fait en plusieurs étapes.</p>
+                                <p>Vous pouvez suivre les étapes du traitement de votre signalement sur la page ‘‘Vos signalements d’erreurs‘‘.</p>
+                                <p>1. Vous repérez une erreur, vous créez et envoyez un signalement.</p>
+                                <p>2. Nos services vérifient les informations que vous nous avez envoyées dans votre signalement.</p>
+                                <p>3. Vous êtes informé(e) par email qu’une réponse a été apportée à votre signalement. Vous pouvez consulter la réponse sur la page ‘‘Vos signalements d’erreurs‘‘. En fonction de votre situation, trois cas de figure sont possibles :</p>
+                                <p>• Si votre signalement est complet et justifié, et nécessite l’intervention de l’employeur concerné, vous pourrez télécharger un avis de dépôt de signalement et le transmettre à l’employeur.</p>
+                                <p>• Si votre signalement est complet et justifié, mais ne peut être résolu par l’employeur concerné, nos services vous indiqueront la démarche appropriée.</p>
+                                <p>• Si votre signalement d’erreurs est incomplet ou injustifié, nos services ne seront pas en mesure de le traiter et vous recevrez une réponse vous l’indiquant.</p>
+                                <p>Pendant combien de temps vos signalements sont-ils conservés ?</p>
+                                <p>Sauf demande de votre part, les informations relatives à votre signalement (contenu du signalement et pièces jointes) sont conservées pour une durée d’un an, à compter de sa date de création. Cette durée peut être prolongée si le traitement du signalement n’est pas achevé au-delà d’un an. Une fois le délai dépassé, et sans demande de prolongation, toutes ces informations sont définitivement supprimées.</p>
+                                <p>Toutefois, si vous souhaitez que les informations relatives à votre signalement soient supprimées avant échéance, vous pouvez nous adresser une demande expresse à ce sujet (en précisant la référence de votre signalement, et sa date de création) via le formulaire de contact.</p>
+                                <p>Il est impossible de sélectionner le mois correspondant au montant en erreur. Pourquoi ne puis-je pas créer un signalement sur ce mois ?</p>
+                                <p>Vous ne pouvez pas créer de signalement dans certains cas :</p>
+                                <p>Lorsque vous avez déjà créé un premier signalement sur une erreur, le montant mensuel en erreur est accompagné de l'icône :</p>
+                                <p>Si ce signalement est en cours de traitement par nos services, il est impossible de recréer un signalement sur la même erreur;</p>
+                                <p>Si ce signalement a déjà été traité par nos services, il est impossible de recréer un signalement sur la même erreur, excepté dans certains cas (par exemple, si votre dossier est incomplet, vous pouvez créer un nouveau signalement sur la même erreur afin de renseigner correctement toutes les informations demandées et joindre toutes les pièces justificatives nécessaires).</p>
+                                <p>Lorsqu'un de vos montants mensuels est accompagné de l'icône :</p>
+                                <p>Il est alors inutile de créer un signalement, car cette erreur est déjà connue de nos services. Si vous êtes bénéficiaire des aides au logement, nous vous invitons à contacter votre CAF ou caisse MSA (suivant votre régime d'affiliation) pour vous assurer que vos droits en matière d'allocations logement sont calculés correctement. Ce type de situation est néanmoins extrêmement rare.</p>
+                                <p>Quelles différences existe-t-il entre salaire brut, salaire net fiscal et salaire net à payer ?</p>
+                                <p>SALAIRE BRUT</p>
+                                <p>Salaire avant déduction des charges et cotisations sociales. Le salaire brut comprend le salaire de base, mais aussi les primes, gratifications ou bonus. Il est affiché au début du bulletin de paie (voir image).</p>
+                                <p>SALAIRE NET FISCAL</p>
+                                <p>Salaire après déduction des charges et cotisations sociales dites imposables ou déductibles. Il est aussi nommé salaire net imposable. Ce salaire sert de montant de référence pour le calcul de l’impôt sur le revenu. Le salaire net fiscal est toujours supérieur au salaire net à payer car il correspond au salaire net à payer, auquel il faut ajouter :</p>
+                                <p>La CSG non déductible</p>
+                                <p>La CRDS non déductible</p>
+                                <p>La part patronale de la mutuelle complémentaire</p>
+                                <p>L’impôt sur le revenu prélevé à la source</p>
+                                <p>Il est affiché à la fin du bulletin de paie.</p>
+                                <p>SALAIRE NET A PAYER</p>
+                                <p>Salaire perçu par le salarié, après déduction de toutes les charges et cotisations sociales, de la cotisation à la mutuelle complémentaire et du prélèvement à la source de l’impôt sur le revenu.</p>
+                                <p>Depuis début 2019, le salaire net à payer est diminué de la retenue pour le prélèvement à la source calculée sur la base du salaire net fiscal pour la majeure partie des salariés.</p>
+                                <p>Le cas échéant, l’employeur procède à d’autres prélèvements sur salaire (par exemple retenue pour titres-restaurants) ou compléments de versement (par exemple prise en charge partielle des transports en commun). Il est affiché à la toute fin du bulletin de paie.</p>
+                                <p>" Caisse Centrale de la MSA Luminem 19 rue de Paris 93013 BOBIGNY Cedex</p>
+                                <p>Directeur de la publication : Le Directeur Général de la Caisse Centrale de la MSA</p>
+                                <p>Réalisation : Ce portail est réalisé par la Caisse Centrale de la MSA et le GIE iMSA</p>
+                                <p>(<a href="https://informatique.msa.fr" target="_blank" rel="noopener external" title="http://informatique.msa.fr/ - nouvelle fenêtre">http://informatique.msa.fr/</a>) avec le portail opensource LIFERAY (<a href="https://www.liferay.com/fr/home" target="_blank" rel="noopener external" title="https://www.liferay.com - nouvelle fenêtre">https://www.liferay.com</a>).</p>
+                                <p>Il est hébergé et géré par :</p>
+                                <p>iMSA Avenue du Clos Maury B.P. n° 217 82002 MONTAUBAN Cedex</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h3 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-6-1-3">Vous souhaitez exercer votre droit de rectification sur vos contrats de travail ou sur vos rémunérations (hors salaires).</button>
+                            </h3>
+                            <div class="fr-collapse" id="faq-6-1-3">
+                                <p>Ces explications ne concernent que les personnes ayant une activité salariée.</p>
+                                <p>Si vous souhaitez faire rectifier une donnée relative à votre rémunération (hors salaires), à un arrêt de travail ou à un motif de rupture du contrat de travail, rapprochez-vous de votre employeur.</p>
+                                <p>Conformément à la loi dite « informatique et libertés », vous pouvez exercer vos droits d’accès et de rectification sur les données issues de la déclaration sociale nominative (DSN). Le tableau ci-après présente l’organisme auquel vous pouvez vous adresser en fonction de la catégorie de données et selon quelles modalités. Celui-ci prendra s’il y a lieu contact avec votre employeur.</p>
+                                <p>Afin de faciliter l’examen de votre demande, veuillez indiquer dans votre courrier :</p>
+                                <p>votre numéro de sécurité sociale</p>
+                                <p>le ou les employeur(s) objet(s) de votre requête</p>
+                                <p>la ou les durée(s) souhaitée(s)</p>
+                                <p>Nous vous remercions également de joindre la photocopie d’un titre d’identité.</p>
+                                <p>Adresses utiles :</p>
+                                <p>CNAV</p>
+                                <p>à l’attention du service relation CNIL</p>
+                                <p>110 av. de Flandre</p>
+                                <p>75 951 PARIS CEDEX 19</p>
+                                <p>CCMSA</p>
+                                <p>19 Rue de Paris</p>
+                                <p>CS 50070</p>
+                                <p>93 013 BOBIGNY CEDEX</p>
+                                <p>France Travail (Direction générale)</p>
+                                <p>1 av. du docteur Gley</p>
+                                <p>75020 PARIS</p>
+                                <p>Catégorie de donnéesA qui s’adresser ?Comment ?</p>
+                                <p>Données relatives à votre identité (nom(s), prénom (s), date et lieu de naissance, numéro de sécurité sociale)A la Caisse nationale d’assurance vieillesse (CNAV) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA</p>
+                                <p>Données relatives à votre emploi et à votre contrat de travailA la Caisse nationale d’assurance vieillesse (CNAV) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA</p>
+                                <p>Données relatives à votre rémunération (hors salaires)A la Caisse nationale d’assurance vieillesse (CNAV) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)Adresser un courrier au correspondant « informatique et libertés » de la CNAVTS ou, si vous êtes salarié agricole, à celui de la CCMSA</p>
+                                <p>Données relatives aux dates d’arrêt de travail pour maladie, maternité, paternité ou adoptionA votre Caisse primaire d’assurance maladie (CPAM) ou à votre Caisse générale de sécurité sociale dans les DOM (CGSS) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)Adresser un courrier au directeur de votre CPAM ou de votre CGSS ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de la CCMSA</p>
+                                <p>Données relatives à la fin de contrat de travail</p>
+                                <p>A la Direction générale de France Travail</p>
+                                <p>Organismes complémentaires (mutuelles, sociétés d’assurance, institutions de prévoyance)</p>
+                                <p>Adresser un courrier au correspondant « informatique et libertés » de la direction générale de France Travail</p>
+                                <p>Adresser un courrier à l’organisme complémentaire concerné</p>
+                                <p>Données relatives à vos cotisations retraite et l’alimentation du compte personnel pénibilitéA la Caisse nationale d’assurance vieillesse (CNAV) ou, si vous êtes salarié agricole, à la Caisse centrale de la mutualité sociale agricole (CCMSA)Adresser un courrier au correspondant « informatique et libertés » suivant que vous dépendez de la Caisse nationale d’assurance vieillesse des travailleurs salariés (CNAVTS) ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de la CCMSA</p>
+                                <p>Données relatives aux cotisations de vos retraites complémentairesA l’AGIRC-ARRCO ou, si vous êtes salarié agricole, à la Caisse de retraite complémentaire agricole (AGRICA) ou à la caisse dont vous dépendezAdresser un courrier au correspondant « informatique et libertés » suivant que vous dépendez de l’AGIRC-ARRCO, si vous êtes salarié agricole, au correspondant « informatique et libertés » de l’AGRICA ou de la caisse dont vous dépendez</p>
+                                <p>Données relatives à la prévoyanceA votre organisme complémentaire de prévoyance ou, à la Caisse de retraite complémentaire agricole (AGRICA) ou à la caisse dont vous dépendezAdresser un courrier au correspondant « informatique et libertés » de l’organisme de prévoyance dont vous dépendez ou, si vous êtes salarié agricole, au correspondant « informatique et libertés » de l’AGRICA ou de la caisse dont vous dépendez</p>
+                                <p>Données relatives à l’alimentation du compte personnel de formationA la Caisse des Dépôts et ConsignationsAdresser un courrier au correspondant « informatiques et libertés » de la Caisse des dépôts et consignations</p>
+                                <p>Données relatives au calcul des congés payés des salariés affiliés à AUDIENSA la Caisse des congés payés AUDIENSAdresser un courrier au correspondant « informatiques et libertés » de la Caisse des congés payés AUDIENS</p>
+                                <p>Données relatives à un régime spécialA votre régime spécial (CNIEG, CAMIEG, CRPCEN et CPRPF)Adresser un courrier au correspondant « informatique et libertés » du régime spécial dont vous dépendez</p>
+                                <p>Données relatives à l’IRCANTECA l'IRCANTECAdresser un courrier au correspondant « informatique et libertés » de l’IRCANTEC dont vous dépendez</p>
+                                <p>Données relatives à la CRPNPACA la CRPNPACAdresser un courrier au correspondant « informatique et libertés » de la CRPNPAC dont vous dépendez</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h2 id="rubrique-7" class="fr-mt-6v">Vos questions ?</h2>
+                    <h3>Je suis français à l’étranger</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-1">Je souhaite revenir en France, quelles sont les démarches à faire auprès de la sécurité sociale ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-1">
+                                <p>Si vous êtes un français résidant à l’étranger, vous pouvez être connu des services fiscaux, cependant vos droits à la sécurité sociale française sont suspendus.</p>
+                                <p>Vous n'avez plus ni carte Vitale, ni attestation de droit, ni bulletin de salaire, ni aucun autre document comportant votre numéro de sécurité sociale ? Pas d'inquiétude : il vous suffit de vous rendre dans n'importe quel point d’accueil d’un organisme de sécurité sociale (CPAM, CAF,…), muni d'une pièce d'identité.</p>
+                                <p>Si vous ne pouvez pas vous déplacer ou si vous habitez à l'étranger, vous pouvez également rédiger une lettre de procuration à une personne qui pourra effectuer cette démarche à votre place.</p>
+                                <p>Pour plus de renseignements, rendez-vous sur <a href="https://www.ameli.fr/assure/droits-demarches/principes/numero-securite-sociale" target="_blank" rel="noopener external" title="le site ameli - nouvelle fenêtre">le site ameli</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-2">Je suis française et je réside à l'étranger avec mon conjoint étranger et mes enfants. Je souhaite m'installer en France avec ma famille et j'aimerais connaître les démarches à suivre et éventuellement les organismes à contacter.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-2">
+                                <p>Pour connaître vos futurs droits sociaux, nous vous invitons à utiliser notre simulateur multi-prestations disponible hors connexion.</p>
+                                <p>Outre vos droits potentiels, il vous indiquera les sites à consulter pour accomplir vos démarches.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-3">Comment obtenir mon numéro de sécurité sociale ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-3">
+                                <p>L’attribution de votre numéro de sécurité sociale ne dépend pas de votre nationalité. Pour l'obtenir, il suffit d'être né en France, d'avoir un travail en France ou simplement d'y habiter de façon stable et régulière. Deux situations peuvent se présenter selon votre lieu de naissance.</p>
+                                <p>Si vous êtes né en France :</p>
+                                <p>Vous n'avez plus ni carte Vitale, ni attestation de droit, ni bulletin de salaire, ni aucun autre document comportant votre numéro de sécurité sociale ? Pas d'inquiétude : il vous suffit de vous rendre dans n'importe quel point d’accueil d’un organisme de sécurité sociale (CPAM, CAF,…), muni d'une pièce d'identité.</p>
+                                <p>Si vous ne pouvez pas vous déplacer ou si vous habitez à l'étranger, vous pouvez également rédiger une lettre de procuration à une personne qui pourra effectuer cette démarche à votre place.</p>
+                                <p>Si vous êtes né à l’étranger, en Nouvelle-Calédonie ou à Wallis et Futuna :</p>
+                                <p>Si vous n’avez pas encore de numéro de sécurité sociale, demandez-le à l'organisme qui correspond à votre situation :</p>
+                                <p>Vous êtes salarié : Si votre employeur n’a pas effectué la demande pour vous, contactez votre Caisse Primaire d’Assurance Maladie (CPAM).</p>
+                                <p>Vous êtes sans emploi ni activité : Contactez votre Caisse Primaire d’Assurance Maladie (CPAM).</p>
+                                <p>Vous êtes salarié agricole ou exploitant agricole : Contactez votre caisse de la Mutualité Sociale Agricole (MSA).</p>
+                                <p>Vous êtes travailleur indépendant ou vous exercez une profession libérale : Contactez la Sécurité Sociale pour les Indépendants (SSI).</p>
+                                <p>Selon la démarche que vous souhaitez effectuer, vous pouvez également vous adresser aux organismes suivants :</p>
+                                <p>votre caisse d’allocations familiales (CAF).</p>
+                                <p>votre organisme gestionnaire si vous relevez d’un régime spécial:</p>
+                                <p>CAVIMAC - Caisse d'assurance vieillesse invalidité et maladie des cultes</p>
+                                <p>CAMIEG - Caisse d'assurance maladie des industries électriques et gazières</p>
+                                <p>CNRACL - Caisse nationale de retraite des agents des collectivités locales</p>
+                                <p>CNIEG - Caisse nationale de retraite des industries électriques et gazières</p>
+                                <p>CNMSS - Caisse nationale militaire de sécurité sociale</p>
+                                <p>CPRPF - Caisse de prévoyance et de retraite du personnel ferroviaire</p>
+                                <p>CRPCEN - Caisse de retraite et de prévoyance des clercs et employés de notaires</p>
+                                <p>CRPRATP - Caisse de retraite du personnel de la RATP</p>
+                                <p>ENIM - Etablissement national des invalides de la marine</p>
+                                <p>CNAVPL - Caisse nationale d’assurance vieillesse des professions libérales</p>
+                                <p>CARSAT - caisse d’assurance retraite et de la santé au travail</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-4">J’aimerais connaître ma situation fiscale.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-4">
+                                <p>Pour connaître vos obligations fiscales, nous vous invitons à vous connecter sur <a href="https://www.impots.gouv.fr" target="_blank" rel="noopener external" title="le site de l’administration fiscale - nouvelle fenêtre">le site de l’administration fiscale</a>.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-5">Comment faire une demande de logement social ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-5">
+                                <p>Pour faire une demande de logement social, nous vous invitons à vous rendre sur <a href="https://www.demande-logement-social.gouv.fr/" target="_blank" rel="noopener external" title="le site dédié à la demande de logement social - nouvelle fenêtre">le site dédié à la demande de logement social</a>.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-1-6">Je souhaite imprimer un relevé d’activité à partir de la page « Votre activité professionnelle »</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-1-6">
+                                <p>La page « Votre activité professionnelle » vous permet d’obtenir un relevé de votre activité professionnelle.</p>
+                                <p>Attention, cette page n’a pas de valeur juridique et ne fait qu’afficher les informations transmises par votre employeur et issues de la déclaration sociale nominative.</p>
+                                <p>Nous vous invitons à vous rapprocher de votre employeur pour lui demander une attestation de votre activité plus détaillée.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Mes données personnelles</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-1">Je suis né en France et je constate une erreur dans les données d’état civil ( nom, prénom, lieu de naissance) affichées lors de la connexion avec FranceConnect.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-1">
+                                <p>L'erreur sur votre nom, prénom, localité de naissance ou autre provient de la transcription de votre acte de naissance dans la base RNIPP (base des actes de naissance).</p>
+                                <p>Une téléprocédure est mise à votre disposition.</p>
+                                <p>Veuillez vous rendre sur <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R49454" target="_blank" rel="noopener external" title="le site du service public - nouvelle fenêtre">le site du service public</a> puis cliquer sur le bouton « Accéder au service en ligne » et démarrer votre demande de modification.</p>
+                                <p>Munissez-vous de votre acte de naissance.</p>
+                                <p>Cette demande sera transmise au RNIPP qui réalisera les modifications demandées.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-2">Je suis né à l’étranger et je constate une erreur dans mon identité.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-2">
+                                <p>L'erreur sur votre nom, prénom, localité de naissance ou autre provient de la transcription de votre acte de naissance dans la base RNIPP (base des actes de naissance).</p>
+                                <p>Veuillez vous rapprocher de votre organisme de rattachement (CPAM, MSA ou autre) muni(e) de votre acte de naissance afin de demander la correction adéquate.</p>
+                                <p>Sachez que le délai de correction peut être long (environ 6 mois) car la demande est transmise à la CNAV qui la transmet elle-même au RNIPP.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-3">Comment procéder pour rectifier une erreur sur mon prénom ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-3">
+                                <p>La marche à suivre est différente selon les cas :</p>
+                                <p>Si vous constatez l’erreur au moment de la connexion avec FranceConnect, nous vous invitons à écrire à l'adresse support.usagers@franceconnect.gouv.fr en transmettant :</p>
+                                <p>vos informations d'identité: nom de naissance, prénoms, date et lieu de naissance et une description de votre incident.</p>
+                                <p>l'adresse du site de l'administration à laquelle vous voulez accéder.</p>
+                                <p>une copie d'écran du compte utilisé indiquant votre identité avec vos nom, prénoms, date et lieu de naissance (impots.gouv.fr, ameli.fr, MobileConnect et moi, MSA ou l'IN La Poste).</p>
+                                <p>une copie d'écran du message d'erreur affiché.</p>
+                                <p>Si l’erreur est dans les informations affichées sur le portail (une bulle, simulateur…) nous vous invitons à vous rapprocher de votre organisme de sécurité sociale pour procéder à la correction de vos informations.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-4">En consultant mes droits sur votre site, je m'aperçois que la composition de ma famille est fausse, par exemple le prénom de mon troisième enfant.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-4">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif, il affiche les informations transmises par ses partenaires. Si vous constatez une erreur dans les informations affichées, nous ne pouvons pas la corriger. Nous vous invitons à consulter le site de l’organisme en question (MSA ou Caf.fr pour vos droits logement, famille, solidarité) et vérifier que l’information est juste.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-5">Vous avez indiqué que je dépendais de la CAF pour les prestations familiales, alors que je dépends de l’organisme MSA. Pourriez-vous rectifier cette information?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-5">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif. Il affiche les informations transmises par nos partenaires. Si votre situation a changé récemment, il se peut que nous n'en ayons pas encore eu connaissance. Si la situation perdure, nous vous invitons à vous rapprocher de votre organisme gestionnaire pour vous assurer de la bonne prise en compte de votre déclaration.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-6">Les informations concernant ma mutuelle sont erronées.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-6">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif. Il affiche les informations transmises par nos partenaires. Si votre situation a changé récemment, il se peut que nous n'en ayons pas encore eu connaissance. Si la situation perdure, nous vous invitons à vous rapprocher de votre organisme gestionnaire pour vous assurer de la bonne prise en compte de votre déclaration.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-7">Je constate des erreurs dans mon dossier. Par exemple, j'apparais comme non bénéficiaire d'allocation France Travail alors que j'en perçois une.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-7">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif. Il affiche les informations transmises par nos partenaires.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-8">L'adresse de mon logement ainsi que le montant de mon loyer sont incorrects. Sur le site de mon organisme gestionnaire, mon adresse est correcte.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-8">
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h afin de trouver une solution.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-2-9">Je suis affilié à la MSA sur le site « Info Retraite » alors que je n'ai travaillé au sein de la MSA que 4 mois, et que je dépends du régime général. Est-ce normal et quelle en sont les conséquences ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-2-9">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif. Il affiche les informations transmises par nos partenaires. Il se peut que la mise à jour de votre dossier ne soit pas encore effective. Cet affichage n’a pas de conséquences à partir du moment où votre employeur a fait les déclarations nécessaires.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Mon activité professionnelle</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-1">Je constate une erreur sur la page « Activité professionnelle » : certains contrats déclarés ainsi que les rémunérations associées ne me concernent pas.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-1">
+                                <p>Il peut s’agir d’une erreur dans le numéro de sécurité sociale au niveau de la déclaration faite par l’entreprise qui a transmis ces données.</p>
+                                <p>Merci de nous transmettre les informations vous concernant (nom, prénoms, numéro de sécurité sociale), le SIRET de votre employeur indiqué sur votre fiche de paie ainsi que la période concernée par votre demande.</p>
+                                <p>Nos services procéderont aux vérifications qui s’imposent.</p>
+                                <p>Nous vous invitons à contacter notre conseiller au 05 56 99 30 60 (depuis un poste fixe, coût d’une communication locale) du lundi au vendredi de 8h30 à 12h30 et de 13h30 à 17h.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-2">Seule une partie de mes employeurs est affichée au cours de la période ? Est-ce normal ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-2">
+                                <p>Oui, actuellement, la page « Activité professionnelle » n’affiche que les informations concernant les salariés de droit privé dont l'employeur effectue la déclaration sociale nominative (DSN). De même, si votre employeur est une entreprise de moins de 20 personnes, il se peut qu'il soit dans un dispositif particulier le dispensant de déclarer votre activité en DSN. Très prochainement les informations relatives aux employeurs publics et aux dispositifs particuliers tels que CESU (Chèque Emploi Service Universel) ou PAJE (Prestation d'Accueil du Jeune Enfant) seront également disponibles.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-3">Je me rends compte que mon ex-employeur ne figure pas dans mes activités professionnelles. Je souhaite mettre à jour mon compte.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-3">
+                                <p>Le site mesdroitssociaux.gouv.fr affiche les informations communiquées par votre employeur qui les a déclarées en DSN sur les douze derniers mois. Ainsi, cette absence peut être due à une information antérieure à 2018 ou au fait que votre employeur n’utilise pas la DSN. Si le contrat doit figurer parmi les informations affichées, veuillez vous rapprocher de votre employeur.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-4">Je constate une erreur sur la page « Activité professionnelle » : certains contrats me concernant, ainsi que les rémunérations associées ne sont pas affichées.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-4">
+                                <p>Les informations affichées dans la page « Activité professionnelle » sont celles transmises par votre employeur chaque mois.</p>
+                                <p>Il se peut que l'information relative à votre numéro de sécurité sociale n'ait pas été correctement déclarée, ainsi le site ne peut pas afficher les données d'activité professionnelle de votre employeur. Vous pouvez prendre contact avec votre employeur pour qu’il mette à jour votre dossier et procède à des déclarations en bonne et due forme.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-5">Je ne visualise pas mes rémunérations pour un mois donné, alors que j’ai bien reçu ma fiche de paie pour le mois concerné</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-5">
+                                <p>La page « Activité professionnelle » affiche les informations transmises par votre employeur et issues de la déclaration sociale nominative (DSN).</p>
+                                <p>Nous vous invitons à vous rapprocher de votre employeur pour lui demander des explications à ce sujet et, le cas échéant, faire corriger les informations manquantes.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-6">Je ne vois pas mon salaire pour un mois donné.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-6">
+                                <p>La page « Activité professionnelle » affiche les informations transmises par votre employeur et issues de la déclaration sociale nominative (DSN).</p>
+                                <p>Nous vous invitons à vous rapprocher de votre employeur pour lui demander des explications à ce sujet et, le cas échéant, faire corriger les informations manquantes.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-7">Dans la section "Vos contrats déclarés", le contrat affiché comme le plus ancien ne semble pas débuter à la date réelle de début de ce contrat.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-7">
+                                <p>Le site mesdroitssociaux.gouv.fr n’affiche que les informations relatives à votre activité professionnelle au cours des douze derniers mois. Vous pouvez vérifier la date de début de votre contrat en cliquant sur le lien « voir le détail » dans le bloc du bas de la page « Activité professionnelle » : vous avez accès aux informations détaillées concernant votre employeur (adresse et SIRET) et votre contrat (la nature et la date de début). A noter également que seuls douze mois d'activité sont pris en compte lors de l'affichage.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-8">Je ne trouve pas mes contrats pour l'ensemble de mes périodes d'activité.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-8">
+                                <p>Le site mesdroitssociaux.gouv.fr affiche les informations relatives à votre activité professionnelle réalisée sur les douze derniers mois, avec un décalage de deux mois.</p>
+                                <p>Par exemple, si vous consultez votre activité le 1er avril 2019, vous visualiserez les informations relatives à la période allant de février 2019 à janvier 2018 inclus.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-9">Les informations affichées dans la page « Activité professionnelle » ne sont pas à jour (non prise en compte de fin de contrat…) / je vois toujours mon ancien employeur, alors que ça fait plusieurs années que je ne travaille plus chez lui.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-9">
+                                <p>Les informations affichées dans la page « Activité professionnelle » sont celles transmises par votre employeur chaque mois. Il se peut que les informations relatives à la date de fin du contrat ne soient pas disponibles, ainsi, le site affichera le contrat comme étant en cours, mais sans rémunération. Vous pouvez prendre contact avec votre ancien employeur pour qu’il mette à jour votre dossier et procède à des déclarations en bonne et due forme.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-10">J’aimerais savoir comment rectifier les salaires nets affichés car ils ne correspondent pas aux salaires nets de ma fiche de paie.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-10">
+                                <p>Le site mesdroitssociaux.gouv.fr affiche la rémunération nette fiscale déclarée par votre employeur (net imposable du mois).</p>
+                                <p>Elle peut présenter une différence avec votre fiche de paie, car celle-ci comporte également le net à payer. Ce montant tient compte de différentes retenues ou des indemnités versées par l’employeur.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-11">Je constate une erreur dans la date du début de mon contrat.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-11">
+                                <p>La page « Activité professionnelle » affiche les informations transmises par votre employeur et issues de la déclaration sociale nominative (DSN).</p>
+                                <p>Nous vous invitons à vous rapprocher de votre employeur pour lui demander des explications à ce sujet et, le cas échéant, faire corriger les informations manquantes.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-12">Je constate que mes bulletins de salaire ne sont pas disponibles sur le site.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-12">
+                                <p>C’est normal, le site mesdroitssociaux.gouv.fr est un site informatif, il affiche uniquement les informations transmises par votre employeur aux organismes sociaux. Pour l’instant, il n’est pas prévu de conserver les bulletins de salaire.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-13">Comment puis-je contrôler les déclarations de mes revenus concernant les années antérieures à 2018?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-13">
+                                <p>Le site mesdroitssociaux.gouv.fr affiche les informations relatives à l’activité professionnelle des douze derniers mois. Pour vérifier que vos revenus étaient bien déclarés avant 2018, vous pouvez consulter vos droits acquis sur le site de l’assurance retraite. Pour vos déclarations de revenus, nous vous invitons à vous rendre sur le site impots.gouv.fr.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-14">Lorsque je vais dans "votre activité professionnelle", je ne vois pas les informations relatives à l'ensemble de ma carrière. J'aimerais voir toute ma carrière, et tout ce qui a été déclaré par mes employeurs depuis le début de mon parcours professionnel ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-14">
+                                <p>Pour connaître les déclarations faites par vos employeurs successifs, nous vous invitons à consulter la page "Retraite". En effet, vous pouvez accéder au site de l’assurance retraite pour consulter votre relevé individuel de situation. Il récapitule les trimestres cotisés en précisant vos employeurs.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-15">Je constate des variations importantes de mes revenus d'un mois sur l'autre contrairement à ce que je vois sur ma fiche de paie.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-15">
+                                <p>Vous avez pu être malade le mois en question ou le mois précédent. Même si cela est transparent sur votre bulletin de salaire, c'est la CNAM ou la MSA qui verse vos indemnités journalières et qui se chargera de déclarer ces montants hors DSN. Pour cette raison, ces montants ne sont pas visibles dans le cadre de votre activité professionnelle.</p>
+                                <p>Votre employeur a également pu effectuer une régularisation sur le mois concerné.</p>
+                                <p>Rapprochez-vous de votre employeur afin de comprendre cette éventuelle régularisation.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-3-16">Je visualise des revenus négatifs pour un mois donné.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-3-16">
+                                <p>Votre employeur a pu effectuer une régularisation sur le mois concerné.</p>
+                                <p>Rapprochez-vous de votre employeur afin de comprendre cette régularisation.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Des questions sur mes informations retraite</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-1">Concernant les trimestres pour 1 enfant, est-il possible de répartir les 8 trimestres avec 4 trimestres pour la mère et 4 trimestres pour le père ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-1">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif.</p>
+                                <p>Pour avoir la réponse à votre question nous vous invitons à consulter le site de l’assurance retraite.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-2">J’ai la garde partagée de mes enfants. Je souhaiterais savoir si cela me donne des droits supplémentaires pour ma retraite.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-2">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif, nous ne sommes pas en mesure de traiter les situations personnelles.</p>
+                                <p>Pour avoir des informations relatives à vos droits personnels, nous vous invitons à vous rapprocher de votre organisme gestionnaire qui pourra apporter une réponse adaptée à votre situation.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-3">Je constate des périodes manquantes dans mon relevé de carrière, je souhaite compléter mon relevé de carrière car il manque des informations.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-3">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif, nous ne pouvons procéder à la mise à jour de votre dossier.</p>
+                                <p>Dès 55 ans, vous pouvez procéder à la régularisation de votre relevé.</p>
+                                <p>Accédez au service sur le site de votre organisme de rattachement : <a href="https://www.lassuranceretraite.fr/portail-services-ihm/index.html#/authentifier" target="_blank" rel="noopener external" title="Demander la régularisation de votre carrière. - nouvelle fenêtre">Demander la régularisation de votre carrière.</a></p>
+                                <p>Vous pourrez ainsi communiquer à votre organisme de retraite toute information sur les périodes lacunaires indiquées par l’icône et/ou apporter des précisions complémentaires sur des périodes qui ne font pas l'objet de signalement mais pour lesquelles vous constatez des anomalies.</p>
+                                <p>IMPORTANT :</p>
+                                <p>Nous vous recommandons de conserver tous vos justificatifs (bulletins de salaires, attestations de chômage, décomptes des indemnités journalières, ...). Ces documents pourront vous être demandés lors de l'étude de vos droits.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-4">Comment savoir si mon activité est bien prise en compte dans mon calcul de droit à la retraite ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-4">
+                                <p>Pour vérifier les déclarations faites par vos employeurs pour vos droits retraite, nous vous invitons à consulter la page "Retraite", vous pourrez voir vos trimestres acquis. Pour plus de détail, depuis cette page, vous pouvez accéder sur le site de l’Assurance Retraite et consulter votre relevé individuel de situation qui récapitule les trimestres cotisés.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-5">Comment puis-je connaître mes droits à la retraite alors que je n’ai jamais travaillé en France ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-5">
+                                <p>Le site mesdroitssociaux.gouv.fr est un site informatif, nous ne sommes pas en mesure de traiter les situations personnelles.</p>
+                                <p>Pour avoir des informations relatives à vos droits personnels, nous vous invitons à vous rapprocher de votre organisme gestionnaire qui pourra apporter une réponse adaptée à votre situation.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-6">Comment puis-je faire pour connaître mes droits à la retraite de réversion et en faire la demande ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-6">
+                                <p>Pour connaître vos droits à la retraite de réversion et en faire la demande, nous vous invitons à vous rapprocher de votre organisme de gestionnaire, en l'occurrence votre Caisse Assurance Retraite.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-7">Je veux faire ma demande de retraite.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-7">
+                                <p>Pour faire votre demande de retraite nous vous invitons à vous rendre sur le site de votre organisme de retraite.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-8">J’aimerais connaître mon âge et mes droits à la retraite.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-8">
+                                <p>Les différents simulateurs sont disponibles dans la page « Retraite ». Vous pouvez les utiliser pour estimer vos droits.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-9">Comment et où me connecter pour faire une réclamation concernant la CARSAT ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-9">
+                                <p>Nous vous invitons à vous rendre sur <a href="https://www.lassuranceretraite.fr/portail-info/hors-menu/footer/contacts.html" target="_blank" rel="noopener external" title="le site de l’Assurance Retraite - nouvelle fenêtre">le site de l’Assurance Retraite</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-4-10">Mes droits à la retraite ont diminué, je ne comprends pas.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-4-10">
+                                <p>Nous vous invitons à vous rapprocher de votre CARSAT qui pourra vous apporter des réponses en tenant compte de votre situation personnelle.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <h3>Mes questions sur le droit à la formation</h3>
+                    <div data-fr-group="false" class="fr-accordions-group">
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-1">Les informations affichées dans mon compte personnel à la formation ne sont pas complètes.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-1">
+                                <p>Si vous constatez une anomalie sur votre compte formation, l'employeur concerné doit compléter une demande de régularisation :</p>
+                                <p><a href="https://www.moncompteformation.gouv.fr/espace-public/comment-signaler-une-erreur-sur-le-solde-de-mon-compte-0" target="_blank" rel="noopener external" title="Si vous êtes salarié de droit privé, cliquez ici - nouvelle fenêtre">Si vous êtes salarié de droit privé, cliquez ici</a></p>
+                                <p><a href="https://www.moncompteformation.gouv.fr/espace-public/comment-signaler-une-erreur-sur-le-solde-de-mon-compte-0" target="_blank" rel="noopener external" title="Si vous êtes agent public, cliquez ici - nouvelle fenêtre">Si vous êtes agent public, cliquez ici</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-2">J’aimerais savoir comment je peux utiliser mes droits à la formation.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-2">
+                                <p>Nous vous invitons à vous rendre sur le site <a href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/" target="_blank" rel="noopener external" title="https://www.moncompteformation.gouv.fr/espace-prive/html/#/ - nouvelle fenêtre">https://www.moncompteformation.gouv.fr/espace-prive/html/#/</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-3">J’aimerais savoir s’il est possible de se faire payer les heures de CPF.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-3">
+                                <p>Nous vous invitons à vous rendre sur le site <a href="https://www.moncompteformation.gouv.fr/espace-public/est-il-possible-de-virer-largent-de-mon-cpf-sur-mon-compte-bancaire" target="_blank" rel="noopener external" title="https://www.moncompteformation.gouv.fr/espace-public/est-il-possible-de-virer-largent-de-mon-cpf-sur-mon-compte-bancaire - nouvelle fenêtre">https://www.moncompteformation.gouv.fr/espace-public/est-il-possible-de-virer-largent-de-mon-cpf-sur-mon-compte-bancaire</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-4">Le compte CPF et le DIF doivent-ils être transformés en euros à partir du 01/01/2019 ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-4">
+                                <p>En effet, depuis 1 janvier 2019, le CPF et le DIF sont disponibles en euros.</p>
+                                <p>En attendant la prise en compte de ce changement sur le site mesdroitssociaux.gouv.fr, vous pouvez consulter vos droits à la formation professionnelle sur le site <a href="https://www.moncompteformation.gouv.fr/espace-public/comment-transformer-mes-heures-en-euros" target="_blank" rel="noopener external" title="https://www.moncompteformation.gouv.fr/espace-public/comment-transformer-mes-heures-en-euros - nouvelle fenêtre">https://www.moncompteformation.gouv.fr/espace-public/comment-transformer-mes-heures-en-euros</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-5">Je travaille depuis plusieurs années en horaires décalés mais je ne vois pas de compte professionnel de prévention (C2P) sur le site. Je crois savoir que l'employeur est dans l'obligation de déclarer ces horaires décalés. Comment y accéder ?</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-5">
+                                <p>Votre compte C2P est accessible sur le portail « mesdroitssociaux.gouv.fr » depuis la page « Autour de l’emploi ».</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-6">Je ne comprends pas pourquoi je possède seulement quelques heures de formation alors que je travaille depuis plusieurs années.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-6">
+                                <p>Vos droits à la formation sont calculés automatiquement à partir des déclarations annuelles de vos activités. Ils dépendent de votre temps de travail, en fonction de votre situation.</p>
+                                <p>Ils sont reportés dans votre compte durant le 1er trimestre de chaque année.</p>
+                                <p>Pour plus d’informations nous vous invitons à vous rendre sur votre compte CPA depuis la page « Autour de l’emploi ».</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion">
+                            <h4 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="faq-7-5-7">Je suis en service civique depuis le mois de septembre, mais je remarque que mon compte d'engagement civique n'indique pas les 20h de formation.</button>
+                            </h4>
+                            <div class="fr-collapse" id="faq-7-5-7">
+                                <p>À l’exception des activités de bénévolat associatif, si vous remplissez les conditions pour être bénéficiaire de droits <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F34030" target="_blank" rel="noopener external" title="CEC - nouvelle fenêtre">CEC</a>, l’organisme compétent va vous déclarer automatiquement. La déclaration est effectuée auprès de la Caisse des Dépôts au début de l’année qui suit celle où vous avez exercé l’activité éligible. Vous n'avez pas de démarche particulière à entreprendre.</p>
+                                <p>Ainsi 20 heures forfaitaires par activité seront créditées sur votre <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F34030" target="_blank" rel="noopener external" title="CEC - nouvelle fenêtre">CEC</a> et ces droits seront visibles sur votre compteur au second trimestre de l’année suivant qui suit celle où vous avez exercé l’activité.</p>
+                                <p>Les premières alimentations automatisées (pour les activités hors bénévolat associatif) ont lieu au premier trimestre 2019 au titre des activités 2017 à l’exception de trois activités éligibles au <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F34030" target="_blank" rel="noopener external" title="CEC - nouvelle fenêtre">CEC</a> depuis 2018 :</p>
+                                <p>La réserve civique;</p>
+                                <p>La réserve citoyenne de la police nationale;</p>
+                                <p>La réserve citoyenne de l’éducation nationale.</p>
+                                <p>Pour plus d’information, consulter le site <a href="https://www.moncompteformation.gouv.fr/espace-prive/html/#/compte-utilisateur/connexion" target="_blank" rel="noopener external" title="moncompteformation - nouvelle fenêtre">moncompteformation</a></p>
+                            </div>
+                        </section>
+                    </div>
+                    <p class="fr-mt-6v">Si vous ne trouvez pas de réponse à votre question :</p>
+                    <p>
+                        <a href="../mds-contact/index.html" id="link-contact" class="fr-link fr-icon-arrow-right-line fr-link--icon-right">Contactez-nous</a>
+                    </p>
+                    <p>
+                        <a href="../mds-accueil/index.html" class="fr-link fr-icon-arrow-left-line fr-link--icon-left">Revenir à l'accueil</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+  </body>
+</html>
