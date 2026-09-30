@@ -1,6 +1,6 @@
 Fichier généré par scripts/build-index.mjs, ne pas modifier à la main
 
-# Modèles DSFR 1.15.2
+# Modèles DSFR 1.15.3
 
 13 modèles (pages types et blocs fonctionnels). Chemins relatifs à la racine du dépôt.
 
