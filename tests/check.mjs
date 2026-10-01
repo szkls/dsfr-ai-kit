@@ -57,16 +57,20 @@ for (const c of [...components]) {
 // id : identifiants techniques des exemples ; aria-current : page ou élément courant (navigation, fil d'Ariane) ;
 // aria-labelledby : retiré par le JS du DSFR sur les modales de l'en-tête en desktop.
 // Parties que la doc du composant déclare facultatives : leur absence n'est pas un écart ; toute autre partie manquante en reste un.
-// Tuile : « Une description, optionnelle », « Un texte de détail, optionnel ». Mise en avant : « Un titre — En option ».
+// Tuile : « Une description, optionnelle », « Un texte de détail, optionnel », « Une première zone de détail, composée d'une
+// précision sous forme de tags […] ou de badges — En option ». Mise en avant : « Un titre — En option ».
 // Modale : « Une icône — En option » dans le titre (span d'icône du titre, voir optionalKey).
-const OPTIONAL_PARTS = new Set(['fr-tile__desc', 'fr-tile__detail', 'fr-callout__title']);
+const OPTIONAL_PARTS = new Set(['fr-tile__desc', 'fr-tile__detail', 'fr-tile__start', 'fr-callout__title']);
+// Modificateurs combinables selon la doc : le type d'une alerte (info, warning, error, success) se combine avec sa taille,
+// alors que le paquet ne montre la taille SM qu'en type info ; à taille égale, les types sont interchangeables.
+const modifierAxis = (c) => c.replace(/^fr-alert--(info|warning|error|success)$/, 'fr-alert--(type)');
 function optionalKey(child, parent) {
   const cls = (child.c || []).find((x) => OPTIONAL_PARTS.has(x));
   if (cls) return cls;
   if ((parent.c || []).includes('fr-modal__title') && child.t === 'span' && [child.p, ...(child.c || [])].some((x) => x && x.startsWith('fr-icon-'))) return 'icone-du-titre';
   return null;
 }
-const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role', 'id', 'aria-current', 'aria-labelledby']);
+const BEHAVIOUR_ATTRS = new Set(['autocomplete', 'spellcheck', 'autocapitalize', 'autocorrect', 'placeholder', 'value', 'required', 'aria-required', 'disabled', 'checked', 'selected', 'readonly', 'maxlength', 'minlength', 'pattern', 'inputmode', 'lang', 'target', 'rel', 'title', 'hreflang', 'download', 'role', 'id', 'aria-current', 'aria-labelledby']);
 const IGNORE_ATTRS = [...BEHAVIOUR_ATTRS];
 
 // ---------- Classes connues du DSFR ----------
@@ -234,8 +238,9 @@ function diff(a, b, path) {
   // quel que soit son élément (la doc autorise par exemple un lien ou un bouton dans une mise en avant)
   if (a.b || b.b) { if (!!a.b !== !!b.b) note(`${path} : sous-composant ${a.b ? 'inattendu' : 'attendu'} ${lbl(a.b ? a : b)}`, 3); return { score, first }; }
   if (a.t !== b.t) { note(`${path} : balise ${lbl(a)} au lieu de ${lbl(b)}`, 5); return { score, first }; }
-  for (const m of b.c.filter((x) => !a.c.includes(x))) note(`${path} : classe ${m} manquante`);
-  for (const e of a.c.filter((x) => !b.c.includes(x))) note(`${path} : classe ${e} en trop`);
+  const ac = a.c.map(modifierAxis), bc = b.c.map(modifierAxis);
+  for (const m of b.c.filter((x) => !ac.includes(modifierAxis(x)))) note(`${path} : classe ${m} manquante`);
+  for (const e of a.c.filter((x) => !bc.includes(modifierAxis(x)))) note(`${path} : classe ${e} en trop`);
   for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
   // listes (ul, ol) : les lignes d'un écran sont libres en nombre et en ordre ; chaque ligne doit correspondre à un type de ligne de l'exemple
   if ((a.t === 'ul' || a.t === 'ol') && a.k.length && b.k.length) {
