@@ -1,6 +1,6 @@
 # Rapport de tests : mds-accueil
 
-Généré par tests/check.mjs le 2026-09-30 — DSFR 1.15.3 — fichiers : index.html
+Généré par tests/check.mjs le 2026-10-01 — DSFR 1.15.3 — fichiers : index.html
 
 **Verdict : CONFORME — 0 écart(s) de snippet, 0 classe(s) inconnue(s) ou style(s) en ligne, 0 problème(s) de contenu, 0 violation(s) axe, 0 composant(s) sans ligne « Doc lue ».**
 

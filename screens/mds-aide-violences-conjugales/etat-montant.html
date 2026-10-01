@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="fr" data-fr-scheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+
+    <meta name="theme-color" content="#000091"><!-- Défini la couleur de thème du navigateur (Safari/Android) -->
+    <link rel="apple-touch-icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../../node_modules/@gouvfr/dsfr/dist/favicon/favicon.ico" type="image/x-icon"><!-- 32×32 -->
+    <link rel="manifest" href="../../node_modules/@gouvfr/dsfr/dist/favicon/manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css">
+    <link rel="stylesheet" href="../../node_modules/@gouvfr/dsfr/dist/utility/utility.min.css">
+
+    <!-- Prototype en thème clair forcé : le DSFR donne la priorité au thème mémorisé dans le navigateur (localStorage « scheme »), on le remet à clair avant son chargement -->
+    <script>try { localStorage.setItem('scheme', 'light'); } catch (e) {}</script>
+
+    <!--- Script pour corriger l'effet de flash au chargement du mode sombre, à placer dans le head pour être exécuté le plus tôt possible -->
+    <script type="module">
+      const e="system",t="dark",c="dark",o="data-fr-theme",a="data-fr-scheme",r=`:root[${o}], :root[${a}]`,m=()=>{document.documentElement.setAttribute(o,c),document.documentElement.style.colorScheme="dark"},n=()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&m()};(()=>{if(document.documentElement.matches(r)){const c=(()=>{try{return"localStorage"in window&&null!==window.localStorage}catch(e){return!1}})()?localStorage.getItem("scheme"):"",o=document.documentElement.getAttribute(a);switch(!0){case c===t:m();break;case c===e:n();break;case o===t:m();break;case o===e:n()}}})();
+    </script>
+
+    <title>Aide d'urgence aux victimes de violences conjugales - Mes droits sociaux</title>
+  </head>
+  <body>
+    <div class="fr-skiplinks">
+        <nav role="navigation" aria-label="Accès rapide" class="fr-container">
+            <ul class="fr-skiplinks__list">
+                <li>
+                    <a class="fr-link" href="#content">Contenu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#header-navigation">Menu</a>
+                </li>
+                <li>
+                    <a class="fr-link" href="#footer">Pied de page</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <header role="banner" class="fr-header">
+        <div class="fr-header__body">
+            <div class="fr-container">
+                <div class="fr-header__body-row">
+                    <div class="fr-header__brand fr-enlarge-link">
+                        <div class="fr-header__brand-top">
+                            <div class="fr-header__logo">
+                                <p class="fr-logo">
+                                    République
+                                    <br>Française
+                                </p>
+                            </div>
+                            <div class="fr-header__navbar">
+                                <button data-fr-opened="false" aria-controls="modal-menu" title="Menu" type="button" id="button-menu" class="fr-btn--menu fr-btn">Menu</button>
+                            </div>
+                        </div>
+                        <div class="fr-header__service">
+                            <a href="/" title="Accueil - Mes droits sociaux - République Française">
+                                <p class="fr-header__service-title">
+                                    Mes droits sociaux
+                                </p>
+                            </a>
+                            <p class="fr-header__service-tagline">Consultez vos droits, simulez vos prestations, effectuez vos démarches</p>
+                        </div>
+                    </div>
+                    <div class="fr-header__tools">
+                        <div class="fr-header__tools-links">
+                            <div class="fr-connect-group">
+                                <button class="fr-connect" id="connect-franceconnect" type="button">
+                                    <span class="fr-connect__login">S’identifier avec</span>
+                                    <span class="fr-connect__brand">FranceConnect</span>
+                                </button>
+                                <p>
+                                    <a href="https://franceconnect.gouv.fr/" id="connect-link-franceconnect" target="_blank" rel="noopener" title="Qu’est-ce que FranceConnect ? - nouvelle fenêtre">Qu’est-ce que FranceConnect ?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu" aria-labelledby="button-menu">
+            <div class="fr-container">
+                <button aria-controls="modal-menu" title="Fermer" type="button" id="button-menu-close" class="fr-btn--close fr-btn">Fermer</button>
+                <div class="fr-header__menu-links">
+                </div>
+                <nav class="fr-nav" id="header-navigation" role="navigation" aria-label="Menu principal">
+                    <ul class="fr-nav__list">
+                        <li class="fr-nav__item">
+                            <a id="nav-accueil" type="link" href="../mds-accueil/index.html" class="fr-nav__link">Accueil</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-services" type="link" href="#" class="fr-nav__link">Vos services</a>
+                        </li>
+                        <li class="fr-nav__item">
+                            <a id="nav-evenements" type="link" href="../mds-evenements-de-vie/index.html" class="fr-nav__link">Vos événements de vie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fr-container">
+        <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+            <button type="button" class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-page">Voir le fil d’Ariane</button>
+            <div class="fr-collapse" id="breadcrumb-page">
+                <ol class="fr-breadcrumb__list">
+                    <li>
+                        <a class="fr-breadcrumb__link" id="breadcrumb-accueil" href="../mds-accueil/index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" aria-current="page">Aide d'urgence aux victimes de violences conjugales</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+    <main role="main" id="content">
+        <div class="fr-container fr-mt-4v fr-mb-8v">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-lg-8">
+                    <h1>Aide d'urgence aux victimes de violences conjugales</h1>
+                    <p class="fr-text--lead">Cette aide d'urgence a pour but de vous garantir les conditions financières nécessaires pour vous mettre à l'abri.</p>
+                    <ul>
+                        <li>Dans les plus brefs délais</li>
+                        <li>Des critères d'éligibilité simplifiés</li>
+                    </ul>
+                    <a href="#demande" class="fr-btn">Accéder à la demande d'aide</a>
+                    <div id="callout-discretion" class="fr-callout fr-mt-6v">
+                        <h2 class="fr-callout__title">Une procédure discrète</h2>
+                        <p class="fr-callout__text">La demande d'aide a été adaptée pour limiter vos risques : vous choisirez sur quelles coordonnées vous serez recontacté. Si l'auteur des violences peut accéder à votre courrier, vos mails ou votre téléphone, nous vous recommandons d'indiquer, dans votre demande d'aide, des coordonnées de contact différentes et sécurisées.</p>
+                        <a href="https://arretonslesviolences.gouv.fr/comment-effacer-mes-traces" target="_blank" rel="noopener external" title="Apprenez à effacer vos traces sur internet (arretonslesviolences.gouv.fr) - nouvelle fenêtre" class="fr-link">Apprenez à effacer vos traces sur internet (arretonslesviolences.gouv.fr)</a>
+                    </div>
+                    <div data-fr-group="false" class="fr-accordions-group fr-mt-6v">
+                        <section class="fr-accordion" id="faq-violences">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-violences">Qu'appelle-t-on des “violences conjugales” ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-violences">
+                                <p>Il s'agit des violences commises au sein des couples mariés, pacsés ou en union libre. Ces violences peuvent être physiques, psychologiques ou sexuelles. Elles peuvent viser un homme ou une femme.</p>
+                                <p>Si vous êtes victime et que vous signalez les faits, vous pouvez être aidé et protégé.</p>
+                                <p>Remarque : les violences familiales (enfants, parents, etc.) ne sont pas concernées par cette aide.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-aide">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-aide">En quoi consiste cette aide ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-aide">
+                                <p>Cette aide se présente sous forme :</p>
+                                <ul>
+                                    <li>d'une aide non remboursable</li>
+                                    <li>ou d'un prêt sans intérêt selon la situation financière et sociale.</li>
+                                </ul>
+                                <p>Elle est versée en une seule fois, dans un délai de 3 à 5 jours ouvrés à compter de la réception de la demande complète.</p>
+                                <p>Vous pouvez faire la demande :</p>
+                                <ul>
+                                    <li>sur place à un accueil CAF ou MSA,</li>
+                                    <li>en ligne, sur cette page, ou sur les sites de la CAF ou la MSA</li>
+                                </ul>
+                                <p>Dans le cas d'un prêt, l'auteur des violences pourra être condamné à rembourser le prêt à votre place.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-remboursement">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-remboursement">Dans le cas d'un prêt, quelles sont les modalités de remboursement ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-remboursement">
+                                <p>Vous avez 2 ans, après l'attribution, pour rembourser l'aide, sauf si une procédure pénale est en cours à l'encontre de l'auteur des violences. Celui-ci pourra être condamné à rembourser le prêt à votre place.</p>
+                                <p>Vous pouvez toutefois opter pour un remboursement anticipé, avant cette échéance de 2 ans.</p>
+                                <p>Ce remboursement peut se faire :</p>
+                                <ul>
+                                    <li>en une seule fois ;</li>
+                                    <li>ou en un versement échelonné, de 24 mensualités au maximum.</li>
+                                </ul>
+                                <p>Ce remboursement peut s'effectuer, soit directement par le bénéficiaire, soit par des retenues sur des prestations à venir ou bien encore par une combinaison de ces deux modalités de remboursement.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-beneficiaires">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-beneficiaires">Qui peut bénéficier de cette aide ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-beneficiaires">
+                                <p>Pour avoir droit à cette aide d'urgence, vous devez :</p>
+                                <ul>
+                                    <li>être de nationalité française, ressortissant d'un pays membre de l'UE/EEE ou Suisse ou disposant d'un titre de séjour</li>
+                                    <li>résider de manière stable et régulière en France</li>
+                                </ul>
+                                <p>Vous pouvez demander cette aide :</p>
+                                <ul>
+                                    <li>que vous ayez vécu ou non avec l'auteur des violences ;</li>
+                                    <li>que vous soyez déjà séparé ou non de l'auteur des violences.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-justificatif">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-justificatif">Quel justificatif est nécessaire ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-justificatif">
+                                <p>Pour avoir droit à cette aide d'urgence, vous devez fournir un justificatif de moins de 12 mois qui atteste des violences. Il peut s'agir :</p>
+                                <ul>
+                                    <li>d'une ordonnance de protection délivrée par le juge aux affaires familiales ;</li>
+                                    <li>d'un dépôt de plainte auprès des forces de l'ordre (ou récépissé du procés verbal);</li>
+                                    <li>d'un signalement adressé au procureur de la République.</li>
+                                </ul>
+                                <p>Une main courante seule ne vous permettra pas de bénéficier de l'aide.</p>
+                                <p><a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F12544#fiche-item-aria-7" target="_blank" rel="noopener external" title="En savoir plus sur l'obtention de ce justificatif (service-public.fr) - nouvelle fenêtre" class="fr-link">En savoir plus sur l'obtention de ce justificatif (service-public.fr)</a></p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-montant">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="true" aria-controls="accordion-faq-montant">Quel est le montant de l'aide financière ?</button>
+                            </h2>
+                            <div class="fr-collapse fr-collapse--expanded" id="accordion-faq-montant">
+                                <p>L'aide financière dépend de vos revenus et du nombre d'enfants que vous avez. Répondez à ces 2 questions pour voir le montant.</p>
+                                <fieldset class="fr-fieldset" id="calcul-enfants" aria-labelledby="calcul-enfants-legend calcul-enfants-messages">
+                                    <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="calcul-enfants-legend">
+                                        1/2 - Combien d'enfants à charge avez-vous ?
+                                        <span class="fr-hint-text">Enfants âgés de moins de 21 ans sur lesquels vous avez l'autorité parentale, résidant dans le foyer d'origine au moment des violences, qu'ils aient ou non quitté le domicile conjugal avec vous.</span>
+                                    </legend>
+                                    <div class="fr-fieldset__element">
+                                        <div class="fr-radio-group">
+                                            <input value="0" type="radio" id="calcul-enfants-1" name="calcul-enfants" checked>
+                                            <label class="fr-label" for="calcul-enfants-1">
+                                                Aucun enfant
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fr-fieldset__element">
+                                        <div class="fr-radio-group">
+                                            <input value="1" type="radio" id="calcul-enfants-2" name="calcul-enfants">
+                                            <label class="fr-label" for="calcul-enfants-2">
+                                                1 enfant
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fr-fieldset__element">
+                                        <div class="fr-radio-group">
+                                            <input value="2" type="radio" id="calcul-enfants-3" name="calcul-enfants">
+                                            <label class="fr-label" for="calcul-enfants-3">
+                                                2 enfants
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fr-fieldset__element">
+                                        <div class="fr-radio-group">
+                                            <input value="3" type="radio" id="calcul-enfants-4" name="calcul-enfants">
+                                            <label class="fr-label" for="calcul-enfants-4">
+                                                3 enfants
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fr-fieldset__element">
+                                        <div class="fr-radio-group">
+                                            <input value="4" type="radio" id="calcul-enfants-5" name="calcul-enfants">
+                                            <label class="fr-label" for="calcul-enfants-5">
+                                                4 enfants ou plus
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="fr-messages-group" id="calcul-enfants-messages" aria-live="polite">
+                                    </div>
+                                </fieldset>
+                                <p>Les ressources prises en compte sont :</p>
+                                <ul>
+                                    <li>Revenus d'activité salariée ;</li>
+                                    <li>Revenus d'activité non salariée (moyenne mensuelle des revenus ou, pour les non-salariés agricoles, moyenne mensuelle des bénéfices) ;</li>
+                                    <li>Indemnités de chômage (y compris le chômage partiel) ;</li>
+                                    <li>Indemnités journalières de sécurité sociale (maternité, paternité, adoption, etc.) ;</li>
+                                    <li>Pensions de retraite ;</li>
+                                    <li>Rémunération garantie pour les travailleurs en Esat.</li>
+                                </ul>
+                                <div class="fr-select-group">
+                                    <label class="fr-label" for="calcul-ressources">
+                                        2/2 - Quelles sont vos dernières ressources connues (mois dernier ou mois précédent), en montant net social ?
+                                        <span class="fr-hint-text">Si vous ne connaissez pas le montant net social de vos ressources, utilisez le montant net à payer.</span>
+                                    </label>
+                                    <select class="fr-select" aria-describedby="calcul-ressources-messages" id="calcul-ressources" name="calcul-ressources">
+                                        <option value="" disabled>Sélectionner une option</option>
+                                        <option value="0" selected>Moins de 722 €</option>
+                                        <option value="1">Entre 723 et 1443 €</option>
+                                        <option value="2">Entre 1444 et 2165 €</option>
+                                        <option value="3">Entre 2166 et 3247 €</option>
+                                        <option value="4">Entre 3248 et 3896 €</option>
+                                        <option value="5">Entre 3897 et 4762 €</option>
+                                        <option value="6">Plus de 4762 €</option>
+                                    </select>
+                                    <div class="fr-messages-group" id="calcul-ressources-messages" aria-live="polite">
+                                    </div>
+                                </div>
+                                <button type="button" class="fr-btn fr-btn--secondary" id="bouton-calcul">Calculer le montant</button>
+                                <div id="resultat-montant" class="fr-alert fr-alert--info fr-mt-4v" role="status">
+                                    <h3 class="fr-alert__title" id="resultat-montant-titre">D'après ces informations, si vous êtes éligible, votre aide financière sera de 652 €</h3>
+                                    <p id="resultat-montant-nature">Il s’agira d'une aide non remboursable.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-imposable">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-imposable">Est-ce que cette aide est imposable ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-imposable">
+                                <p>L'aide d'urgence n'est pas imposable.</p>
+                                <p>Elle n'est pas prise en compte comme ressources pour la prime d'activité et le droit au revenu de solidarité active, ni pour aucune prestation sociale.</p>
+                            </div>
+                        </section>
+                        <section class="fr-accordion" id="faq-deroulement">
+                            <h2 class="fr-accordion__title">
+                                <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-faq-deroulement">Comment se déroule la demande ?</button>
+                            </h2>
+                            <div class="fr-collapse" id="accordion-faq-deroulement">
+                                <ul>
+                                    <li>Vous répondez aux questions ci-dessous pour vérifier votre droit et être orienté vers la demande correspondant à votre situation.</li>
+                                    <li>Vous déposez votre demande.</li>
+                                    <li>L'organisme traite votre demande et vous informe du versement de l'aide. Vérifiez bien vos coordonnées de contact.</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="demande" class="fr-mt-8v">
+                        <h2>Accéder à la demande d'aide</h2>
+                        <p>Vérifiez si vous avez droit à l'Aide aux Victimes de Violences Conjugales en répondant aux 4 questions ci-dessous.</p>
+                        <p class="fr-text--sm">Toutes les questions sont obligatoires.</p>
+                        <div id="etape-residence" class="fr-mt-4v">
+                            <fieldset class="fr-fieldset" id="residence" aria-labelledby="residence-legend residence-messages">
+                                <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="residence-legend">
+                                    1/4 - Résidez-vous en France de manière stable et régulière ?
+                                </legend>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="oui" type="radio" id="residence-1" name="residence" required>
+                                        <label class="fr-label" for="residence-1">
+                                            Oui
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="non" type="radio" id="residence-2" name="residence" required>
+                                        <label class="fr-label" for="residence-2">
+                                            Non
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-messages-group" id="residence-messages" aria-live="polite">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="issue-residence" hidden>
+                            <div class="fr-alert fr-alert--warning fr-alert--sm" role="alert">
+                                <p>Vous devez résider en France de façon régulière pour bénéficier de cette aide.</p>
+                            </div>
+                            <ul class="fr-links-group fr-mt-2v">
+                                <li>
+                                    <a href="#faq-beneficiaires" class="fr-link">Quelles sont les conditions pour obtenir l'aide ?</a>
+                                </li>
+                                <li>
+                                    <a href="https://arretonslesviolences.gouv.fr/associations-de-lutte-contre-les-violences-sexistes-et-sexuelles" target="_blank" rel="noopener external" title="Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/ - nouvelle fenêtre" class="fr-link">Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="etape-statut" class="fr-mt-4v" hidden>
+                            <fieldset class="fr-fieldset" id="statut" aria-labelledby="statut-legend statut-messages">
+                                <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="statut-legend">
+                                    2/4 - Êtes-vous de nationalité française OU ressortissant d'un pays membre de l'Union Européenne / l'Espace Economique Européen OU disposant d'un titre de séjour ?
+                                </legend>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="oui" type="radio" id="statut-1" name="statut" required>
+                                        <label class="fr-label" for="statut-1">
+                                            Oui
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="non" type="radio" id="statut-2" name="statut" required>
+                                        <label class="fr-label" for="statut-2">
+                                            Non
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-messages-group" id="statut-messages" aria-live="polite">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="issue-statut" hidden>
+                            <div class="fr-alert fr-alert--warning fr-alert--sm" role="alert">
+                                <p>Votre statut ne vous permet pas de bénéficier de cette aide.</p>
+                            </div>
+                            <ul class="fr-links-group fr-mt-2v">
+                                <li>
+                                    <a href="#faq-beneficiaires" class="fr-link">Qui peut bénéficier de cette aide ?</a>
+                                </li>
+                                <li>
+                                    <a href="https://arretonslesviolences.gouv.fr/associations-de-lutte-contre-les-violences-sexistes-et-sexuelles" target="_blank" rel="noopener external" title="Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/ - nouvelle fenêtre" class="fr-link">Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="etape-justificatif" class="fr-mt-4v" hidden>
+                            <fieldset class="fr-fieldset" id="justificatif" aria-labelledby="justificatif-legend justificatif-messages">
+                                <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="justificatif-legend">
+                                    3/4 - Avez-vous une pièce justificative attestant des violences datant de moins de 12 mois ?
+                                </legend>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="oui" type="radio" id="justificatif-1" name="justificatif" required>
+                                        <label class="fr-label" for="justificatif-1">
+                                            Oui
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-fieldset__element fr-fieldset__element--inline">
+                                    <div class="fr-radio-group">
+                                        <input value="non" type="radio" id="justificatif-2" name="justificatif" required>
+                                        <label class="fr-label" for="justificatif-2">
+                                            Non
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-messages-group" id="justificatif-messages" aria-live="polite">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="issue-justificatif" hidden>
+                            <div class="fr-alert fr-alert--warning fr-alert--sm" role="alert">
+                                <p>Pour faire une demande d'aide, vous devez fournir un document attestant des violences.</p>
+                            </div>
+                            <ul class="fr-links-group fr-mt-2v">
+                                <li>
+                                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F12544#fiche-item-aria-7" target="_blank" rel="noopener external" title="En savoir plus sur l'obtention de ce justificatif (service-public.fr) - nouvelle fenêtre" class="fr-link">En savoir plus sur l'obtention de ce justificatif (service-public.fr)</a>
+                                </li>
+                                <li>
+                                    <a href="https://arretonslesviolences.gouv.fr/associations-de-lutte-contre-les-violences-sexistes-et-sexuelles" target="_blank" rel="noopener external" title="Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/ - nouvelle fenêtre" class="fr-link">Trouvez de l'aide auprès des associations nationales et près de chez vous sur arretonslesviolences.gouv.fr/</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="etape-organisme" class="fr-mt-4v" hidden>
+                            <fieldset class="fr-fieldset" id="organisme" aria-labelledby="organisme-legend organisme-messages">
+                                <legend class="fr-fieldset__legend--regular fr-fieldset__legend" id="organisme-legend">
+                                    4/4 - De quel organisme social dépendez-vous ?
+                                </legend>
+                                <div class="fr-fieldset__element">
+                                    <div class="fr-radio-group">
+                                        <input value="msa" type="radio" id="organisme-1" name="organisme" required>
+                                        <label class="fr-label" for="organisme-1">
+                                            MSA
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-fieldset__element">
+                                    <div class="fr-radio-group">
+                                        <input value="caf" type="radio" id="organisme-2" name="organisme" required>
+                                        <label class="fr-label" for="organisme-2">
+                                            CAF
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-fieldset__element">
+                                    <div class="fr-radio-group">
+                                        <input value="autre" type="radio" id="organisme-3" name="organisme" required>
+                                        <label class="fr-label" for="organisme-3">
+                                            Autre / Je ne sais pas
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="fr-messages-group" id="organisme-messages" aria-live="polite">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div id="issue-msa" class="fr-mt-4v" hidden>
+                            <div class="fr-alert fr-alert--success" role="status">
+                                <h3 class="fr-alert__title">Vous remplissez les conditions pour demander l'Aide aux Victimes de Violences Conjugales.</h3>
+                                <p>Votre dossier sera traité par la MSA.</p>
+                            </div>
+                            <p class="fr-mt-4v">
+                                <a href="https://www.msa.fr/famille/aide-urgence-victimes-violences-conjugales" target="_blank" rel="noopener external" title="Faire la demande sur le site de la MSA - nouvelle fenêtre" class="fr-btn">Faire la demande sur le site de la MSA</a>
+                            </p>
+                        </div>
+                        <div id="issue-caf" class="fr-mt-4v" hidden>
+                            <div class="fr-alert fr-alert--success" role="status">
+                                <h3 class="fr-alert__title">Vous remplissez les conditions pour demander l'Aide aux Victimes de Violences Conjugales.</h3>
+                                <p>Votre dossier sera traité par la CAF (créez un compte si besoin).</p>
+                            </div>
+                            <p class="fr-mt-4v">
+                                <a href="https://wwwd.caf.fr/redirect/s/Redirect?page=monCompteDemanderLAVVC" target="_blank" rel="noopener external" title="Faire la demande sur le site de la CAF - nouvelle fenêtre" class="fr-btn">Faire la demande sur le site de la CAF</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="fr-mt-8v">Voir aussi</h2>
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-voir-aussi-1">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://arretonslesviolences.gouv.fr/besoin-d-aide" target="_blank" rel="noopener external" title="Besoin d'aide : à qui vous adresser ? - nouvelle fenêtre">Besoin d'aide : à qui vous adresser ?</a>
+                                </h3>
+                                <p class="fr-tile__desc">Numéro d'écoute, plateforme de signalement des violences, liste des associations, etc.</p>
+                                <p class="fr-tile__detail">arretonslesviolences.gouv.fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-voir-aussi-2">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/F12544" target="_blank" rel="noopener external" title="Violence conjugale - Service Public - nouvelle fenêtre">Violence conjugale - Service Public</a>
+                                </h3>
+                                <p class="fr-tile__desc">Consultez l'ensemble des informations et démarches pour votre situation.</p>
+                                <p class="fr-tile__detail">service-public.fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-col-12 fr-col-md-4">
+                    <div class="fr-tile fr-enlarge-link" id="tile-voir-aussi-3">
+                        <div class="fr-tile__body">
+                            <div class="fr-tile__content">
+                                <h3 class="fr-tile__title">
+                                    <a href="https://www.service-public.gouv.fr/cmi" target="_blank" rel="noopener external" title="Signaler une violence conjugale - nouvelle fenêtre">Signaler une violence conjugale</a>
+                                </h3>
+                                <p class="fr-tile__desc">Vous êtes victime ou témoin ? Dialoguez avec une policière ou un policier</p>
+                                <p class="fr-tile__detail">service-public.fr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+        <div class="fr-container">
+            <div class="fr-footer__body">
+                <div class="fr-footer__brand fr-enlarge-link">
+                    <a id="footer-brand-link" title="Retour à l’accueil du site - Mes droits sociaux - République Française" href="/">
+                        <p class="fr-logo">
+                            République
+                            <br>Française
+                        </p>
+                    </a>
+                </div>
+                <div class="fr-footer__content">
+                    <p class="fr-footer__content-desc">Mes droits sociaux est le portail de l'État pour consulter vos droits sociaux, simuler vos prestations et effectuer vos démarches.</p>
+                    <ul class="fr-footer__content-list">
+                        <li class="fr-footer__content-item">
+                            <a title="info.gouv.fr - nouvelle fenêtre" id="footer__content-link-1" href="https://info.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">info.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="service-public.gouv.fr - nouvelle fenêtre" id="footer__content-link-2" href="https://service-public.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">service-public.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="legifrance.gouv.fr - nouvelle fenêtre" id="footer__content-link-3" href="https://legifrance.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">legifrance.gouv.fr</a>
+                        </li>
+                        <li class="fr-footer__content-item">
+                            <a title="data.gouv.fr - nouvelle fenêtre" id="footer__content-link-4" href="https://data.gouv.fr" target="_blank" rel="noopener external" class="fr-footer__content-link">data.gouv.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr-footer__bottom">
+                <ul class="fr-footer__bottom-list">
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-1" href="../mds-faq/index.html" class="fr-footer__bottom-link">Foire aux questions</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-2" href="../mds-contact/index.html" class="fr-footer__bottom-link">Contact</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-3" href="../mds-qui-sommes-nous/index.html" class="fr-footer__bottom-link">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-4" href="../mds-mentions-legales/index.html" class="fr-footer__bottom-link">Mentions légales</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-5" href="#" class="fr-footer__bottom-link">Gérer les cookies</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-6" href="../mds-accessibilite/index.html" class="fr-footer__bottom-link">Accessibilité : partiellement conforme</a>
+                    </li>
+                    <li class="fr-footer__bottom-item">
+                        <a id="footer__bottom-link-7" href="../mds-plan-du-site/index.html" class="fr-footer__bottom-link">Plan du site</a>
+                    </li>
+                </ul>
+                <div class="fr-footer__bottom-copy">
+                    <p>Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener external" title="Licence etalab - nouvelle fenêtre">licence etalab-2.0</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/@gouvfr/dsfr/dist/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="../../node_modules/@gouvfr/dsfr/dist/dsfr.nomodule.min.js"></script>
+      <script>
+      (function () {
+        // barème relevé sur le site le 01/10/2026 : [enfants][tranche de ressources] -> [montant, nature]
+        var BAREME = [[["652 €","Il s’agira d'une aide non remboursable."],["522 €","Il s’agira d'une aide non remboursable."],["391 €","Il s’agira d'une aide non remboursable."],["261 €","Il s’agira d'un prêt sans intérêt."],["261 €","Il s’agira d'un prêt sans intérêt."],["261 €","Il s’agira d'un prêt sans intérêt."],["261 €","Il s’agira d'un prêt sans intérêt."]],[["979 €","Il s’agira d'une aide non remboursable."],["783 €","Il s’agira d'une aide non remboursable."],["587 €","Il s’agira d'une aide non remboursable."],["391 €","Il s’agira d'une aide non remboursable."],["391 €","Il s’agira d'un prêt sans intérêt."],["391 €","Il s’agira d'un prêt sans intérêt."],["391 €","Il s’agira d'un prêt sans intérêt."]],[["1 174 €","Il s’agira d'une aide non remboursable."],["939 €","Il s’agira d'une aide non remboursable."],["705 €","Il s’agira d'une aide non remboursable."],["470 €","Il s’agira d'une aide non remboursable."],["470 €","Il s’agira d'une aide non remboursable."],["470 €","Il s’agira d'un prêt sans intérêt."],["470 €","Il s’agira d'un prêt sans intérêt."]],[["1 435 €","Il s’agira d'une aide non remboursable."],["1 148 €","Il s’agira d'une aide non remboursable."],["861 €","Il s’agira d'une aide non remboursable."],["574 €","Il s’agira d'une aide non remboursable."],["574 €","Il s’agira d'une aide non remboursable."],["574 €","Il s’agira d'une aide non remboursable."],["574 €","Il s’agira d'un prêt sans intérêt."]],[["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."],["574 €","Il s’agira d'un prêt sans intérêt."]]];
+        var ORDRE = ['residence', 'statut', 'justificatif', 'organisme'];
+        function valeur(nom) { var c = document.querySelector('input[name="' + nom + '"]:checked'); return c ? c.value : null; }
+        function afficher(id, visible) { var el = document.getElementById(id); if (el) el.hidden = !visible; }
+        function eligibilite() {
+          var bloque = false;
+          ORDRE.forEach(function (q) {
+            var v = valeur(q);
+            afficher('etape-' + q, !bloque);
+            if (q !== 'organisme') { afficher('issue-' + q, !bloque && v === 'non'); if (v !== 'oui') bloque = true; }
+            else { afficher('issue-msa', !bloque && v === 'msa'); afficher('issue-caf', !bloque && (v === 'caf' || v === 'autre')); }
+          });
+        }
+        document.getElementById('demande').addEventListener('change', eligibilite);
+        document.getElementById('bouton-calcul').addEventListener('click', function () {
+          var e = valeur('calcul-enfants'), select = document.getElementById('calcul-ressources'), r = select.value;
+          if (e === null) { document.getElementById('calcul-enfants-1').focus(); return; }
+          if (r === '') { select.focus(); return; }
+          var res = BAREME[+e][+r];
+          document.getElementById('resultat-montant-titre').textContent = "D'après ces informations, si vous êtes éligible, votre aide financière sera de " + res[0];
+          document.getElementById('resultat-montant-nature').textContent = res[1];
+          afficher('resultat-montant', true);
+        });
+        // les liens vers une question de la FAQ ouvrent l'accordéon correspondant
+        document.querySelectorAll('a[href^="#faq-"]').forEach(function (a) {
+          a.addEventListener('click', function () {
+            var collapse = document.querySelector(a.getAttribute('href') + ' .fr-collapse');
+            if (collapse && window.dsfr) window.dsfr(collapse).collapse.disclose();
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
