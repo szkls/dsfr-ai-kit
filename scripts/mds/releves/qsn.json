@@ -1,0 +1,63 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/accueil/qui-sommes-nous",
+ "h1": [
+  "QUI SOMMES-NOUS ?"
+ ],
+ "title": "Qui Sommes Nous",
+ "lignes": [
+  "# QUI SOMMES-NOUS ?",
+  "## Découvrez le portail mesdroitssociaux.gouv.fr",
+  "## LE PORTAIL",
+  "### Qu’est-ce que le portail mesdroitssociaux.gouv.fr ?",
+  "mesdroitssociaux.gouv.fr est un portail universel destiné à tous, que vous soyez en activité, sans emploi ou à la retraite. Il vous permet de :",
+  "Visualiser et comprendre vos droits et prestations",
+  "Retrouver rapidement vos organismes de rattachement",
+  "Simuler vos droits sociaux",
+  "Réaliser vos démarches en ligne",
+  "Consulter l’ensemble de vos ressources",
+  "Découvrir les évènements de vie",
+  "C’est simple, facile et rapide.",
+  "[image alt=\"\"]",
+  "## VIDÉO DE PRÉSENTATION",
+  "### Découvrez en vidéo le portail mesdroitsociaux.gouv.fr",
+  "[image alt=\"\"]",
+  "#### Qui sommes nous",
+  "Pour voir cette vidéo, vous devez autoriser les cookies \"Vidéo\" Dailymotion.",
+  "[bouton \"Gérer les cookies\"]",
+  "[bouton \"Voir la transcription textuelle\"]",
+  "## FRANCE CONNECT",
+  "### Qu’est-ce que FranceConnect ?",
+  "La connexion au portail mesdroitssociaux.gouv.fr se fait via FranceConnect. Vous avez déjà un compte auprès de Impots.gouv.fr, Ameli.fr, MSA.fr, La Poste, Mobile Connect et moi, Alicem, AidantsConnect, ... ?FranceConnect vous permet de vous connecter aux services publics en ligne en utilisant l’un de vos comptes habituels : aucune inscription au préalable et plus besoin de mémoriser de multiples identifiants et mots de passe. Lorsque vous utilisez l’un de ces comptes pour accéder à nos services, seule votre identité est transmise sans tracer votre navigation. Pour plus d’informations :",
+  "[bouton \"Pourquoi et comment vous connecter avec France Connect ?\"]",
+  "[bouton \"Voir la vidéo \"FranceConnect expliqué en 2 minutes\"\"]",
+  "[image alt=\"\"]",
+  "## LES PARTENAIRES",
+  "### Quels sont les organismes partenaires ?",
+  "Le portail mesdroitssociaux.gouv.fr est le fruit d’un travail collectif des différents acteurs de la protection sociale, de l’emploi et de l’Etat :"
+ ],
+ "destinations": [
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/presentationGenerale",
+   "fenetre": null
+  },
+  {
+   "libelle": "keyboard_arrow_right Pourquoi et comment vous connecter avec France Connect ?",
+   "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/foireAuxQuestionsFooter",
+   "fenetre": null
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la vidéo \"FranceConnect expliqué en 2 minutes\"",
+   "ouvre": "https://www.dailymotion.com/video/x78xrdm",
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

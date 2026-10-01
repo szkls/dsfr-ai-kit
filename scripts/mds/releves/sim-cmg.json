@@ -1,0 +1,27 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg",
+ "h1": [
+  "Simuler le Complément de libre choix du mode de garde (CMG) structure"
+ ],
+ "title": "Simuler le Complément de libre choix du mode de garde (CMG) structure - simulation CMG – mes droits sociaux",
+ "lignes": [
+  "# Simuler le Complément de libre choix du mode de garde (CMG) structure",
+  "Le Complément de libre choix du Mode de Garde (CMG) Structure est une aide financière versée par l'organisme de prestations familiales (CAF ou MSA). Cette aide prend en charge, partiellement, les frais de garde de vos enfants de moins de 6 ans. Elle varie en fonction des revenus de votre foyer, du nombre d'enfants à charge et du type de garde. {fr-text--lead}",
+  "## Préparez vos documents",
+  "- des avis d’imposition de votre foyer, sur les deux dernières années 2025 et 2024.",
+  "- d’une estimation de vos frais de garde par mois.",
+  "<fr-callout>",
+  "#### Le simulateur prend en compte un seul mode de garde par simulation {fr-callout__title}",
+  "Le simulateur est en cours de construction.Si vous voulez : comparer plusieurs modes de garde, vous pouvez refaire la simulation en changeant de mode de gardecumuler différents modes de garde, vous pouvez vous rapprocher de votre CAF ou MSA {fr-callout__text}",
+  "[bouton \"Commencer la simulation\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Commencer la simulation",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/questions-preliminaires",
+   "fenetre": null
+  }
+ ]
+}

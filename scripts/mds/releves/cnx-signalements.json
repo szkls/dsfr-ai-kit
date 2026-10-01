@@ -1,0 +1,22 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/signalements",
+ "h1": [
+  "Connexion à vos signalements"
+ ],
+ "title": "Connexion à vos signalements - mes droits sociaux",
+ "lignes": [
+  "# Connexion à vos signalements",
+  "Après vous être identifié via le bouton FranceConnect, vous pourrez suivre les signalements d’erreurs que vous avez effectués. {fr-text--lead}",
+  "[bouton \"S’identifier avecFranceConnect\"] {fr-connect}",
+  "Qu’est-ce que FranceConnect ? [lien \"Qu’est-ce que FranceConnect ?\" -> https://franceconnect.gouv.fr/ (nouvelle fenêtre)]",
+  "[image alt=\"vos_droits\"]",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "S’identifier avecFranceConnect",
+   "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/I_tdlqswM4xDj0pC118oYyLoAPcnbcCQmWS79Eh1ofK",
+   "fenetre": null
+  }
+ ]
+}

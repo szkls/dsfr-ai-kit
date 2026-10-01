@@ -1,0 +1,52 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/parcours-emploi-aides",
+ "h1": [
+  "Vous cherchez un emploi"
+ ],
+ "title": "Vous cherchez un emploi - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux évènements de vie\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Vous cherchez un emploi {fr-mt-3w}",
+  "Emploi {fr-tag}",
+  "Les personnes en recherche d'emploi peuvent être accompagnées et bénéficier d'aides financières. {fr-mt-3w.fr-text--xl}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Découvrir toutes les aides financières possibles {fr-tile__title} [lien \"Découvrir toutes les aides financières possibles\" -> https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/aides-financieres-et-autres-allo.html (nouvelle fenêtre)]",
+  "A côté de l'allocation chômage, d'autres dispositifs d'aides financières viennent en soutien à vos projets de formation, de mobilité, de reconversion professionnelle ou de création d'entreprise. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "AIDES {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Estimer vos droits et allocations {fr-tile__title} [lien \"Estimer vos droits et allocations\" -> https://www.francetravail.fr/candidat/vos-services-en-ligne/les-simulateurs.html (nouvelle fenêtre)]",
+  "Vous pouvez estimer vos droits et allocations si vous êtes : en reprise d'emploi, en perte d'emploi, en démission pour reconversion professionnelle ou intermittents du spectacle. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SIMULATEUR {fr-badge.fr-badge--yellow-tournesol.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Comprendre le calcul de l'allocation {fr-tile__title} [lien \"Comprendre le calcul de l'allocation\" -> https://monallocation.francetravail.fr/ (nouvelle fenêtre)]",
+  "Vous vous demandez comment l'allocation d'aide au retour à l'emploi est calculée et à quoi correspondent son montant et sa durée ? {fr-tile__desc}",
+  "<fr-badges-group>",
+  "CALCUL {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## A chaque situation son allocation {fr-tile__title} [lien \"A chaque situation son allocation\" -> https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/a-chaque-situation-son-allocatio.html (nouvelle fenêtre)]",
+  "Découvrez les règles spécifiques d'indemnisation selon votre situation personnelle, votre parcours professionnel, votre métier, votre secteur d'activité ou encore votre employeur. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "RÈGLES {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "## Aller plus loin {fr-mt-3w.fr-mt-md-4w}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "### Quels services pour vous ? {fr-tile__title} [lien \"Quels services pour vous ?\" -> https://messervices.francetravail.fr/catalogue-services (nouvelle fenêtre)]",
+  "France Travail met à votre disposition différents services pour répondre à vos besoins : laissez-vous guider ! {fr-tile__desc}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "### Allocations : attention aux idées reçues ! {fr-tile__title} [lien \"Allocations : attention aux idées reçues !\" -> https://www.francetravail.fr/candidat/mes-droits-aux-aides-et-allocati/allocations-et-aides--les-repons/allocations--attention-aux-idees.html (nouvelle fenêtre)]",
+  "Les fausses idées concernant l'indemnisation sont nombreuses. Alors on vous aide à y voir plus clair ! {fr-tile__desc}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "### Laissez-vous guider avec les vidéos France Travail {fr-tile__title} [lien \"Laissez-vous guider avec les vidéos France Travail\" -> https://www.francetravail.fr/candidat/vos-services-en-ligne/les-pas-a-pas-les-videos-qui-vou.html (nouvelle fenêtre)]",
+  "Des tutoriels pas-à-pas pour répondre à vos questions sur les démarches, la formation et les services en ligne. {fr-tile__desc}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux évènements de vie",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/",
+   "fenetre": null
+  }
+ ]
+}

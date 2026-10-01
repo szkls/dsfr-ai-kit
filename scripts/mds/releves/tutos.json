@@ -1,0 +1,92 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/accueil/les-tutos-videos",
+ "h1": [
+  "LES TUTOS VIDÉOS"
+ ],
+ "title": "Les tutos videos",
+ "lignes": [
+  "# LES TUTOS VIDÉOS",
+  "## Découvrez tous les services proposés sur mesdroitssociaux.gouv.fr à l'aide de petites vidéos explicatives.",
+  "[bouton \"Découvrir notre page Dailymotion\"]"
+ ],
+ "destinations": [
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"La page d'accueil\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/pageAccueil",
+   "fenetre": null
+  },
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"La connexion\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/laConnexion",
+   "fenetre": null
+  },
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"Vos droits\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/vosDroits",
+   "fenetre": null
+  },
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"Votre simulateur\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/votreSimulateur",
+   "fenetre": null
+  },
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"Vos ressources\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/vosRessources",
+   "fenetre": null
+  },
+  {
+   "libelle": "Gérer les cookies",
+   "ouvre": null,
+   "url": null,
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "keyboard_arrow_right Voir la transcription textuelle du tuto vidéo \"Vos signalements\"",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/transcription-textuelle-video/vosSignalements",
+   "fenetre": null
+  },
+  {
+   "libelle": "Découvrir notre page Dailymotion",
+   "ouvre": "https://www.dailymotion.com/playlist/x6iuls",
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/parcours-adoption",
+ "h1": [
+  "Vous adoptez un enfant"
+ ],
+ "title": "Vous adoptez un enfant - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux évènements de vie\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Vous adoptez un enfant {fr-mt-3w}",
+  "Famille {fr-tag}",
+  "Consulter les démarches pour adopter un enfant ou simuler la prime à l'adoption selon votre situation familiale. {fr-mt-3w.fr-text--xl}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Simulation de la prime à l'adoption {fr-tile__title} [lien \"Simulation de la prime à l'adoption\" -> /votre-simulateur/prime-adoption]",
+  "La prime à l'adoption permet d'aider aux premières dépenses liées à l'arrivée de l'enfant. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SIMULATEUR {fr-badge.fr-badge--yellow-tournesol.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Les démarches pour adopter un enfant {fr-tile__title} [lien \"Les démarches pour adopter un enfant\" -> https://www.service-public.gouv.fr/particuliers/vosdroits/N133 (nouvelle fenêtre)]",
+  "Consulter les démarches à suivre sur le site du service public pour adopter un enfant. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SERVICE PUBLIC {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux évènements de vie",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/",
+   "fenetre": null
+  }
+ ]
+}

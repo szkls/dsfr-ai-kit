@@ -1,0 +1,24 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/vos-evenements-de-vie/parcours-deces-assistant",
+ "h1": [
+  "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE"
+ ],
+ "title": "Votre parcours décès",
+ "lignes": [
+  "# VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE",
+  "## Lors du décès d'un proche, certaines démarches doivent être faites rapidement.",
+  "[image alt=\"\"]",
+  "[bouton \"keyboard_arrow_left Retour au parcours Décès\"]",
+  "## A PROPOS DE VOUS ET DU DEFUNT",
+  "En fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.",
+  "### Situations"
+ ],
+ "destinations": [
+  {
+   "libelle": "keyboard_arrow_left Retour au parcours Décès",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

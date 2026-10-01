@@ -1,0 +1,22 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/rappels",
+ "h1": [
+  "Connexion à vos rappels"
+ ],
+ "title": "Connexion à vos rappels - mes droits sociaux",
+ "lignes": [
+  "# Connexion à vos rappels",
+  "Après vous être identifié via le bouton France Connect, vous pourrez consulter vos rappels relatifs à vos droits sociaux pour ne rien oublier. {fr-text--lead}",
+  "[bouton \"S’identifier avecFranceConnect\"] {fr-connect}",
+  "Qu’est-ce que FranceConnect ? [lien \"Qu’est-ce que FranceConnect ?\" -> https://franceconnect.gouv.fr/ (nouvelle fenêtre)]",
+  "[image alt=\"vos_droits\"]",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "S’identifier avecFranceConnect",
+   "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/wvZo0R3co34SekvSuP81ylhkDzXr21IUUIbzhIuX_j_",
+   "fenetre": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "prime-naissance": [
+  {
+   "libelle": "Faire une demande à la MSA",
+   "href": null,
+   "onglet": "https://www.msa.fr/lfp/web/msa/famille/paje-allocation-base-prime-naissance",
+   "page": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-naissance/resultat"
+  },
+  {
+   "libelle": "Faire une demande à la CAF",
+   "href": null,
+   "onglet": "https://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation?codeThematique=Vie%20personnelle#DPN",
+   "page": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-naissance/resultat"
+  }
+ ],
+ "prime-adoption": [
+  {
+   "libelle": "Faire une demande à la MSA",
+   "href": null,
+   "onglet": "https://www.msa.fr/lfp/web/msa/famille/paje-allocation-base-prime-naissance",
+   "page": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/resultat"
+  },
+  {
+   "libelle": "Faire une demande à la CAF",
+   "href": null,
+   "onglet": "https://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation?codeThematique=Vie%20personnelle#DPA",
+   "page": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/resultat"
+  }
+ ]
+}

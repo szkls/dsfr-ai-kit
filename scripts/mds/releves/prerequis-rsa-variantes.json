@@ -1,0 +1,54 @@
+[
+ {
+  "oui": -1,
+  "texte": [
+   "Simuler le RSA et la PA"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler le RSA et la PA",
+    "ouvre": "/vos-simulateurs/#/rsa-pa/foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/rsa-pa"
+   }
+  ]
+ },
+ {
+  "oui": 0,
+  "texte": [
+   "Votre situation n'est pas prise en compte dans ce simulateur Pour simuler vos droits au Revenu de Solidarité Active (RSA) et à la Prime d'Activité (PA), nous vous invitons à utiliser le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/rsa-pa"
+   }
+  ]
+ },
+ {
+  "oui": 1,
+  "texte": [
+   "Votre situation n'est pas prise en compte dans ce simulateur Pour simuler vos droits au Revenu de Solidarité Active (RSA) et à la Prime d'Activité (PA), nous vous invitons à utiliser le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/rsa-pa"
+   }
+  ]
+ },
+ {
+  "oui": 2,
+  "texte": [
+   "Votre situation n'est pas prise en compte dans ce simulateur Pour simuler vos droits au Revenu de Solidarité Active (RSA) et à la Prime d'Activité (PA), nous vous invitons à utiliser le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/rsa-pa"
+   }
+  ]
+ }
+]

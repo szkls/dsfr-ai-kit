@@ -1,0 +1,55 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/formulaire-foyer",
+ "h1": [
+  "Votre foyer"
+ ],
+ "title": "Votre foyer - Simulation prime adoption - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Quitter la simulation\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "<fr-stepper>",
+  "Foyer Étape 1 sur 4 {fr-stepper__title}",
+  "Étape suivante : Ressources {fr-stepper__details}",
+  "# Votre foyer {fr-mt-3w.fr-mb-1w}",
+  "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+  "<fr-callout>",
+  "## Les organismes autorisés pour l'adoption {fr-callout__title}",
+  "Si l'adoption respecte les conditions prévues, vous pouvez obtenir la prime d'adoption. En savoir plus sur les organismes autorisés pour l'adoption {fr-callout__text}",
+  "[legend \"Vous êtes\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+  "[input type=radio name=8c688ef7-52c9-4d14-8772-6eb2f4df6f18 id=8c688ef7-52c9-4d14-8772-6eb2f4df6f18_1]",
+  "[label \"Célibataire\"] {fr-label}",
+  "[input type=radio name=8c688ef7-52c9-4d14-8772-6eb2f4df6f18 id=8c688ef7-52c9-4d14-8772-6eb2f4df6f18_2]",
+  "[label \"En coupleMarié, pacsé ou union libre\"] {fr-label}",
+  "[label \"Nombre d'enfants à charge actuellement dans votre foyer Exemple : 2\"] {fr-label}",
+  "[input type=number name= id=nombreEnfantsACharge]",
+  "[label \"Nombre d'enfants de moins de 20 ans qui vont être adoptés Exemple : 2\"] {fr-label}",
+  "[input type=number name= id=nombreEnfantsAAdopter]",
+  "[legend \"Date d'arrivée dans le foyer du ou des enfants adoptés\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+  "[label \"Jour Exemple : 14\"] {fr-label}",
+  "[input type=text name= id=7f8e97c2-30b5-4e89-b0ee-41848cac2f07]",
+  "[label \"Mois Exemple : 12\"] {fr-label}",
+  "[input type=text name= id=3cd125b2-bf36-41bd-bff1-5cf999f2a0e2]",
+  "[label \"Année Exemple : 1984\"] {fr-label}",
+  "[input type=text name= id=6d5825ac-1f66-48b5-bd33-91851f0a5561]",
+  "[bouton \"Suivant\"] {fr-btn}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Quitter la simulation",
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/",
+   "fenetre": "Panneau de gestion des cookies Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr. keyboard_arrow_right En savoir plus sur les cookies et les données pers"
+  },
+  {
+   "libelle": "En savoir plus sur les organismes autorisés pour l'adoption",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "Suivant",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

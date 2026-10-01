@@ -1,0 +1,37 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/services",
+ "h1": [
+  "Vos services"
+ ],
+ "title": "Vos services - mes droits sociaux",
+ "lignes": [
+  "# Vos services {fr-mt-3w}",
+  "Consultez l’ensemble de vos droits sociaux : vos droits, vos ressources, votre attestation employeur, vos signalements, votre activité professionnelle et simulez vos aides. {fr-mt-3w.fr-text--xl}",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Vos simulateurs {fr-card__title} [lien \"Vos simulateurs\" -> simulateurs]",
+  "Simulez rapidement les aides sociales auxquelles vous pouvez prétendre. {fr-card__desc}",
+  "[image alt=\"\"]",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Vos droits {fr-card__title} [lien \"Vos droits\" -> droits]",
+  "Consultez vos droits sociaux, trouvez vos contacts et faites vos démarches. {fr-card__desc}",
+  "[image alt=\"\"]",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Vos ressources {fr-card__title} [lien \"Vos ressources\" -> ressources]",
+  "Consultez l’ensemble de vos ressources sur les douze derniers mois. {fr-card__desc}",
+  "[image alt=\"\"]",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Votre activité professionnelle {fr-card__title} [lien \"Votre activité professionnelle\" -> activite-professionnelle]",
+  "Consultez les informations déclarées par vos employeurs, et téléchargez votre relevé d'activité. {fr-card__desc}",
+  "[image alt=\"\"]",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Vos signalements {fr-card__title} [lien \"Vos signalements\" -> signalements]",
+  "Suivez les signalements d’erreurs que avez effectués. {fr-card__desc}",
+  "[image alt=\"\"]",
+  "<fr-card.fr-card--horizontal.fr-enlarge-link>",
+  "## Vos rappels {fr-card__title} [lien \"Vos rappels\" -> rappels]",
+  "Consultez vos rappels relatifs à vos droits sociaux pour ne rien oublier ! {fr-card__desc}",
+  "[image alt=\"\"]",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": []
+}

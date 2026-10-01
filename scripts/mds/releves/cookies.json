@@ -1,0 +1,58 @@
+{
+ "panneau": [
+  "## Panneau de gestion des cookies",
+  "[bouton \"\"]",
+  "Vous pouvez indiquer vos préférences de gestion des cookies sur le site mesdroitssociaux.gouv.fr.",
+  "[bouton \"En savoir plus sur les cookies et les données personnelles\"]",
+  "#### TOLD",
+  "C’est un outil externe à mes droits sociaux. Il vous permet, si vous acceptez les cookies, de donner votre avis sur les pages que vous allez visiter.",
+  "[bouton \"Voir les mentions légales de TOLD\"]",
+  "[libellé \"Autoriser\"]",
+  "[libellé \"Refuser\"]",
+  "#### Dailymotion",
+  "Les vidéos permettent de présenter le fonctionnement du site et des services proposés.",
+  "[bouton \"Voir la politique de confidentialité de Dailymotion\"]",
+  "[libellé \"Autoriser\"]",
+  "[libellé \"Refuser\"]",
+  "#### Piano Analytics",
+  "La mesure de l'audience du site contribue à l'amélioration continue de son ergonomie, de sa navigation et de ses contenus. Les informations collectées sont anonymes.",
+  "[bouton \"Voir la politique de confidentialité de Piano Analytics\"]",
+  "Il est tout de même possible de refuser ces cookies strictement nécessaires en cliquant ici.",
+  "#### Assurer le fonctionnement du site",
+  "Ces cookies sont indispensables pour la navigation sur les pages.Ils ne peuvent pas être désactivés.",
+  "[bouton \"Enregistrer mes préférences\"]",
+  "[bouton \"fermer\"]"
+ ],
+ "liens": [
+  {
+   "libelle": "En savoir plus sur les cookies et les données personnelles",
+   "href": null,
+   "ouvre": "/dd1pnds-ria/#destination/mentionLegaleFooter",
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+  },
+  {
+   "libelle": "Voir les mentions légales de TOLD",
+   "href": null,
+   "ouvre": "https://www.told.club/legal",
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+  },
+  {
+   "libelle": "Voir la politique de confidentialité de Dailymotion",
+   "href": null,
+   "ouvre": "https://legal.dailymotion.com/fr/politique-de-confidentialite/",
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+  },
+  {
+   "libelle": "Voir la politique de confidentialité de Piano Analytics",
+   "href": null,
+   "ouvre": "https://www.piano.io/legal/privacy-policy#cookies-and-similar-technologies",
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+  },
+  {
+   "libelle": "cliquant ici",
+   "href": null,
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+  }
+ ]
+}

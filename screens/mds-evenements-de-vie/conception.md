@@ -32,6 +32,10 @@ Aucun modèle de page correspondant dans le DSFR (voir mds-accueil) : squelette 
 - Doc lue : reference/doc/composants/button.md — boutons secondaires dans les mises en avant (un bouton pour ouvrir une modale, un lien de style bouton pour naviguer), bouton Fermer des modales ; aucun bouton primaire pour ne pas concurrencer le contenu.
 ### Pied de page (footer)
 - Doc lue : reference/doc/composants/footer.md — pied de page minimal identique à mds-accueil, liens du bas reliés aux écrans du prototype.
+### Panneau de gestion des cookies (consent, modal)
+- Doc lue : reference/doc/composants/consent.md — modale de gestion des cookies présente sur toutes les pages, ouverte par le lien « Gérer les cookies » du pied de page et par les boutons « Gérer les cookies » des vidéos ; premier bloc « Tout accepter / Tout refuser » et boutons « Accepter / Refuser » par service, libellés imposés par la doc (le site écrit « Autoriser ») ; services du site : Assurer le fonctionnement du site (obligatoire, refus désactivé), TOLD, Dailymotion, Piano Analytics, avec leurs liens de politique de confidentialité ; bouton du site « Enregistrer mes préférences ».
+- Doc lue : reference/doc/composants/modal.md — `dialog.fr-modal` en fin de `body`, titre h2 relié par `aria-labelledby`, bouton Fermer ; le lien du pied de page reste un lien (extrait officiel du pied de page) et ouvre la modale par l'API `dsfr(…).modal.disclose()`, ouverture programmatique prévue par la doc, le DSFR rendant le focus à l'élément d'origine.
+
 ## Composants propres à la page
 ### Tag (tag)
 - Doc lue : reference/doc/composants/tag.md — six tags sélectionnables (`button` avec `aria-pressed`) en groupe `fr-tags-group`, soit la limite de six fixée par la doc pour un filtre ; libellé du groupe relié par `aria-labelledby` ; dans chaque tuile, un tag non cliquable (`p.fr-tag`) dans `fr-tile__start`, emplacement prévu par la doc de la tuile.

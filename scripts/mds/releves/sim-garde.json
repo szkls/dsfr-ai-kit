@@ -1,0 +1,86 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant",
+ "h1": [
+  "Simulation des aides à la garde d’enfants"
+ ],
+ "title": "Simulation des aides à la garde d’enfants – mes droits sociaux",
+ "lignes": [
+  "# Simulation des aides à la garde d’enfants",
+  "Ces aides prennent en charge partiellement, les frais de garde des enfants de moins de 6 ans. En cas de famille monoparentale, l’aide à la garde d’enfant en emploi direct peut être prolongé jusqu’aux 12 ans de l’enfant. Elles varient en fonction des revenus des parents, du nombre d'enfants à charge et du type de garde choisi. {fr-text--lead}",
+  "<fr-callout>",
+  "## Connaître les différents modes d'accueil à côté de chez vous {fr-callout__title}",
+  "Pour connaître les différents modes d'accueil à côté de chez vous ou de votre travail, rendez-vous sur le site monenfant.fr {fr-callout__text} [lien \"monenfant.fr\" -> https://monenfant.fr/ (nouvelle fenêtre)]",
+  "## Une aide pour la garde d’enfant en structure",
+  "Une organisation (établissement ou service) qui propose l’accueil des enfants. Les parents paient directement la structure employant les professionnels en charge de la garde des enfants. {fr-text--lg}",
+  "### Garde d’enfant en structure conventionnée",
+  "La Prestation de Service Unique (PSU) est une aide versée aux Etablissements d’Accueil du Jeune Enfant (EAJE), qui permet à ces établissements d’appliquer un tarif réduit aux familles selon leurs revenus. {fr-text--lg}",
+  "[bouton \"Simuler la PSU\"] {fr-btn.fr-btn-full-width-md.fr-icon-external-link-line.fr-btn--icon-right}",
+  "<fr-accordion>",
+  "Les modes de garde en structure conventionnée {fr-accordion__title}",
+  "Crèches collectives",
+  "- à taux partiel avec une activité professionnelle comprise entre 51 et 80 %, le montant du CMG n'est pas impacté. {fr-ml-2w.fr-ml-md-0}",
+  "- à taux partiel avec une activité professionnelle à temps partiel (50 % ou moins), le montant du CMG affiché est divisé par 2 par rapport au montant de base. {fr-ml-2w.fr-ml-md-0}",
+  "- à taux plein (pas d'activité professionnelle), vous ne pouvez pas bénéficier du CMG structure. {fr-ml-2w.fr-ml-md-0}",
+  "- Crèches familiales (services d’accueil familial) : Ces crèches emploient des assistants maternels qui accueillent, à leur domicile, des enfants. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Micro-crèches : Ces établissements peuvent accueillir au maximum 12 enfants. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Multi accueil : C’est un établissement qui associe différents types d'accueils (accueil collectif régulier, accueil collectif occasionnel, en horaires atypiques...). {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Jardins d’enfants : C’est un établissement accueillant des enfants âgées de 18 mois et plus, géré par une collectivité publique. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "### Garde d’enfant en structure non conventionnée",
+  "Le Complément de libre choix du Mode de Garde structure (CMG structure) est une aide versée aux parents pour faire garder leurs enfants par une structure non conventionnée. Une structure non conventionnée n’a pas signé de contrat avec la CAF (Caisse d’Allocations Familiales) pour percevoir directement des aides financières. {fr-text--lg}",
+  "[bouton \"Simuler le CMG structure\"] {fr-btn.fr-btn-full-width-md}",
+  "<fr-accordion>",
+  "Les modes de garde en structure non conventionnée {fr-accordion__title}",
+  "- Crèches familiales (services d’accueil familial) : Ces crèches emploient des assistants maternels qui accueillent, à leur domicile, des enfants. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Micro-crèches : Ces établissements peuvent accueillir au maximum 12 enfants. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Service de garde à domicile : C’est une association ou entreprise proposant l’accueil d’enfants au domicile du parent. Le service de garde à domicile est l'employeur de la garde d'enfants à domicile. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "## Une aide pour la garde d’enfant en emploi direct",
+  "Le Complément de libre choix du Mode de Garde emploi direct (CMG emploi direct)",
+  "- Les parents gèrent le contrat et paient directement la personne qui garde leur enfant. Pour en savoir plus, rendez-vous sur le site Pajemploi [lien \"Pajemploi\" -> https://www.urssaf.fr/accueil/services/services-particuliers/service-pajemploi.html (nouvelle fenêtre)]",
+  "- Les parents gèrent le contrat et déclarent la personne qui garde leur enfant au service de l’Urssaf. Pour en savoir plus, rendez-vous sur le site Pajemploi+ [lien \"Pajemploi+\" -> https://www.urssaf.fr/accueil/services/services-particuliers/service-pajemploi/service-pajemploi-plus.html (nouvelle fenêtre)]",
+  "[bouton \"Simuler le CMG emploi direct\"] {fr-btn.fr-btn-full-width-md.fr-icon-external-link-line.fr-btn--icon-right}",
+  "<fr-accordion>",
+  "Les modes de garde en emploi direct {fr-accordion__title}",
+  "- Assistant maternelle : Il s'agit d'un professionnel de la petite enfance pouvant accueillir chez lui jusqu'à quatre enfants. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Garde d’enfants à domicile : Il s’agit d’une personne qui garde l’enfant au domicile des parents. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "- Maison d’assistantes maternelles (Mam) : Elle permet à quatre assistants maternels maximum d'accueillir jusqu’à quatre enfants dans un local dédié. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0.fr-mb-3w}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Simuler la PSU",
+   "ouvre": "https://monenfant.fr/le-cout-en-creche",
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/",
+   "fenetre": null
+  },
+  {
+   "libelle": "Les modes de garde en structure conventionnée",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/",
+   "fenetre": null
+  },
+  {
+   "libelle": "Simuler le CMG structure",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg",
+   "fenetre": null
+  },
+  {
+   "libelle": "Les modes de garde en structure non conventionnée",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/",
+   "fenetre": null
+  },
+  {
+   "libelle": "Simuler le CMG emploi direct",
+   "ouvre": "https://www.urssaf.fr/accueil/outils-documentation/simulateurs/calculer-reste-a-charge-cmg-pe.html",
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/",
+   "fenetre": null
+  },
+  {
+   "libelle": "Les modes de garde en emploi direct",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/",
+   "fenetre": null
+  }
+ ]
+}

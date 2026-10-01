@@ -1,2 +1,6 @@
 node_modules/
 .playwright-mcp/
+
+# relevés du prototype mds : captures du site réel et journaux non versionnés (les données .json le sont)
+scripts/mds/releves/*.png
+scripts/mds/releves/_*

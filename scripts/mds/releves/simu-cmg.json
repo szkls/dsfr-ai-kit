@@ -1,0 +1,919 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg",
+ "etapes": [
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg",
+   "lignes": [
+    "# Simuler le Complément de libre choix du mode de garde (CMG) structure",
+    "Le Complément de libre choix du Mode de Garde (CMG) Structure est une aide financière versée par l'organisme de prestations familiales (CAF ou MSA). Cette aide prend en charge, partiellement, les frais de garde de vos enfants de moins de 6 ans. Elle varie en fonction des revenus de votre foyer, du nombre d'enfants à charge et du type de garde. {fr-text--lead}",
+    "## Préparez vos documents",
+    "- des avis d’imposition de votre foyer, sur les deux dernières années 2025 et 2024.",
+    "- d’une estimation de vos frais de garde par mois.",
+    "<fr-callout>",
+    "#### Le simulateur prend en compte un seul mode de garde par simulation {fr-callout__title}",
+    "Le simulateur est en cours de construction.Si vous voulez : comparer plusieurs modes de garde, vous pouvez refaire la simulation en changeant de mode de gardecumuler différents modes de garde, vous pouvez vous rapprocher de votre CAF ou MSA {fr-callout__text}",
+    "[bouton \"Commencer la simulation\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "# Simuler le Complément de libre choix du mode de garde (CMG) structure",
+    "Le Complément de libre choix du Mode de Garde (CMG) Structure est une aide financière versée par l'organisme de prestations familiales (CAF ou MSA). Cette aide prend en charge, partiellement, les frais de garde de vos enfants de moins de 6 ans. Elle varie en fonction des revenus de votre foyer, du nombre d'enfants à charge et du type de garde. {fr-text--lead}",
+    "## Préparez vos documents",
+    "- des avis d’imposition de votre foyer, sur les deux dernières années 2025 et 2024.",
+    "- d’une estimation de vos frais de garde par mois.",
+    "<fr-callout>",
+    "#### Le simulateur prend en compte un seul mode de garde par simulation {fr-callout__title}",
+    "Le simulateur est en cours de construction.Si vous voulez : comparer plusieurs modes de garde, vous pouvez refaire la simulation en changeant de mode de gardecumuler différents modes de garde, vous pouvez vous rapprocher de votre CAF ou MSA {fr-callout__text}",
+    "[bouton \"Commencer la simulation\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [],
+   "reponses": [],
+   "bouton": "Commencer la simulation"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/questions-preliminaires",
+   "lignes": [
+    "# Questions préliminaires",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm.fr-text--bold}",
+    "[légende \"Vous souhaitez passer par une structure pour garder votre enfant Il s’agit des crèches (parentales, familiales, micro-crèches ou crèches d’entreprise) ou services de garde à domicile. Vous payez directement la facture à la structure de garde.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=25d665d6-b584-4df7-9564-881f1ac74054 « Oui »]",
+    "[champ radio name=25d665d6-b584-4df7-9564-881f1ac74054 « Non »]",
+    "[légende \"Vous souhaitez faire garder au moins un enfant de moins de 6 ans\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=e7c301f4-5694-4ac1-86c5-bc122ace14be « Oui »]",
+    "[champ radio name=e7c301f4-5694-4ac1-86c5-bc122ace14be « Non »]",
+    "[légende \"Vous souhaitez faire garder un ou plusieurs enfants par\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=da5b986f-4860-4d6d-aadc-65900dd20ead « Un même type de mode de garde structureExemple : une crèche familiale ou une micro crèche ou un service de garde à domicile. »]",
+    "[champ radio name=da5b986f-4860-4d6d-aadc-65900dd20ead « Différents types de modes de gardeExemple 1 : un enfant gardé par une crèche (structure) et une assistante maternelle (emploi direct).Exemple 2 : une crèche familiale (structure) et micro crèche (structure). »]",
+    "[légende \"Vous ou votre conjoint exercez actuellement une activité professionnelle Exemple : salarié, travailleur indépendant, apprenti, stagiaire rémunéré, chômage indemnisé,...\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=8a663ac6-fe1e-4fce-ac09-71f3d3081828 « Oui »]",
+    "[champ radio name=8a663ac6-fe1e-4fce-ac09-71f3d3081828 « Non »]",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "# Questions préliminaires",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm.fr-text--bold}",
+    "[légende \"Vous souhaitez passer par une structure pour garder votre enfant Il s’agit des crèches (parentales, familiales, micro-crèches ou crèches d’entreprise) ou services de garde à domicile. Vous payez directement la facture à la structure de garde.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=25d665d6-b584-4df7-9564-881f1ac74054 « Oui »]",
+    "[champ radio name=25d665d6-b584-4df7-9564-881f1ac74054 « Non »]",
+    "[légende \"Vous souhaitez faire garder au moins un enfant de moins de 6 ans\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=e7c301f4-5694-4ac1-86c5-bc122ace14be « Oui »]",
+    "[champ radio name=e7c301f4-5694-4ac1-86c5-bc122ace14be « Non »]",
+    "[légende \"Vous souhaitez faire garder un ou plusieurs enfants par\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=da5b986f-4860-4d6d-aadc-65900dd20ead « Un même type de mode de garde structureExemple : une crèche familiale ou une micro crèche ou un service de garde à domicile. »]",
+    "[champ radio name=da5b986f-4860-4d6d-aadc-65900dd20ead « Différents types de modes de gardeExemple 1 : un enfant gardé par une crèche (structure) et une assistante maternelle (emploi direct).Exemple 2 : une crèche familiale (structure) et micro crèche (structure). »]",
+    "[légende \"Vous ou votre conjoint exercez actuellement une activité professionnelle Exemple : salarié, travailleur indépendant, apprenti, stagiaire rémunéré, chômage indemnisé,...\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=8a663ac6-fe1e-4fce-ac09-71f3d3081828 « Oui »]",
+    "[champ radio name=8a663ac6-fe1e-4fce-ac09-71f3d3081828 « Non »]",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [],
+   "reponses": [
+    "Vous souhaitez passer par une structure pour garder votre enfant Il s’ = Oui",
+    "Vous souhaitez faire garder au moins un enfant de moins de 6 ans = Oui",
+    "Vous souhaitez faire garder un ou plusieurs enfants par = Un même type de mode de garde structureExemple : une crèche familiale ou une micro crèche ou un service de garde à domicile.",
+    "Vous ou votre conjoint exercez actuellement une activité professionnel = Oui"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/formulaire-demandeur",
+   "lignes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Votre profil {fr-mt-3w.fr-text--bold}",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm}",
+    "[libellé \"Votre prénom\"] {fr-label}",
+    "[champ text name=] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Vous êtes\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=39dd7896-1b51-4402-ae5f-e2848aaf5a1f « Célibataire »]",
+    "[champ radio name=39dd7896-1b51-4402-ae5f-e2848aaf5a1f « En coupleMarié, pacsé ou en union libre »]",
+    "[légende \"Vous bénéficiez de l’AAH (Allocation aux Adultes Handicapés)\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=7fb57c96-a05c-4c01-a967-b2d2053295ec « Oui »]",
+    "[champ radio name=7fb57c96-a05c-4c01-a967-b2d2053295ec « Non »]",
+    "[légende \"Vous bénéficiez de la PreParE (Prestation Partagée d’éducation de l’Enfant)\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=2d284e13-70f6-4de6-aef8-607bedfcbfc0 « Oui »]",
+    "[champ radio name=2d284e13-70f6-4de6-aef8-607bedfcbfc0 « Non »]",
+    "## Composition de votre foyer {fr-h3}",
+    "[libellé \"Nombre d'enfants à charge dans le foyer (y compris les enfants à naître) Un enfant est considéré à charge si vous vous occupez financièrement de lui (nourriture, logement et habillement) de façon réelle et permanente. En cas de séparation, l'enfant est à la charge d'un seul de ses parents. (exemple : 2)\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Au moins un de vos enfants bénéficie de l’Allocation d’Éducation de l’Enfant Handicapé (AEEH) Quelque soit l’enfant concerné, qu’il soit gardé ou non.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=42063ab2-31f7-475d-bb25-331ba30f7597 « Oui »]",
+    "[champ radio name=42063ab2-31f7-475d-bb25-331ba30f7597 « Non »]",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Votre profil {fr-mt-3w.fr-text--bold}",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm}",
+    "[libellé \"Votre prénom\"] {fr-label}",
+    "[champ text name=] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Vous êtes\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=39dd7896-1b51-4402-ae5f-e2848aaf5a1f « Célibataire »]",
+    "[champ radio name=39dd7896-1b51-4402-ae5f-e2848aaf5a1f « En coupleMarié, pacsé ou en union libre »]",
+    "[légende \"Vous bénéficiez de l’AAH (Allocation aux Adultes Handicapés)\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=7fb57c96-a05c-4c01-a967-b2d2053295ec « Oui »]",
+    "[champ radio name=7fb57c96-a05c-4c01-a967-b2d2053295ec « Non »]",
+    "[légende \"Vous bénéficiez de la PreParE (Prestation Partagée d’éducation de l’Enfant)\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=2d284e13-70f6-4de6-aef8-607bedfcbfc0 « Oui »]",
+    "[champ radio name=2d284e13-70f6-4de6-aef8-607bedfcbfc0 « Non »]",
+    "## Composition de votre foyer {fr-h3}",
+    "[libellé \"Nombre d'enfants à charge dans le foyer (y compris les enfants à naître) Un enfant est considéré à charge si vous vous occupez financièrement de lui (nourriture, logement et habillement) de façon réelle et permanente. En cas de séparation, l'enfant est à la charge d'un seul de ses parents. (exemple : 2)\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Au moins un de vos enfants bénéficie de l’Allocation d’Éducation de l’Enfant Handicapé (AEEH) Quelque soit l’enfant concerné, qu’il soit gardé ou non.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=42063ab2-31f7-475d-bb25-331ba30f7597 « Oui »]",
+    "[champ radio name=42063ab2-31f7-475d-bb25-331ba30f7597 « Non »]",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    }
+   ],
+   "reponses": [
+    "Vous êtes = Célibataire",
+    "Vous bénéficiez de l’AAH (Allocation aux Adultes Handicapés) = Non",
+    "Vous bénéficiez de la PreParE (Prestation Partagée d’éducation de l’En = Non",
+    "Au moins un de vos enfants bénéficie de l’Allocation d’Éducation de l’ = Non",
+    " Votre prénom = Test",
+    " Nombre d'enfants à charge dans le foyer (y compris les enfants à naît = 1"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/recap-foyer",
+   "lignes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Récapitulatif de votre foyer {fr-mt-3w}",
+    "## Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "- Modifier",
+    "## Enfants à garder {fr-mt-3w}",
+    "Ajouter vos enfants de moins de 6 ans que vous souhaitez faire garder. {fr-hint-text.fr-mb-3w}",
+    "[bouton \"Ajouter un enfant à garder\"] {fr-btn.fr-btn-full-width-md.fr-mb-3w.fr-btn--secondary.fr-icon-add-line.fr-btn--icon-left}",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Récapitulatif de votre foyer {fr-mt-3w}",
+    "## Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "- Modifier",
+    "## Enfants à garder {fr-mt-3w}",
+    "Ajouter vos enfants de moins de 6 ans que vous souhaitez faire garder. {fr-hint-text.fr-mb-3w}",
+    "[bouton \"Ajouter un enfant à garder\"] {fr-btn.fr-btn-full-width-md.fr-mb-3w.fr-btn--secondary.fr-icon-add-line.fr-btn--icon-left}",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "supprimerEnfantModal",
+     "titre": "Supprimer des informations de votre enfant",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre enfant."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": "Étape suivante",
+   "erreurs": [
+    "Veuillez ajouter au moins un enfant à faire garder"
+   ]
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/formulaire-enfant",
+   "lignes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Enfant à garder {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm.fr-text--bold}",
+    "[libellé \"Prénom de votre enfant\"] {fr-label}",
+    "[champ text name=] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Date de naissance ou date de naissance prévue de votre enfant\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[légende \"Vous ou votre conjoint êtes l'allocataire principal de l'enfant Dans le cas d’une résidence alternée, vous êtes l’allocataire principal de l’enfant quand vous recevez les allocations familiales versées par la CAF ou la MSA.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=670ac7ed-8312-4f48-9064-40aa83ca3d92 « Oui »]",
+    "[champ radio name=670ac7ed-8312-4f48-9064-40aa83ca3d92 « Non »]",
+    "[bouton \"Ajouter l'enfant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Enfant à garder {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires. {fr-text--sm.fr-text--bold}",
+    "[libellé \"Prénom de votre enfant\"] {fr-label}",
+    "[champ text name=] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Date de naissance ou date de naissance prévue de votre enfant\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[légende \"Vous ou votre conjoint êtes l'allocataire principal de l'enfant Dans le cas d’une résidence alternée, vous êtes l’allocataire principal de l’enfant quand vous recevez les allocations familiales versées par la CAF ou la MSA.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=670ac7ed-8312-4f48-9064-40aa83ca3d92 « Oui »]",
+    "[champ radio name=670ac7ed-8312-4f48-9064-40aa83ca3d92 « Non »]",
+    "[bouton \"Ajouter l'enfant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [],
+   "reponses": [
+    "Vous ou votre conjoint êtes l'allocataire principal de l'enfant Dans l = Oui",
+    " Prénom de votre enfant = Test",
+    "Date de naissance ou date de naissance prévue de votre enfant Jour Exe = 14",
+    "Date de naissance ou date de naissance prévue de votre enfant Mois Exe = 03",
+    "Date de naissance ou date de naissance prévue de votre enfant Année Ex = 2027"
+   ],
+   "bouton": "Ajouter l'enfant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/recap-foyer",
+   "lignes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Récapitulatif de votre foyer {fr-mt-3w}",
+    "## Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "- Modifier",
+    "## Enfants à garder {fr-mt-3w}",
+    "Ajouter vos enfants de moins de 6 ans que vous souhaitez faire garder. {fr-hint-text.fr-mb-3w}",
+    "[bouton \"Ajouter un enfant à garder\"] {fr-btn.fr-btn-full-width-md.fr-mb-3w.fr-btn--secondary.fr-icon-add-line.fr-btn--icon-left}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "- Modifier",
+    "- Supprimer",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Mode de garde {fr-stepper__details}",
+    "# Récapitulatif de votre foyer {fr-mt-3w}",
+    "## Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "- Modifier",
+    "## Enfants à garder {fr-mt-3w}",
+    "Ajouter vos enfants de moins de 6 ans que vous souhaitez faire garder. {fr-hint-text.fr-mb-3w}",
+    "[bouton \"Ajouter un enfant à garder\"] {fr-btn.fr-btn-full-width-md.fr-mb-3w.fr-btn--secondary.fr-icon-add-line.fr-btn--icon-left}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "- Modifier",
+    "- Supprimer",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "supprimerEnfantModal",
+     "titre": "Supprimer des informations de votre enfant",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre enfant."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    },
+    {
+     "id": "supprimerConjointModal",
+     "titre": "Suppression des informations de votre conjoint",
+     "texte": [
+      "Vous allez supprimer toutes les informations relatives à votre conjoint.",
+      "Votre statut passera à “Célibataire”."
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": "Étape suivante"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/formulaire-mode-de-garde",
+   "lignes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Mode de garde Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Votre mode de garde {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[légende \"Mode de garde souhaité pour votre enfant\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « une crèche familiale »]",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « une micro crèche »]",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « un service de garde à domicile »]",
+    "[bouton \"Description des différents modes de garde\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Vous ne trouvez pas votre mode de garde ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[légende \"Date de début d'accueil de votre ou de vos enfants Vous devez saisir une date égale ou supérieure à la date du jour.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Montant total des frais de garde par mois en euros Exemple: 800\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Vous ne connaissez pas le montant des frais de garde ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Mode de garde Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Votre mode de garde {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[légende \"Mode de garde souhaité pour votre enfant\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « une crèche familiale »]",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « une micro crèche »]",
+    "[champ radio name=962e8225-416d-43aa-9f63-3d752984372a « un service de garde à domicile »]",
+    "[bouton \"Description des différents modes de garde\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Vous ne trouvez pas votre mode de garde ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[légende \"Date de début d'accueil de votre ou de vos enfants Vous devez saisir une date égale ou supérieure à la date du jour.\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name= requis] {fr-input}",
+    "[libellé \"Montant total des frais de garde par mois en euros Exemple: 800\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Vous ne connaissez pas le montant des frais de garde ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "modaleDifferentsModesDeGarde",
+     "titre": "Description des différents modes de garde",
+     "texte": [
+      "- Crèches familiales (services d’accueil familial) : Les assistantes maternelles gardent les enfants chez elles. Elles proposent aux enfants des activités collectives au sein des locaux de la crèche familiale une fois par semaine.",
+      "- Micro-crèches : Ce sont de petits établissements d’accueil qui regroupent au maximum 10 enfants.",
+      "- Service de garde à domicile : C’est une association ou entreprise proposant l’accueil d’enfants au domicile du parent. Le service de garde à domicile est l'employeur de la garde d'enfants à domicile ou de l'assistante maternelle."
+     ]
+    },
+    {
+     "id": "modeDeGardeModal",
+     "titre": "Vous ne trouvez pas votre mode de garde ?",
+     "texte": [
+      "Certains modes d’accueil proposent des tarifs préférentiels qui ne vous permettent pas de bénéficier du CMG structure :",
+      "- les crèches collectives",
+      "- certaines micro-crèches",
+      "- certaines crèches familiales",
+      "- les crèches parentales",
+      "- les crèches d’entreprises"
+     ]
+    },
+    {
+     "id": "modaleMontantFrais",
+     "titre": "Vous ne connaissez pas le montant des frais de garde ?",
+     "texte": [
+      "Vous pouvez vous rapprocher d’une structure d’accueil pour obtenir une estimation en fonction du temps de garde de votre enfant.",
+      "Sinon, vous pouvez aussi indiquer le budget maximum que vous souhaitez consacrer à la garde de votre enfant."
+     ]
+    },
+    {
+     "id": "modaleDifferentsModesDeGarde",
+     "titre": "Description des différents modes de garde",
+     "texte": [
+      "- Crèches familiales (services d’accueil familial) : Les assistantes maternelles gardent les enfants chez elles. Elles proposent aux enfants des activités collectives au sein des locaux de la crèche familiale une fois par semaine.",
+      "- Micro-crèches : Ce sont de petits établissements d’accueil qui regroupent au maximum 10 enfants.",
+      "- Service de garde à domicile : C’est une association ou entreprise proposant l’accueil d’enfants au domicile du parent. Le service de garde à domicile est l'employeur de la garde d'enfants à domicile ou de l'assistante maternelle."
+     ]
+    },
+    {
+     "id": "modaleDifferentsModesDeGarde",
+     "titre": "Description des différents modes de garde",
+     "texte": [
+      "- Crèches familiales (services d’accueil familial) : Les assistantes maternelles gardent les enfants chez elles. Elles proposent aux enfants des activités collectives au sein des locaux de la crèche familiale une fois par semaine.",
+      "- Micro-crèches : Ce sont de petits établissements d’accueil qui regroupent au maximum 10 enfants.",
+      "- Service de garde à domicile : C’est une association ou entreprise proposant l’accueil d’enfants au domicile du parent. Le service de garde à domicile est l'employeur de la garde d'enfants à domicile ou de l'assistante maternelle."
+     ]
+    },
+    {
+     "id": "modaleMontantFrais",
+     "titre": "Vous ne connaissez pas le montant des frais de garde ?",
+     "texte": [
+      "Vous pouvez vous rapprocher d’une structure d’accueil pour obtenir une estimation en fonction du temps de garde de votre enfant.",
+      "Sinon, vous pouvez aussi indiquer le budget maximum que vous souhaitez consacrer à la garde de votre enfant."
+     ]
+    },
+    {
+     "id": "modaleMontantFrais",
+     "titre": "Vous ne connaissez pas le montant des frais de garde ?",
+     "texte": [
+      "Vous pouvez vous rapprocher d’une structure d’accueil pour obtenir une estimation en fonction du temps de garde de votre enfant.",
+      "Sinon, vous pouvez aussi indiquer le budget maximum que vous souhaitez consacrer à la garde de votre enfant."
+     ]
+    },
+    {
+     "id": "modeDeGardeModal",
+     "titre": "Vous ne trouvez pas votre mode de garde ?",
+     "texte": [
+      "Certains modes d’accueil proposent des tarifs préférentiels qui ne vous permettent pas de bénéficier du CMG structure :",
+      "- les crèches collectives",
+      "- certaines micro-crèches",
+      "- certaines crèches familiales",
+      "- les crèches parentales",
+      "- les crèches d’entreprises"
+     ]
+    },
+    {
+     "id": "modeDeGardeModal",
+     "titre": "Vous ne trouvez pas votre mode de garde ?",
+     "texte": [
+      "Certains modes d’accueil proposent des tarifs préférentiels qui ne vous permettent pas de bénéficier du CMG structure :",
+      "- les crèches collectives",
+      "- certaines micro-crèches",
+      "- certaines crèches familiales",
+      "- les crèches parentales",
+      "- les crèches d’entreprises"
+     ]
+    }
+   ],
+   "reponses": [
+    "Mode de garde souhaité pour votre enfant = une micro crèche",
+    "Date de début d'accueil de votre ou de vos enfants Vous devez saisir u = 14",
+    "Date de début d'accueil de votre ou de vos enfants Vous devez saisir u = 03",
+    "Date de début d'accueil de votre ou de vos enfants Vous devez saisir u = 2027",
+    " Montant total des frais de garde par mois en euros Exemple: 800 = 1200"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/recap-mode-de-garde",
+   "lignes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Mode de garde Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Récapitulatif de votre mode de garde {fr-mt-3w}",
+    "## Foyer",
+    "### Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "### Enfants à garder {fr-mt-3w}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "## Mode de garde {fr-mt-3w}",
+    "- Mode de garde : une micro crèche",
+    "- Date de début d’accueil de votre ou de vos enfants : 14/03/2027",
+    "- Montant total des frais de garde par mois : 1 200 €",
+    "[bouton \"Modifier le mode de garde\"] {fr-btn.fr-mt-3w.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Mode de garde Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Récapitulatif de votre mode de garde {fr-mt-3w}",
+    "## Foyer",
+    "### Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "### Enfants à garder {fr-mt-3w}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "## Mode de garde {fr-mt-3w}",
+    "- Mode de garde : une micro crèche",
+    "- Date de début d’accueil de votre ou de vos enfants : 14/03/2027",
+    "- Montant total des frais de garde par mois : 1 200 €",
+    "[bouton \"Modifier le mode de garde\"] {fr-btn.fr-mt-3w.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Étape suivante\"] {fr-btn.fr-btn-full-width-md.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [],
+   "reponses": [],
+   "bouton": "Étape suivante"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/formulaire-ressources",
+   "lignes": [
+    "[bouton \"Revenir à l’étape mode de garde\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Vos ressources {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[libellé \"Indiquer le revenu fiscal de référence de votre foyer, figurant sur l’avis d’impôt de l’année 2026 sur les revenus de l’année 2025. Si vous avez plusieurs avis d’impôt sur l’année 2026, il vous faudra additionner les différents revenus fiscaux de référence. Exemple : 18000\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Où trouver le revenu fiscal de référence ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Vous n’avez pas d’avis d’imposition ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l’étape mode de garde\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Vos ressources {fr-mt-3w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[libellé \"Indiquer le revenu fiscal de référence de votre foyer, figurant sur l’avis d’impôt de l’année 2026 sur les revenus de l’année 2025. Si vous avez plusieurs avis d’impôt sur l’année 2026, il vous faudra additionner les différents revenus fiscaux de référence. Exemple : 18000\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Où trouver le revenu fiscal de référence ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Vous n’avez pas d’avis d’imposition ?\"] {fr-btn.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn.fr-btn-full-width-md}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "revenuFiscalModal",
+     "titre": "Où trouver le revenu fiscal de référence ?",
+     "texte": [
+      "### Où trouver le revenu fiscal de référence ?",
+      "Votre revenu fiscal de référence se trouve sur la première page de votre avis d’impôt sur les revenus. Il se trouve dans la section où se situe le nombre de parts."
+     ]
+    },
+    {
+     "id": "avisImpositionModal",
+     "titre": "Vous n’avez pas d’avis d’imposition ?",
+     "texte": [
+      "### Vous n’avez pas d’avis d’imposition ?",
+      "Votre revenu fiscal de référence vous permet d'avoir une simulation plus précise. Vous pouvez estimer votre revenu fiscal de référence, en additionnant les revenus nets imposables des 12 derniers mois de votre foyer. Pour les salariés, ces revenus sont présents sur vos bulletins de paie."
+     ]
+    },
+    {
+     "id": "revenuFiscalModal",
+     "titre": "Où trouver le revenu fiscal de référence ?",
+     "texte": [
+      "### Où trouver le revenu fiscal de référence ?",
+      "Votre revenu fiscal de référence se trouve sur la première page de votre avis d’impôt sur les revenus. Il se trouve dans la section où se situe le nombre de parts."
+     ]
+    },
+    {
+     "id": "revenuFiscalModal",
+     "titre": "Où trouver le revenu fiscal de référence ?",
+     "texte": [
+      "### Où trouver le revenu fiscal de référence ?",
+      "Votre revenu fiscal de référence se trouve sur la première page de votre avis d’impôt sur les revenus. Il se trouve dans la section où se situe le nombre de parts."
+     ]
+    },
+    {
+     "id": "avisImpositionModal",
+     "titre": "Vous n’avez pas d’avis d’imposition ?",
+     "texte": [
+      "### Vous n’avez pas d’avis d’imposition ?",
+      "Votre revenu fiscal de référence vous permet d'avoir une simulation plus précise. Vous pouvez estimer votre revenu fiscal de référence, en additionnant les revenus nets imposables des 12 derniers mois de votre foyer. Pour les salariés, ces revenus sont présents sur vos bulletins de paie."
+     ]
+    },
+    {
+     "id": "avisImpositionModal",
+     "titre": "Vous n’avez pas d’avis d’imposition ?",
+     "texte": [
+      "### Vous n’avez pas d’avis d’imposition ?",
+      "Votre revenu fiscal de référence vous permet d'avoir une simulation plus précise. Vous pouvez estimer votre revenu fiscal de référence, en additionnant les revenus nets imposables des 12 derniers mois de votre foyer. Pour les salariés, ces revenus sont présents sur vos bulletins de paie."
+     ]
+    }
+   ],
+   "reponses": [
+    " Indiquer le revenu fiscal de référence de votre foyer, figurant sur l = 1200"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/recap-ressources",
+   "lignes": [
+    "[bouton \"Revenir à l’étape mode de garde\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Récapitulatif de vos ressources {fr-mt-3w}",
+    "## Foyer",
+    "### Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "### Enfants à garder {fr-mt-3w}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "## Mode de garde {fr-mt-3w}",
+    "- Mode de garde : une micro crèche",
+    "- Date de début d’accueil de votre ou de vos enfants : 14/03/2027",
+    "- Montant total des frais de garde par mois : 1 200 €",
+    "## Ressources {fr-mt-3w}",
+    "- Revenu fiscal du foyer de l'année 2025 sur l'année 2024 : 1 200 €",
+    "[bouton \"Modifier les ressources\"] {fr-btn.fr-mt-3w.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Voir le résultat\"] {fr-btn.fr-mt-3w.fr-btn-full-width-md}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l’étape mode de garde\"] {fr-btn.fr-btn-full-width-md.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Récapitulatif de vos ressources {fr-mt-3w}",
+    "## Foyer",
+    "### Votre profil",
+    "### Test",
+    "- Statut : Célibataire",
+    "- AAH : Non",
+    "- PreParE : Non",
+    "#### Composition de votre foyer {fr-mt-2w.fr-text--md}",
+    "- Enfants à charge : 1",
+    "- Un de vos enfants bénéficie de l'AEEH : Non",
+    "### Enfants à garder {fr-mt-3w}",
+    "### Test",
+    "- Date de naissance ou date prévue : 14/03/2027",
+    "- Vous êtes l'allocataire principal : Oui",
+    "## Mode de garde {fr-mt-3w}",
+    "- Mode de garde : une micro crèche",
+    "- Date de début d’accueil de votre ou de vos enfants : 14/03/2027",
+    "- Montant total des frais de garde par mois : 1 200 €",
+    "## Ressources {fr-mt-3w}",
+    "- Revenu fiscal du foyer de l'année 2025 sur l'année 2024 : 1 200 €",
+    "[bouton \"Modifier les ressources\"] {fr-btn.fr-mt-3w.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Voir le résultat\"] {fr-btn.fr-mt-3w.fr-btn-full-width-md}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur CMG."
+     ]
+    },
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur CMG."
+     ]
+    },
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur CMG."
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": "Voir le résultat"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/aide-garde-enfant/cmg/resultats",
+   "lignes": [
+    "<fr-stepper>",
+    "Résultat Étape 4 sur 4 {fr-stepper__title}",
+    "# Résultat {fr-mt-3w}",
+    "<fr-alert.fr-alert--success>",
+    "Simulation terminée {fr-alert__title}",
+    "Ce résultat est une simulation. Il ne garantit pas l'accès à l’aide et au montant indiqué. Il n’engage pas les organismes de sécurité sociale. {fr-text--xs.fr-text--light.fr-mt-1w}",
+    "D’après les informations que vous avez saisies, il semble que vous pouvez bénéficier de cette aide. {fr-text--lg.fr-text--bold}",
+    "## CMG Structure {fr-h3}",
+    "Montant estimé de l'aide pour le mois de mars 2027",
+    "1 014,90 € /mois {fr-text--lead.fr-text-title--blue-france}",
+    "Montant total des frais de garde par mois : 1 200 € Reste à votre charge : 185,10 € {fr-mb-n0-5v}",
+    "[bouton \"Accéder à la demande du CMG\"] {fr-btn.fr-btn-full-width-md.fr-mt-2w}",
+    "## Récapitulatif de votre simulation {fr-mt-3w}",
+    "[lien \"Ouvrir le récapitulatif de votre simulation\" -> /htmlRecap] {fr-link}",
+    "[lien \"Télécharger le récapitulatif de votre simulation\" -> pdf] {fr-icon-file-download-line.fr-link.fr-link--icon-right}",
+    "PDF - Environ 500 Ko {fr-hint-text}",
+    "- Revenir à l'accueil",
+    "- Modifier la simulation",
+    "## En savoir plus",
+    "<fr-accordions-group>",
+    "<fr-accordion>",
+    "Si vous avez plusieurs modes de garde {fr-accordion__title}",
+    "Si vous utilisez plusieurs modes de garde, vous devez vous rapprocher de votre organisme de prestations familiales (CAF ou MSA) afin d’estimer vos droits. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "<fr-accordion>",
+    "Si votre enfant est gardé la nuit, les jours fériés et/ou dimanche {fr-accordion__title}",
+    "Si votre enfant est gardé au minimum 25 h par mois sur des horaires spécifiques*, une majoration de 10 % peut s'appliquer au montant estimé, dans la limite des 85 % des frais de garde. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "*Horaires spécifiques : le dimanche, les jours fériés, la nuit entre 22 h et 6 h du matin {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "<fr-stepper>",
+    "Résultat Étape 4 sur 4 {fr-stepper__title}",
+    "# Résultat {fr-mt-3w}",
+    "<fr-alert.fr-alert--success>",
+    "Simulation terminée {fr-alert__title}",
+    "Ce résultat est une simulation. Il ne garantit pas l'accès à l’aide et au montant indiqué. Il n’engage pas les organismes de sécurité sociale. {fr-text--xs.fr-text--light.fr-mt-1w}",
+    "D’après les informations que vous avez saisies, il semble que vous pouvez bénéficier de cette aide. {fr-text--lg.fr-text--bold}",
+    "## CMG Structure {fr-h3}",
+    "Montant estimé de l'aide pour le mois de mars 2027",
+    "1 014,90 € /mois {fr-text--lead.fr-text-title--blue-france}",
+    "Montant total des frais de garde par mois : 1 200 € Reste à votre charge : 185,10 € {fr-mb-n0-5v}",
+    "[bouton \"Accéder à la demande du CMG\"] {fr-btn.fr-btn-full-width-md.fr-mt-2w}",
+    "## Récapitulatif de votre simulation {fr-mt-3w}",
+    "[lien \"Ouvrir le récapitulatif de votre simulation\" -> /htmlRecap] {fr-link}",
+    "[lien \"Télécharger le récapitulatif de votre simulation\" -> pdf] {fr-icon-file-download-line.fr-link.fr-link--icon-right}",
+    "PDF - Environ 500 Ko {fr-hint-text}",
+    "- Revenir à l'accueil",
+    "- Modifier la simulation",
+    "## En savoir plus",
+    "<fr-accordions-group>",
+    "<fr-accordion>",
+    "Si vous avez plusieurs modes de garde {fr-accordion__title}",
+    "Si vous utilisez plusieurs modes de garde, vous devez vous rapprocher de votre organisme de prestations familiales (CAF ou MSA) afin d’estimer vos droits. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "<fr-accordion>",
+    "Si votre enfant est gardé la nuit, les jours fériés et/ou dimanche {fr-accordion__title}",
+    "Si votre enfant est gardé au minimum 25 h par mois sur des horaires spécifiques*, une majoration de 10 % peut s'appliquer au montant estimé, dans la limite des 85 % des frais de garde. {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "*Horaires spécifiques : le dimanche, les jours fériés, la nuit entre 22 h et 6 h du matin {fr-pl-2w.fr-pl-md-0.fr-pr-2w.fr-pr-md-0}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "modaleAccederDemandeCMG",
+     "titre": "Accéder à la demande du CMG structure",
+     "texte": [
+      "### Accéder à la demande du CMG structure",
+      "Cliquez sur l'organisme dont vous dépendez pour accéder à la demande. Votre CAF (Caisse d'Allocations Familiales) ou MSA (Mutualité Sociale Agricole) calculera votre droit réel au moment de votre demande.",
+      "Si vous ne savez pas de quel organisme social vous dépendez, sélectionnez la CAF.",
+      "- Faire une demande à la MSA",
+      "- Faire une demande à la CAF"
+     ]
+    },
+    {
+     "id": "modaleAccederDemandeCMG",
+     "titre": "Accéder à la demande du CMG structure",
+     "texte": [
+      "### Accéder à la demande du CMG structure",
+      "Cliquez sur l'organisme dont vous dépendez pour accéder à la demande. Votre CAF (Caisse d'Allocations Familiales) ou MSA (Mutualité Sociale Agricole) calculera votre droit réel au moment de votre demande.",
+      "Si vous ne savez pas de quel organisme social vous dépendez, sélectionnez la CAF.",
+      "- Faire une demande à la MSA",
+      "- Faire une demande à la CAF"
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": null,
+   "destinations": [
+    {
+     "texte": "Accéder à la demande du CMG",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "Fermer",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "Faire une demande à la MSA",
+     "href": null,
+     "ouvre": "https://monespaceprive.msa.fr/lfp/o/delegate/bookmark?codeServiceFct=pw0formpcg&groupId=98830",
+     "url": null
+    },
+    {
+     "texte": "Faire une demande à la CAF",
+     "href": null,
+     "ouvre": "https://wwwd.caf.fr/wps/portal/caffr/aidesetdemarches/mesdemarches/faireunedemandedeprestation?codeThematique=Vie%20personnelle#CMGPAJE",
+     "url": null
+    },
+    {
+     "texte": "Ouvrir le récapitulatif de votre simulation",
+     "href": "/htmlRecap"
+    },
+    {
+     "texte": "Télécharger le récapitulatif de votre simulation",
+     "href": "pdf"
+    },
+    {
+     "texte": "Revenir à l'accueil",
+     "href": null,
+     "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+    },
+    {
+     "texte": "Modifier la simulation",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "www.mesdroitssociaux.gouv.fr",
+     "href": "https://mesdroitssociaux.gouv.fr"
+    },
+    {
+     "texte": "www.mesdroitssociaux.gouv.fr",
+     "href": "https://mesdroitssociaux.gouv.fr"
+    },
+    {
+     "texte": "www.mesdroitssociaux.gouv.fr",
+     "href": "https://mesdroitssociaux.gouv.fr"
+    }
+   ]
+  }
+ ]
+}

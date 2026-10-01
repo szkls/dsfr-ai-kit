@@ -1,0 +1,22 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/activite-professionnelle",
+ "h1": [
+  "Connexion à votre activité professionnelle"
+ ],
+ "title": "Connexion à votre activité professionnelle - mes droits sociaux",
+ "lignes": [
+  "# Connexion à votre activité professionnelle",
+  "Après vous être identifié via le bouton FranceConnect, vous pourrez consulter les données d’activité professionnelle déclarées par vos employeurs. {fr-text--lead}",
+  "[bouton \"S’identifier avecFranceConnect\"] {fr-connect}",
+  "Qu’est-ce que FranceConnect ? [lien \"Qu’est-ce que FranceConnect ?\" -> https://franceconnect.gouv.fr/ (nouvelle fenêtre)]",
+  "[image alt=\"vos_droits\"]",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "S’identifier avecFranceConnect",
+   "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/81QiPJfaynsPJEdHexxePgbPnm6ODOmbyn1_ST_I9_f",
+   "fenetre": null
+  }
+ ]
+}

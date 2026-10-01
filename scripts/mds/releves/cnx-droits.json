@@ -1,0 +1,22 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/droits",
+ "h1": [
+  "Connexion à vos droits"
+ ],
+ "title": "Connexion à vos droits - mes droits sociaux",
+ "lignes": [
+  "# Connexion à vos droits",
+  "Après vous être identifié via le bouton France Connect, vous pourrez accéder à l'ensemble de vos droits sociaux, retrouver vos interlocuteurs et effectuer vos démarches. {fr-text--lead}",
+  "[bouton \"S’identifier avecFranceConnect\"] {fr-connect}",
+  "Qu’est-ce que FranceConnect ? [lien \"Qu’est-ce que FranceConnect ?\" -> https://franceconnect.gouv.fr/ (nouvelle fenêtre)]",
+  "[image alt=\"vos_droits\"]",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "S’identifier avecFranceConnect",
+   "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/GTmyrElEBJssSk636DEm_Y0urU374wYjc85SfiIprhH",
+   "fenetre": null
+  }
+ ]
+}

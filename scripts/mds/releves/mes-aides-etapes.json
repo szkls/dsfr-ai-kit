@@ -1,0 +1,185 @@
+{
+ "simu-foyer": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-foyer",
+  "texte": "Simulateur\n1. VOTRE FOYER\n\nVous pouvez modifier sur cet écran la composition de votre foyer pour effectuer votre simulation.\n\nVOUS\n\najouter un conjoint\n\ncélibataire, changement de status\n\ncélibataire\nEnfants ou personnes à charge\najouter un enfant ou une personne à charge\nSuivant\nRéinitialiser\nSYNTHÈSE\nVOUS",
+  "champs": [
+   "button:submit « Né le Invalid date VOUS Né le Invalid date » ",
+   "button:submit « ajouter un conjoint » ",
+   "button:submit « célibataire » ",
+   "button:submit « ajouter un enfant ou une personne à charge » ",
+   "button:submit « Suivant » ",
+   "button:submit « Réinitialiser » "
+  ]
+ },
+ "simu-situation": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-situation",
+  "texte": "Simulateur\n1. VOTRE FOYER\n\nPassez directement à l'étape suivante si vous n'êtes dans aucune de ces situations\n\n vous êtes...\nen reprise d'activité\nen CER ou en PPAE\nen situation de handicap\nen situation d’invalidité\nrégime Alsace Moselle\nSuivant\nRéinitialiser\nSYNTHÈSE\nVOUS",
+  "champs": [
+   "input:checkbox «  » ",
+   "input:checkbox «  » ",
+   "button:button «  » ",
+   "input:checkbox «  » ",
+   "input:checkbox «  » ",
+   "button:button «  » ",
+   "input:checkbox «  » ",
+   "button:button «  » ",
+   "button:submit « Suivant » ",
+   "button:submit « Réinitialiser » "
+  ]
+ },
+ "simu-logement": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-logement",
+  "texte": "Simulateur\n1. VOTRE FOYER\nLe code postal de votre résidence principale est...\nVous êtes actuellement\nlocataire\npropriétaire\nautre\n\n\nSuivant\nRéinitialiser\nSYNTHÈSE\nVOUS",
+  "champs": [
+   "input:text «  » ",
+   "input:radio «  » statut-occupation",
+   "input:radio «  » statut-occupation",
+   "input:radio «  » statut-occupation",
+   "button:submit « Suivant » ",
+   "button:submit « Réinitialiser » "
+  ]
+ },
+ "simu-ressources": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-ressources",
+  "texte": "Simulateur\n1. VOTRE FOYER\nRevenu fiscal de référence 2024 du foyer\n(présent sur votre avis d’imposition 2025)\n€\n\nPensez à compléter vos ressources des 12 derniers mois pour chaque membre du foyer.\n\nLes résultats de la simulation seront basés sur ces informations.\n\n\n\naucune ressource\n\nAjouter des ressources\n\nSuivant\nRéinitialiser\nSYNTHÈSE\nVOUS",
+  "champs": [
+   "input:text «  » ",
+   "button:button « aide sur le champ » ",
+   "button:submit « Ajouter des ressources » ",
+   "button:submit « Suivant » ",
+   "button:submit « Réinitialiser » "
+  ]
+ },
+ "simu-resultat": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-resultat",
+  "texte": "Simulateur\n1. VOTRE FOYER\nSelon les informations qui ont été saisies, vous ne pouvez pas bénéficier de prestation sociale.\nSuivant\nRéinitialiser\nSYNTHÈSE\nVOUS",
+  "champs": [
+   "button:submit « Suivant » ",
+   "button:submit « Réinitialiser » "
+  ]
+ },
+ "simu-synthese": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-synthese",
+  "texte": "",
+  "champs": []
+ },
+ "simu-resultats": {
+  "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-resultats",
+  "texte": "",
+  "champs": []
+ },
+ "dialogues": [
+  {
+   "ouvreur": "Né le Invalid date VOUS Né le Invalid date",
+   "dialogues": [
+    {
+     "texte": "Préciser vos données personnelles\nfermer\nInformations personne\nPrénom\nDate de naissance\n\nSexe de la personne\n\nSexe\nFéminin\nMasculin\nAnnuler\nValider",
+     "champs": [
+      "button:submit « fermer » ",
+      "input:radio «  » en-couple",
+      "input:radio «  » en-couple",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » duree-celibat",
+      "input:radio «  » duree-celibat",
+      "input:text « individu1 » ",
+      "input:hidden «  » ",
+      "input:text « jour au format jj » ",
+      "input:text « mois au format mm » ",
+      "input:text « année au format aaaa » ",
+      "input:radio «  » sexe",
+      "input:radio «  » sexe",
+      "button:submit « Annuler » ",
+      "button:submit « Valider » ",
+      "button:submit « Supprimer » "
+     ]
+    }
+   ]
+  },
+  {
+   "ouvreur": "ajouter un conjoint",
+   "dialogues": [
+    {
+     "texte": "Votre situation matrimoniale\nfermer\nVous vivez\nseul(e)\nen couple\ndepuis\nplus de 18 mois\nmoins de 18 mois\nAnnuler\nValider",
+     "champs": [
+      "button:submit « fermer » ",
+      "input:radio «  » en-couple",
+      "input:radio «  » en-couple",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » duree-celibat",
+      "input:radio «  » duree-celibat",
+      "input:text « conjoint » ",
+      "input:hidden «  » ",
+      "input:text « jour au format jj » ",
+      "input:text « mois au format mm » ",
+      "input:text « année au format aaaa » ",
+      "input:radio «  » sexe",
+      "input:radio «  » sexe",
+      "button:submit « Annuler » ",
+      "button:submit « Valider » ",
+      "button:submit « Supprimer » "
+     ]
+    }
+   ]
+  },
+  {
+   "ouvreur": "célibataire",
+   "dialogues": [
+    {
+     "texte": "Votre situation matrimoniale\nfermer\nVous vivez\nseul(e)\nen couple\ndepuis\nplus de 18 mois\nmoins de 18 mois\nAnnuler\nValider",
+     "champs": [
+      "button:submit « fermer » ",
+      "input:radio «  » en-couple",
+      "input:radio «  » en-couple",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » duree-celibat",
+      "input:radio «  » duree-celibat",
+      "input:text « conjoint » ",
+      "input:hidden «  » ",
+      "input:text « jour au format jj » ",
+      "input:text « mois au format mm » ",
+      "input:text « année au format aaaa » ",
+      "input:radio «  » sexe",
+      "input:radio «  » sexe",
+      "button:submit « Annuler » ",
+      "button:submit « Valider » ",
+      "button:submit « Supprimer » "
+     ]
+    }
+   ]
+  },
+  {
+   "ouvreur": "ajouter un enfant ou une personne à charge",
+   "dialogues": [
+    {
+     "texte": "Ajouter un enfant ou une personne à charge\nfermer\nInformations personne\nPrénom\nDate de naissance\n\nSexe de la personne\n\nSexe\nFéminin\nMasculin\nAnnuler\nValider",
+     "champs": [
+      "button:submit « fermer » ",
+      "input:radio «  » en-couple",
+      "input:radio «  » en-couple",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » typeRelation",
+      "input:radio «  » duree-celibat",
+      "input:radio «  » duree-celibat",
+      "input:text « individu1 » ",
+      "input:hidden «  » ",
+      "input:text « jour au format jj » ",
+      "input:text « mois au format mm » ",
+      "input:text « année au format aaaa » ",
+      "input:radio «  » sexe",
+      "input:radio «  » sexe",
+      "button:submit « Annuler » ",
+      "button:submit « Valider » ",
+      "button:submit « Supprimer » "
+     ]
+    }
+   ]
+  }
+ ]
+}

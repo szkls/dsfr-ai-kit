@@ -33,6 +33,10 @@ Aucun modèle de page correspondant dans le DSFR (voir mds-accueil) : squelette 
 ### Pied de page (footer)
 - Doc lue : reference/doc/composants/footer.md — pied de page minimal identique à mds-accueil ; « Qui sommes-nous ? » mène à l'écran correspondant du prototype.
 
+### Panneau de gestion des cookies (consent, modal)
+- Doc lue : reference/doc/composants/consent.md — modale de gestion des cookies présente sur toutes les pages, ouverte par le lien « Gérer les cookies » du pied de page et par les boutons « Gérer les cookies » des vidéos ; premier bloc « Tout accepter / Tout refuser » et boutons « Accepter / Refuser » par service, libellés imposés par la doc (le site écrit « Autoriser ») ; services du site : Assurer le fonctionnement du site (obligatoire, refus désactivé), TOLD, Dailymotion, Piano Analytics, avec leurs liens de politique de confidentialité ; bouton du site « Enregistrer mes préférences ».
+- Doc lue : reference/doc/composants/modal.md — `dialog.fr-modal` en fin de `body`, titre h2 relié par `aria-labelledby`, bouton Fermer ; le lien du pied de page reste un lien (extrait officiel du pied de page) et ouvre la modale par l'API `dsfr(…).modal.disclose()`, ouverture programmatique prévue par la doc, le DSFR rendant le focus à l'élément d'origine.
+
 ## Composants propres à la page
 ### Mise en avant (callout)
 - Doc lue : reference/doc/composants/callout.md — « Une procédure discrète » : titre h2, description, lien externe vers la page « effacer vos traces » ; sans accentuation de couleur ; les deux phrases du site forment la description unique du composant.

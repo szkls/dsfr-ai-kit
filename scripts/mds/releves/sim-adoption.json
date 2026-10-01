@@ -1,0 +1,41 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption",
+ "h1": [
+  "Simulation de la prime à l'adoption"
+ ],
+ "title": "Simulation de la prime à l'adoption - mes droits sociaux",
+ "lignes": [
+  "# Simulation de la prime à l'adoption",
+  "La prime à l'adoption permet d'aider à financer les premières dépenses liées à l'arrivée de votre enfant en fonction de vos ressources. {fr-text--lead}",
+  "## Préparez vos documents",
+  "- du dernier avis d'imposition de votre foyer sur 2024",
+  "[bouton \"Commencer la simulation\"] {fr-btn}",
+  "<fr-accordion>",
+  "### Qui peut en bénéficier ? {fr-accordion__title}",
+  "Les parents qui accueillent en vue d'une adoption ou adoptent un enfant de moins de 20 ans. {fr-collapse.fr-collapse--expanded}",
+  "<fr-accordion>",
+  "### Quand est-elle versée ? {fr-accordion__title}",
+  "les deux mois suivants l'arrivée de l'enfant ou à la date du jugement.",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Commencer la simulation",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/formulaire-foyer",
+   "fenetre": null
+  },
+  {
+   "libelle": "Qui peut en bénéficier ?",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/",
+   "fenetre": null
+  },
+  {
+   "libelle": "Quand est-elle versée ?",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/",
+   "fenetre": null
+  }
+ ]
+}

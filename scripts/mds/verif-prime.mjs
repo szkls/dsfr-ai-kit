@@ -1,0 +1,24 @@
+// Vérifie le parcours de la simulation de la prime à la naissance dans un navigateur.
+import { chromium } from 'playwright';
+const b = await chromium.launch(); const p = await (await b.newContext()).newPage();
+const err = []; p.on('pageerror', (e) => err.push(e.message));
+const U = 'http://localhost:8000/screens/';
+await p.goto(U + 'mds-simulateur-prime-naissance/', { waitUntil: 'networkidle' });
+await p.click('a:has-text("Commencer la simulation")'); await p.waitForLoadState('networkidle');
+await p.click('button[type=submit]'); await p.waitForTimeout(300);
+console.log('envoi vide : erreurs affichées =', await p.locator('.fr-message--error').count(), '| focus', await p.evaluate(() => document.activeElement.id));
+await p.click('label[for="situation-2"]'); await p.fill('#enfants-charge', '2'); await p.fill('#enfants-arrivee', '2');
+await p.fill('#date-arrivee-day', '10'); await p.fill('#date-arrivee-month', '06'); await p.fill('#date-arrivee-year', '2027');
+await p.click('button[type=submit]'); await p.waitForLoadState('networkidle');
+console.log('étape 2 :', p.url().split('/').pop(), '| questions couple visibles =', await p.locator('[data-si="situation=couple"]').isVisible());
+await p.click('label[for="activite-vous-2"]'); await p.click('label[for="activite-conjoint-1"]'); await p.fill('#revenu', '23500');
+await p.click('button[type=submit]'); await p.waitForLoadState('networkidle');
+console.log('récap :', (await p.locator('main ul').first().innerText()).replace(/\n/g, ' | '), '||', (await p.locator('main ul').nth(1).innerText()).replace(/\n/g, ' | '));
+await p.click('text=Voir le résultat'); await p.waitForLoadState('networkidle');
+console.log('résultat :', await p.locator('[data-montant-total]').innerText(), '|', await p.locator('main p:has([data-nombre-enfants])').innerText());
+await p.click('#accordion-resultat-naissance-1 >> xpath=..').catch(() => {}); await p.click('button[aria-controls="accordion-resultat-naissance-1"]'); await p.waitForTimeout(300);
+console.log('versement :', await p.locator('[data-versement]').textContent());
+await p.click('button[aria-controls="modale-acces-demande"]'); await p.waitForTimeout(500);
+console.log('fenêtre accès demande ouverte =', await p.evaluate(() => document.getElementById('modale-acces-demande').classList.contains('fr-modal--opened')));
+console.log('erreurs JS :', err);
+await b.close();

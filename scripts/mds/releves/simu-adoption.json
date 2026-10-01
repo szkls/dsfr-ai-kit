@@ -1,0 +1,377 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/formulaire-foyer",
+ "etapes": [
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/formulaire-foyer",
+   "lignes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Votre foyer {fr-mt-3w.fr-mb-1w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "<fr-callout>",
+    "## Les organismes autorisés pour l'adoption {fr-callout__title}",
+    "Si l'adoption respecte les conditions prévues, vous pouvez obtenir la prime d'adoption. En savoir plus sur les organismes autorisés pour l'adoption {fr-callout__text}",
+    "[légende \"Vous êtes\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=71955b19-ce86-4ce6-bfc9-52f052f70de6 « Célibataire »]",
+    "[champ radio name=71955b19-ce86-4ce6-bfc9-52f052f70de6 « En coupleMarié, pacsé ou union libre »]",
+    "[libellé \"Nombre d'enfants à charge actuellement dans votre foyer Exemple : 2\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[libellé \"Nombre d'enfants de moins de 20 ans qui vont être adoptés Exemple : 2\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Date d'arrivée dans le foyer du ou des enfants adoptés\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[bouton \"Suivant\"] {fr-btn}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Quitter la simulation\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Foyer Étape 1 sur 4 {fr-stepper__title}",
+    "Étape suivante : Ressources {fr-stepper__details}",
+    "# Votre foyer {fr-mt-3w.fr-mb-1w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "<fr-callout>",
+    "## Les organismes autorisés pour l'adoption {fr-callout__title}",
+    "Si l'adoption respecte les conditions prévues, vous pouvez obtenir la prime d'adoption. En savoir plus sur les organismes autorisés pour l'adoption {fr-callout__text}",
+    "[légende \"Vous êtes\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[champ radio name=71955b19-ce86-4ce6-bfc9-52f052f70de6 « Célibataire »]",
+    "[champ radio name=71955b19-ce86-4ce6-bfc9-52f052f70de6 « En coupleMarié, pacsé ou union libre »]",
+    "[libellé \"Nombre d'enfants à charge actuellement dans votre foyer Exemple : 2\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[libellé \"Nombre d'enfants de moins de 20 ans qui vont être adoptés Exemple : 2\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4.fr-mb-3w}",
+    "[légende \"Date d'arrivée dans le foyer du ou des enfants adoptés\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+    "[libellé \"Jour Exemple : 14\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[libellé \"Mois Exemple : 12\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[libellé \"Année Exemple : 1984\"] {fr-label}",
+    "[champ text name=] {fr-input}",
+    "[bouton \"Suivant\"] {fr-btn}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "modaleOrganismesAutorisesAdoption",
+     "titre": "Les organismes autorisés pour l'adoption",
+     "texte": [
+      "### Les organismes autorisés pour l'adoption",
+      "Il existe plusieurs organismes qui accompagnent les parents pour adopter un enfant :",
+      "- L'Aide Sociale à l'Enfance (ASE) : service public présent dans chaque département, s'occupe des enfants qui peuvent être adoptés en France.",
+      "[lien \"service public présent dans chaque département\" -> https://lannuaire.service-public.gouv.fr/navigation/cg]",
+      "- Les Organismes Autorisés pour l'Adoption (OAA) : associations privées, contrôlées par l'État. Elles peuvent aider à adopter en France ou dans un autre pays.",
+      "[lien \"Organismes Autorisés pour l'Adoption\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/les-operateurs-de-l-adoption-internationale/organismes-autorises-pour-l-adoption-oaa/]",
+      "- L' Agence Française de l'Adoption (AFA) : organisme public. Il aide à adopter à l'étranger.",
+      "[lien \"Agence Française de l'Adoption\" -> https://www.agence-adoption.fr/]",
+      "- Les autorités étrangères compétentes : si vous adoptez dans un autre pays, l'organisme local doit être reconnu par la France.",
+      "[lien \"autorités étrangères compétentes\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/]"
+     ]
+    },
+    {
+     "id": "modaleOrganismesAutorisesAdoption",
+     "titre": "Les organismes autorisés pour l'adoption",
+     "texte": [
+      "### Les organismes autorisés pour l'adoption",
+      "Il existe plusieurs organismes qui accompagnent les parents pour adopter un enfant :",
+      "- L'Aide Sociale à l'Enfance (ASE) : service public présent dans chaque département, s'occupe des enfants qui peuvent être adoptés en France.",
+      "[lien \"service public présent dans chaque département\" -> https://lannuaire.service-public.gouv.fr/navigation/cg]",
+      "- Les Organismes Autorisés pour l'Adoption (OAA) : associations privées, contrôlées par l'État. Elles peuvent aider à adopter en France ou dans un autre pays.",
+      "[lien \"Organismes Autorisés pour l'Adoption\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/les-operateurs-de-l-adoption-internationale/organismes-autorises-pour-l-adoption-oaa/]",
+      "- L' Agence Française de l'Adoption (AFA) : organisme public. Il aide à adopter à l'étranger.",
+      "[lien \"Agence Française de l'Adoption\" -> https://www.agence-adoption.fr/]",
+      "- Les autorités étrangères compétentes : si vous adoptez dans un autre pays, l'organisme local doit être reconnu par la France.",
+      "[lien \"autorités étrangères compétentes\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/]"
+     ]
+    },
+    {
+     "id": "modaleOrganismesAutorisesAdoption",
+     "titre": "Les organismes autorisés pour l'adoption",
+     "texte": [
+      "### Les organismes autorisés pour l'adoption",
+      "Il existe plusieurs organismes qui accompagnent les parents pour adopter un enfant :",
+      "- L'Aide Sociale à l'Enfance (ASE) : service public présent dans chaque département, s'occupe des enfants qui peuvent être adoptés en France.",
+      "[lien \"service public présent dans chaque département\" -> https://lannuaire.service-public.gouv.fr/navigation/cg]",
+      "- Les Organismes Autorisés pour l'Adoption (OAA) : associations privées, contrôlées par l'État. Elles peuvent aider à adopter en France ou dans un autre pays.",
+      "[lien \"Organismes Autorisés pour l'Adoption\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/les-operateurs-de-l-adoption-internationale/organismes-autorises-pour-l-adoption-oaa/]",
+      "- L' Agence Française de l'Adoption (AFA) : organisme public. Il aide à adopter à l'étranger.",
+      "[lien \"Agence Française de l'Adoption\" -> https://www.agence-adoption.fr/]",
+      "- Les autorités étrangères compétentes : si vous adoptez dans un autre pays, l'organisme local doit être reconnu par la France.",
+      "[lien \"autorités étrangères compétentes\" -> https://www.diplomatie.gouv.fr/fr/adopter-a-l-etranger/les-acteurs-de-l-adoption-internationale/]"
+     ]
+    }
+   ],
+   "reponses": [
+    "Vous êtes = Célibataire",
+    " Nombre d'enfants à charge actuellement dans votre foyer Exemple : 2 = 1",
+    " Nombre d'enfants de moins de 20 ans qui vont être adoptés Exemple : 2 = 1",
+    "Date d'arrivée dans le foyer du ou des enfants adoptés Jour Exemple :  = 14",
+    "Date d'arrivée dans le foyer du ou des enfants adoptés Mois Exemple :  = 03",
+    "Date d'arrivée dans le foyer du ou des enfants adoptés Année Exemple : = 2027"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/formulaire-ressources",
+   "lignes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Récapitulatif {fr-stepper__details}",
+    "# Vos ressources {fr-mt-3w.fr-mb-1w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[libellé \"Revenus nets imposables de 2024 de votre foyer en eurosSi vous avez plusieurs avis d'impôt sur l'année 2024, il vous faudra additionner les différents revenus net imposable. Exemple : 18000\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Où trouver le revenu net imposable du foyer ?\"] {fr-btn.fr-mb-3w.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l'étape foyer\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Ressources Étape 2 sur 4 {fr-stepper__title}",
+    "Étape suivante : Récapitulatif {fr-stepper__details}",
+    "# Vos ressources {fr-mt-3w.fr-mb-1w}",
+    "Toutes les informations demandées sont obligatoires {fr-text--sm}",
+    "[libellé \"Revenus nets imposables de 2024 de votre foyer en eurosSi vous avez plusieurs avis d'impôt sur l'année 2024, il vous faudra additionner les différents revenus net imposable. Exemple : 18000\"] {fr-label}",
+    "[champ number name= inputmode=numeric] {fr-input.fr-col-md-4}",
+    "[bouton \"Où trouver le revenu net imposable du foyer ?\"] {fr-btn.fr-mb-3w.fr-btn--tertiary-no-outline}",
+    "[bouton \"Suivant\"] {fr-btn}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "modaleRevenuNetImposable",
+     "titre": "Où trouver le revenu net imposable du foyer ?",
+     "texte": [
+      "### Où trouver le revenu net imposable du foyer ?",
+      "Le revenu net imposable se trouve sur la ligne “Revenu imposable” de votre avis d'impôt."
+     ]
+    },
+    {
+     "id": "modaleRevenuNetDActivite",
+     "titre": "Où trouver le revenu net d'activité pour chaque membre du foyer ?",
+     "texte": [
+      "### Où trouver le revenu net d'activité pour chaque membre du foyer ?",
+      "Le revenu net d'activité se trouve sur la ligne “Salaires, pensions, rentes nets” de votre avis d'impôt."
+     ]
+    },
+    {
+     "id": "modaleRevenuNetDActivite",
+     "titre": "Où trouver le revenu net d'activité pour chaque membre du foyer ?",
+     "texte": [
+      "### Où trouver le revenu net d'activité pour chaque membre du foyer ?",
+      "Le revenu net d'activité se trouve sur la ligne “Salaires, pensions, rentes nets” de votre avis d'impôt."
+     ]
+    },
+    {
+     "id": "modaleRevenuNetImposable",
+     "titre": "Où trouver le revenu net imposable du foyer ?",
+     "texte": [
+      "### Où trouver le revenu net imposable du foyer ?",
+      "Le revenu net imposable se trouve sur la ligne “Revenu imposable” de votre avis d'impôt."
+     ]
+    },
+    {
+     "id": "modaleRevenuNetImposable",
+     "titre": "Où trouver le revenu net imposable du foyer ?",
+     "texte": [
+      "### Où trouver le revenu net imposable du foyer ?",
+      "Le revenu net imposable se trouve sur la ligne “Revenu imposable” de votre avis d'impôt."
+     ]
+    }
+   ],
+   "reponses": [
+    " Revenus nets imposables de 2024 de votre foyer en eurosSi vous avez p = 1200"
+   ],
+   "bouton": "Suivant"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/recapitulatif",
+   "lignes": [
+    "[bouton \"Revenir à l'étape ressources\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Récapitulatif Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Récapitulatif {fr-my-3w}",
+    "## Votre foyer {fr-h3}",
+    "- Vous êtes : Célibataire",
+    "- Nombre d'enfants actuellement à charge dans votre foyer : 1",
+    "- Nombre d'enfants à adopter : 1",
+    "- Date d'arrivée : 14/03/2027",
+    "[bouton \"Modifier le foyer\"] {fr-btn.fr-background-default--grey.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "## Vos ressources {fr-h3}",
+    "- Revenus nets imposables de 2024 de votre foyer : 1 200 €",
+    "[bouton \"Modifier les ressources\"] {fr-btn.fr-background-default--grey.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Voir le résultat\"] {fr-btn.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "[bouton \"Revenir à l'étape ressources\"] {fr-btn.fr-mb-3w.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+    "<fr-stepper>",
+    "Récapitulatif Étape 3 sur 4 {fr-stepper__title}",
+    "Étape suivante : Résultat {fr-stepper__details}",
+    "# Récapitulatif {fr-my-3w}",
+    "## Votre foyer {fr-h3}",
+    "- Vous êtes : Célibataire",
+    "- Nombre d'enfants actuellement à charge dans votre foyer : 1",
+    "- Nombre d'enfants à adopter : 1",
+    "- Date d'arrivée : 14/03/2027",
+    "[bouton \"Modifier le foyer\"] {fr-btn.fr-background-default--grey.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "## Vos ressources {fr-h3}",
+    "- Revenus nets imposables de 2024 de votre foyer : 1 200 €",
+    "[bouton \"Modifier les ressources\"] {fr-btn.fr-background-default--grey.fr-btn--secondary.fr-icon-pencil-line.fr-btn--icon-left}",
+    "[bouton \"Voir le résultat\"] {fr-btn.fr-icon-arrow-right-line.fr-btn--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur de prime à l'adoption."
+     ]
+    },
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur de prime à l'adoption."
+     ]
+    },
+    {
+     "id": "erreurModal",
+     "titre": "Une erreur est survenue",
+     "texte": [
+      "Une erreur est survenue durant le calcul de votre simulation.",
+      "Vous pouvez essayer de relancer le calcul de votre simulation ou revenir sur le simulateur de prime à l'adoption."
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": "Voir le résultat"
+  },
+  {
+   "url": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/prime-adoption/resultat",
+   "lignes": [
+    "<fr-stepper>",
+    "Résultat Étape 4 sur 4 {fr-stepper__title}",
+    "# Résultat {fr-mt-3w}",
+    "<fr-alert.fr-alert--success>",
+    "Simulation terminée ! {fr-alert__title}",
+    "Ce résultat est une simulation. Il ne garantit pas l'accès à l'aide et au montant indiqué. Il n'engage pas les organismes de sécurité sociale. {fr-text--xs.fr-text--light.fr-mt-1w}",
+    "D'après les informations que vous avez saisies, il semble que vous pouvez bénéficier de cette aide. {fr-text--lg.fr-text--bold}",
+    "### Prime à l'adoption {fr-h6.fr-mb-0}",
+    "2 186,16 € {fr-text--lead.fr-text-title--blue-france.fr-mb-0}",
+    "Versement en une seule fois. Le montant est prévu pour 1 enfant à adopter. {fr-mb-n0-5v}",
+    "[bouton \"Accéder à la demande de la prime à l'adoption\"] {fr-btn}",
+    "- Revenir à l'accueil",
+    "- Modifier la simulation",
+    "### Comprendre le résultat de votre simulation {fr-mt-3w}",
+    "<fr-accordion>",
+    "### Comment et quand sera versée l'aide ? {fr-accordion__title}",
+    "La prime est versée en une seule fois au cours des deux mois suivants l'arrivée de l'enfant dans votre foyer. Si vous demandez la prime d'adoption, le versement devrait avoir lieu entre mars 2027 et mai 2027. {fr-collapse.fr-collapse--expanded}",
+    "<fr-accordion>",
+    "### Comment les ressources du foyer sont-elles prises en compte ? {fr-accordion__title}",
+    "- le revenu est inférieur au plafond de ressource.",
+    "[lien \"service-public.gouv.fr\" -> https://www.service-public.gouv.fr/particuliers/vosdroits/F13220] {fr-icon-external-link-line.fr-link.fr-link--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "lignesCompletes": [
+    "<fr-stepper>",
+    "Résultat Étape 4 sur 4 {fr-stepper__title}",
+    "# Résultat {fr-mt-3w}",
+    "<fr-alert.fr-alert--success>",
+    "Simulation terminée ! {fr-alert__title}",
+    "Ce résultat est une simulation. Il ne garantit pas l'accès à l'aide et au montant indiqué. Il n'engage pas les organismes de sécurité sociale. {fr-text--xs.fr-text--light.fr-mt-1w}",
+    "D'après les informations que vous avez saisies, il semble que vous pouvez bénéficier de cette aide. {fr-text--lg.fr-text--bold}",
+    "### Prime à l'adoption {fr-h6.fr-mb-0}",
+    "2 186,16 € {fr-text--lead.fr-text-title--blue-france.fr-mb-0}",
+    "Versement en une seule fois. Le montant est prévu pour 1 enfant à adopter. {fr-mb-n0-5v}",
+    "[bouton \"Accéder à la demande de la prime à l'adoption\"] {fr-btn}",
+    "- Revenir à l'accueil",
+    "- Modifier la simulation",
+    "### Comprendre le résultat de votre simulation {fr-mt-3w}",
+    "<fr-accordion>",
+    "### Comment et quand sera versée l'aide ? {fr-accordion__title}",
+    "La prime est versée en une seule fois au cours des deux mois suivants l'arrivée de l'enfant dans votre foyer. Si vous demandez la prime d'adoption, le versement devrait avoir lieu entre mars 2027 et mai 2027. {fr-collapse.fr-collapse--expanded}",
+    "<fr-accordion>",
+    "### Comment les ressources du foyer sont-elles prises en compte ? {fr-accordion__title}",
+    "- le revenu est inférieur au plafond de ressource.",
+    "[lien \"service-public.gouv.fr\" -> https://www.service-public.gouv.fr/particuliers/vosdroits/F13220] {fr-icon-external-link-line.fr-link.fr-link--icon-right}",
+    "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+   ],
+   "modales": [
+    {
+     "id": "modaleAccesDemande",
+     "titre": "Accéder à la demande",
+     "texte": [
+      "### Accéder à la demande",
+      "Cliquez sur l'organisme dont vous dépendez pour accéder à la demande. Votre CAF (Caisse d'Allocations Familiales) ou MSA (Mutualité Sociale Agricole) calculera votre droit réel au moment de votre demande.",
+      "Si vous ne savez pas de quel organisme social vous dépendez, sélectionnez la CAF."
+     ]
+    },
+    {
+     "id": "modaleAccesDemande",
+     "titre": "Accéder à la demande",
+     "texte": [
+      "### Accéder à la demande",
+      "Cliquez sur l'organisme dont vous dépendez pour accéder à la demande. Votre CAF (Caisse d'Allocations Familiales) ou MSA (Mutualité Sociale Agricole) calculera votre droit réel au moment de votre demande.",
+      "Si vous ne savez pas de quel organisme social vous dépendez, sélectionnez la CAF."
+     ]
+    }
+   ],
+   "reponses": [],
+   "bouton": null,
+   "destinations": [
+    {
+     "texte": "Accéder à la demande de la prime à l'adoption",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "Revenir à l'accueil",
+     "href": null,
+     "url": "https://www.mesdroitssociaux.gouv.fr/accueil/"
+    },
+    {
+     "texte": "Modifier la simulation",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "service-public.gouv.fr",
+     "href": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13220"
+    },
+    {
+     "texte": "Fermer",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "Faire une demande à la MSA",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    },
+    {
+     "texte": "Faire une demande à la CAF",
+     "href": null,
+     "ouvre": null,
+     "url": null
+    }
+   ]
+  }
+ ]
+}

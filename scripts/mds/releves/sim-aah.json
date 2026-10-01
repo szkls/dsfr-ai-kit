@@ -1,0 +1,36 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/allocation-adulte-handicape",
+ "h1": [
+  "Prérequis pour simuler l'Allocation aux Adultes Handicapés (AAH)"
+ ],
+ "title": "Prérequis pour simuler l'Allocation aux Adultes Handicapés (AAH) - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux simulateurs\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Prérequis pour simuler l'Allocation aux Adultes Handicapés (AAH)",
+  "Avant de commencer à simuler l'Allocation aux Adultes Handicapés, nous aurions besoin des informations suivantes : {fr-text--xl}",
+  "[legend \"Avez-vous plus de 62 ans ?\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+  "[input type=radio name=91c5c630-5b09-4c7b-8ef1-65a9cd2a0cc4 id=91c5c630-5b09-4c7b-8ef1-65a9cd2a0cc4_1]",
+  "[label \"Oui\"] {fr-label}",
+  "[input type=radio name=91c5c630-5b09-4c7b-8ef1-65a9cd2a0cc4 id=91c5c630-5b09-4c7b-8ef1-65a9cd2a0cc4_2]",
+  "[label \"Non\"] {fr-label}",
+  "[legend \"Êtes-vous travailleur non salarié ? C'est une personne qui exerce une activité à son propre compte sans être lié à un employeur par un contrat de travail (auto-entrepreneur, artisan,...)\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+  "[input type=radio name=8b153d6e-6b28-410b-8d90-c3b5230e2633 id=8b153d6e-6b28-410b-8d90-c3b5230e2633_1]",
+  "[label \"Oui\"] {fr-label}",
+  "[input type=radio name=8b153d6e-6b28-410b-8d90-c3b5230e2633 id=8b153d6e-6b28-410b-8d90-c3b5230e2633_2]",
+  "[label \"Non\"] {fr-label}",
+  "[legend \"Êtes-vous travailleur ESAT ? C'est une personne en situation d'handicap qui exerce une activité professionnelle au sein d'un Etablissement et Service d'Accompagnement par le Travail (ESAT).\"] {fr-fieldset__legend.fr-fieldset__legend--regular}",
+  "[input type=radio name=023a888b-fa82-4ad9-b9fe-5938cff6de65 id=023a888b-fa82-4ad9-b9fe-5938cff6de65_1]",
+  "[label \"Oui\"] {fr-label}",
+  "[input type=radio name=023a888b-fa82-4ad9-b9fe-5938cff6de65 id=023a888b-fa82-4ad9-b9fe-5938cff6de65_2]",
+  "[label \"Non\"] {fr-label}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux simulateurs",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs",
+   "fenetre": null
+  }
+ ]
+}

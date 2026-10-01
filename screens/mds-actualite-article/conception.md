@@ -1,39 +1,43 @@
-# Conception : Article d'actualité (page type)
+# Conception : Article Deux nouveaux documents pour faciliter vos démarches
 
-Écran produit avec la skill dsfr-designer et les outils du serveur dsfr-kit. Contenus issus du brief, relevés sur le site le 30/09/2026.
+Écran produit avec la skill dsfr-designer et les outils du serveur dsfr-kit (get_fundamental, get_component, check_screen). Gabarit « article » commun aux 32 actualités.
 
 ## Fondamentaux
-- Doc lue : reference/doc/fondamentaux/couleurs.md — règles appliquées : aucune couleur en dur, fonds et textes par les tokens des composants ; texte de mention pour la date (`fr-text-mention--grey`).
-- Doc lue : reference/doc/fondamentaux/typographie.md — règles appliquées : un seul h1, un h2 par section, h3 pour les sous-titres et les titres de tuiles ou d'accordéons ; chapô en `fr-text--lead` ; corps de texte limité à 8 colonnes.
-- Doc lue : reference/doc/fondamentaux/grille-et-points-de-rupture.md — règles appliquées : `fr-container` › `fr-grid-row fr-grid-row--gutters` › `fr-col-*`, pleine largeur sur mobile, 8 colonnes de texte à partir de LG, grilles de tuiles ou de blocs à 2 colonnes MD et 3 colonnes LG.
-- Doc lue : reference/doc/fondamentaux/espacement.md — règles appliquées : classes d'espacement en nomenclature « v » uniquement (`fr-mt-4v`, `fr-mt-6v`, `fr-mb-8v`, `fr-mt-2v`).
-- Doc lue : reference/doc/fondamentaux/icone.md — règles appliquées : icônes fonctionnelles du DSFR avec libellé uniquement (`fr-icon-arrow-right-line`, `fr-icon-arrow-left-line` sur les liens).
-- Doc lue : reference/doc/fondamentaux/pictogramme.md — règles appliquées : aucun pictogramme sur cette page (tuiles sans en-tête).
+- Doc lue : reference/doc/fondamentaux/couleurs.md — règles appliquées : aucune couleur en dur, fonds et textes portés par les composants.
+- Doc lue : reference/doc/fondamentaux/typographie.md — règles appliquées : un seul h1, hiérarchie de titres continue, chapô en `fr-text--lead`, corps de texte limité à 8 colonnes.
+- Doc lue : reference/doc/fondamentaux/grille-et-points-de-rupture.md — règles appliquées : `fr-container` › `fr-grid-row fr-grid-row--gutters` › `fr-col-*`, pleine largeur sur mobile.
+- Doc lue : reference/doc/fondamentaux/espacement.md — règles appliquées : classes d'espacement en nomenclature « v » uniquement.
+- Doc lue : reference/doc/fondamentaux/icone.md — règles appliquées : icônes fonctionnelles du DSFR avec libellé (flèches des liens, icônes intégrées des composants), aucune icône seule.
+- Doc lue : reference/doc/fondamentaux/pictogramme.md — règles appliquées : aucun pictogramme ajouté, images du site retirées.
 
 ## Point de départ
-Aucun modèle de page correspondant dans le DSFR (voir mds-accueil) : squelette `screens/_gabarit.html`, en-tête, navigation, pied de page et liens d'évitement repris à l'identique de `screens/mds-accueil/index.html` pour que le prototype soit navigable, fil d'Ariane sous l'en-tête, corps de page sur 8 colonnes.
+Gabarit commun du prototype : en-tête, navigation, pied de page, panneau cookies et liens d'évitement repris de screens/mds-accueil/index.html et tenus à jour par scripts/mds/sync-layout.mjs ; fil d'Ariane sous l'en-tête ; écran généré par scripts/mds/ à partir des relevés du site.
 
-## Composants communs à toutes les pages institutionnelles
+## Composants communs à toutes les pages
 ### Liens d'évitement (skiplink)
-- Doc lue : reference/doc/composants/skiplink.md — variante unique, trois liens (Contenu, Menu, Pied de page) vers des ancres présentes ; `nav role="navigation" aria-label="Accès rapide"`.
+- Doc lue : reference/doc/composants/skiplink.md — trois liens (Contenu, Menu, Pied de page) vers des ancres présentes.
 ### En-tête (header)
-- Doc lue : reference/doc/composants/header.md — « Header avec nom de service, lien d'accès », FranceConnect dans les outils ; `role="banner"`, lien d'accueil sur le nom du service avec `title` au format de la doc ; aucune entrée de navigation n'est marquée courante car la page n'est pas une rubrique de la navigation.
+- Doc lue : reference/doc/composants/header.md — nom du service, lien d'accueil vers mds-accueil, FranceConnect dans les outils, `role="banner"`.
 ### Bloc marque (logo)
-- Doc lue : reference/doc/composants/logo.md — taille par défaut, intitulé « République Française » seul.
+- Doc lue : reference/doc/composants/logo.md — intitulé « République Française », taille par défaut.
 ### Navigation principale (navigation)
-- Doc lue : reference/doc/composants/navigation.md — liens directs, trois entrées ; Accueil mène à l'écran mds-accueil du prototype.
+- Doc lue : reference/doc/composants/navigation.md — liens directs Accueil, Vos services, Vos événements de vie ; rubrique courante marquée par `aria-current`.
 ### Boutons FranceConnect et ProConnect (connect)
-- Doc lue : reference/doc/composants/connect.md — bouton FranceConnect avec son lien d'information, intitulés non modifiés.
+- Doc lue : reference/doc/composants/connect.md — bouton FranceConnect et lien d'information, intitulés non modifiés ; dans le prototype, le bouton mène à la page de limite des écrans connectés.
 ### Fil d'Ariane (breadcrumb)
-- Doc lue : reference/doc/composants/breadcrumb.md — variante unique, sous l'en-tête, hors du `main`, sur fond blanc ; page courante non cliquable avec `aria-current="page"` ; libellé tronqué à quatre mots quand le titre est long ; même emplacement sur toutes les pages.
+- Doc lue : reference/doc/composants/breadcrumb.md — sous l'en-tête, page courante non cliquable avec `aria-current="page"`.
 ### Lien (link)
-- Doc lue : reference/doc/composants/link.md — « Lien icon à droite » pour les liens d'action, « Lien icon à gauche » pour les liens de retour, « Lien seul » pour les transcriptions, « Lien externe » (nouvelle fenêtre avec `title`) pour Dailymotion ; libellés du site.
+- Doc lue : reference/doc/composants/link.md — liens de retour et d'action avec icône, liens externes en nouvelle fenêtre avec `title` « … - nouvelle fenêtre », « Haut de page » en fin de contenu.
 ### Bouton (button)
-- Doc lue : reference/doc/composants/button.md — seuls boutons : Menu et Fermer de l'en-tête, et « Gérer les cookies » en secondaire quand la page a des vidéos ; aucun bouton primaire, aucun bouton désactivé.
+- Doc lue : reference/doc/composants/button.md — boutons du menu et de fermeture, boutons d'action propres à la page.
 ### Pied de page (footer)
-- Doc lue : reference/doc/composants/footer.md — pied de page minimal identique à mds-accueil ; « Qui sommes-nous ? » mène à l'écran correspondant du prototype.
+- Doc lue : reference/doc/composants/footer.md — pied de page minimal, liens du bas reliés aux écrans du prototype, « Gérer les cookies » ouvre le panneau.
+### Panneau de gestion des cookies (consent, modal)
+- Doc lue : reference/doc/composants/consent.md — modale de gestion des cookies présente sur toutes les pages, ouverte par le lien « Gérer les cookies » du pied de page et par les boutons « Gérer les cookies » des vidéos ; premier bloc « Tout accepter / Tout refuser » et boutons « Accepter / Refuser » par service, libellés imposés par la doc (le site écrit « Autoriser ») ; services du site : Assurer le fonctionnement du site (obligatoire, refus désactivé), TOLD, Dailymotion, Piano Analytics, avec leurs liens de politique de confidentialité ; bouton du site « Enregistrer mes préférences ».
+- Doc lue : reference/doc/composants/modal.md — `dialog.fr-modal` en fin de `body`, titre h2 relié par `aria-labelledby`, bouton Fermer ; le lien du pied de page reste un lien (extrait officiel du pied de page) et ouvre la modale par l'API `dsfr(…).modal.disclose()`, ouverture programmatique prévue par la doc, le DSFR rendant le focus à l'élément d'origine.
+
 ## Composants propres à la page
-Aucun autre composant : le corps de l'article est en typographie DSFR (titre, mention de date, chapô, paragraphes, listes) avec les liens d'action en « Lien icon à droite ».
+Aucun composant supplémentaire : titres, paragraphes, listes et liens (voir Lien) ; la date en texte de mention (`fr-text-mention--grey`).
 
 ## Note de conception
-**Retenus** : structure éditoriale sur 8 colonnes, fil d'Ariane avec titre tronqué, liens d'action et lien de retour. **Écartés** : image de presse (interdite par le brief), carte. **Écarts assumés** : la date est précédée de « Publié le » pour être compréhensible hors contexte (le site affiche la date seule en h2, ce qui n'est pas un titre) ; les liens d'action pointent vers # en attendant les pages connectées. **Questions ouvertes** : aucune.
+**Retenus** : texte intégral du site, chapô repris du résumé de la liste, liens d'action en « Lien icon à droite » ou « Lien externe ». **Écartés** : image d'illustration. **Écarts assumés** : « Publié le » ajouté devant la date (le site n'affiche que la date) ; les boutons-liens du site deviennent des liens, puisqu'ils naviguent. **Questions ouvertes** : aucune.

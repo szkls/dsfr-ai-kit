@@ -1,0 +1,60 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/dd1pnds-ria/#destination/simu-foyer",
+ "h1": [
+  "Simulateur"
+ ],
+ "title": "Simulateur de droits - étape votre foyer",
+ "lignes": [
+  "# Simulateur",
+  "## 1. VOTRE FOYER",
+  "Vous pouvez modifier sur cet écran la composition de votre foyer pour effectuer votre simulation.",
+  "[bouton \"Né le Invalid date VOUS Né le Invalid date\"]",
+  "[bouton \"ajouter un conjoint\"]",
+  "célibataire, changement de status",
+  "[bouton \"célibataire\"]",
+  "### Enfants ou personnes à charge",
+  "[bouton \"ajouter un enfant ou une personne à charge\"]",
+  "[bouton \"Suivant\"]",
+  "[bouton \"Réinitialiser\"]",
+  "## SYNTHÈSE",
+  "### VOUS"
+ ],
+ "destinations": [
+  {
+   "libelle": "Né le Invalid date VOUS Né le Invalid date",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "ajouter un conjoint",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "célibataire",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "ajouter un enfant ou une personne à charge",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "Suivant",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  },
+  {
+   "libelle": "Réinitialiser",
+   "ouvre": null,
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

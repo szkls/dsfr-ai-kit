@@ -1,0 +1,41 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/complementaire-sante-solidaire",
+ "h1": [
+  "Prérequis pour simuler la Complémentaire Santé Solidaire (CSS)"
+ ],
+ "title": "Prérequis pour simuler la Complémentaire Santé Solidaire (CSS) - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux simulateurs\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Prérequis pour simuler la Complémentaire Santé Solidaire (CSS)",
+  "## Plus rapide, plus simple {fr-h4.fr-mb-2w.fr-mb-md-3w}",
+  "Connectez-vous et simulez la Complémentaire Santé Solidaire avec vos informations pré-remplies. {fr-text--lg.fr-mb-2w.fr-mb-md-3w}",
+  "[bouton \"S’identifier avecFranceConnect\"] {fr-connect}",
+  "Qu’est-ce que FranceConnect ? [lien \"Qu’est-ce que FranceConnect ?\" -> https://franceconnect.gouv.fr/ (nouvelle fenêtre)]",
+  "Vous êtes célibataire et adhérent de la MSA (Mutualité Sociale Agricole) ? {fr-mb-1w}",
+  "Si vous avez droit à la fin de la simulation, faites votre demande directement sur le site de la MSA avec les informations déjà remplies ! {fr-mb-0}",
+  "Nous vous conseillons de réaliser cette démarche sur un ordinateur. {fr-mb-0}",
+  "## Sans identification {fr-h4}",
+  "Sans vous identifier, vous pouvez simuler diverses aides dont la Complémentaire Santé Solidaire depuis le simulateur \"Simuler mes aides\".",
+  "[bouton \"Simuler mes aides\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux simulateurs",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs",
+   "fenetre": null
+  },
+  {
+   "libelle": "S’identifier avecFranceConnect",
+   "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/Ude0_tHSL3TZadK4egihUPmHOwvdibvIsA9Lh4Rl1Ja",
+   "fenetre": null
+  },
+  {
+   "libelle": "Simuler mes aides",
+   "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+   "url": null,
+   "fenetre": null
+  }
+ ]
+}

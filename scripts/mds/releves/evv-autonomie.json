@@ -1,0 +1,59 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/parcours-autonomie",
+ "h1": [
+  "Autonomie et grand âge"
+ ],
+ "title": "Autonomie et grand âge - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux évènements de vie\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Autonomie et grand âge {fr-mt-3w}",
+  "Grand âge {fr-tag}",
+  "Les personnes âgées peuvent être accompagnées et bénéficier d'aides financières, à domicile ou en centre d'accueil. {fr-mt-3w.fr-text--xl}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Préserver son autonomie {fr-tile__title} [lien \"Préserver son autonomie\" -> https://www.pour-les-personnes-agees.gouv.fr/preserver-son-autonomie-s-informer-et-anticiper/perte-d-autonomie-evaluation-et-droits (nouvelle fenêtre)]",
+  "Les personnes âgées en perte d'autonomie bénéficient de droits, ont accès à des solutions d'aménagement du logement, à du matériel adapté, ou encore des actions de prévention. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SIMULATEUR {fr-badge.fr-badge--yellow-tournesol.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Vivre à domicile {fr-tile__title} [lien \"Vivre à domicile\" -> https://www.pour-les-personnes-agees.gouv.fr/vivre-a-domicile/beneficier-daide-a-domicile (nouvelle fenêtre)]",
+  "Vous pouvez être aidé à domicile de différentes façons : intervention d'une aide à domicile, livraison de repas, installation d'une téléassistance... {fr-tile__desc}",
+  "<fr-badges-group>",
+  "AIDES {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Changer de logement {fr-tile__title} [lien \"Changer de logement\" -> https://www.pour-les-personnes-agees.gouv.fr/changer-de-logement/les-questions-a-se-poser (nouvelle fenêtre)]",
+  "Vous souhaitez changer de domicile ou aller vivre dans une résidence pour les personnes âgées. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "LOGEMENT {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Vivre en établissement {fr-tile__title} [lien \"Vivre en établissement\" -> https://www.pour-les-personnes-agees.gouv.fr/vivre-dans-un-ehpad/les-differents-etablissements-medicalises (nouvelle fenêtre)]",
+  "Il existe les EHPAD (Etablissements d'Hébergement pour les Personnes Agées dépendantes) et les USLD (Unités de Soins de Longue Durée). {fr-tile__desc}",
+  "<fr-badges-group>",
+  "ÉTABLISSEMENTS {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Solutions pour les aidants {fr-tile__title} [lien \"Solutions pour les aidants\" -> https://www.pour-les-personnes-agees.gouv.fr/solutions-pour-les-aidants/soutien-financier (nouvelle fenêtre)]",
+  "Vous accompagnez un proche âgé : trouvez du soutien au sein des lieux d'échanges et d'information de proximité, des formations et des aides pour vous préserver et mieux accompagner. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SOLUTIONS {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Les annuaires de la CNSA {fr-tile__title} [lien \"Les annuaires de la CNSA\" -> https://www.pour-les-personnes-agees.gouv.fr/tous-les-annuaires (nouvelle fenêtre)]",
+  "Avec les annuaires de la CNSA (Caisse Nationale de Solidarité pour l'Autonomie), simplifiez vos recherches, comparez les prix des EHPAD, consultez le site de votre département pour vos démarches. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "ANNUAIRE {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "## Vos sites de référence {fr-mt-3w.fr-mt-md-4w}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "### Pour rester autonome, je prends les choses en main {fr-tile__title} [lien \"Pour rester autonome, je prends les choses en main\" -> https://www.pour-les-personnes-agees.gouv.fr/ (nouvelle fenêtre)]",
+  "Découvrez le portail national d'information pour les personnes âgées et leurs proches {fr-tile__desc}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "### Bien vivre votre âge : découvrez le site 'Pour bien vieillir' {fr-tile__title} [lien \"Bien vivre votre âge : découvrez le site 'Pour bien vieillir'\" -> https://www.pourbienvieillir.fr/ (nouvelle fenêtre)]",
+  "Les caisses de retraite et Santé publique France vous aident à bien vivre votre âge. {fr-tile__desc}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux évènements de vie",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/",
+   "fenetre": null
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "directoryListing": false,
+  "redirects": [
+    { "source": "/", "destination": "/screens/mds-accueil/", "type": 302 }
+  ],
+  "rewrites": [
+    { "source": "/screens/:ecran", "destination": "/screens/:ecran/index.html" }
+  ]
+}

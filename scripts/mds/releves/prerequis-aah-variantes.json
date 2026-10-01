@@ -1,0 +1,63 @@
+[
+ {
+  "oui": -1,
+  "texte": [
+   "Plus rapide, plus simple Connectez-vous et simulez l'Allocation aux Adultes Handicapés avec vos informations pré-remplies. S’identifier avec FranceConnect Qu’est-ce que FranceConnect ? Sans identification Sans vous identifier, vous pouvez simuler diverses aides dont l'Allocation aux Adultes Handicapés depuis le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "S’identifier avecFranceConnect",
+    "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/jajcByti2oRJBDTlKwtLHUtazgAqhzE-3My3xOQCj2K"
+   },
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/allocation-adulte-handicape"
+   }
+  ]
+ },
+ {
+  "oui": 0,
+  "texte": [
+   "Vous avez plus de 62 ans Au dessus de 62 ans, l'Allocation aux Adultes Handicapés ne peut plus être perçue. Vous avez la possibilité de simuler d'autres aides sur le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/allocation-adulte-handicape"
+   }
+  ]
+ },
+ {
+  "oui": 1,
+  "texte": [
+   "Travailleurs non salarié Votre situation n'est pas prise en compte dans ce simulateur. Nous vous invitons à simuler l'Allocation aux Adultes Handicapés sur le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/allocation-adulte-handicape"
+   }
+  ]
+ },
+ {
+  "oui": 2,
+  "texte": [
+   "Si vous travaillez en Etablissement et Service d’Accompagnement par le Travail (ESAT), le simulateur de l’Allocation aux Adultes Handicapés ne prend pas en compte cette situation. Votre droit à l’AAH sera calculé comme un salarié.",
+   "Plus rapide, plus simple Connectez-vous et simulez l'Allocation aux Adultes Handicapés avec vos informations pré-remplies. S’identifier avec FranceConnect Qu’est-ce que FranceConnect ? Sans identification Sans vous identifier, vous pouvez simuler diverses aides dont l'Allocation aux Adultes Handicapés depuis le simulateur \"Simuler mes aides\". Simuler mes aides"
+  ],
+  "destinations": [
+   {
+    "bouton": "S’identifier avecFranceConnect",
+    "url": "https://oidc.franceconnect.gouv.fr/api/v2/interaction/6Rk0slRCgujh0_B57SXpIlVc7Evp_6ivM__XTjzOh75"
+   },
+   {
+    "bouton": "Simuler mes aides",
+    "ouvre": "/dd1pnds-ria/#destination/simu-foyer",
+    "url": "https://www.mesdroitssociaux.gouv.fr/simulateurs/allocation-adulte-handicape"
+   }
+  ]
+ }
+]

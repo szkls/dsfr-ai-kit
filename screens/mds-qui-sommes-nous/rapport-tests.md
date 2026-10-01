@@ -6,7 +6,7 @@ Généré par tests/check.mjs le 2026-10-01 — DSFR 1.15.3 — fichiers : index
 
 ## 1. Fidélité aux snippets officiels
 
-23 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, lignes de liste libres en nombre et en ordre (chaque ligne doit correspondre à un type de ligne de l'exemple), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes, contenu libre du bloc refermable des accordéons. Un bloc est conforme s'il correspond à au moins une variante.
+32 bloc(s) de composant analysé(s) contre les extraits des pages d'exemple des composants et des modèles (blocs fonctionnels). Tolérances : textes, valeurs d'attributs, attributs supplémentaires, attributs de comportement ou d'état (autocomplete, spellcheck, required, id, aria-current, aria-labelledby…), niveau des titres h1 à h6, classes d'espacement et de grille, lignes de liste libres en nombre et en ordre (chaque ligne doit correspondre à un type de ligne de l'exemple), sous-composant imbriqué interchangeable (un lien à la place d'un bouton), chacun étant comparé à part contre ses propres variantes, contenu libre du bloc refermable des accordéons. Un bloc est conforme s'il correspond à au moins une variante.
 
 | Fichier | Endroit | Composant | Résultat | Variante la plus proche | Détail |
 |---|---|---|---|---|---|
@@ -25,7 +25,7 @@ Généré par tests/check.mjs le 2026-10-01 — DSFR 1.15.3 — fichiers : index
 | index.html | body > div:nth-of-type(2) > nav.fr-breadcrumb | Fil d'Ariane | conforme | Fil d’Ariane avec liens | identique |
 | index.html | body > main > div > div > div > nav.fr-summary | Sommaire | conforme | Sommaire | identique |
 | index.html | body > main > div > div > div > div.fr-consent-placeholder:nth-of-type(1) | Gestionnaire de consentement | conforme | **Nom du service** est désactivé | identique |
-| index.html | body > main > div > div > div > div.fr-consent-placeholder:nth-of-type(1) > button.fr-btn | Bouton | conforme | Bouton secondaire | identique |
+| index.html | body > main > div > div > div > div.fr-consent-placeholder:nth-of-type(1) > button.fr-btn | Gestionnaire de consentement | conforme | À propos des cookies sur nomdusite.gouv.fr (élément imbriqué <button>) | identique |
 | index.html | body > main > div > div > div > p:nth-of-type(4) > a.fr-link | Lien | conforme | Lien seul | identique |
 | index.html | body > main > div > div > div > ul.fr-links-group:nth-of-type(2) | Lien | conforme | Groupe de liens | identique |
 | index.html | body > main > div > div > div > ul.fr-links-group:nth-of-type(2) > li:nth-of-type(1) > a.fr-link | Lien | conforme | Lien icon à droite | identique |
@@ -33,6 +33,15 @@ Généré par tests/check.mjs le 2026-10-01 — DSFR 1.15.3 — fichiers : index
 | index.html | body > main > div > div > div > p:nth-of-type(7) > a.fr-link | Lien | conforme | Lien icon à gauche | identique |
 | index.html | body > footer.fr-footer | Pied de page | conforme | Pied de page minimal | identique |
 | index.html | body > footer.fr-footer > div > div:nth-of-type(1) > div.fr-enlarge-link:nth-of-type(1) > a > p.fr-logo | Pied de page | conforme | Pied de page minimal (élément imbriqué <p>) | identique |
+| index.html | body > dialog.fr-modal | Modale | conforme | Titre de la modale | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(1) > button.fr-btn | Modale | conforme | Titre de la modale (élément imbriqué <button>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > div.fr-consent-service:nth-of-type(1) > fieldset.fr-fieldset | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <fieldset>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > div.fr-consent-service:nth-of-type(2) > fieldset.fr-fieldset | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <fieldset>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > div.fr-consent-service:nth-of-type(3) > fieldset.fr-fieldset | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <fieldset>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > div.fr-consent-service:nth-of-type(4) > fieldset.fr-fieldset | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <fieldset>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > div.fr-consent-service:nth-of-type(5) > fieldset.fr-fieldset | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <fieldset>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > ul.fr-btns-group | Gestionnaire de consentement | conforme | Panneau de gestion des cookies (élément imbriqué <ul>) | identique |
+| index.html | body > dialog.fr-modal > div > div > div > div > div:nth-of-type(2) > div.fr-consent-manager > ul.fr-btns-group > li > button.fr-btn | Gestionnaire de consentement | conforme | À propos des cookies sur nomdusite.gouv.fr (élément imbriqué <button>) | identique |
 
 ## 2. Classes inconnues et styles en ligne
 
@@ -69,11 +78,11 @@ Chaque composant du paquet présent dans l'écran doit avoir dans `conception.md
 | Composant | Fichier de doc attendu | Résultat | Détail |
 |---|---|---|---|
 | Fil d'Ariane (breadcrumb) | reference/doc/composants/breadcrumb.md | conforme | ligne « Doc lue » présente |
-| Bouton (button) | reference/doc/composants/button.md | conforme | ligne « Doc lue » présente |
 | Bouton FranceConnect (connect) | reference/doc/composants/connect.md | conforme | ligne « Doc lue » présente |
 | Gestionnaire de consentement (consent) | reference/doc/composants/consent.md | conforme | ligne « Doc lue » présente |
 | Pied de page (footer) | reference/doc/composants/footer.md | conforme | ligne « Doc lue » présente |
 | En-tête (header) | reference/doc/composants/header.md | conforme | ligne « Doc lue » présente |
 | Lien (link) | reference/doc/composants/link.md | conforme | ligne « Doc lue » présente |
+| Modale (modal) | reference/doc/composants/modal.md | conforme | ligne « Doc lue » présente |
 | Liens d'évitement (skiplink) | reference/doc/composants/skiplink.md | conforme | ligne « Doc lue » présente |
 | Sommaire (summary) | reference/doc/composants/summary.md | conforme | ligne « Doc lue » présente |

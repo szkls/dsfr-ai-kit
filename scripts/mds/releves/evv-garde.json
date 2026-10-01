@@ -1,0 +1,32 @@
+{
+ "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/parcours-garde-enfants",
+ "h1": [
+  "Vous avez besoin de faire garder vos enfants"
+ ],
+ "title": "Vous avez besoin de faire garder vos enfants - mes droits sociaux",
+ "lignes": [
+  "[bouton \"Revenir aux évènements de vie\"] {fr-btn.fr-btn--tertiary-no-outline.fr-btn--secondary.fr-icon-arrow-left-line.fr-btn--icon-left}",
+  "# Vous avez besoin de faire garder vos enfants {fr-mt-3w}",
+  "Famille {fr-tag}",
+  "Vous pouvez être accompagnées et bénéficier d'aides financières et faire garder vos enfants. {fr-mt-3w.fr-text--xl}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## Simulation des aides à la garde d'enfants {fr-tile__title} [lien \"Simulation des aides à la garde d'enfants\" -> /votre-simulateur/aide-garde-enfant/]",
+  "Pour obtenir une aide si vous faites garder vos enfants. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SIMULATEUR {fr-badge.fr-badge--yellow-tournesol.fr-badge--no-icon}",
+  "<fr-tile.fr-enlarge-link.fr-tile--horizontal>",
+  "## J'ai besoin de faire garder mes enfants {fr-tile__title} [lien \"J'ai besoin de faire garder mes enfants\" -> https://www.service-public.gouv.fr/particuliers/vosdroits/F601 (nouvelle fenêtre)]",
+  "Pour faire garder mes enfants (la journée, le soir ou les vacances scolaires...), plusieurs possibilités existent. {fr-tile__desc}",
+  "<fr-badges-group>",
+  "SERVICE PUBLIC {fr-badge.fr-badge--info.fr-badge--no-icon}",
+  "[lien \"Haut de page\" -> #] {fr-link.fr-icon-arrow-up-fill.fr-link--icon-left}"
+ ],
+ "destinations": [
+  {
+   "libelle": "Revenir aux évènements de vie",
+   "ouvre": null,
+   "url": "https://www.mesdroitssociaux.gouv.fr/evenements-de-vie/",
+   "fenetre": null
+  }
+ ]
+}

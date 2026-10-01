@@ -1,0 +1,2053 @@
+[
+ {
+  "tour": 0,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nVeuillez renseigner l'âge du défunt",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 1,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 2,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   }
+  ]
+ },
+ {
+  "tour": 3,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   }
+  ]
+ },
+ {
+  "tour": 4,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 5,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   }
+  ]
+ },
+ {
+  "tour": 6,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   }
+  ]
+ },
+ {
+  "tour": 7,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x18",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x19",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   }
+  ]
+ },
+ {
+  "tour": 8,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nNombre d'enfants à charge\nVeuillez renseigner le nombre d’enfant à charge\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x18",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x19",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x20",
+    "tag": "input",
+    "type": "text",
+    "name": "numberOfChildren",
+    "checked": false,
+    "value": "",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 9,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nNombre d'enfants à charge\nVotre caisse d'assurance maladie\nCPAM\nMSA\nAutre\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x18",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x19",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x20",
+    "tag": "input",
+    "type": "text",
+    "name": "numberOfChildren",
+    "checked": false,
+    "value": "1",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x21",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "cpam",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x22",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "msa",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x23",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 10,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nNombre d'enfants à charge\nVotre caisse d'assurance maladie\nCPAM\nMSA\nAutre\nVotre caisse d'allocations familiales\nCAF\nMSA\nAucune\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x18",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x19",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x20",
+    "tag": "input",
+    "type": "text",
+    "name": "numberOfChildren",
+    "checked": false,
+    "value": "1",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x21",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": true,
+    "value": "cpam",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x22",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "msa",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x23",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x24",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": false,
+    "value": "caf",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x25",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": false,
+    "value": "msa",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x26",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": false,
+    "value": "aucune",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "tour": 11,
+  "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nNombre d'enfants à charge\nVotre caisse d'assurance maladie\nCPAM\nMSA\nAutre\nVotre caisse d'allocations familiales\nCAF\nMSA\nAucune\nAfficher les aides et prestations\nRéinitialiser\nkeyboard_arrow_up",
+  "champs": [
+   {
+    "id": "x0",
+    "tag": "input",
+    "type": "text",
+    "name": "defunctAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x1",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": true,
+    "value": "retraite",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x2",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "salarie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x3",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "demandeurEmploi",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x4",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "arretMaladie",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x5",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "situationDefunt",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x6",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x7",
+    "tag": "input",
+    "type": "radio",
+    "name": "defuntBenefDispo",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x8",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": true,
+    "value": "pensionInvalidite",
+    "label": "Pension d'invalidité",
+    "groupe": "Pension d'invalidité"
+   },
+   {
+    "id": "x9",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "renteAccidentMaladie",
+    "label": "Rente Accident du travail/maladie professionnelle",
+    "groupe": "Rente Accident du travail/maladie professionnelle"
+   },
+   {
+    "id": "x10",
+    "tag": "input",
+    "type": "checkbox",
+    "name": "defuntBenef",
+    "checked": false,
+    "value": "aah",
+    "label": "AAH Allocation Adulte Handicapé",
+    "groupe": "AAH Allocation Adulte Handicapé"
+   },
+   {
+    "id": "x11",
+    "tag": "input",
+    "type": "text",
+    "name": "applicantAge",
+    "checked": false,
+    "value": "75",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x12",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": true,
+    "value": "marie",
+    "label": "Marié(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x13",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "pacse",
+    "label": "Pacsé(e)/Concubin(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x14",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "divorce",
+    "label": "Divorcé(e)",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x15",
+    "tag": "input",
+    "type": "radio",
+    "name": "lienDefunt",
+    "checked": false,
+    "value": "enfant",
+    "label": "Enfant",
+    "groupe": "Marié(e)"
+   },
+   {
+    "id": "x16",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x17",
+    "tag": "input",
+    "type": "radio",
+    "name": "demandeurRemarie",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x18",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": true,
+    "value": "oui",
+    "label": "Oui",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x19",
+    "tag": "input",
+    "type": "radio",
+    "name": "enfantsCharge",
+    "checked": false,
+    "value": "non",
+    "label": "Non",
+    "groupe": "Oui"
+   },
+   {
+    "id": "x20",
+    "tag": "input",
+    "type": "text",
+    "name": "numberOfChildren",
+    "checked": false,
+    "value": "1",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x21",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": true,
+    "value": "cpam",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x22",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "msa",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x23",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAssuranceMaladie",
+    "checked": false,
+    "value": "autre",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x24",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": true,
+    "value": "caf",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x25",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": false,
+    "value": "msa",
+    "label": "",
+    "groupe": ""
+   },
+   {
+    "id": "x26",
+    "tag": "input",
+    "type": "radio",
+    "name": "caisseAllocationFamille",
+    "checked": false,
+    "value": "aucune",
+    "label": "",
+    "groupe": ""
+   }
+  ]
+ },
+ {
+  "resultats": {
+   "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nMODIFIER MES INFORMATIONS\nkeyboard_arrow_down\nVOUS POURRIEZ PRETENDRE A …\nAide aux Situations de Rupture (ASIR)\nEn savoir plus\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nAllocation de Solidarité aux Personnes Agées\nEn savoir plus\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nCapital Décès pour les ayants droit\nEn savoir plus\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nPENSEZ A SIMULER VOS AIDES EN CAS DE DIMINUTION DE VOS REVENUS\nAides au Logement\n\nAL\n\nkeyboard_arrow_right\nFaire une simulation\nRevenu de Solidarité Active\n\nRSA\n\nkeyboard_arrow_right\nFaire une simulation\nComplémentaire Santé Solidaire\n\nCSS\n\nkeyboard_arrow_right\nFaire une simulation\nkeyboard_arrow_up",
+   "liens": [],
+   "boutonsLiens": [
+    "keyboard_arrow_left Retour au parcours Décès",
+    "MODIFIER MES INFORMATIONSkeyboard_arrow_down",
+    "Afficher les aides et prestations",
+    "Réinitialiser",
+    "keyboard_arrow_right Télécharger le formulaire de demande",
+    "keyboard_arrow_right Télécharger le formulaire de demande",
+    "keyboard_arrow_right Télécharger le formulaire de demande",
+    "Aides au Logement AL keyboard_arrow_right Faire une simulation",
+    "keyboard_arrow_right Faire une simulation",
+    "Revenu de Solidarité Active RSA keyboard_arrow_right Faire une simulation",
+    "keyboard_arrow_right Faire une simulation",
+    "Complémentaire Santé Solidaire CSS keyboard_arrow_right Faire une simulation",
+    "keyboard_arrow_right Faire une simulation",
+    "keyboard_arrow_up"
+   ]
+  },
+  "destinations": [
+   {
+    "libelle": "MODIFIER MES INFORMATIONSkeyboard_arrow_down",
+    "ouvre": ""
+   },
+   {
+    "libelle": "keyboard_arrow_right Télécharger le formulaire de demande",
+    "ouvre": "https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub/files/PDF/demande-aide-situa-rupture.pdf"
+   },
+   {
+    "libelle": "Aides au Logement AL keyboard_arrow_right Faire une simulation",
+    "ouvre": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil"
+   },
+   {
+    "libelle": "keyboard_arrow_right Faire une simulation",
+    "ouvre": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil"
+   },
+   {
+    "libelle": "Revenu de Solidarité Active RSA keyboard_arrow_right Faire une simulation",
+    "ouvre": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil"
+   },
+   {
+    "libelle": "Complémentaire Santé Solidaire CSS keyboard_arrow_right Faire une simulation",
+    "ouvre": "https://www.mesdroitssociaux.gouv.fr/votre-simulateur/accueil"
+   },
+   {
+    "libelle": "keyboard_arrow_up",
+    "ouvre": ""
+   }
+  ],
+  "aides": {
+   "telechargements": [
+    {
+     "i": 0,
+     "ouvre": "https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub/files/PDF/demande-aide-situa-rupture.pdf"
+    },
+    {
+     "i": 1,
+     "ouvre": "https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub/files/PDF/PS/demande-aspa.pdf"
+    },
+    {
+     "i": 2,
+     "ouvre": "https://www.ameli.fr/sites/default/files/formualires/169/s3180.pdf"
+    }
+   ],
+   "texte": "VOUS DEVEZ FAIRE FACE AU DECES D'UN PROCHE\nLors du décès d'un proche, certaines démarches doivent être faites rapidement.\nkeyboard_arrow_left\nRetour au parcours Décès\nA PROPOS DE VOUS ET DU DEFUNT\n\nEn fonction de la situation du défunt et de la vôtre, retrouvez en détail les aides et prestations dont vous pouvez bénéficier.\n\nfilter_list\nSituations\nFERMER\nkeyboard_arrow_up\nÀ propos du défunt\nÂge du défunt\nans\nSituation du défunt\n\nRetraité\n\nSalarié\n\nDemandeur d'emploi\n\nEn arrêt maladie\n\nAutre Situation\n\nLe défunt bénéficiait-il d'une pension, d'une rente ou d'une allocation ?\nOui\nNon\nPension d'invalidité\nRente Accident du travail/maladie professionnelle\nAAH Allocation Adulte Handicapé\nÀ propos de vous\nVotre âge\nans\nVotre lien avec le défunt\nMarié(e)\nPacsé(e)/Concubin(e)\nDivorcé(e)\nEnfant\nEtes-vous remarié(e) ?\nOui\nNon\nAvez-vous des enfants à charge ?\nOui\nNon\nNombre d'enfants à charge\nVotre caisse d'assurance maladie\nCPAM\nMSA\nAutre\nVotre caisse d'allocations familiales\nCAF\nMSA\nAucune\nAfficher les aides et prestations\nRéinitialiser\nVOUS POURRIEZ PRETENDRE A …\nAide aux Situations de Rupture (ASIR)\nEn savoir plus\n\nL'Aide aux situations de Rupture (ASIR) est une aide ponctuelle, de 3 mois maximum, proposée par l'Assurance Retraite aux personnes retraités (Gir 5/6 ou on girées) permettant de faire face aux situations de rupture, telles que la perte d’un conjoint. L’ASIR vise une amélioration des conditions de vie à domicile, ainsi qu’un accompagnement administratif, de gestion budgétaire, de soutien moral et d’aide dans les tâches domestiques. La demande doit être faite dans les 6 mois suivant le décès et l'aide pourra être mise en place après évaluation des besoins.\n\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nAllocation de Solidarité aux Personnes Agées\nEn savoir plus\n\nL’allocation de solidarité aux personnes âgées (ASPA) vise à garantir un minimum de ressources aux personnes aux revenus faibles, versée à partir de 65 ans ou après l'âge légal de départ à la retraite dans certaines situations. Si vous êtes reconnu inapte au travail ou ayant une incapacité permanente d’au moins 50% la condition d'âge est comprise entre 62 et 65 ans.\n\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nCapital Décès pour les ayants droit\nEn savoir plus\n\nLe capital décès est une indemnité qui garantit le versement d'un capital aux ayants droit d'un salarié décédé, sous certaines conditions. Son montant est forfaitaire. Les ayants droit doivent en faire la demande à la Caisse Primaire d'Assurance Maladie (CPAM) dont dépendait le défunt au moment du décès. La demande de capital décès doit être faite dans un certain délai.\n\nkeyboard_arrow_right\nTélécharger le formulaire de demande\nPENSEZ A SIMULER VOS AIDES EN CAS DE DIMINUTION DE VOS REVENUS\nAides au Logement\n\nAL\n\nkeyboard_arrow_right\nFaire une simulation\nRevenu de Solidarité Active\n\nRSA\n\nkeyboard_arrow_right\nFaire une simulation\nComplémentaire Santé Solidaire\n\nCSS\n\nkeyboard_arrow_right\nFaire une simulation\nkeyboard_arrow_up"
+  }
+ }
+]
