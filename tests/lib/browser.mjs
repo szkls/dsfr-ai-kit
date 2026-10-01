@@ -38,7 +38,9 @@ export function normalizeFragments({ fragments, roots, utilityRe, ignoreAttrs = 
     const freeZone = el.classList.contains('fr-header__menu-links') || (el.classList.contains('fr-collapse') && el.parentElement && el.parentElement.classList.contains('fr-accordion'));
     // contenu d'une modale : seul le titre est comparé (doc Modale : « Le contenu de la modale, obligatoire et libre »)
     const modalContent = el.classList.contains('fr-modal__content');
-    for (const ch of freeZone ? [] : modalContent ? [...el.children].filter((x) => x.classList.contains('fr-modal__title')) : el.children) {
+    // dans un paragraphe, les éléments de texte sans classe DSFR (lien, gras, saut de ligne…) font partie du texte libre
+    const enLigne = (x) => el.tagName === 'P' && ![...x.classList].some((c) => c.startsWith('fr-'));
+    for (const ch of freeZone ? [] : modalContent ? [...el.children].filter((x) => x.classList.contains('fr-modal__title')) : [...el.children].filter((x) => !enLigne(x))) {
       const p = primaryOf(ch);
       kids.push(p && roots.includes(p) ? { t: ch.tagName.toLowerCase(), p, b: true } : norm(ch));
     }
@@ -111,7 +113,9 @@ export function analyseDocument({ roots, utilityRe, ignoreAttrs = [] }) {
     const freeZone = el.classList.contains('fr-header__menu-links') || (el.classList.contains('fr-collapse') && el.parentElement && el.parentElement.classList.contains('fr-accordion'));
     // contenu d'une modale : seul le titre est comparé (doc Modale : « Le contenu de la modale, obligatoire et libre »)
     const modalContent = el.classList.contains('fr-modal__content');
-    const children = freeZone ? [] : modalContent ? [...el.children].filter((x) => x.classList.contains('fr-modal__title')) : [...el.children];
+    // dans un paragraphe, les éléments de texte sans classe DSFR (lien, gras, saut de ligne…) font partie du texte libre
+    const enLigne = (x) => el.tagName === 'P' && ![...x.classList].some((c) => c.startsWith('fr-'));
+    const children = freeZone ? [] : modalContent ? [...el.children].filter((x) => x.classList.contains('fr-modal__title')) : [...el.children].filter((x) => !enLigne(x));
     for (const ch of children) {
       const p = primaryOf(ch);
       kids.push(p && roots.includes(p) ? { t: ch.tagName.toLowerCase(), p, b: true } : norm(ch));

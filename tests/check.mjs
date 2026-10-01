@@ -60,10 +60,17 @@ for (const c of [...components]) {
 // Tuile : « Une description, optionnelle », « Un texte de détail, optionnel », « Une première zone de détail, composée d'une
 // précision sous forme de tags […] ou de badges — En option ». Mise en avant : « Un titre — En option ».
 // Modale : « Une icône — En option » dans le titre (span d'icône du titre, voir optionalKey).
-const OPTIONAL_PARTS = new Set(['fr-tile__desc', 'fr-tile__detail', 'fr-tile__start', 'fr-callout__title']);
+// Tuile encore : « L'en-tête de la tuile fr-tile__header, optionnel » (pictogramme).
+// Indicateur d'étapes : « Sur cette dernière étape, le titre de l'étape suivante ne doit pas être affiché » (fr-stepper__details).
+// Bouton radio, champ de saisie, liste déroulante, bloc date : la description additionnelle (fr-hint-text) est « En option ».
+const OPTIONAL_PARTS = new Set(['fr-tile__desc', 'fr-tile__detail', 'fr-tile__start', 'fr-tile__header', 'fr-callout__title', 'fr-stepper__details', 'fr-hint-text']);
 // Modificateurs combinables selon la doc : le type d'une alerte (info, warning, error, success) se combine avec sa taille,
 // alors que le paquet ne montre la taille SM qu'en type info ; à taille égale, les types sont interchangeables.
-const modifierAxis = (c) => c.replace(/^fr-alert--(info|warning|error|success)$/, 'fr-alert--(type)');
+// Docs du bouton et du lien : « les icônes peuvent être changées » : le nom de l'icône est libre (fr-icon-*, hors tailles fr-icon--*).
+const modifierAxis = (c) => c.replace(/^fr-alert--(info|warning|error|success)$/, 'fr-alert--(type)').replace(/^fr-icon-(?!-)[a-z0-9-]+$/, 'fr-icon-(nom)');
+// Doc du bouton : « Un lien <a href> permet de rediriger vers une autre page » : un bouton DSFR qui navigue est un lien ;
+// pour la classe fr-btn, <a> et <button> sont interchangeables (et leurs attributs href / type).
+const lienBouton = (a, b) => a.t !== b.t && ['a', 'button'].includes(a.t) && ['a', 'button'].includes(b.t) && a.c.includes('fr-btn') && b.c.includes('fr-btn');
 function optionalKey(child, parent) {
   const cls = (child.c || []).find((x) => OPTIONAL_PARTS.has(x));
   if (cls) return cls;
@@ -157,7 +164,8 @@ try {
     const authoredStyles = [...readFileSync(join(screenDir, file), 'utf8').matchAll(/\sstyle="([^"]*)"/g)].map((m) => m[1].trim()).filter(Boolean);
     for (const s of a.styles) if (authoredStyles.some((v) => s.value.includes(v) || v.includes(s.value.trim()))) r2.push({ file, path: s.path, problem: 'attribut style en ligne', value: s.value });
     // 3. Contenus
-    const fauxRe = /lorem|ipsum|\bà compléter\b|\[[^\]]*\]|^(titre|texte|libellé|description)\b/i;
+    // textes factices des exemples DSFR (« Libellé bouton », « Description de la tuile », « Titre de la modale »…), pas un vrai intitulé
+    const fauxRe = /lorem|ipsum|\bà compléter\b|\[[^\]]*\]|^(titre|texte|libellé|description)( (de la|du|de l’|de l'|d’|d'|de|pour)( [a-zé’']+){0,3})?( (bouton|lien|tuile|carte|modale|alerte|additionnel|radio|case|champ|onglet|tag|badge))?\s*\d*$/i;
     for (const t of a.texts) if (fauxRe.test(t.text)) r3.push({ file, path: t.path, problem: 'faux-texte', value: t.text.slice(0, 80) });
     for (const t of a.attrTexts) if (/\[[^\]]*\]|lorem|ipsum|à modifier|à compléter/i.test(t.value)) r3.push({ file, path: t.path, problem: `faux-texte dans l'attribut ${t.attr}`, value: t.value.slice(0, 80) });
     const genericRe = /^(cliquez ici|cliquer ici|ici|en savoir plus|lire la suite|voir plus|plus d'infos?|link|button)$/i;
@@ -237,11 +245,12 @@ function diff(a, b, path) {
   // un sous-composant (bouton, lien…) imbriqué est comparé à part, contre ses propres variantes : ici seule sa présence compte,
   // quel que soit son élément (la doc autorise par exemple un lien ou un bouton dans une mise en avant)
   if (a.b || b.b) { if (!!a.b !== !!b.b) note(`${path} : sous-composant ${a.b ? 'inattendu' : 'attendu'} ${lbl(a.b ? a : b)}`, 3); return { score, first }; }
-  if (a.t !== b.t) { note(`${path} : balise ${lbl(a)} au lieu de ${lbl(b)}`, 5); return { score, first }; }
+  const echange = lienBouton(a, b);
+  if (a.t !== b.t && !echange) { note(`${path} : balise ${lbl(a)} au lieu de ${lbl(b)}`, 5); return { score, first }; }
   const ac = a.c.map(modifierAxis), bc = b.c.map(modifierAxis);
   for (const m of b.c.filter((x) => !ac.includes(modifierAxis(x)))) note(`${path} : classe ${m} manquante`);
   for (const e of a.c.filter((x) => !bc.includes(modifierAxis(x)))) note(`${path} : classe ${e} en trop`);
-  for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x))) note(`${path} : attribut ${m} manquant`);
+  for (const m of b.a.filter((x) => !BEHAVIOUR_ATTRS.has(x) && !a.a.includes(x) && !(echange && ['type', 'href'].includes(x)))) note(`${path} : attribut ${m} manquant`);
   // listes (ul, ol) : les lignes d'un écran sont libres en nombre et en ordre ; chaque ligne doit correspondre à un type de ligne de l'exemple
   if ((a.t === 'ul' || a.t === 'ol') && a.k.length && b.k.length) {
     for (const ca of a.k) {
@@ -251,10 +260,22 @@ function diff(a, b, path) {
     }
     return { score, first };
   }
-  const bk = b.k.filter((c) => { const key = optionalKey(c, b); return !key || a.k.some((x) => optionalKey(x, a) === key); });
-  const n = Math.max(a.k.length, bk.length);
+  let bk = b.k.filter((c) => { const key = optionalKey(c, b); return !key || a.k.some((x) => optionalKey(x, a) === key); });
+  let ak = a.k;
+  // groupe de champs (fieldset) : comme pour les listes, le nombre d'éléments (choix, champs) dépend du contenu ;
+  // chaque élément doit correspondre à un type d'élément de l'exemple, le reste (légende, messages) est comparé en place
+  const elementDeGroupe = (k) => (k.c || []).includes('fr-fieldset__element');
+  if (a.t === 'fieldset' && ak.some(elementDeGroupe) && bk.some(elementDeGroupe)) {
+    for (const ca of ak.filter(elementDeGroupe)) {
+      let bestD = null;
+      for (const cb of bk.filter(elementDeGroupe)) { const d = diff(ca, cb, `${path} > ${ca.t}`); if (!bestD || d.score < bestD.score) bestD = d; if (bestD.score === 0) break; }
+      score += bestD.score; if (!first && bestD.first) first = bestD.first;
+    }
+    ak = ak.filter((k) => !elementDeGroupe(k)); bk = bk.filter((k) => !elementDeGroupe(k));
+  }
+  const n = Math.max(ak.length, bk.length);
   for (let i = 0; i < n; i++) {
-    const ca = a.k[i], cb = bk[i];
+    const ca = ak[i], cb = bk[i];
     if (!ca) { note(`${path} : élément ${lbl(cb)} manquant`, 2); continue; }
     if (!cb) { note(`${path} : élément ${lbl(ca)} en trop`, 2); continue; }
     const d = diff(ca, cb, `${path} > ${ca.t}${ca.p ? '.' + ca.p : ''}`);
